@@ -18,7 +18,7 @@
       "chipsets": "/data/chipsets.json"
     },
     "pending_sources": [
-      "TrimUI — site does not expose product specs via web, needs manual entry",
+      "TrimUI — official site exposes firmware/features but not full hardware specs (CPU/RAM/storage/battery fields still partial)",
       "Konkr — site not accessible, needs correct URL or manual entry",
       "Miniloong — currently sourced from Litnxt reseller page; still need official manufacturer spec page"
     ]
@@ -652,29 +652,36 @@
       }
     },
     {
-      "id": "trimui-smart-pro-placeholder",
+      "id": "trimui-smart-pro",
       "brand": "TrimUI",
-      "model": "Smart Pro",
+      "model": "Smart Pro (TG5040)",
       "category": "retro-handheld",
-      "year": null,
+      "year": 2024,
       "price_usd": null,
-      "tier": "budget",
+      "tier": "mid",
       "form_factor": "landscape",
-      "cpu": { "chip": "—", "architecture": "—", "cores": "—" },
-      "gpu": { "chip": "—", "cores": null },
+      "cpu": { "chip": "Unpublished on official page", "architecture": "—", "cores": "—" },
+      "gpu": { "chip": "Unpublished on official page", "cores": null },
       "ram_gb": null,
       "storage_gb": null,
-      "storage_type": null,
-      "os": "Linux",
+      "storage_type": "microSD base package",
+      "os": "Linux (TRIMUI firmware)",
       "screen": { "size_inch": null, "resolution": "—", "type": "—" },
       "battery_mah": null,
-      "wifi": null,
-      "bluetooth": null,
-      "source_url": "https://trimui.com",
+      "wifi": "Wi-Fi",
+      "bluetooth": "Bluetooth (A2DP + BLE HID)",
+      "source_url": "https://trimui.com/pages/trimui-smart-pro-firmware",
       "verified": false,
-      "notes": "PLACEHOLDER — TrimUI site does not expose specs. Known models: Smart Pro (Allwinner A133P), Brick (Allwinner A133P), Brick Pro. Please provide official spec sheet URL to populate.",
+      "notes": "Official TrimUI pages confirm Smart Pro model and firmware lineage but do not publish full hardware spec sheet (CPU, RAM, storage, and battery capacity remain undisclosed).",
       "capabilities": {
-        "evidence": "Waiting on official source material before adding device-level capabilities."
+        "firmware": "Official firmware track for TG5040: v1.0.3, v1.0.4, v1.1.0, v1.1.1 with OTA and release notes on trimui.com + GitHub.",
+        "wireless": "Bluetooth function officially enabled with A2DP audio and BLE HID support; Wi-Fi stack is actively maintained in firmware updates.",
+        "graphics_stack": "Vulkan driver and updated GLES/Vulkan blobs documented in official v1.0.4 release notes.",
+        "media": "Official media player support includes hardware decoding for H.265 and H.264 plus broad audio codec support (Dolby/AC3 not supported).",
+        "streaming": "Moonlight streaming support is explicitly documented in official firmware notes.",
+        "charging": "Official firmware notes report charging-current tuning from 1500mA to 1950mA; no battery-capacity value published on official pages.",
+        "system": "SSH support, SD repair checks, and broader Linux driver updates are explicitly listed in official firmware changelogs.",
+        "evidence": "All capability statements above are sourced from trimui.com firmware/support pages and linked official TrimUI GitHub release notes."
       }
     },
     {
