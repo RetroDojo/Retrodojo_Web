@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetroDojo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">⚔️ RetroDojo</h1>
+      <p class="subtitle">▸ INSERT COIN TO CONTINUE ◂</p>
+    </header>
+    <main>
+      <div class="card">
+        <h2>Welcome, Player One</h2>
+        <p>Your personal hub for AI experiments, retro projects, and everything in between.</p>
+      </div>
+      <div class="card">
+        <h3>▸ API Status</h3>
+        <div id="api-response"><span class="blink">▋</span> Connecting to server...</div>
+      </div>
+    </main>
+    <footer>
+      <p>© RetroDojo — Powered by Azure Static Web Apps</p>
+    </footer>
+  </div>
+  <script>
+    fetch('/api/hello')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('api-response').innerHTML =
+          `<span class="success">✓ ${data.message}</span><br><small class="dim">${data.timestamp}</small>`;
+      })
+      .catch(() => {
+        document.getElementById('api-response').innerHTML =
+          `<span class="warn">⚠ API offline — run locally with: func start</span>`;
+      });
+  </script>
+</body>
+</html>
