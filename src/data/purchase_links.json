@@ -1,0 +1,122 @@
+{
+  "_meta": {
+    "description": "Placeholder purchase links keyed by device id. Fill direct_url and affiliate_url as links become available.",
+    "last_updated": "2026-04-26"
+  },
+  "links": [
+    {
+      "device_id": "anbernic-rg35xxsp",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "anbernic-rg35xxpro",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "anbernic-rg556",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "retroid-rp4",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "retroid-rp4pro",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "retroid-rp5",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "retroid-rp6",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "retroid-rp-classic",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "miyoo-mini-plus",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "miyoo-mini-flip",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "miyoo-flip-v2",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "ayn-odin3-base",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "ayn-thor-lite",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "ayaneo-3",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "mangmi-air-x",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "mangmi-pocket-max",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "trimui-smart-pro",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "konkr-placeholder",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    },
+    {
+      "device_id": "miniloong-pocket-1",
+      "direct_url": "",
+      "affiliate_url": "",
+      "notes": ""
+    }
+  ]
+}

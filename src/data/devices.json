@@ -16,7 +16,8 @@
     },
     "last_updated": "2026-04-26",
     "related_datasets": {
-      "chipsets": "/data/chipsets.json"
+      "chipsets": "/data/chipsets.json",
+      "purchase_links": "/data/purchase_links.json"
     },
     "pending_sources": [
       "TrimUI — official hardware spec sheet still needed to confirm CPU/GPU/RAM/storage/battery values currently backfilled from community sheet",

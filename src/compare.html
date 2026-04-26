@@ -137,6 +137,14 @@
     .badge-budget   { border: 1px solid #00ff41; color: #00ff41; }
     .badge-mid      { border: 1px solid #ffcc00; color: #ffcc00; }
     .badge-flagship { border: 1px solid #ff6b35; color: #ff6b35; }
+    .badge-tier-lt50 { border: 1px solid #36f0b8; color: #36f0b8; }
+    .badge-tier-50-100 { border: 1px solid #00ff41; color: #00ff41; }
+    .badge-tier-100-150 { border: 1px solid #9cff57; color: #9cff57; }
+    .badge-tier-150-200 { border: 1px solid #ffcc00; color: #ffcc00; }
+    .badge-tier-200-500 { border: 1px solid #ff9a3c; color: #ff9a3c; }
+    .badge-tier-500-1000 { border: 1px solid #ff6b35; color: #ff6b35; }
+    .badge-tier-1000-plus { border: 1px solid #ff3b3b; color: #ff3b3b; }
+    .badge-tier-unknown { border: 1px solid rgba(0,255,65,0.35); color: rgba(0,255,65,0.65); }
     .badge-category-retro-handheld { border: 1px solid #00d1ff; color: #00d1ff; }
     .badge-category-pc-handheld { border: 1px solid #ff66c4; color: #ff66c4; }
 
@@ -380,9 +388,14 @@
         <label for="filter-tier">Tier</label>
         <select id="filter-tier">
           <option value="all">All</option>
-          <option value="budget">Budget</option>
-          <option value="mid">Mid</option>
-          <option value="flagship">Flagship</option>
+          <option value="lt50">&lt; $50</option>
+          <option value="50-100">$50–$100</option>
+          <option value="100-150">$100–$150</option>
+          <option value="150-200">$150–$200</option>
+          <option value="200-500">$200–$500</option>
+          <option value="500-1000">$500–$1000</option>
+          <option value="1000-plus">$1000+</option>
+          <option value="unknown">Unknown</option>
         </select>
       </div>
       <div class="filter-group">
@@ -405,9 +418,9 @@
 
     <!-- Legend -->
     <div class="legend">
-      <div class="legend-item"><span class="badge badge-budget">Budget</span> &lt; $75</div>
-      <div class="legend-item"><span class="badge badge-mid">Mid</span> $75–$175</div>
-      <div class="legend-item"><span class="badge badge-flagship">Flagship</span> $175+</div>
+      <div class="legend-item"><span class="badge badge-tier-lt50">&lt; $50</span> Entry pricing band</div>
+      <div class="legend-item"><span class="badge badge-tier-50-100">$50–$100</span> Tiered pricing by MSRP</div>
+      <div class="legend-item"><span class="badge badge-tier-200-500">$200–$500</span> Upper-mid pricing band</div>
       <div class="legend-item"><span class="unverified">⚠</span> Specs not tested on device — sourced from vendor page only</div>
     </div>
 
@@ -446,9 +459,24 @@
   </div>
 
   <script>
-    const PAGE_REVISION = 'v0.7.0-beta.2';
-    const TIERS = { budget: 0, mid: 1, flagship: 2 };
-    const TIER_LABEL = { budget: 'budget', mid: 'mid', flagship: 'flagship' };
+    const PAGE_REVISION = 'v0.7.0-beta.3';
+    const PRICE_BANDS = [
+      { key: 'lt50', label: '< $50', min: 0, max: 50 },
+      { key: '50-100', label: '$50-$100', min: 50, max: 100 },
+      { key: '100-150', label: '$100-$150', min: 100, max: 150 },
+      { key: '150-200', label: '$150-$200', min: 150, max: 200 },
+      { key: '200-500', label: '$200-$500', min: 200, max: 500 },
+      { key: '500-1000', label: '$500-$1000', min: 500, max: 1000 },
+      { key: '1000-plus', label: '$1000+', min: 1000, max: Infinity }
+    ];
+    const PRICE_BAND_ORDER = PRICE_BANDS.reduce((acc, band, index) => {
+      acc[band.key] = index;
+      return acc;
+    }, { unknown: PRICE_BANDS.length });
+    const PRICE_BAND_LABEL = PRICE_BANDS.reduce((acc, band) => {
+      acc[band.key] = band.label;
+      return acc;
+    }, { unknown: 'Unknown' });
     const CATEGORY_LABEL = {
       'retro-handheld': 'Retro Handheld',
       'pc-handheld': 'PC Handheld'
@@ -615,6 +643,18 @@
       return typeof price === 'number' ? `$${price.toFixed(2)}` : '—';
     }
 
+    function priceBandKey(price) {
+      if (typeof price !== 'number' || Number.isNaN(price)) return 'unknown';
+      const band = PRICE_BANDS.find(item => price >= item.min && price < item.max);
+      return band ? band.key : 'unknown';
+    }
+
+    function tierBadgeFromPrice(price) {
+      const bandKey = priceBandKey(price);
+      const label = PRICE_BAND_LABEL[bandKey] || 'Unknown';
+      return `<span class="badge badge-tier-${bandKey}">${label}</span>`;
+    }
+
     function categoryBadge(category) {
       const label = CATEGORY_LABEL[category] || category || 'Unknown';
       return `<span class="badge badge-category-${category || 'unknown'}">${label}</span>`;
@@ -630,7 +670,7 @@
 
       if (category !== 'all' && d.category !== category) return false;
       if (brand !== 'all' && d.brand !== brand) return false;
-      if (tier  !== 'all' && d.tier  !== tier)  return false;
+      if (tier  !== 'all' && priceBandKey(d.price_usd) !== tier) return false;
       if (os    !== 'all') {
         const osMatch = d.os.toLowerCase().includes(os.toLowerCase());
         if (!osMatch) return false;
@@ -646,7 +686,10 @@
     function sortDevices(devices) {
       return [...devices].sort((a, b) => {
         let av = a[sortCol], bv = b[sortCol];
-        if (sortCol === 'tier') { av = TIERS[av] ?? 0; bv = TIERS[bv] ?? 0; }
+        if (sortCol === 'tier') {
+          av = PRICE_BAND_ORDER[priceBandKey(a.price_usd)] ?? PRICE_BAND_ORDER.unknown;
+          bv = PRICE_BAND_ORDER[priceBandKey(b.price_usd)] ?? PRICE_BAND_ORDER.unknown;
+        }
         if (sortCol === 'ram_gb') { av = parseFloat(av); bv = parseFloat(bv); }
         if (sortCol === 'screen_aspect') {
           av = aspectLabel(a.screen);
@@ -679,7 +722,7 @@
       }
 
       tbody.innerHTML = sorted.map(d => `
-        <tr data-category="${d.category}" data-brand="${d.brand}" data-tier="${d.tier}">
+        <tr data-category="${d.category}" data-brand="${d.brand}" data-tier="${priceBandKey(d.price_usd)}">
           <td class="brand-cell" data-label="Brand">${d.brand}</td>
           <td class="model-cell" data-label="Model">
             <a href="${d.source_url}" target="_blank" rel="noopener noreferrer"
@@ -688,7 +731,7 @@
             ${d.verified ? '' : '<span class="unverified" title="Specs sourced from vendor page only — not yet hands-on tested">⚠</span>'}
           </td>
           <td data-label="Category">${categoryBadge(d.category)}</td>
-          <td data-label="Tier"><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
+          <td data-label="Tier">${tierBadgeFromPrice(d.price_usd)}</td>
           <td data-label="Price">${priceLabel(d.price_usd)}</td>
           <td data-label="CPU / SoC">${cpuLabel(d.cpu)}</td>
           <td data-label="GPU">${gpuLabel(d.gpu)}</td>
