@@ -1,6 +1,12 @@
 {
   "_meta": {
     "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added. Optional category distinguishes retro handhelds from PC handhelds. Android devices with multiple configurations use 'variants' array to distinguish Base/Pro/Max tiers and color/storage options. Device-level capabilities can reference chipset-level details stored in chipsets.json.",
+    "form_factor_guide": {
+      "horizontal": "Wide landscape orientation with single display (e.g., most Android/Linux handhelds).",
+      "vertical": "Tall portrait orientation with single display (reserved for future devices).",
+      "clamshell (single screen)": "Folding design with one display (e.g., GBA-SP style, Miyoo Flip).",
+      "clamshell (dual screen)": "Folding design with two separate displays (e.g., AYN Thor with top+bottom screens)."
+    },
     "sources": {
       "Anbernic": "https://anbernic.com",
       "Retroid": "https://www.goretroid.com",
@@ -35,7 +41,7 @@
       "year": 2024,
       "price_usd": 39.99,
       "tier": "budget",
-      "form_factor": "clamshell",
+      "form_factor": "clamshell (single screen)",
       "cpu": {
         "chip": "Allwinner H700",
         "architecture": "ARM Cortex-A53",
@@ -73,7 +79,7 @@
       "year": 2024,
       "price_usd": 54.99,
       "tier": "budget",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Allwinner H700",
         "architecture": "ARM Cortex-A53",
@@ -110,7 +116,7 @@
       "chipset_id": "unisoc-t820",
       "year": 2024,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Unisoc T820",
         "architecture": "ARM Cortex-A76 / A55",
@@ -179,7 +185,7 @@
       "year": 2023,
       "price_usd": 139.00,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "MediaTek Dimensity 900 (RP4 variant)",
         "architecture": "ARM Cortex-A78 / A55",
@@ -218,7 +224,7 @@
       "year": 2023,
       "price_usd": 149.00,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "MediaTek Dimensity 1100 (RP4 Pro variant)",
         "architecture": "ARM Cortex-A78 / A55",
@@ -257,7 +263,7 @@
       "year": 2024,
       "price_usd": 199.00,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Snapdragon 865",
         "architecture": "ARM Kryo 585 (A77-based)",
@@ -296,7 +302,7 @@
       "year": 2025,
       "price_usd": 244.00,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Snapdragon 8 Gen 2",
         "architecture": "ARM Cortex-X3 / A715 / A510",
@@ -335,7 +341,7 @@
       "year": 2025,
       "price_usd": 149.00,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Snapdragon G1 Gen 2",
         "architecture": "ARM Kryo (2 Performance + 6 Efficiency cores)",
@@ -374,7 +380,7 @@
       "year": 2023,
       "price_usd": 56.99,
       "tier": "budget",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Allwinner A133P",
         "architecture": "ARM Cortex-A7",
@@ -412,7 +418,7 @@
       "year": 2025,
       "price_usd": 59.99,
       "tier": "budget",
-      "form_factor": "clamshell",
+      "form_factor": "clamshell (single screen)",
       "cpu": {
         "chip": "Allwinner A133P",
         "architecture": "ARM Cortex-A7",
@@ -452,7 +458,7 @@
       "year": 2025,
       "price_usd": 69.99,
       "tier": "budget",
-      "form_factor": "clamshell",
+      "form_factor": "clamshell (single screen)",
       "cpu": {
         "chip": "Rockchip RK3566",
         "architecture": "ARM Cortex-A55",
@@ -491,7 +497,7 @@
       "category": "retro-handheld",
       "year": 2025,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Qualcomm Dragonwing Q8 (Snapdragon 8 Gen 3)",
         "architecture": "ARM Cortex-X4 / A720 / A520",
@@ -562,7 +568,7 @@
       "year": 2025,
       "price_usd": 249.00,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "clamshell (dual screen)",
       "cpu": {
         "chip": "Snapdragon 865",
         "architecture": "ARM Kryo 585 (A77-based)",
@@ -599,7 +605,7 @@
       "category": "pc-handheld",
       "year": 2025,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "AMD Ryzen AI 9 HX 370",
         "architecture": "AMD Zen 5 (Strix Point)",
@@ -693,7 +699,7 @@
       "year": 2025,
       "price_usd": 105.99,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Snapdragon 662",
         "architecture": "ARM Kryo 260",
@@ -733,7 +739,7 @@
       "year": 2026,
       "price_usd": 239.99,
       "tier": "flagship",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Snapdragon 865",
         "architecture": "ARM Kryo 585 (A77-based)",
@@ -772,7 +778,7 @@
       "year": 2024,
       "price_usd": null,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": { "chip": "Cortex-A53 class (community-sourced)", "architecture": "ARM Cortex-A53", "cores": "4x Cortex-A53 (community-sourced)" },
       "gpu": { "chip": "PowerVR GE8300 (community-sourced)", "cores": null },
       "ram_gb": 1,
@@ -805,7 +811,7 @@
       "year": 2025,
       "price_usd": null,
       "tier": "budget",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": { "chip": "Qualcomm Kryo (community-sourced)", "architecture": "ARM", "cores": "1x Prime + 5x Performance + 2x Efficiency (community-sourced)" },
       "gpu": { "chip": "Qualcomm Adreno A33 (community-sourced)", "cores": null },
       "ram_gb": null,
@@ -834,7 +840,7 @@
       "year": 2026,
       "price_usd": 99.99,
       "tier": "mid",
-      "form_factor": "landscape",
+      "form_factor": "horizontal",
       "cpu": {
         "chip": "Rockchip RK3566",
         "architecture": "ARM Cortex-A55",
