@@ -21,7 +21,7 @@ az staticwebapp list --resource-group retrodojo-rg --query "[].{Name:name, URL:d
 - **Dev SWA:** `retrodojo-web-dev`
 
 ## GitHub
-- **Repo:** https://github.com/RetroDojo/Retrodojo_Web (personal account: `RetroDojo`)
+- **Repo:** https://github.com/RetroDojo/Retrodojo_Web (personal account: `RetroDojo`) — note: canonical casing is `Retrodojo_Web` (lowercase r)
 - **Identity:** All commits use `RetroDojo <279508929+RetroDojo@users.noreply.github.com>` — real name is intentionally not exposed
 - **Auth:** Use PAT stored separately; run `$env:GITHUB_TOKEN = "<pat>"` before `gh` commands
 
