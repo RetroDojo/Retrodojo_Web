@@ -159,6 +159,12 @@
       font-size: 0.65rem;
       font-weight: normal;
       color: var(--dim);
+      line-height: 1.5;
+    }
+
+    .plat-badge {
+      font-size: 0.6rem;
+      margin-right: 0.15rem;
     }
 
     /* ── Cell rating colours ── */
@@ -400,13 +406,38 @@
 
     /* Tier definitions — matches emulators.json emulation_tiers order */
     const TIER_ORDER = [
-      { id: '8bit_16bit', label: '8-bit & 16-bit', systems: 'NES · SNES · GB/C/A · Genesis · Neo Geo' },
-      { id: 'ps1_n64_saturn', label: 'PS1 / N64 / Saturn', systems: 'Gen 5 — First 3D era' },
-      { id: 'psp_ds_dreamcast', label: 'PSP / DS / Dreamcast', systems: 'Portable & late ’90s 3D' },
-      { id: 'gc_wii_3ds', label: 'GameCube / Wii / 3DS', systems: 'Gen 6–7 — Dolphin & Citra' },
-      { id: 'ps2_wiiu', label: 'PS2 / Wii U', systems: 'Gen 6–8 — Demanding' },
-      { id: 'switch', label: 'Nintendo Switch', systems: 'Gen 8 — Adreno Vulkan critical' },
-      { id: 'streaming', label: 'Game Streaming', systems: 'GameNative · GeForce NOW · Steam · Xbox Cloud' }
+      { id: '8bit_16bit', label: '8-bit & 16-bit',
+        console: 'NES · SNES · Genesis · SMS · Neo Geo · Atari',
+        handheld: 'GB · GBC · GBA · Game Gear',
+        pc: 'DOS · ScummVM' },
+      { id: 'ps1_n64_saturn', label: 'PS1 / N64 / Saturn',
+        console: 'PlayStation 1 · Nintendo 64 · Sega Saturn',
+        handheld: '',
+        pc: '' },
+      { id: 'psp_ds_dreamcast', label: 'PSP / DS / Dreamcast',
+        console: 'Dreamcast',
+        handheld: 'PSP · Nintendo DS',
+        pc: '' },
+      { id: 'gc_wii_3ds', label: 'GameCube / Wii / 3DS',
+        console: 'GameCube · Wii',
+        handheld: '3DS',
+        pc: '' },
+      { id: 'ps2_wiiu', label: 'PS2 / Wii U',
+        console: 'PlayStation 2 · Wii U',
+        handheld: '',
+        pc: '' },
+      { id: 'switch', label: 'Nintendo Switch',
+        console: '',
+        handheld: 'Switch',
+        pc: '' },
+      { id: 'pc_gaming', label: 'PC Gaming',
+        console: '',
+        handheld: '',
+        pc: 'Windows x86 via Winlator' },
+      { id: 'streaming', label: 'Game Streaming',
+        console: '',
+        handheld: '',
+        pc: 'GameNative · GeForce NOW · Steam · Xbox Cloud · Moonlight' }
     ];
 
     const SPEED_LABELS = {
@@ -510,7 +541,11 @@
 
           /* Row label */
           const tdLabel = document.createElement('td');
-          tdLabel.innerHTML = `<span class="tier-label">${tier.label}</span><span class="tier-systems">${tier.systems}</span>`;
+          let systemsHtml = '';
+          if (tier.console) systemsHtml += `<span class="plat-badge plat-console">🎮</span> ${tier.console}<br>`;
+          if (tier.handheld) systemsHtml += `<span class="plat-badge plat-handheld">📱</span> ${tier.handheld}<br>`;
+          if (tier.pc) systemsHtml += `<span class="plat-badge plat-pc">💻</span> ${tier.pc}<br>`;
+          tdLabel.innerHTML = `<span class="tier-label">${tier.label}</span><span class="tier-systems">${systemsHtml}</span>`;
           tr.appendChild(tdLabel);
 
           /* One cell per chipset */
@@ -530,6 +565,21 @@
               } else {
                 td.className = 'cell-empty';
                 td.textContent = '—';
+              }
+            } else if (tier.id === 'pc_gaming') {
+              /* PC Gaming row — infer from switch tier capability (only flagship SoCs) */
+              const switchTier = perf.tiers.find(t => t.tier === 'switch');
+              const canWinlator = switchTier && (switchTier.speed === 'full_speed' || switchTier.speed === 'playable');
+              const isX86 = c.vendor === 'AMD' || c.vendor === 'Intel';
+              if (isX86) {
+                td.className = 'cell-full_speed';
+                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS.full_speed}</span><span class="cell-emulator">native x86</span><span class="cell-note">Native Windows/Linux PC gaming</span>`;
+              } else if (canWinlator) {
+                td.className = 'cell-playable';
+                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS.playable}</span><span class="cell-emulator">winlator</span><span class="cell-note">Wine + Box86/64 translation. Older/lighter titles only.</span>`;
+              } else {
+                td.className = 'cell-not_capable';
+                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS.not_capable}</span><span class="cell-emulator">—</span><span class="cell-note">SoC too weak for x86 translation</span>`;
               }
             } else if (tierData) {
               td.className = `cell-${tierData.speed}`;

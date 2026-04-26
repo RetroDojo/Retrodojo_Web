@@ -38,16 +38,24 @@
     {
       "id": "8bit_16bit",
       "label": "8-bit & 16-bit",
-      "era": "Gen 3–4 (1983–1995)",
-      "systems": ["NES", "SNES", "Game Boy", "Game Boy Color", "Game Boy Advance", "Sega Genesis", "Sega Master System", "Game Gear", "Neo Geo", "Atari 2600", "Atari 7800"],
+      "era": "Gen 2–4 (1977–1995)",
+      "systems_by_type": {
+        "console": ["NES", "SNES", "Sega Genesis", "Sega Master System", "Neo Geo", "Atari 2600", "Atari 7800"],
+        "handheld": ["Game Boy", "Game Boy Color", "Game Boy Advance", "Game Gear"],
+        "pc": ["MS-DOS", "ScummVM"]
+      },
       "compute_demand": "minimal",
-      "notes": "Any modern ARM SoC handles these at full speed. Even budget Allwinner/RK chips have no issues."
+      "notes": "Any modern ARM SoC handles these at full speed. Even budget Allwinner/RK chips have no issues. DOS and ScummVM games also fit here."
     },
     {
       "id": "ps1_n64_saturn",
       "label": "PS1 / N64 / Saturn",
       "era": "Gen 5 (1994–2000)",
-      "systems": ["PlayStation 1", "Nintendo 64", "Sega Saturn"],
+      "systems_by_type": {
+        "console": ["PlayStation 1", "Nintendo 64", "Sega Saturn"],
+        "handheld": [],
+        "pc": []
+      },
       "compute_demand": "low",
       "notes": "First-gen 3D. PS1 is easy; N64 is deceptively hard due to complex RDP emulation. Saturn depends heavily on emulator maturity."
     },
@@ -55,7 +63,11 @@
       "id": "psp_ds_dreamcast",
       "label": "PSP / DS / Dreamcast",
       "era": "Gen 5.5–7 Portable (1998–2009)",
-      "systems": ["PSP", "Nintendo DS", "Sega Dreamcast"],
+      "systems_by_type": {
+        "console": ["Sega Dreamcast"],
+        "handheld": ["PSP", "Nintendo DS"],
+        "pc": []
+      },
       "compute_demand": "moderate",
       "notes": "Well-optimized standalone emulators exist. PSP via PPSSPP is remarkably efficient. DS needs dual-screen rendering."
     },
@@ -63,7 +75,11 @@
       "id": "gc_wii_3ds",
       "label": "GameCube / Wii / 3DS",
       "era": "Gen 6–7 (2001–2017)",
-      "systems": ["GameCube", "Wii", "Nintendo 3DS"],
+      "systems_by_type": {
+        "console": ["GameCube", "Wii"],
+        "handheld": ["Nintendo 3DS"],
+        "pc": []
+      },
       "compute_demand": "high",
       "notes": "Dolphin needs real GPU + Vulkan. 3DS via Azahar/Citra needs decent CPU. This is where SoC tier really starts to matter."
     },
@@ -71,7 +87,11 @@
       "id": "ps2_wiiu",
       "label": "PS2 / Wii U",
       "era": "Gen 6–8 (2000–2017)",
-      "systems": ["PlayStation 2", "Wii U"],
+      "systems_by_type": {
+        "console": ["PlayStation 2", "Wii U"],
+        "handheld": [],
+        "pc": []
+      },
       "compute_demand": "very_high",
       "notes": "PS2 via AetherSX2/NetherSX2 needs strong CPU + driver stack. Wii U via Cemu is Android-only recent and demanding."
     },
@@ -79,15 +99,35 @@
       "id": "switch",
       "label": "Nintendo Switch",
       "era": "Gen 8 (2017–present)",
-      "systems": ["Nintendo Switch"],
+      "systems_by_type": {
+        "console": [],
+        "handheld": ["Nintendo Switch"],
+        "pc": []
+      },
       "compute_demand": "extreme",
       "notes": "Yuzu/Eden/Skyline — Qualcomm Adreno Vulkan drivers are practically required on Android. Mali GPUs struggle significantly. x86 platforms (AMD/Intel) have better compatibility via desktop emulators."
+    },
+    {
+      "id": "pc_gaming",
+      "label": "PC Gaming",
+      "era": "PC (1995–present)",
+      "systems_by_type": {
+        "console": [],
+        "handheld": [],
+        "pc": ["Windows PC games"]
+      },
+      "compute_demand": "extreme",
+      "notes": "Winlator (Wine + Box86/Box64) translates x86 Windows games to ARM. Only practical on flagship SoCs (SD 8 Gen 2+). DirectX → Vulkan via DXVK. Very demanding."
     },
     {
       "id": "streaming",
       "label": "Game Streaming",
       "era": "Cloud / Remote Play",
-      "systems": ["GameNative", "GeForce NOW", "Steam Remote Play", "Xbox Cloud Gaming", "Moonlight"],
+      "systems_by_type": {
+        "console": [],
+        "handheld": [],
+        "pc": ["GameNative", "GeForce NOW", "Steam Remote Play", "Xbox Cloud Gaming", "Moonlight"]
+      },
       "compute_demand": "network_dependent",
       "notes": "Not emulation — depends on Wi-Fi quality, H.265/AV1 hardware decode, and latency. GameNative and GeForce NOW run games server-side; Steam Remote Play streams from your own PC. Higher Wi-Fi standards (Wi-Fi 6/7) significantly improve experience."
     }
@@ -302,7 +342,7 @@
       "name": "Winlator",
       "type": "compatibility_layer",
       "systems": ["Windows PC games"],
-      "tiers_covered": [],
+      "tiers_covered": ["pc_gaming"],
       "graphics_api": ["Vulkan", "DirectX (translated)"],
       "driver_gate": "vulkan_required",
       "platforms": ["Android"],
