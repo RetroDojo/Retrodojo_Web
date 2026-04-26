@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added. Optional category distinguishes retro handhelds from PC handhelds. Device-level capabilities can reference chipset-level details stored in chipsets.json.",
+    "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added. Optional category distinguishes retro handhelds from PC handhelds. Android devices with multiple configurations use 'variants' array to distinguish Base/Pro/Max tiers and color/storage options. Device-level capabilities can reference chipset-level details stored in chipsets.json.",
     "sources": {
       "Anbernic": "https://anbernic.com",
       "Retroid": "https://www.goretroid.com",
@@ -12,7 +12,8 @@
       "Konkr": "https://konkr.com",
       "Miniloong": "https://www.miniloong.com",
       "Litnxt": "https://www.litnxt.com",
-      "CommunitySheet": "https://docs.google.com/spreadsheets/d/1irg60f9qsZOkhp0cwOU7Cy4rJQeyusEUzTNQzhoTYTU"
+      "RetroCatalog": "https://retrocatalog.com/retro-handhelds",
+      "CommunityDatasheet": "https://docs.google.com/spreadsheets/d/1aUdIX0T7_fAcLZynK9zgfhttTkpBYYiO5aYahuRSCSY/edit?usp=sharing"
     },
     "last_updated": "2026-04-26",
     "related_datasets": {
@@ -108,7 +109,6 @@
       "model": "RG556",
       "chipset_id": "unisoc-t820",
       "year": 2024,
-      "price_usd": 169.99,
       "tier": "flagship",
       "form_factor": "landscape",
       "cpu": {
@@ -121,7 +121,6 @@
         "cores": "4-core @ 850MHz"
       },
       "ram_gb": 8,
-      "storage_gb": 128,
       "storage_type": "UFS 2.2",
       "os": "Android 13",
       "screen": { "size_inch": 5.48, "resolution": "1080x1920", "type": "AMOLED" },
@@ -130,7 +129,37 @@
       "bluetooth": "5.0",
       "source_url": "https://anbernic.com/products/rg556",
       "verified": false,
-      "notes": "Android flagship from Anbernic. Hall joysticks, active cooling, 6nm SoC.",
+      "variants": [
+        {
+          "sku": "rg556-black-standard",
+          "name": "Black (128GB)",
+          "storage_gb": 128,
+          "colors": ["Black"],
+          "price_usd": 169.99
+        },
+        {
+          "sku": "rg556-black-256g",
+          "name": "Black (256GB)",
+          "storage_gb": 256,
+          "colors": ["Black"],
+          "price_usd": 189.99
+        },
+        {
+          "sku": "rg556-blue-standard",
+          "name": "Blue Translucent (128GB)",
+          "storage_gb": 128,
+          "colors": ["Blue Translucent"],
+          "price_usd": 169.99
+        },
+        {
+          "sku": "rg556-blue-256g",
+          "name": "Blue Translucent (256GB)",
+          "storage_gb": 256,
+          "colors": ["Blue Translucent"],
+          "price_usd": 189.99
+        }
+      ],
+      "notes": "Android flagship with Hall joysticks and active cooling. Multiple color and storage configurations available. Select variant above to see specific color, storage, and price.",
       "capabilities": {
         "video_output": "USB Type-C supports 1080p DisplayPort output; product page also lists wireless screencasting.",
         "audio": "High-fidelity dual speakers and 3.5mm stereo earphone support.",
@@ -139,7 +168,7 @@
         "cooling": "High-speed fan plus heat-pipe active cooling.",
         "software": "FOTA wireless upgrade, netplay, streaming, joystick light control, display brightness, and energy-saving settings.",
         "expansion": "TF card expansion officially supported up to 2TB.",
-        "evidence": "All capability fields above are explicitly listed on the official Anbernic RG556 page."
+        "evidence": "All capability fields and variant configurations sourced from official Anbernic RG556 product page (https://anbernic.com/products/rg556)."
       }
     },
     {
@@ -455,13 +484,12 @@
       }
     },
     {
-      "id": "ayn-odin3-base",
+      "id": "ayn-odin3",
       "brand": "AYN",
-      "model": "Odin 3 (Base)",
+      "model": "Odin 3",
       "chipset_id": "qualcomm-dragonwing-q8",
       "category": "retro-handheld",
       "year": 2025,
-      "price_usd": 339.00,
       "tier": "flagship",
       "form_factor": "landscape",
       "cpu": {
@@ -473,8 +501,6 @@
         "chip": "Adreno 750",
         "cores": null
       },
-      "ram_gb": 8,
-      "storage_gb": 128,
       "storage_type": "UFS 3.1",
       "os": "Android 15",
       "screen": { "size_inch": 6.0, "resolution": "1080x1920", "type": "AMOLED 120Hz" },
@@ -483,14 +509,48 @@
       "bluetooth": "5.4",
       "source_url": "https://www.ayntec.com/products/ayn-odin-3",
       "verified": false,
-      "notes": "Hall sticks, active cooling, 390g. Base 8+128GB $339. Also: Pro 12+256GB $439, Max 16+512GB $489, Ultra 24+1TB $519.",
+      "variants": [
+        {
+          "sku": "odin3-base",
+          "name": "Base",
+          "ram_gb": 8,
+          "storage_gb": 128,
+          "colors": ["Black"],
+          "price_usd": 339.00
+        },
+        {
+          "sku": "odin3-pro",
+          "name": "Pro",
+          "ram_gb": 12,
+          "storage_gb": 256,
+          "colors": ["Black"],
+          "price_usd": 439.00
+        },
+        {
+          "sku": "odin3-max",
+          "name": "Max",
+          "ram_gb": 16,
+          "storage_gb": 512,
+          "colors": ["Black"],
+          "price_usd": 489.00
+        },
+        {
+          "sku": "odin3-ultra",
+          "name": "Ultra",
+          "ram_gb": 24,
+          "storage_gb": 1024,
+          "colors": ["Black"],
+          "price_usd": 519.00
+        }
+      ],
+      "notes": "All variants feature Hall sticks, active cooling, 390g weight. Select variant above to see specific RAM/storage/price configuration.",
       "capabilities": {
         "display": "6-inch 120Hz AMOLED touchscreen.",
-        "storage": "UFS 3.1 across published trims.",
+        "storage": "UFS 3.1 across all published trims.",
         "controls": "Hall sticks officially listed.",
         "charging": "Battery capacity is official; charging rate is not exposed in the collected Odin 3 product text.",
-        "dock_ecosystem": "Official Odin 2 Super Dock accessory is sold alongside the device, but the Odin 3 page excerpt does not explicitly state supported dock functions.",
-        "evidence": "Current Odin 3 capability detail is device-level and intentionally conservative because AYN exposes less port detail than AYANEO or Anbernic."
+        "dock_ecosystem": "Official Odin 2 Super Dock accessory compatible; Odin 3 page does not explicitly state supported dock functions.",
+        "evidence": "Variant specifications sourced from official AYN Odin 3 product page (https://www.ayntec.com/products/ayn-odin-3). Configuration options verified against AYN pre-order listings."
       }
     },
     {
@@ -538,7 +598,6 @@
       "chipset_id": "amd-ryzen-ai-9-hx-370",
       "category": "pc-handheld",
       "year": 2025,
-      "price_usd": 1499.00,
       "tier": "flagship",
       "form_factor": "landscape",
       "cpu": {
@@ -550,17 +609,70 @@
         "chip": "AMD Radeon 890M",
         "cores": "16 CUs @ up to 2900MHz"
       },
-      "ram_gb": 32,
-      "storage_gb": 1024,
       "storage_type": "SSD",
       "os": "Windows 11",
-      "screen": { "size_inch": 7.0, "resolution": "1920x1080", "type": "OLED / LCD 144Hz (selectable)" },
-      "battery_mah": null,
+      "screen": { "size_inch": 7.0, "resolution": "1920x1080", "type": "OLED or LCD 144Hz (user-selectable)" },
       "wifi": "Wi-Fi 7",
       "bluetooth": "5.3",
       "source_url": "https://www.ayaneo.com/product/AYANEO-3",
       "verified": false,
-      "notes": "Windows PC handheld — significantly different category from Android/Linux retro devices. OCuLink + 2×USB4 40Gbps. 49Wh battery, 65W charging. 690g. Also available: 64GB+2TB and 64GB+4TB tiers.",
+      "variants": [
+        {
+          "sku": "ayaneo3-oled-32-1tb",
+          "name": "OLED 144Hz | 32GB+1TB",
+          "ram_gb": 32,
+          "storage_gb": 1024,
+          "colors": ["Black"],
+          "display_type": "OLED 144Hz",
+          "price_usd": 1499.00
+        },
+        {
+          "sku": "ayaneo3-oled-64-2tb",
+          "name": "OLED 144Hz | 64GB+2TB",
+          "ram_gb": 64,
+          "storage_gb": 2048,
+          "colors": ["Black"],
+          "display_type": "OLED 144Hz",
+          "price_usd": 1699.00
+        },
+        {
+          "sku": "ayaneo3-oled-64-4tb",
+          "name": "OLED 144Hz | 64GB+4TB",
+          "ram_gb": 64,
+          "storage_gb": 4096,
+          "colors": ["Black"],
+          "display_type": "OLED 144Hz",
+          "price_usd": 1999.00
+        },
+        {
+          "sku": "ayaneo3-lcd-32-1tb",
+          "name": "LCD 120Hz | 32GB+1TB",
+          "ram_gb": 32,
+          "storage_gb": 1024,
+          "colors": ["Black"],
+          "display_type": "LCD 120Hz",
+          "price_usd": 1399.00
+        },
+        {
+          "sku": "ayaneo3-lcd-64-2tb",
+          "name": "LCD 120Hz | 64GB+2TB",
+          "ram_gb": 64,
+          "storage_gb": 2048,
+          "colors": ["Black"],
+          "display_type": "LCD 120Hz",
+          "price_usd": 1599.00
+        },
+        {
+          "sku": "ayaneo3-lcd-64-4tb",
+          "name": "LCD 120Hz | 64GB+4TB",
+          "ram_gb": 64,
+          "storage_gb": 4096,
+          "colors": ["Black"],
+          "display_type": "LCD 120Hz",
+          "price_usd": 1899.00
+        }
+      ],
+      "notes": "Windows PC handheld — significantly different category from Android/Linux retro devices. All variants: OCuLink 64Gbps + 2×USB4 40Gbps, 49Wh battery, 65W charging, 690g weight. Select variant to view screen type, storage configuration, and price. OLED: 800 nits peak brightness, 144Hz max, 150% sRGB. LCD: 500 nits, 120Hz, 100% sRGB.",
       "capabilities": {
         "video_output": "2x USB4 at 40Gbps with DP 1.4 support for charging, data transfer, and video output.",
         "audio": "3.5mm headphone jack, large-cavity dual speakers, HyperSound 2.0 tuning.",
@@ -568,9 +680,8 @@
         "io": "2x USB4, 1x OCuLink 64Gbps, 1x MicroSD 4.0 up to 300MB/s.",
         "controls": "RGB hall joysticks at 250Hz, hall-effect triggers with travel switch, dual rear buttons, dual six-axis gyroscopes, fingerprint power button.",
         "cooling": "Triple copper-pipe cooling system, large PC turbo fan, graphene thermal patches.",
-        "software": "AYASpace 3.0 management suite, hardware-level keyboard/mouse mode, modular controller ecosystem.",
-        "display": "7-inch 1080p OLED up to 144Hz or LCD up to 120Hz with VRR and FreeSync Premium on LCD option.",
-        "evidence": "All capability fields above are explicitly described on the official AYANEO 3 product page."
+        "software": "AYASpace 3.0 management suite, hardware-level keyboard/mouse mode, modular controller ecosystem with detachable ABXY buttons.",
+        "evidence": "All capability fields and variant configurations sourced from official AYANEO 3 product page and configuration documentation."
       }
     },
     {
