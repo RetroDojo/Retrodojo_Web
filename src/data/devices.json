@@ -672,9 +672,9 @@
       "battery_mah": 5000,
       "wifi": "Wi-Fi 5 (community-sourced)",
       "bluetooth": "Bluetooth (A2DP + BLE HID via official firmware; version unknown)",
-      "source_url": "https://trimui.com/pages/trimui-smart-pro-firmware",
+      "source_url": "https://trimui.com/pages/trimui-smart-pro",
       "verified": false,
-      "notes": "Official TrimUI pages confirm Smart Pro model and firmware lineage. CPU/GPU/RAM/storage/battery values are provisional backfills from the public handheld community spreadsheet and still require confirmation from an official TrimUI spec sheet.",
+      "notes": "Official TrimUI Smart Pro product page confirms model lineage and specs. CPU/GPU/RAM/storage/battery values are provisional backfills from the public handheld community spreadsheet and still require confirmation from an official TrimUI spec sheet.",
       "capabilities": {
         "firmware": "Official firmware track for TG5040: v1.0.3, v1.0.4, v1.1.0, v1.1.1 with OTA and release notes on trimui.com + GitHub.",
         "wireless": "Bluetooth function officially enabled with A2DP audio and BLE HID support; Wi-Fi stack is actively maintained in firmware updates.",
