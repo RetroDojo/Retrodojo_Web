@@ -1,0 +1,336 @@
+{
+  "_meta": {
+    "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added.",
+    "sources": {
+      "Anbernic": "https://anbernic.com",
+      "Retroid": "https://www.goretroid.com",
+      "Miyoo": "https://lomiyoo.com"
+    },
+    "last_updated": "2026-04-26"
+  },
+  "devices": [
+    {
+      "id": "anbernic-rg35xxsp",
+      "brand": "Anbernic",
+      "model": "RG35XX SP",
+      "year": 2024,
+      "price_usd": 39.99,
+      "tier": "budget",
+      "form_factor": "clamshell",
+      "cpu": {
+        "chip": "Allwinner H700",
+        "architecture": "ARM Cortex-A53",
+        "cores": "4x Cortex-A53 @ 1.5GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G31 MP2",
+        "cores": "2-core"
+      },
+      "ram_gb": 1,
+      "storage_gb": 64,
+      "storage_type": "TF/MicroSD",
+      "os": "Linux",
+      "screen": { "size_inch": 3.5, "resolution": "640x480", "type": "IPS" },
+      "battery_mah": 3300,
+      "wifi": "2.4/5GHz",
+      "bluetooth": "4.2",
+      "source_url": "https://anbernic.com/products/rg35xxsp",
+      "verified": false,
+      "notes": "Clamshell GBA-SP style form factor. No analog sticks."
+    },
+    {
+      "id": "anbernic-rg35xxpro",
+      "brand": "Anbernic",
+      "model": "RG35XX Pro",
+      "year": 2024,
+      "price_usd": 54.99,
+      "tier": "budget",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Allwinner H700",
+        "architecture": "ARM Cortex-A53",
+        "cores": "4x Cortex-A53 @ 1.5GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G31 MP2",
+        "cores": "2-core"
+      },
+      "ram_gb": 1,
+      "storage_gb": 64,
+      "storage_type": "TF/MicroSD",
+      "os": "Linux",
+      "screen": { "size_inch": 3.5, "resolution": "640x480", "type": "IPS" },
+      "battery_mah": 3200,
+      "wifi": "2.4/5GHz",
+      "bluetooth": "4.2",
+      "source_url": "https://anbernic.com/products/rg35xxpro",
+      "verified": false,
+      "notes": "Dual analog sticks. Same SoC as RG35XX SP."
+    },
+    {
+      "id": "anbernic-rg556",
+      "brand": "Anbernic",
+      "model": "RG556",
+      "year": 2024,
+      "price_usd": 169.99,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Unisoc T820",
+        "architecture": "ARM Cortex-A76 / A55",
+        "cores": "1x A76 @ 2.7GHz + 3x A76 @ 2.3GHz + 4x A55 @ 2.1GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G57 MC4",
+        "cores": "4-core @ 850MHz"
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 2.2",
+      "os": "Android 13",
+      "screen": { "size_inch": 5.48, "resolution": "1080x1920", "type": "AMOLED" },
+      "battery_mah": 5500,
+      "wifi": "2.4/5GHz",
+      "bluetooth": "5.0",
+      "source_url": "https://anbernic.com/products/rg556",
+      "verified": false,
+      "notes": "Android flagship from Anbernic. Hall joysticks, active cooling, 6nm SoC."
+    },
+    {
+      "id": "retroid-rp4",
+      "brand": "Retroid",
+      "model": "Retroid Pocket 4",
+      "year": 2023,
+      "price_usd": 139.00,
+      "tier": "mid",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "MediaTek Dimensity 900 (RP4 variant)",
+        "architecture": "ARM Cortex-A78 / A55",
+        "cores": "2x A78 @ 2.4GHz + 6x A55 @ 2.0GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G68 MC4",
+        "cores": "4-core @ 900MHz"
+      },
+      "ram_gb": 4,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 11",
+      "screen": { "size_inch": 4.7, "resolution": "750x1334", "type": "IPS" },
+      "battery_mah": 5000,
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.2",
+      "source_url": "https://www.goretroid.com/products/retroid-pocket-4-handheld",
+      "verified": false,
+      "notes": "Hall sticks, analog L2/R2. Android 11 limits some compatibility."
+    },
+    {
+      "id": "retroid-rp4pro",
+      "brand": "Retroid",
+      "model": "Retroid Pocket 4 Pro",
+      "year": 2023,
+      "price_usd": 149.00,
+      "tier": "mid",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "MediaTek Dimensity 1100 (RP4 Pro variant)",
+        "architecture": "ARM Cortex-A78 / A55",
+        "cores": "4x A78 @ 2.6GHz + 4x A55 @ 2.0GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G77 MC9",
+        "cores": "9-core @ 836MHz"
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 13",
+      "screen": { "size_inch": 4.7, "resolution": "750x1334", "type": "IPS" },
+      "battery_mah": 5000,
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.2",
+      "source_url": "https://www.goretroid.com/products/retroid-pocket-4-handheld",
+      "verified": false,
+      "notes": "Significant GPU upgrade over RP4. Android 13. Same physical form as RP4."
+    },
+    {
+      "id": "retroid-rp5",
+      "brand": "Retroid",
+      "model": "Retroid Pocket 5",
+      "year": 2024,
+      "price_usd": 199.00,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon 865",
+        "architecture": "ARM Kryo 585 (A77-based)",
+        "cores": "1x @ 2.8GHz + 3x @ 2.4GHz + 4x @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Adreno 650",
+        "cores": null
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 13",
+      "screen": { "size_inch": 5.5, "resolution": "1080x1920", "type": "AMOLED" },
+      "battery_mah": 5000,
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.1",
+      "source_url": "https://www.goretroid.com/products/retroid-pocket-5",
+      "verified": false,
+      "notes": "3D hall sticks, active cooling, AMOLED. Strong PS2/GameCube candidate."
+    },
+    {
+      "id": "retroid-rp6",
+      "brand": "Retroid",
+      "model": "Retroid Pocket 6",
+      "year": 2025,
+      "price_usd": 244.00,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon 8 Gen 2",
+        "architecture": "ARM Cortex-X3 / A715 / A510",
+        "cores": "1x @ 3.2GHz + 4x @ 2.8GHz + 3x @ 2.0GHz"
+      },
+      "gpu": {
+        "chip": "Adreno 740",
+        "cores": null
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 13",
+      "screen": { "size_inch": 5.5, "resolution": "1080x1920", "type": "AMOLED 120Hz" },
+      "battery_mah": 6000,
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.3",
+      "source_url": "https://www.goretroid.com/products/retroid-pocket-6-handheld",
+      "verified": false,
+      "notes": "Top-tier SoC. Pre-order unit as of early 2026. 8GB and 12GB RAM configs."
+    },
+    {
+      "id": "retroid-rp-classic",
+      "brand": "Retroid",
+      "model": "Retroid Pocket Classic",
+      "year": 2025,
+      "price_usd": 149.00,
+      "tier": "mid",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon G1 Gen 2",
+        "architecture": "ARM Kryo (2 Performance + 6 Efficiency cores)",
+        "cores": "2 perf + 6 efficiency"
+      },
+      "gpu": {
+        "chip": "Adreno A12",
+        "cores": null
+      },
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "storage_type": "eMMC 5.1",
+      "os": "Android 14",
+      "screen": { "size_inch": 3.92, "resolution": "1240x1080", "type": "AMOLED" },
+      "battery_mah": 5000,
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.1",
+      "source_url": "https://www.goretroid.com/products/retroid-pocket-classic",
+      "verified": false,
+      "notes": "GBA-style form factor with Android. Android 14 + active cooling. 4GB and 6GB configs."
+    },
+    {
+      "id": "miyoo-mini-plus",
+      "brand": "Miyoo",
+      "model": "Miyoo Mini Plus",
+      "year": 2023,
+      "price_usd": 56.99,
+      "tier": "budget",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Allwinner A133P",
+        "architecture": "ARM Cortex-A7",
+        "cores": "4x Cortex-A7 @ 1.2GHz"
+      },
+      "gpu": {
+        "chip": "PowerVR GE8300",
+        "cores": null,
+        "source_note": "not listed on official site — sourced from community teardown"
+      },
+      "ram_gb": 0.25,
+      "storage_gb": 64,
+      "storage_type": "TF/MicroSD",
+      "os": "Linux (Onion OS)",
+      "screen": { "size_inch": 3.5, "resolution": "640x480", "type": "IPS" },
+      "battery_mah": 3000,
+      "wifi": "Yes",
+      "bluetooth": null,
+      "source_url": "https://lomiyoo.com/products/miyoo-mini-plus",
+      "verified": false,
+      "notes": "GPU/RAM not listed on official site. 256MB RAM — budget tier, limited to 16-bit era emulation. Beloved for Onion OS."
+    },
+    {
+      "id": "miyoo-mini-flip",
+      "brand": "Miyoo",
+      "model": "Miyoo Mini Flip",
+      "year": 2025,
+      "price_usd": 59.99,
+      "tier": "budget",
+      "form_factor": "clamshell",
+      "cpu": {
+        "chip": "Allwinner A133P",
+        "architecture": "ARM Cortex-A7",
+        "cores": "4x Cortex-A7 @ 1.2GHz",
+        "source_note": "not explicitly listed on official site — inferred from product description"
+      },
+      "gpu": {
+        "chip": "PowerVR GE8300",
+        "cores": null,
+        "source_note": "not listed on official site"
+      },
+      "ram_gb": 0.25,
+      "storage_gb": 64,
+      "storage_type": "TF/MicroSD",
+      "os": "Linux",
+      "screen": { "size_inch": 2.8, "resolution": "750x560", "type": "IPS" },
+      "battery_mah": 2500,
+      "wifi": "Yes",
+      "bluetooth": null,
+      "source_url": "https://lomiyoo.com/products/miyoo-mini-flip",
+      "verified": false,
+      "notes": "Clamshell form factor. Upgraded hinges over original Miyoo Flip. CPU/GPU not confirmed on official site."
+    },
+    {
+      "id": "miyoo-flip-v2",
+      "brand": "Miyoo",
+      "model": "Miyoo Flip V2",
+      "year": 2025,
+      "price_usd": 69.99,
+      "tier": "budget",
+      "form_factor": "clamshell",
+      "cpu": {
+        "chip": "Rockchip RK3566",
+        "architecture": "ARM Cortex-A55",
+        "cores": "4x Cortex-A55 @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G52 2EE",
+        "cores": null,
+        "source_note": "not listed on official site — sourced from RK3566 datasheet"
+      },
+      "ram_gb": 1,
+      "storage_gb": 64,
+      "storage_type": "TF/MicroSD",
+      "os": "Linux",
+      "screen": { "size_inch": 3.5, "resolution": "640x480", "type": "IPS" },
+      "battery_mah": 3000,
+      "wifi": "Yes",
+      "bluetooth": null,
+      "source_url": "https://lomiyoo.com/products/miyoo-flip-v2",
+      "verified": false,
+      "notes": "Significantly more powerful than Mini Plus. HDMI output, OTG support, dual joysticks. RK3566 confirmed on official site."
+    }
+  ]
+}

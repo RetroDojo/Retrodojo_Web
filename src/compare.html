@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetroDojo — Device Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page layout ── */
+    .compare-container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+
+    .controls label {
+      font-size: 0.78rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-right: 0.3rem;
+    }
+
+    .controls select,
+    .controls input[type="text"] {
+      background: var(--card-bg);
+      color: var(--green);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.4rem 0.6rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+    }
+
+    .controls select:focus,
+    .controls input[type="text"]:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ── Table wrapper ── */
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+
+    thead th {
+      background: #0d0d0d;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.7rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    thead th:hover { color: var(--green); }
+
+    thead th.sorted-asc::after  { content: ' ▲'; color: var(--green); }
+    thead th.sorted-desc::after { content: ' ▼'; color: var(--green); }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(0,255,65,0.08);
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover { background: rgba(0,255,65,0.04); }
+    tbody tr.hidden { display: none; }
+
+    td {
+      padding: 0.65rem 1rem;
+      vertical-align: top;
+      color: #ccc;
+    }
+
+    td.model-cell {
+      color: var(--green);
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    td.brand-cell {
+      color: var(--dim);
+      white-space: nowrap;
+    }
+
+    /* ── Tier badges ── */
+    .badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .badge-budget   { border: 1px solid #00ff41; color: #00ff41; }
+    .badge-mid      { border: 1px solid #ffcc00; color: #ffcc00; }
+    .badge-flagship { border: 1px solid #ff6b35; color: #ff6b35; }
+
+    /* ── Verified indicator ── */
+    .unverified {
+      font-size: 0.7rem;
+      color: #ff6b35;
+      margin-left: 0.4rem;
+    }
+
+    /* ── Notes tooltip ── */
+    .note-cell {
+      font-size: 0.75rem;
+      color: rgba(0,255,65,0.45);
+      max-width: 200px;
+    }
+
+    /* ── Empty state ── */
+    .empty-state {
+      text-align: center;
+      padding: 3rem;
+      color: var(--dim);
+      font-size: 0.85rem;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      font-size: 0.75rem;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+
+    .stat-bar {
+      display: inline-block;
+      height: 6px;
+      background: var(--green);
+      border-radius: 2px;
+      opacity: 0.6;
+      vertical-align: middle;
+    }
+
+    /* ── Back link ── */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--dim);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .back-link:hover { color: var(--green); }
+
+    /* ── Override body centering for wide table ── */
+    body { justify-content: flex-start; }
+  </style>
+</head>
+<body>
+  <div class="compare-container">
+    <a href="/" class="back-link">◂ Back to RetroDojo</a>
+
+    <header style="margin-bottom:1.5rem;">
+      <h1 class="title" style="font-size:2rem;">⚔️ Device Comparison</h1>
+      <p class="subtitle">▸ HANDHELD SPECS — SOURCED FROM OFFICIAL VENDOR PAGES ◂</p>
+    </header>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="filter-group">
+        <label for="filter-brand">Brand</label>
+        <select id="filter-brand">
+          <option value="all">All</option>
+          <option value="Anbernic">Anbernic</option>
+          <option value="Retroid">Retroid</option>
+          <option value="Miyoo">Miyoo</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-tier">Tier</label>
+        <select id="filter-tier">
+          <option value="all">All</option>
+          <option value="budget">Budget</option>
+          <option value="mid">Mid</option>
+          <option value="flagship">Flagship</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-os">OS</label>
+        <select id="filter-os">
+          <option value="all">All</option>
+          <option value="Linux">Linux</option>
+          <option value="Android">Android</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-search">Search</label>
+        <input type="text" id="filter-search" placeholder="e.g. RK3566, Adreno, 8GB…" style="width:200px;">
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item"><span class="badge badge-budget">Budget</span> &lt; $75</div>
+      <div class="legend-item"><span class="badge badge-mid">Mid</span> $75–$175</div>
+      <div class="legend-item"><span class="badge badge-flagship">Flagship</span> $175+</div>
+      <div class="legend-item"><span class="unverified">⚠</span> Specs not tested on device — sourced from vendor page only</div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrapper">
+      <table id="device-table">
+        <thead>
+          <tr>
+            <th data-col="brand">Brand</th>
+            <th data-col="model">Model</th>
+            <th data-col="tier">Tier</th>
+            <th data-col="price_usd">Price</th>
+            <th data-col="cpu">CPU / SoC</th>
+            <th data-col="gpu">GPU</th>
+            <th data-col="ram_gb">RAM</th>
+            <th data-col="os">OS</th>
+            <th data-col="screen">Screen</th>
+            <th data-col="battery_mah">Battery</th>
+            <th data-col="form_factor">Form</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="device-tbody">
+          <tr><td colspan="12" class="empty-state"><span class="blink">▋</span> Loading devices…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1rem; font-size:0.72rem; color:rgba(0,255,65,0.3);">
+      Data sourced from official vendor pages. Benchmark results added after hands-on testing.
+      Last updated: <span id="last-updated">—</span>
+    </p>
+  </div>
+
+  <script>
+    const TIERS = { budget: 0, mid: 1, flagship: 2 };
+    const TIER_LABEL = { budget: 'budget', mid: 'mid', flagship: 'flagship' };
+
+    let allDevices = [];
+    let sortCol = 'price_usd';
+    let sortDir = 1;
+
+    async function loadDevices() {
+      const res = await fetch('/data/devices.json');
+      const json = await res.json();
+      allDevices = json.devices;
+      document.getElementById('last-updated').textContent = json._meta.last_updated;
+      render();
+    }
+
+    function ramLabel(gb) {
+      if (gb < 1) return (gb * 1024) + 'MB';
+      return gb + 'GB';
+    }
+
+    function cpuLabel(cpu) {
+      return `<strong>${cpu.chip}</strong><br><small style="color:rgba(0,255,65,0.5)">${cpu.cores}</small>`;
+    }
+
+    function gpuLabel(gpu) {
+      let out = gpu.chip || '—';
+      if (gpu.source_note) out += ` <span class="unverified" title="${gpu.source_note}">⚠</span>`;
+      return out;
+    }
+
+    function screenLabel(s) {
+      return `${s.size_inch}" ${s.resolution}<br><small style="color:rgba(0,255,65,0.5)">${s.type}</small>`;
+    }
+
+    function formLabel(f) {
+      return f === 'clamshell' ? '🦀 Clamshell' : '🎮 Landscape';
+    }
+
+    function matchesFilters(d) {
+      const brand  = document.getElementById('filter-brand').value;
+      const tier   = document.getElementById('filter-tier').value;
+      const os     = document.getElementById('filter-os').value;
+      const search = document.getElementById('filter-search').value.toLowerCase();
+
+      if (brand !== 'all' && d.brand !== brand) return false;
+      if (tier  !== 'all' && d.tier  !== tier)  return false;
+      if (os    !== 'all') {
+        const osMatch = d.os.toLowerCase().includes(os.toLowerCase());
+        if (!osMatch) return false;
+      }
+      if (search) {
+        const haystack = JSON.stringify(d).toLowerCase();
+        if (!haystack.includes(search)) return false;
+      }
+      return true;
+    }
+
+    function sortDevices(devices) {
+      return [...devices].sort((a, b) => {
+        let av = a[sortCol], bv = b[sortCol];
+        if (sortCol === 'tier') { av = TIERS[av] ?? 0; bv = TIERS[bv] ?? 0; }
+        if (sortCol === 'ram_gb') { av = parseFloat(av); bv = parseFloat(bv); }
+        if (typeof av === 'string') return av.localeCompare(bv) * sortDir;
+        return (av - bv) * sortDir;
+      });
+    }
+
+    function render() {
+      const filtered = allDevices.filter(matchesFilters);
+      const sorted   = sortDevices(filtered);
+      const tbody     = document.getElementById('device-tbody');
+
+      // Update sort headers
+      document.querySelectorAll('thead th').forEach(th => {
+        th.classList.remove('sorted-asc', 'sorted-desc');
+        if (th.dataset.col === sortCol) {
+          th.classList.add(sortDir === 1 ? 'sorted-asc' : 'sorted-desc');
+        }
+      });
+
+      if (sorted.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="12" class="empty-state">▋ No devices match filters.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = sorted.map(d => `
+        <tr data-brand="${d.brand}" data-tier="${d.tier}">
+          <td class="brand-cell">${d.brand}</td>
+          <td class="model-cell">
+            <a href="${d.source_url}" target="_blank" rel="noopener noreferrer"
+               style="color:inherit;text-decoration:none;"
+               title="Official vendor page">${d.model}</a>
+            ${d.verified ? '' : '<span class="unverified" title="Specs sourced from vendor page only — not yet hands-on tested">⚠</span>'}
+          </td>
+          <td><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
+          <td>$${d.price_usd.toFixed(2)}</td>
+          <td>${cpuLabel(d.cpu)}</td>
+          <td>${gpuLabel(d.gpu)}</td>
+          <td>${ramLabel(d.ram_gb)}</td>
+          <td>${d.os}</td>
+          <td>${screenLabel(d.screen)}</td>
+          <td>${d.battery_mah ? d.battery_mah.toLocaleString() + ' mAh' : '—'}</td>
+          <td>${formLabel(d.form_factor)}</td>
+          <td class="note-cell">${d.notes || ''}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Sorting
+    document.querySelectorAll('thead th[data-col]').forEach(th => {
+      th.addEventListener('click', () => {
+        if (sortCol === th.dataset.col) {
+          sortDir *= -1;
+        } else {
+          sortCol = th.dataset.col;
+          sortDir = 1;
+        }
+        render();
+      });
+    });
+
+    // Filters
+    ['filter-brand', 'filter-tier', 'filter-os'].forEach(id => {
+      document.getElementById(id).addEventListener('change', render);
+    });
+    document.getElementById('filter-search').addEventListener('input', render);
+
+    loadDevices().catch(err => {
+      document.getElementById('device-tbody').innerHTML =
+        `<tr><td colspan="12" class="empty-state"><span class="warn">⚠ Failed to load device data: ${err.message}</span></td></tr>`;
+    });
+  </script>
+</body>
+</html>
