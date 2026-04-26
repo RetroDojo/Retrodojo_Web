@@ -194,12 +194,15 @@
     <!-- Controls -->
     <div class="controls">
       <div class="filter-group">
+        <label for="filter-category">Category</label>
+        <select id="filter-category">
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <label for="filter-brand">Brand</label>
         <select id="filter-brand">
           <option value="all">All</option>
-          <option value="Anbernic">Anbernic</option>
-          <option value="Retroid">Retroid</option>
-          <option value="Miyoo">Miyoo</option>
         </select>
       </div>
       <div class="filter-group">
@@ -215,8 +218,6 @@
         <label for="filter-os">OS</label>
         <select id="filter-os">
           <option value="all">All</option>
-          <option value="Linux">Linux</option>
-          <option value="Android">Android</option>
         </select>
       </div>
       <div class="filter-group">
@@ -267,6 +268,10 @@
   <script>
     const TIERS = { budget: 0, mid: 1, flagship: 2 };
     const TIER_LABEL = { budget: 'budget', mid: 'mid', flagship: 'flagship' };
+    const CATEGORY_LABEL = {
+      'retro-handheld': 'Retro Handheld',
+      'pc-handheld': 'PC Handheld'
+    };
 
     let allDevices = [];
     let sortCol = 'price_usd';
@@ -275,40 +280,96 @@
     async function loadDevices() {
       const res = await fetch('/data/devices.json');
       const json = await res.json();
-      allDevices = json.devices;
+      allDevices = json.devices.map(normalizeDevice);
+      populateFilters(allDevices);
       document.getElementById('last-updated').textContent = json._meta.last_updated;
       render();
     }
 
+    function inferCategory(device) {
+      const os = (device.os || '').toLowerCase();
+      if (os.includes('windows')) return 'pc-handheld';
+      return 'retro-handheld';
+    }
+
+    function normalizeDevice(device) {
+      return {
+        ...device,
+        category: device.category || inferCategory(device)
+      };
+    }
+
+    function setSelectOptions(selectId, values, labelMap = {}) {
+      const select = document.getElementById(selectId);
+      const currentValue = select.value;
+      const options = ['<option value="all">All</option>'];
+
+      values.forEach(value => {
+        const label = labelMap[value] || value;
+        options.push(`<option value="${value}">${label}</option>`);
+      });
+
+      select.innerHTML = options.join('');
+      if ([...select.options].some(option => option.value === currentValue)) {
+        select.value = currentValue;
+      }
+    }
+
+    function populateFilters(devices) {
+      const categories = [...new Set(devices.map(device => device.category).filter(Boolean))]
+        .sort((a, b) => (CATEGORY_LABEL[a] || a).localeCompare(CATEGORY_LABEL[b] || b));
+      const brands = [...new Set(devices.map(device => device.brand).filter(Boolean))].sort();
+      const operatingSystems = [...new Set(devices.map(device => device.os).filter(Boolean))].sort();
+
+      setSelectOptions('filter-category', categories, CATEGORY_LABEL);
+      setSelectOptions('filter-brand', brands);
+      setSelectOptions('filter-os', operatingSystems);
+    }
+
     function ramLabel(gb) {
+      if (gb == null || Number.isNaN(Number(gb))) return '—';
       if (gb < 1) return (gb * 1024) + 'MB';
       return gb + 'GB';
     }
 
     function cpuLabel(cpu) {
-      return `<strong>${cpu.chip}</strong><br><small style="color:rgba(0,255,65,0.5)">${cpu.cores}</small>`;
+      if (!cpu || !cpu.chip) return '—';
+      const detail = cpu.cores || cpu.architecture || '—';
+      return `<strong>${cpu.chip}</strong><br><small style="color:rgba(0,255,65,0.5)">${detail}</small>`;
     }
 
     function gpuLabel(gpu) {
+      if (!gpu) return '—';
       let out = gpu.chip || '—';
       if (gpu.source_note) out += ` <span class="unverified" title="${gpu.source_note}">⚠</span>`;
       return out;
     }
 
     function screenLabel(s) {
-      return `${s.size_inch}" ${s.resolution}<br><small style="color:rgba(0,255,65,0.5)">${s.type}</small>`;
+      if (!s) return '—';
+      const size = s.size_inch ? `${s.size_inch}" ` : '';
+      const resolution = s.resolution || '—';
+      const type = s.type || '—';
+      return `${size}${resolution}<br><small style="color:rgba(0,255,65,0.5)">${type}</small>`;
     }
 
     function formLabel(f) {
+      if (!f) return '—';
       return f === 'clamshell' ? '🦀 Clamshell' : '🎮 Landscape';
     }
 
+    function priceLabel(price) {
+      return typeof price === 'number' ? `$${price.toFixed(2)}` : '—';
+    }
+
     function matchesFilters(d) {
+      const category = document.getElementById('filter-category').value;
       const brand  = document.getElementById('filter-brand').value;
       const tier   = document.getElementById('filter-tier').value;
       const os     = document.getElementById('filter-os').value;
       const search = document.getElementById('filter-search').value.toLowerCase();
 
+      if (category !== 'all' && d.category !== category) return false;
       if (brand !== 'all' && d.brand !== brand) return false;
       if (tier  !== 'all' && d.tier  !== tier)  return false;
       if (os    !== 'all') {
@@ -327,6 +388,9 @@
         let av = a[sortCol], bv = b[sortCol];
         if (sortCol === 'tier') { av = TIERS[av] ?? 0; bv = TIERS[bv] ?? 0; }
         if (sortCol === 'ram_gb') { av = parseFloat(av); bv = parseFloat(bv); }
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;
+        if (bv == null) return -1;
         if (typeof av === 'string') return av.localeCompare(bv) * sortDir;
         return (av - bv) * sortDir;
       });
@@ -351,7 +415,7 @@
       }
 
       tbody.innerHTML = sorted.map(d => `
-        <tr data-brand="${d.brand}" data-tier="${d.tier}">
+        <tr data-category="${d.category}" data-brand="${d.brand}" data-tier="${d.tier}">
           <td class="brand-cell">${d.brand}</td>
           <td class="model-cell">
             <a href="${d.source_url}" target="_blank" rel="noopener noreferrer"
@@ -360,11 +424,11 @@
             ${d.verified ? '' : '<span class="unverified" title="Specs sourced from vendor page only — not yet hands-on tested">⚠</span>'}
           </td>
           <td><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
-          <td>$${d.price_usd.toFixed(2)}</td>
+          <td>${priceLabel(d.price_usd)}</td>
           <td>${cpuLabel(d.cpu)}</td>
           <td>${gpuLabel(d.gpu)}</td>
           <td>${ramLabel(d.ram_gb)}</td>
-          <td>${d.os}</td>
+          <td>${d.os || '—'}</td>
           <td>${screenLabel(d.screen)}</td>
           <td>${d.battery_mah ? d.battery_mah.toLocaleString() + ' mAh' : '—'}</td>
           <td>${formLabel(d.form_factor)}</td>
@@ -387,7 +451,7 @@
     });
 
     // Filters
-    ['filter-brand', 'filter-tier', 'filter-os'].forEach(id => {
+    ['filter-category', 'filter-brand', 'filter-tier', 'filter-os'].forEach(id => {
       document.getElementById(id).addEventListener('change', render);
     });
     document.getElementById('filter-search').addEventListener('input', render);
