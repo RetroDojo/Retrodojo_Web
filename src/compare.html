@@ -8,7 +8,7 @@
   <style>
     /* ── Page layout ── */
     .compare-container {
-      max-width: 1200px;
+      max-width: none;
       width: 100%;
       padding: clamp(0.8rem, 2vw, 2rem);
     }
@@ -216,6 +216,34 @@
       font-size: 0.66rem;
     }
 
+    @media (min-width: 1280px) {
+      .table-wrapper {
+        overflow-x: visible;
+      }
+
+      table {
+        table-layout: fixed;
+      }
+
+      thead th,
+      td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      #device-table th:nth-child(1),
+      #device-table td:nth-child(1) {
+        min-width: 6.6rem;
+        width: 6.6rem;
+      }
+
+      #device-table th:nth-child(2),
+      #device-table td:nth-child(2) {
+        min-width: 11.5rem;
+        width: 11.5rem;
+      }
+    }
+
     @media (min-width: 901px) {
       #device-table th:nth-child(1),
       #device-table td:nth-child(1) {
@@ -228,7 +256,7 @@
       #device-table th:nth-child(2),
       #device-table td:nth-child(2) {
         position: sticky;
-        left: 7.5rem;
+        left: var(--sticky-col-2-left, 7.5rem);
         z-index: 3;
         background: #0c0c0c;
       }
@@ -241,6 +269,12 @@
       #device-table tbody tr:hover td:nth-child(1),
       #device-table tbody tr:hover td:nth-child(2) {
         background: #111;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      :root {
+        --sticky-col-2-left: 6.6rem;
       }
     }
 
