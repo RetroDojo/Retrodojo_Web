@@ -122,6 +122,8 @@
     .badge-budget   { border: 1px solid #00ff41; color: #00ff41; }
     .badge-mid      { border: 1px solid #ffcc00; color: #ffcc00; }
     .badge-flagship { border: 1px solid #ff6b35; color: #ff6b35; }
+    .badge-category-retro-handheld { border: 1px solid #00d1ff; color: #00d1ff; }
+    .badge-category-pc-handheld { border: 1px solid #ff66c4; color: #ff66c4; }
 
     /* ── Verified indicator ── */
     .unverified {
@@ -241,6 +243,7 @@
           <tr>
             <th data-col="brand">Brand</th>
             <th data-col="model">Model</th>
+            <th data-col="category">Category</th>
             <th data-col="tier">Tier</th>
             <th data-col="price_usd">Price</th>
             <th data-col="cpu">CPU / SoC</th>
@@ -254,7 +257,7 @@
           </tr>
         </thead>
         <tbody id="device-tbody">
-          <tr><td colspan="12" class="empty-state"><span class="blink">▋</span> Loading devices…</td></tr>
+          <tr><td colspan="13" class="empty-state"><span class="blink">▋</span> Loading devices…</td></tr>
         </tbody>
       </table>
     </div>
@@ -362,6 +365,11 @@
       return typeof price === 'number' ? `$${price.toFixed(2)}` : '—';
     }
 
+    function categoryBadge(category) {
+      const label = CATEGORY_LABEL[category] || category || 'Unknown';
+      return `<span class="badge badge-category-${category || 'unknown'}">${label}</span>`;
+    }
+
     function matchesFilters(d) {
       const category = document.getElementById('filter-category').value;
       const brand  = document.getElementById('filter-brand').value;
@@ -410,7 +418,7 @@
       });
 
       if (sorted.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="12" class="empty-state">▋ No devices match filters.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="13" class="empty-state">▋ No devices match filters.</td></tr>';
         return;
       }
 
@@ -423,6 +431,7 @@
                title="Official vendor page">${d.model}</a>
             ${d.verified ? '' : '<span class="unverified" title="Specs sourced from vendor page only — not yet hands-on tested">⚠</span>'}
           </td>
+          <td>${categoryBadge(d.category)}</td>
           <td><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
           <td>${priceLabel(d.price_usd)}</td>
           <td>${cpuLabel(d.cpu)}</td>
@@ -458,7 +467,7 @@
 
     loadDevices().catch(err => {
       document.getElementById('device-tbody').innerHTML =
-        `<tr><td colspan="12" class="empty-state"><span class="warn">⚠ Failed to load device data: ${err.message}</span></td></tr>`;
+        `<tr><td colspan="13" class="empty-state"><span class="warn">⚠ Failed to load device data: ${err.message}</span></td></tr>`;
     });
   </script>
 </body>
