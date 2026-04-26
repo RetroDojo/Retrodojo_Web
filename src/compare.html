@@ -111,6 +111,19 @@
       white-space: nowrap;
     }
 
+    /* Keep first two columns stable widths for sticky positioning */
+    #device-table th:nth-child(1),
+    #device-table td:nth-child(1) {
+      min-width: 7.5rem;
+      width: 7.5rem;
+    }
+
+    #device-table th:nth-child(2),
+    #device-table td:nth-child(2) {
+      min-width: 13rem;
+      width: 13rem;
+    }
+
     /* ── Tier badges ── */
     .badge {
       display: inline-block;
@@ -181,6 +194,34 @@
     }
 
     .back-link:hover { color: var(--green); }
+
+    @media (min-width: 901px) {
+      #device-table th:nth-child(1),
+      #device-table td:nth-child(1) {
+        position: sticky;
+        left: 0;
+        z-index: 4;
+        background: #0c0c0c;
+      }
+
+      #device-table th:nth-child(2),
+      #device-table td:nth-child(2) {
+        position: sticky;
+        left: 7.5rem;
+        z-index: 3;
+        background: #0c0c0c;
+      }
+
+      #device-table thead th:nth-child(1),
+      #device-table thead th:nth-child(2) {
+        background: #0d0d0d;
+      }
+
+      #device-table tbody tr:hover td:nth-child(1),
+      #device-table tbody tr:hover td:nth-child(2) {
+        background: #111;
+      }
+    }
 
     @media (max-width: 900px) {
       .controls {
