@@ -13,9 +13,9 @@
       "Miyoo": "https://lomiyoo.com",
       "AYN": "https://www.ayntec.com",
       "AYANEO": "https://www.ayaneo.com",
+      "AYANEO / Konkr": "https://www.ayaneo.com/product",
       "MANGMI": "https://mangmi.com",
       "TrimUI": "https://trimui.com",
-      "Konkr": "https://konkr.com",
       "Miniloong": "https://www.miniloong.com",
       "Litnxt": "https://www.litnxt.com",
       "RetroCatalog": "https://retrocatalog.com/retro-handhelds",
@@ -28,7 +28,7 @@
     },
     "pending_sources": [
       "TrimUI — official hardware spec sheet still needed to confirm CPU/GPU/RAM/storage/battery values currently backfilled from community sheet",
-      "Konkr — official product pages still needed; current values are provisional community-sheet data",
+      "Konkr — AYANEO sub-brand; Konkr product details found on https://www.ayaneo.com/product; specific Konkr model details may require additional vendor documentation",
       "Miniloong — currently sourced from Litnxt reseller page; still need official manufacturer spec page"
     ]
   },
@@ -805,7 +805,7 @@
     },
     {
       "id": "konkr-placeholder",
-      "brand": "Konkr",
+      "brand": "Konkr (AYANEO sub-brand)",
       "model": "Konkr (Android model, provisional)",
       "category": "retro-handheld",
       "year": 2025,
@@ -822,13 +822,13 @@
       "battery_mah": 8000,
       "wifi": "Wi-Fi 6 (community-sourced)",
       "bluetooth": "5.3 (community-sourced)",
-      "source_url": "https://konkr.com",
+      "source_url": "https://www.ayaneo.com/product",
       "verified": false,
-      "notes": "Provisional entry backfilled from the public handheld community spreadsheet because official Konkr product pages were not accessible during collection. Model naming and final specs require official confirmation.",
+      "notes": "Konkr is an AYANEO sub-brand. Konkr product details are listed on AYANEO's product page. Model naming and final specs require official confirmation from AYANEO/Konkr. Community-sheet backfill used for provisional specifications.",
       "capabilities": {
         "video_output": "USB-C video out (community-sourced).",
         "audio_output": "3.5mm headphone jack (community-sourced).",
-        "evidence": "All current Konkr fields are provisional community-sheet data pending official source verification."
+        "evidence": "All current Konkr fields are provisional community-sheet data pending official source verification from AYANEO product documentation."
       }
     },
     {
