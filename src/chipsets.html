@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetroDojo — What Can I Play?</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Page layout ── */
+    .chipset-container {
+      max-width: none;
+      width: 100%;
+      padding: clamp(0.8rem, 2vw, 2rem);
+    }
+
+    /* ── Controls ── */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+
+    .controls label {
+      font-size: 0.78rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-right: 0.3rem;
+    }
+
+    .controls select {
+      background: var(--card-bg);
+      color: var(--green);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.4rem 0.6rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+    }
+
+    .controls select:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.72rem;
+      color: var(--dim);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .legend-swatch {
+      display: inline-block;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 2px;
+    }
+
+    /* ── Emulation Matrix Table ── */
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: clamp(0.72rem, 0.2vw + 0.7rem, 0.82rem);
+      table-layout: auto;
+    }
+
+    thead th {
+      background: #0d0d0d;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: clamp(0.5rem, 0.5vw + 0.4rem, 0.7rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+      cursor: default;
+    }
+
+    thead th:first-child {
+      text-align: left;
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: #0d0d0d;
+    }
+
+    thead th .soc-vendor {
+      display: block;
+      font-size: 0.62rem;
+      color: rgba(0,255,65,0.35);
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    thead th .soc-gpu {
+      display: block;
+      font-size: 0.6rem;
+      color: rgba(0,255,65,0.3);
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(0,255,65,0.08);
+    }
+
+    tbody tr:hover { background: rgba(0,255,65,0.04); }
+
+    td {
+      padding: clamp(0.4rem, 0.35vw + 0.3rem, 0.6rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    td:first-child {
+      text-align: left;
+      color: var(--dim);
+      font-weight: bold;
+      white-space: nowrap;
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: var(--card-bg);
+    }
+
+    /* Tier row label styling */
+    .tier-label {
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .tier-systems {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: normal;
+      color: var(--dim);
+    }
+
+    /* ── Cell rating colours ── */
+    .cell-full_speed   { background: rgba(0,255,65,0.15); color: #00ff41; }
+    .cell-playable     { background: rgba(255,204,0,0.12); color: #ffcc00; }
+    .cell-slow         { background: rgba(255,107,53,0.12); color: #ff6b35; }
+    .cell-not_capable  { background: rgba(255,59,59,0.08); color: rgba(255,59,59,0.5); }
+    .cell-empty        { color: rgba(0,255,65,0.15); }
+
+    .cell-rating {
+      display: block;
+      font-weight: bold;
+      font-size: 0.78rem;
+    }
+
+    .cell-compat {
+      display: block;
+      font-size: 0.62rem;
+      opacity: 0.7;
+    }
+
+    .cell-emulator {
+      display: block;
+      font-size: 0.58rem;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+
+    .cell-note {
+      display: none;
+      font-size: 0.6rem;
+      line-height: 1.3;
+      margin-top: 0.2rem;
+    }
+
+    td:hover .cell-note {
+      display: block;
+    }
+
+    /* ── SoC Detail Cards ── */
+    .soc-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .soc-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1rem 1.2rem;
+    }
+
+    .soc-card h3 {
+      font-size: 0.9rem;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+
+    .soc-card .soc-meta {
+      font-size: 0.72rem;
+      color: var(--dim);
+      margin-bottom: 0.6rem;
+    }
+
+    .soc-card .driver-info {
+      font-size: 0.72rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .soc-card .driver-info strong {
+      color: var(--dim);
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+    }
+
+    .soc-card .device-badges {
+      margin-top: 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .device-badge {
+      display: inline-block;
+      font-size: 0.62rem;
+      padding: 0.12rem 0.4rem;
+      border-radius: 2px;
+      border: 1px solid rgba(0,255,65,0.3);
+      color: rgba(0,255,65,0.7);
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .device-badge:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    .ref-links {
+      margin-top: 0.5rem;
+      font-size: 0.65rem;
+    }
+
+    .ref-links a {
+      color: var(--dim);
+      text-decoration: none;
+      margin-right: 0.8rem;
+    }
+
+    .ref-links a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    /* ── Meta footer ── */
+    .meta-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: var(--dim);
+      margin-top: 1.5rem;
+      gap: 0.5rem;
+    }
+
+    .rev-badge {
+      font-size: 0.62rem;
+      padding: 0.1rem 0.35rem;
+      border: 1px solid rgba(0,255,65,0.25);
+      border-radius: 2px;
+    }
+
+    /* ── Back link ── */
+    .back-link {
+      display: inline-block;
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 0.78rem;
+      margin-bottom: 1rem;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover { color: var(--green); }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .soc-details {
+        grid-template-columns: 1fr;
+      }
+
+      td:first-child,
+      thead th:first-child {
+        position: static;
+      }
+    }
+
+    /* ── Override body centering for wide table ── */
+    body { justify-content: flex-start; }
+  </style>
+</head>
+<body>
+  <div class="chipset-container">
+    <a href="/" class="back-link">◂ Back to RetroDojo</a>
+    <a href="/compare.html" class="back-link" style="margin-left:1.5rem;">⚔️ Device Comparison</a>
+
+    <header style="margin-bottom:1.5rem;">
+      <h1 class="title" style="font-size:2rem;">🎮 What Can I Play?</h1>
+      <p class="subtitle">▸ SoC EMULATION MATRIX — WHAT RUNS ON WHAT ◂</p>
+    </header>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="filter-group">
+        <label for="filter-vendor">Vendor</label>
+        <select id="filter-vendor">
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-gpu-type">GPU</label>
+        <select id="filter-gpu-type">
+          <option value="all">All</option>
+          <option value="adreno">Adreno</option>
+          <option value="mali">Mali</option>
+          <option value="powervr">PowerVR</option>
+          <option value="rdna">RDNA</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-tier">Min Tier</label>
+        <select id="filter-tier">
+          <option value="all">Show All</option>
+          <option value="4_heavy_3d">GameCube / Wii / 3DS</option>
+          <option value="5_demanding">PS2 / Wii U</option>
+          <option value="6_extreme">Switch</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item"><span class="legend-swatch" style="background:rgba(0,255,65,0.25);"></span> Full Speed</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,204,0,0.2);"></span> Playable</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,107,53,0.2);"></span> Slow</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,59,59,0.12);"></span> Not Capable</div>
+      <div class="legend-item"><span style="font-size:0.72rem;color:var(--dim);">Hover cells for details</span></div>
+    </div>
+
+    <!-- Emulation Matrix -->
+    <div class="table-wrapper">
+      <table id="emu-table">
+        <thead>
+          <tr id="emu-thead"></tr>
+        </thead>
+        <tbody id="emu-tbody">
+          <tr><td colspan="20" style="text-align:center;color:var(--dim);"><span class="blink">▋</span> Loading chipset data…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SoC Detail Cards -->
+    <h2 style="margin-top:2rem;font-size:0.9rem;color:var(--dim);text-transform:uppercase;letter-spacing:0.1em;">SoC Details &amp; Driver Ecosystem</h2>
+    <div class="soc-details" id="soc-cards">
+    </div>
+
+    <p class="meta-line">
+      <span>Sources: official vendor pages, <a href="https://retrocatalog.com" style="color:var(--dim);">RetroCatalog</a>, Handhelds.xlsx community spreadsheet, <a href="https://github.com/RJNY/Obtainium-Emulation-Pack" style="color:var(--dim);">Obtainium</a></span>
+      <span class="rev-badge" id="page-revision">v0.0.0</span>
+      <span>Last updated: <span id="last-updated">—</span></span>
+    </p>
+  </div>
+
+  <script>
+    const PAGE_REVISION = 'v0.1.0-beta.1';
+
+    /* Tier definitions — matches emulators.json emulation_tiers order */
+    const TIER_ORDER = [
+      { id: '1_lightweight', label: 'Lightweight', systems: 'NES · SNES · GB/C/A · Genesis · Neo Geo' },
+      { id: '2_mid_3d', label: 'Mid 3D', systems: 'PS1 · N64 · Saturn' },
+      { id: '3_portable_plus', label: 'Portable+', systems: 'PSP · DS · Dreamcast' },
+      { id: '4_heavy_3d', label: 'Heavy 3D', systems: 'GameCube · Wii · 3DS' },
+      { id: '5_demanding', label: 'Demanding', systems: 'PS2 · Wii U' },
+      { id: '6_extreme', label: 'Extreme', systems: 'Switch' },
+      { id: '7_streaming', label: 'Streaming', systems: 'Moonlight · Steam Link' }
+    ];
+
+    const SPEED_LABELS = {
+      full_speed: '● FULL',
+      playable: '◐ PLAY',
+      slow: '◔ SLOW',
+      not_capable: '○ N/A'
+    };
+
+    /* Sort chipsets by overall emulation power (number of tiers at playable+) */
+    function chipsetSortKey(c) {
+      if (!c.emulation_performance) return 0;
+      return c.emulation_performance.tiers.reduce((sum, t) => {
+        if (t.speed === 'full_speed') return sum + 3;
+        if (t.speed === 'playable') return sum + 2;
+        if (t.speed === 'slow') return sum + 1;
+        return sum;
+      }, 0);
+    }
+
+    /* GPU type from model string */
+    function gpuType(chip) {
+      const g = (chip.gpu?.model || '').toLowerCase();
+      if (g.includes('adreno')) return 'adreno';
+      if (g.includes('mali')) return 'mali';
+      if (g.includes('powervr')) return 'powervr';
+      if (g.includes('radeon') || g.includes('rdna')) return 'rdna';
+      return 'other';
+    }
+
+    /* Check if chip passes minimum tier filter */
+    function passesMinTier(chip, minTier) {
+      if (minTier === 'all') return true;
+      if (!chip.emulation_performance) return false;
+      const tierEntry = chip.emulation_performance.tiers.find(t => t.tier === minTier);
+      return tierEntry && (tierEntry.speed === 'full_speed' || tierEntry.speed === 'playable');
+    }
+
+    async function init() {
+      const [chipsetRes, deviceRes] = await Promise.all([
+        fetch('/data/chipsets.json'),
+        fetch('/data/devices.json')
+      ]);
+      const chipsetData = await chipsetRes.json();
+      const deviceData = await deviceRes.json();
+
+      const chipsets = chipsetData.chipsets.filter(c => c.emulation_performance);
+      const devices = deviceData.devices;
+
+      /* Build device-to-chipset map */
+      const devicesByChipset = {};
+      devices.forEach(d => {
+        const cid = d.chipset_id;
+        if (cid) {
+          if (!devicesByChipset[cid]) devicesByChipset[cid] = [];
+          devicesByChipset[cid].push(d);
+        }
+      });
+
+      /* Populate vendor filter */
+      const vendors = [...new Set(chipsets.map(c => c.vendor))].sort();
+      const vendorSelect = document.getElementById('filter-vendor');
+      vendors.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        vendorSelect.appendChild(opt);
+      });
+
+      function render() {
+        const vendorFilter = vendorSelect.value;
+        const gpuFilter = document.getElementById('filter-gpu-type').value;
+        const tierFilter = document.getElementById('filter-tier').value;
+
+        /* Filter chipsets */
+        let visible = chipsets.filter(c => {
+          if (vendorFilter !== 'all' && c.vendor !== vendorFilter) return false;
+          if (gpuFilter !== 'all' && gpuType(c) !== gpuFilter) return false;
+          if (!passesMinTier(c, tierFilter)) return false;
+          return true;
+        });
+
+        /* Sort by emulation power descending */
+        visible.sort((a, b) => chipsetSortKey(b) - chipsetSortKey(a));
+
+        /* ── Build matrix thead ── */
+        const thead = document.getElementById('emu-thead');
+        thead.innerHTML = '<th>Emulation Tier</th>';
+        visible.forEach(c => {
+          const th = document.createElement('th');
+          th.innerHTML = `${c.model}<span class="soc-vendor">${c.vendor}</span><span class="soc-gpu">${c.gpu?.model || '—'}</span>`;
+          thead.appendChild(th);
+        });
+
+        /* ── Build matrix tbody ── */
+        const tbody = document.getElementById('emu-tbody');
+        tbody.innerHTML = '';
+
+        TIER_ORDER.forEach(tier => {
+          const tr = document.createElement('tr');
+
+          /* Row label */
+          const tdLabel = document.createElement('td');
+          tdLabel.innerHTML = `<span class="tier-label">${tier.label}</span><span class="tier-systems">${tier.systems}</span>`;
+          tr.appendChild(tdLabel);
+
+          /* One cell per chipset */
+          visible.forEach(c => {
+            const td = document.createElement('td');
+            const perf = c.emulation_performance;
+            const tierData = perf.tiers.find(t => t.tier === tier.id);
+
+            if (tier.id === '7_streaming') {
+              /* Streaming row uses streaming_capability instead of tiers */
+              const stream = perf.streaming_capability;
+              if (stream) {
+                const speed = stream.moonlight || 'not_capable';
+                td.className = `cell-${speed}`;
+                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS[speed] || '—'}</span><span class="cell-emulator">moonlight</span><span class="cell-note">${stream.notes || ''}</span>`;
+              } else {
+                td.className = 'cell-empty';
+                td.textContent = '—';
+              }
+            } else if (tierData) {
+              td.className = `cell-${tierData.speed}`;
+              td.innerHTML = `<span class="cell-rating">${SPEED_LABELS[tierData.speed]}</span><span class="cell-compat">${tierData.compatibility_pct}% compat</span><span class="cell-emulator">${tierData.primary_emulator}</span><span class="cell-note">${tierData.notes}</span>`;
+            } else {
+              td.className = 'cell-empty';
+              td.textContent = '—';
+            }
+
+            tr.appendChild(td);
+          });
+
+          tbody.appendChild(tr);
+        });
+
+        /* ── Build SoC detail cards ── */
+        const cardsDiv = document.getElementById('soc-cards');
+        cardsDiv.innerHTML = '';
+
+        visible.forEach(c => {
+          const card = document.createElement('div');
+          card.className = 'soc-card';
+          card.id = c.id;
+
+          const perf = c.emulation_performance;
+          const driver = perf.driver_ecosystem || {};
+          const devs = devicesByChipset[c.id] || [];
+
+          let html = `<h3>${c.vendor} ${c.model}</h3>`;
+          html += `<div class="soc-meta">`;
+          html += `${c.cpu?.core_layout || '—'} · ${c.gpu?.model || '—'}`;
+          if (c.process_nm) html += ` · ${c.process_nm}nm`;
+          html += `</div>`;
+
+          html += `<div class="driver-info">`;
+          html += `<strong>Vulkan:</strong> ${driver.vulkan || '—'}<br>`;
+          html += `<strong>OpenGL ES:</strong> ${driver.opengl_es || '—'}<br>`;
+          html += `<strong>Video Decode:</strong> ${driver.video_decode || '—'}<br>`;
+          html += `<strong>Driver Path:</strong> ${driver.driver_update_path || '—'}`;
+          html += `</div>`;
+
+          html += `<p style="font-size:0.72rem;color:#ccc;margin-top:0.5rem;">${perf.summary}</p>`;
+
+          /* Device badges */
+          if (devs.length > 0) {
+            html += `<div class="device-badges">`;
+            devs.forEach(d => {
+              html += `<a class="device-badge" href="compare.html" title="${d.brand} ${d.model}">${d.model}</a>`;
+            });
+            html += `</div>`;
+          }
+
+          /* Reference links */
+          if (c.reference_links && c.reference_links.length > 0) {
+            html += `<div class="ref-links">`;
+            c.reference_links.forEach(l => {
+              html += `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`;
+            });
+            html += `</div>`;
+          }
+
+          card.innerHTML = html;
+          cardsDiv.appendChild(card);
+        });
+      }
+
+      /* Wire up filters */
+      document.getElementById('filter-vendor').addEventListener('change', render);
+      document.getElementById('filter-gpu-type').addEventListener('change', render);
+      document.getElementById('filter-tier').addEventListener('change', render);
+
+      /* Initial render */
+      render();
+
+      /* Scroll to hash target (e.g. chipsets.html#allwinner-h700) */
+      if (location.hash) {
+        const el = document.getElementById(location.hash.slice(1));
+        if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+      }
+
+      /* Meta */
+      document.getElementById('page-revision').textContent = PAGE_REVISION;
+      document.getElementById('last-updated').textContent = chipsetData._meta?.last_updated || '—';
+    }
+
+    init();
+  </script>
+</body>
+</html>

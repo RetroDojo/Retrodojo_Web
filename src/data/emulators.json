@@ -1,0 +1,270 @@
+{
+  "_meta": {
+    "description": "RetroDojo emulator reference dataset. Maps emulators to the systems they emulate, their source repositories, graphics API requirements, and platform support. Used by chipsets.html to cross-reference SoC emulation capability with emulator requirements.",
+    "last_updated": "2026-04-26",
+    "sources": {
+      "Obtainium Emulation Pack": "https://github.com/RJNY/Obtainium-Emulation-Pack",
+      "RetroArch / Libretro": "https://www.libretro.com/",
+      "RetroCatalog": "https://retrocatalog.com/retro-handhelds",
+      "Handhelds.xlsx": "RetroDojo-Standards/04_Reference_Data/Handhelds.xlsx"
+    },
+    "speed_scale": {
+      "full_speed": "Sustains target FPS (usually 60) at native resolution consistently across the library.",
+      "playable": "30-60fps at native resolution; occasional drops but enjoyable gameplay.",
+      "slow": "Sub-30fps or frequent stutters; technically runs but frustrating.",
+      "not_capable": "Cannot run the emulator meaningfully on this SoC."
+    },
+    "upscale_scale": {
+      "3x+": "Can render at 3x native resolution or higher.",
+      "2x": "Comfortable at 2x native resolution.",
+      "1x_only": "Native resolution is the performance ceiling.",
+      "sub_native": "Cannot sustain native resolution consistently.",
+      "n/a": "Not applicable (2D systems or streaming)."
+    },
+    "setup_scale": {
+      "plug_and_play": "Default settings, no per-game tuning needed.",
+      "light_config": "A few global settings tweaks required.",
+      "per_game_tuning": "Many titles need individual performance profiles.",
+      "heavy_tweaking": "Extensive optimization, custom builds, or special drivers needed."
+    },
+    "driver_gate_scale": {
+      "none": "Works on any graphics backend.",
+      "vulkan_preferred": "Vulkan improves performance significantly but OpenGL works.",
+      "vulkan_required": "Vulkan driver quality is the primary bottleneck.",
+      "vendor_specific": "Only works well on specific vendor drivers (e.g., Qualcomm Adreno for Switch emulation)."
+    }
+  },
+  "emulation_tiers": [
+    {
+      "id": "1_lightweight",
+      "label": "Lightweight",
+      "systems": ["NES", "SNES", "Game Boy", "Game Boy Color", "Game Boy Advance", "Sega Genesis", "Sega Master System", "Game Gear", "Neo Geo", "Atari 2600", "Atari 7800"],
+      "compute_demand": "minimal",
+      "notes": "Any modern ARM SoC handles these at full speed. Even budget Allwinner/RK chips have no issues."
+    },
+    {
+      "id": "2_mid_3d",
+      "label": "Mid 3D",
+      "systems": ["PlayStation 1", "Nintendo 64", "Sega Saturn"],
+      "compute_demand": "low",
+      "notes": "First-gen 3D. PS1 is easy; N64 is deceptively hard due to complex RDP emulation. Saturn depends heavily on emulator maturity."
+    },
+    {
+      "id": "3_portable_plus",
+      "label": "Portable+",
+      "systems": ["PSP", "Nintendo DS", "Sega Dreamcast"],
+      "compute_demand": "moderate",
+      "notes": "Well-optimized standalone emulators exist. PSP via PPSSPP is remarkably efficient. DS needs dual-screen rendering."
+    },
+    {
+      "id": "4_heavy_3d",
+      "label": "Heavy 3D",
+      "systems": ["GameCube", "Wii", "Nintendo 3DS"],
+      "compute_demand": "high",
+      "notes": "Dolphin needs real GPU + Vulkan. 3DS via Azahar/Citra needs decent CPU. This is where SoC tier really starts to matter."
+    },
+    {
+      "id": "5_demanding",
+      "label": "Demanding",
+      "systems": ["PlayStation 2", "Wii U"],
+      "compute_demand": "very_high",
+      "notes": "PS2 via AetherSX2/NetherSX2 needs strong CPU + driver stack. Wii U via Cemu is Android-only recent and demanding."
+    },
+    {
+      "id": "6_extreme",
+      "label": "Extreme",
+      "systems": ["Nintendo Switch"],
+      "compute_demand": "extreme",
+      "notes": "Yuzu/Eden/Skyline — Qualcomm Adreno Vulkan drivers are practically required on Android. Mali GPUs struggle significantly. x86 platforms (AMD/Intel) have better compatibility via desktop emulators."
+    },
+    {
+      "id": "7_streaming",
+      "label": "Streaming",
+      "systems": ["Moonlight", "Steam Link", "Xbox Cloud Gaming"],
+      "compute_demand": "network_dependent",
+      "notes": "Not emulation — depends on Wi-Fi quality, H.265 hardware decode, and latency. Higher Wi-Fi standards (Wi-Fi 6/7) significantly improve experience."
+    }
+  ],
+  "emulators": [
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "type": "multi-system",
+      "systems": ["NES", "SNES", "Game Boy", "Game Boy Color", "Game Boy Advance", "Sega Genesis", "Sega Master System", "Game Gear", "Neo Geo", "PlayStation 1", "Nintendo 64", "Sega Saturn", "PSP", "Nintendo DS", "Sega Dreamcast", "Atari 2600", "Atari 7800"],
+      "tiers_covered": ["1_lightweight", "2_mid_3d", "3_portable_plus"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/libretro/RetroArch",
+      "notes": "Frontend for libretro cores. Covers most systems up to PSP/Dreamcast tier. Individual core quality varies."
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "type": "standalone",
+      "systems": ["PSP"],
+      "tiers_covered": ["3_portable_plus"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "vulkan_preferred",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/nicknisi/ppsspp",
+      "notes": "Remarkably well-optimized. Runs full speed on most mid-range SoCs. Vulkan backend preferred for best performance."
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "type": "standalone",
+      "systems": ["PlayStation 1"],
+      "tiers_covered": ["2_mid_3d"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/stenzek/duckstation",
+      "notes": "High-accuracy PS1 emulator. Supports upscaling, PGXP geometry correction. Very efficient."
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "type": "standalone",
+      "systems": ["GameCube", "Wii"],
+      "tiers_covered": ["4_heavy_3d"],
+      "graphics_api": ["Vulkan", "OpenGL ES"],
+      "driver_gate": "vulkan_required",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/dolphin-emu/dolphin",
+      "notes": "GameCube/Wii. Vulkan is critical for Android performance. Mali GPU Vulkan drivers limit compatibility vs Adreno."
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar (Citra fork)",
+      "type": "standalone",
+      "systems": ["Nintendo 3DS"],
+      "tiers_covered": ["4_heavy_3d"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "vulkan_preferred",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/azahar-emu/azahar",
+      "notes": "Community fork of Citra after original was discontinued. Needs decent CPU for full speed."
+    },
+    {
+      "id": "citra-mmj",
+      "name": "Citra MMJ",
+      "type": "standalone",
+      "systems": ["Nintendo 3DS"],
+      "tiers_covered": ["4_heavy_3d"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "vulkan_preferred",
+      "platforms": ["Android"],
+      "source_url": "https://github.com/weihuoya/citra",
+      "notes": "Android-optimized Citra fork. Often better performance than official builds on handhelds."
+    },
+    {
+      "id": "aethersx2",
+      "name": "AetherSX2 / NetherSX2",
+      "type": "standalone",
+      "systems": ["PlayStation 2"],
+      "tiers_covered": ["5_demanding"],
+      "graphics_api": ["Vulkan", "OpenGL ES"],
+      "driver_gate": "vulkan_required",
+      "platforms": ["Android"],
+      "source_url": null,
+      "notes": "PS2 emulation on Android. AetherSX2 development paused; NetherSX2 patch continues. Vulkan driver quality directly determines game compatibility."
+    },
+    {
+      "id": "armsx2",
+      "name": "ARMSX2",
+      "type": "standalone",
+      "systems": ["PlayStation 2"],
+      "tiers_covered": ["5_demanding"],
+      "graphics_api": ["Vulkan"],
+      "driver_gate": "vulkan_required",
+      "platforms": ["Android"],
+      "source_url": "https://github.com/AetherSX2/ARMSX2",
+      "notes": "Newer PS2 Android emulator. Active development. Requires strong SoC with good Vulkan support."
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "type": "standalone",
+      "systems": ["Sega Dreamcast"],
+      "tiers_covered": ["3_portable_plus"],
+      "graphics_api": ["OpenGL ES", "Vulkan"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/flyinghead/flycast",
+      "notes": "Well-optimized Dreamcast emulator. Runs well even on mid-range hardware."
+    },
+    {
+      "id": "melonds",
+      "name": "MelonDS",
+      "type": "standalone",
+      "systems": ["Nintendo DS"],
+      "tiers_covered": ["3_portable_plus"],
+      "graphics_api": ["OpenGL ES"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/melonDS-emu/melonDS",
+      "notes": "Accurate DS emulator. Dual-screen rendering has moderate CPU cost."
+    },
+    {
+      "id": "eden",
+      "name": "Eden (Yuzu fork)",
+      "type": "standalone",
+      "systems": ["Nintendo Switch"],
+      "tiers_covered": ["6_extreme"],
+      "graphics_api": ["Vulkan"],
+      "driver_gate": "vendor_specific",
+      "platforms": ["Android"],
+      "source_url": "https://github.com/AzureConstellation/Eden",
+      "notes": "Switch emulation on Android. Requires Qualcomm Adreno GPU with up-to-date Vulkan drivers. Mali GPUs have severe compatibility issues. Custom Adreno driver packs (Turnip) significantly improve performance."
+    },
+    {
+      "id": "cemu",
+      "name": "Cemu",
+      "type": "standalone",
+      "systems": ["Wii U"],
+      "tiers_covered": ["5_demanding"],
+      "graphics_api": ["Vulkan", "OpenGL"],
+      "driver_gate": "vulkan_required",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/cemu-project/Cemu",
+      "notes": "Wii U emulator. Android port is relatively new. Demanding on both CPU and GPU."
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "type": "streaming",
+      "systems": ["Moonlight"],
+      "tiers_covered": ["7_streaming"],
+      "graphics_api": ["H.264", "H.265", "AV1"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/moonlight-stream/moonlight-android",
+      "notes": "NVIDIA GameStream / Sunshine client. Low-latency game streaming. Quality depends on Wi-Fi standard and HW decode support."
+    },
+    {
+      "id": "winlator",
+      "name": "Winlator",
+      "type": "compatibility_layer",
+      "systems": ["Windows PC games"],
+      "tiers_covered": [],
+      "graphics_api": ["Vulkan", "DirectX (translated)"],
+      "driver_gate": "vulkan_required",
+      "platforms": ["Android"],
+      "source_url": "https://github.com/nicknisi/winlator",
+      "notes": "Runs Windows x86 games on Android via Wine + translation layer. Very demanding. Only practical on flagship SoCs (SD 8 Gen 2+, Dragonwing Q8)."
+    },
+    {
+      "id": "scummvm",
+      "name": "ScummVM",
+      "type": "standalone",
+      "systems": ["Point-and-click adventure games"],
+      "tiers_covered": ["1_lightweight"],
+      "graphics_api": ["OpenGL ES"],
+      "driver_gate": "none",
+      "platforms": ["Android", "Linux", "Windows"],
+      "source_url": "https://github.com/scummvm/scummvm",
+      "notes": "Re-implementation of classic adventure game engines. Minimal hardware requirements."
+    }
+  ]
+}

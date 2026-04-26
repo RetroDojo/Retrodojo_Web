@@ -611,7 +611,8 @@
     function cpuLabel(cpu) {
       if (!cpu || !cpu.chip) return '—';
       const detail = cpu.cores || cpu.architecture || '—';
-      return `<strong>${cpu.chip}</strong><br><small style="color:rgba(0,255,65,0.5)">${detail}</small>`;
+      const slug = cpu.chip.toLowerCase().replace(/\s*\(.*\)/, '').replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
+      return `<a href="/chipsets.html#${slug}" style="color:inherit;text-decoration:none;" title="View emulation tiers"><strong>${cpu.chip}</strong></a><br><small style="color:rgba(0,255,65,0.5)">${detail}</small>`;
     }
 
     function gpuLabel(gpu) {
@@ -636,7 +637,12 @@
 
     function formLabel(f) {
       if (!f) return '—';
-      return f === 'clamshell' ? '🦀 Clamshell' : '🎮 Landscape';
+      const labels = {
+        'horizontal': '🎮 Landscape',
+        'clamshell (single screen)': '🦀 Clamshell',
+        'clamshell (dual screen)': '🦀 Dual-Screen'
+      };
+      return labels[f] || f;
     }
 
     function priceLabel(price) {
