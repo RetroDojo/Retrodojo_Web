@@ -2,7 +2,13 @@
 
 Personal web hub — static site + Azure Functions API, hosted on Azure Static Web Apps.
 
-**Live:** https://gray-bush-05176c40f.7.azurestaticapps.net
+## Environments
+| | Branch | URL |
+|---|---|---|
+| 🟢 Production | `main` | https://gray-bush-05176c40f.7.azurestaticapps.net |
+| 🔵 Dev | `dev` | https://zealous-grass-0f449b70f.7.azurestaticapps.net |
+
+> To look these up anytime: `az staticwebapp list --resource-group retrodojo-rg --query "[].{Name:name, URL:defaultHostname}" -o table`
 
 ## Structure
 
