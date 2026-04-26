@@ -2,7 +2,7 @@
 
 Personal web hub — static site + Azure Functions API, hosted on Azure Static Web Apps.
 
-**Live:** https://retrodojo-web.azurestaticapps.net
+**Live:** https://gray-bush-05176c40f.7.azurestaticapps.net
 
 ## Structure
 
