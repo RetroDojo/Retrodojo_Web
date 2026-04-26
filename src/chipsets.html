@@ -355,9 +355,9 @@
         <label for="filter-tier">Min Tier</label>
         <select id="filter-tier">
           <option value="all">Show All</option>
-          <option value="4_heavy_3d">GameCube / Wii / 3DS</option>
-          <option value="5_demanding">PS2 / Wii U</option>
-          <option value="6_extreme">Switch</option>
+          <option value="gc_wii_3ds">GameCube / Wii / 3DS</option>
+          <option value="ps2_wiiu">PS2 / Wii U</option>
+          <option value="switch">Switch</option>
         </select>
       </div>
     </div>
@@ -400,13 +400,13 @@
 
     /* Tier definitions — matches emulators.json emulation_tiers order */
     const TIER_ORDER = [
-      { id: '1_lightweight', label: 'Lightweight', systems: 'NES · SNES · GB/C/A · Genesis · Neo Geo' },
-      { id: '2_mid_3d', label: 'Mid 3D', systems: 'PS1 · N64 · Saturn' },
-      { id: '3_portable_plus', label: 'Portable+', systems: 'PSP · DS · Dreamcast' },
-      { id: '4_heavy_3d', label: 'Heavy 3D', systems: 'GameCube · Wii · 3DS' },
-      { id: '5_demanding', label: 'Demanding', systems: 'PS2 · Wii U' },
-      { id: '6_extreme', label: 'Extreme', systems: 'Switch' },
-      { id: '7_streaming', label: 'Streaming', systems: 'Moonlight · Steam Link' }
+      { id: '8bit_16bit', label: '8-bit & 16-bit', systems: 'NES · SNES · GB/C/A · Genesis · Neo Geo' },
+      { id: 'ps1_n64_saturn', label: 'PS1 / N64 / Saturn', systems: 'Gen 5 — First 3D era' },
+      { id: 'psp_ds_dreamcast', label: 'PSP / DS / Dreamcast', systems: 'Portable & late ’90s 3D' },
+      { id: 'gc_wii_3ds', label: 'GameCube / Wii / 3DS', systems: 'Gen 6–7 — Dolphin & Citra' },
+      { id: 'ps2_wiiu', label: 'PS2 / Wii U', systems: 'Gen 6–8 — Demanding' },
+      { id: 'switch', label: 'Nintendo Switch', systems: 'Gen 8 — Adreno Vulkan critical' },
+      { id: 'streaming', label: 'Game Streaming', systems: 'GameNative · GeForce NOW · Steam · Xbox Cloud' }
     ];
 
     const SPEED_LABELS = {
@@ -519,13 +519,14 @@
             const perf = c.emulation_performance;
             const tierData = perf.tiers.find(t => t.tier === tier.id);
 
-            if (tier.id === '7_streaming') {
+            if (tier.id === 'streaming') {
               /* Streaming row uses streaming_capability instead of tiers */
               const stream = perf.streaming_capability;
               if (stream) {
-                const speed = stream.moonlight || 'not_capable';
+                const speed = stream.overall || 'not_capable';
+                const svcList = stream.services ? Object.keys(stream.services).filter(k => stream.services[k] !== 'not_capable').join(', ') : '';
                 td.className = `cell-${speed}`;
-                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS[speed] || '—'}</span><span class="cell-emulator">moonlight</span><span class="cell-note">${stream.notes || ''}</span>`;
+                td.innerHTML = `<span class="cell-rating">${SPEED_LABELS[speed] || '—'}</span><span class="cell-emulator">${svcList || 'none'}</span><span class="cell-note">${stream.notes || ''}</span>`;
               } else {
                 td.className = 'cell-empty';
                 td.textContent = '—';

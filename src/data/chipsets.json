@@ -58,7 +58,7 @@
         "summary": "SNES FX and PS1 at 60 FPS. N64 and Dreamcast mostly playable. PSP somewhat playable. Saturn barely playable.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 99,
@@ -68,7 +68,7 @@
             "notes": "All 8/16-bit systems including SNES enhancement chips at full speed."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 80,
@@ -78,7 +78,7 @@
             "notes": "PS1 at 60 FPS. N64 mostly playable. Saturn barely playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 55,
@@ -95,7 +95,14 @@
           "driver_update_path": "Vendor kernel only. No Vulkan driver exists for Mali-G31."
         },
         "streaming_capability": {
-          "moonlight": "not_capable",
+          "overall": "not_capable",
+          "services": {
+            "gamenative": "not_capable",
+            "geforce_now": "not_capable",
+            "steam_remote_play": "not_capable",
+            "xbox_cloud": "not_capable",
+            "moonlight": "not_capable"
+          },
           "notes": "H.265 decode present but limited network stack and low RAM make streaming impractical."
         }
       }
@@ -144,7 +151,7 @@
         "summary": "N64, Dreamcast, PSP all full speed. GameCube and Wii almost all full speed. PS2 playable. Switch mostly unplayable.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -154,7 +161,7 @@
             "notes": "All retro 2D systems trivial."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -164,7 +171,7 @@
             "notes": "PS1 and N64 full speed with 2x upscale headroom. Saturn playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -174,7 +181,7 @@
             "notes": "PSP, Dreamcast, DS all full speed."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 80,
@@ -184,7 +191,7 @@
             "notes": "GameCube and Wii almost all full speed. Mali Vulkan driver limits some titles."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 60,
@@ -194,7 +201,7 @@
             "notes": "PS2 playable with per-game tuning. Mali G57 Vulkan is the bottleneck."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "not_capable",
             "upscale_headroom": "n/a",
             "compatibility_pct": 5,
@@ -211,7 +218,14 @@
           "driver_update_path": "ARM Mali blob driver via Android OTA. No custom driver path (unlike Adreno Turnip)."
         },
         "streaming_capability": {
-          "moonlight": "playable",
+          "overall": "playable",
+          "services": {
+            "gamenative": "playable",
+            "geforce_now": "playable",
+            "steam_remote_play": "playable",
+            "xbox_cloud": "playable",
+            "moonlight": "playable"
+          },
           "notes": "H.265 HW decode. Wi-Fi 5 is typical on T820 devices."
         }
       }
@@ -260,7 +274,7 @@
         "summary": "N64, Dreamcast, PSP full speed. GameCube and Wii mostly playable. Similar to T820 but slightly better CPU.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -270,7 +284,7 @@
             "notes": "Trivial for all 2D retro systems."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -280,7 +294,7 @@
             "notes": "PS1, N64 full speed. Saturn playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -290,7 +304,7 @@
             "notes": "PSP, Dreamcast, DS all full speed."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 75,
@@ -300,7 +314,7 @@
             "notes": "GameCube and Wii mostly playable. Mali GPU is the limiting factor."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 45,
@@ -310,7 +324,7 @@
             "notes": "PS2 partially playable with heavy per-game tuning."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "not_capable",
             "upscale_headroom": "n/a",
             "compatibility_pct": 5,
@@ -327,7 +341,14 @@
           "driver_update_path": "ARM Mali blob driver via Android OTA. No Turnip equivalent."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "Wi-Fi 6, good H.265/AV1 decode. Solid streaming platform."
         }
       }
@@ -376,7 +397,7 @@
         "summary": "GameCube, Wii, PS2 playable. Some Switch barely playable. Significant step up from Dimensity 900.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -386,7 +407,7 @@
             "notes": "Trivial for all 2D retro systems."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 98,
@@ -396,7 +417,7 @@
             "notes": "PS1 and N64 full speed with upscale headroom. Saturn playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 98,
@@ -406,7 +427,7 @@
             "notes": "PSP, Dreamcast, DS all full speed."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 85,
@@ -416,7 +437,7 @@
             "notes": "GameCube and Wii playable. Mali G77 MC9 gives meaningful GPU boost over G68."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 65,
@@ -426,7 +447,7 @@
             "notes": "PS2 playable with tuning. RetroCatalog rates PS2 at 86/100."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 15,
@@ -443,7 +464,14 @@
           "driver_update_path": "ARM Mali blob driver via Android OTA."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "Wi-Fi 6, good H.265/AV1 decode. Solid streaming platform."
         }
       }
@@ -492,7 +520,7 @@
         "summary": "GameCube, Wii, PS2 playable. Some Switch playable. Adreno 650 gives meaningful Vulkan advantage over Mali.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -502,7 +530,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -512,7 +540,7 @@
             "notes": "PS1 with 3x+ upscale. N64 full speed. Saturn good."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -522,7 +550,7 @@
             "notes": "PSP at 3x+. Dreamcast and DS full speed."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "playable",
             "upscale_headroom": "2x",
             "compatibility_pct": 90,
@@ -532,7 +560,7 @@
             "notes": "GameCube at 90/100. Wii mostly full speed. 3DS at 88/100. Adreno Vulkan is markedly better than Mali here."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 75,
@@ -542,7 +570,7 @@
             "notes": "PS2 at 86/100 per RetroCatalog. Per-game tuning needed for harder titles."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 35,
@@ -559,7 +587,14 @@
           "driver_update_path": "Qualcomm Adreno blob + Turnip (Mesa) open-source Vulkan driver available. Custom driver packs significantly improve emulation."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "Excellent H.265/AV1 HW decode. Wi-Fi 6 on most SD865 devices. Great streaming platform."
         }
       }
@@ -608,7 +643,7 @@
         "summary": "GameCube, Wii, 3DS, PS2, Wii U all fully playable. Most Switch fully playable.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -618,7 +653,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -628,7 +663,7 @@
             "notes": "PS1 at 4x+. N64 and Saturn full speed."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -638,7 +673,7 @@
             "notes": "PSP at 4x+. Everything in this tier trivial."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -648,7 +683,7 @@
             "notes": "GameCube, Wii, 3DS all fully playable with upscale headroom."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 90,
@@ -658,7 +693,7 @@
             "notes": "PS2 and Wii U all fully playable. Adreno 740 Vulkan is excellent."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 80,
@@ -675,7 +710,14 @@
           "driver_update_path": "Qualcomm Adreno blob + Turnip (Mesa) Vulkan. Best-in-class Android emulation driver ecosystem."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "Excellent streaming. Wi-Fi 7 on RP6. AV1 HW decode."
         }
       }
@@ -724,7 +766,7 @@
         "summary": "Budget Qualcomm gaming chip. N64, PSP, Dreamcast playable. Limited GameCube capability.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 99,
@@ -734,7 +776,7 @@
             "notes": "All 2D retro systems at full speed."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 90,
@@ -744,7 +786,7 @@
             "notes": "PS1 and N64 full speed. Saturn mostly playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 88,
@@ -754,7 +796,7 @@
             "notes": "PSP, Dreamcast, DS playable."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 35,
@@ -771,7 +813,14 @@
           "driver_update_path": "Qualcomm Adreno driver via Android OTA. Limited public documentation on driver update cadence."
         },
         "streaming_capability": {
-          "moonlight": "playable",
+          "overall": "playable",
+          "services": {
+            "gamenative": "playable",
+            "geforce_now": "playable",
+            "steam_remote_play": "playable",
+            "xbox_cloud": "playable",
+            "moonlight": "playable"
+          },
           "notes": "H.265 HW decode. Wi-Fi 5 on RP Classic is the bottleneck."
         }
       }
@@ -821,7 +870,7 @@
         "summary": "SD8 Gen 3 class. GameCube, Wii, 3DS, PS2, Wii U all fully playable. Most Switch fully playable. Top-tier Android emulation.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -831,7 +880,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -841,7 +890,7 @@
             "notes": "PS1 at 4x+. Everything full speed."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -851,7 +900,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 98,
@@ -861,7 +910,7 @@
             "notes": "GameCube, Wii, 3DS all fully playable with upscale headroom. Adreno 750 is excellent."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 92,
@@ -871,7 +920,7 @@
             "notes": "PS2 and Wii U fully playable. Adreno 750 Vulkan is top-tier."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 85,
@@ -888,7 +937,14 @@
           "driver_update_path": "Qualcomm Adreno blob + Turnip (Mesa) Vulkan. Latest generation, best Android emulation driver support."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "Wi-Fi 7, AV1 HW decode. Best streaming experience in the Android handheld space."
         }
       }
@@ -937,7 +993,7 @@
         "summary": "N64, PSP, Dreamcast playable but not all at full speed. Budget 2D/light-3D chip.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 99,
@@ -947,7 +1003,7 @@
             "notes": "All 8/16-bit systems run at full speed."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 75,
@@ -957,7 +1013,7 @@
             "notes": "PS1 mostly full speed. N64 and Saturn partial."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 50,
@@ -974,7 +1030,14 @@
           "driver_update_path": "Vendor kernel only, no updates expected."
         },
         "streaming_capability": {
-          "moonlight": "not_capable",
+          "overall": "not_capable",
+          "services": {
+            "gamenative": "not_capable",
+            "geforce_now": "not_capable",
+            "steam_remote_play": "not_capable",
+            "xbox_cloud": "not_capable",
+            "moonlight": "not_capable"
+          },
           "notes": "Too weak for reliable game streaming decode."
         }
       }
@@ -1023,7 +1086,7 @@
         "summary": "N64, PSP, and Dreamcast mostly playable but not all at full speed. Slightly above H700.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 99,
@@ -1033,7 +1096,7 @@
             "notes": "All 8/16-bit systems run at full speed."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 82,
@@ -1043,7 +1106,7 @@
             "notes": "PS1 full speed. N64 mostly playable. Saturn better than H700 but still inconsistent."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "playable",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 65,
@@ -1060,7 +1123,14 @@
           "driver_update_path": "Panfrost open-source Mesa driver provides basic Vulkan. Linux firmware updates via community."
         },
         "streaming_capability": {
-          "moonlight": "slow",
+          "overall": "slow",
+          "services": {
+            "gamenative": "slow",
+            "geforce_now": "slow",
+            "steam_remote_play": "slow",
+            "xbox_cloud": "slow",
+            "moonlight": "slow"
+          },
           "notes": "H.265 decode works. Wi-Fi quality varies by device. Usable for casual streaming."
         }
       }
@@ -1109,7 +1179,7 @@
         "summary": "GameCube, Wii, 3DS, PS2, Wii U, Switch almost all full speed. PS3 mostly playable. Desktop-class emulation on a handheld.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -1119,7 +1189,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -1129,7 +1199,7 @@
             "notes": "Everything full speed with massive upscale headroom."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -1139,7 +1209,7 @@
             "notes": "Trivial."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "full_speed",
             "upscale_headroom": "3x+",
             "compatibility_pct": 99,
@@ -1149,7 +1219,7 @@
             "notes": "GameCube, Wii, 3DS all at full speed with high upscale. Desktop Dolphin/Citra runs natively."
           },
           {
-            "tier": "5_demanding",
+            "tier": "ps2_wiiu",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 95,
@@ -1159,7 +1229,7 @@
             "notes": "PS2 and Wii U at full speed. Desktop PCSX2 and Cemu run natively. RetroCatalog rates Switch at 95/100, PS3 at 85/100."
           },
           {
-            "tier": "6_extreme",
+            "tier": "switch",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 90,
@@ -1176,7 +1246,14 @@
           "driver_update_path": "AMD Radeon driver via Windows Update and amd.com. Full desktop Vulkan 1.3 stack. Best driver ecosystem for emulation."
         },
         "streaming_capability": {
-          "moonlight": "full_speed",
+          "overall": "full_speed",
+          "services": {
+            "gamenative": "full_speed",
+            "geforce_now": "full_speed",
+            "steam_remote_play": "full_speed",
+            "xbox_cloud": "full_speed",
+            "moonlight": "full_speed"
+          },
           "notes": "But streaming is largely unnecessary - this SoC can run most games natively or emulate them locally."
         }
       }
@@ -1225,7 +1302,7 @@
         "summary": "N64, Dreamcast, PSP playable. Saturn mostly playable. GameCube and 3DS some playable. Wii mostly unplayable.",
         "tiers": [
           {
-            "tier": "1_lightweight",
+            "tier": "8bit_16bit",
             "speed": "full_speed",
             "upscale_headroom": "2x",
             "compatibility_pct": 99,
@@ -1235,7 +1312,7 @@
             "notes": "All retro 2D systems at full speed with headroom for 2x upscale."
           },
           {
-            "tier": "2_mid_3d",
+            "tier": "ps1_n64_saturn",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 88,
@@ -1245,7 +1322,7 @@
             "notes": "PS1 full speed. N64 full speed. Saturn mostly playable."
           },
           {
-            "tier": "3_portable_plus",
+            "tier": "psp_ds_dreamcast",
             "speed": "full_speed",
             "upscale_headroom": "1x_only",
             "compatibility_pct": 85,
@@ -1255,7 +1332,7 @@
             "notes": "PSP, Dreamcast, DS all playable at full speed."
           },
           {
-            "tier": "4_heavy_3d",
+            "tier": "gc_wii_3ds",
             "speed": "slow",
             "upscale_headroom": "sub_native",
             "compatibility_pct": 30,
@@ -1272,7 +1349,14 @@
           "driver_update_path": "Qualcomm Adreno driver via Android OTA. No Turnip/custom driver support."
         },
         "streaming_capability": {
-          "moonlight": "playable",
+          "overall": "playable",
+          "services": {
+            "gamenative": "playable",
+            "geforce_now": "playable",
+            "steam_remote_play": "playable",
+            "xbox_cloud": "playable",
+            "moonlight": "playable"
+          },
           "notes": "H.265 HW decode. Adreno handles stream decode well. Wi-Fi 5 is the bottleneck."
         }
       }
