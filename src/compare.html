@@ -10,7 +10,7 @@
     .compare-container {
       max-width: 1200px;
       width: 100%;
-      padding: 2rem;
+      padding: clamp(0.8rem, 2vw, 2rem);
     }
 
     /* ── Controls ── */
@@ -58,12 +58,14 @@
       overflow-x: auto;
       border: 1px solid var(--border);
       border-radius: 3px;
+      -webkit-overflow-scrolling: touch;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.82rem;
+      font-size: clamp(0.72rem, 0.2vw + 0.7rem, 0.82rem);
+      table-layout: auto;
     }
 
     thead th {
@@ -71,7 +73,7 @@
       color: var(--dim);
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      padding: 0.7rem 1rem;
+      padding: clamp(0.5rem, 0.5vw + 0.4rem, 0.7rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
       text-align: left;
       border-bottom: 1px solid var(--border);
       white-space: nowrap;
@@ -93,7 +95,7 @@
     tbody tr.hidden { display: none; }
 
     td {
-      padding: 0.65rem 1rem;
+      padding: clamp(0.5rem, 0.45vw + 0.35rem, 0.65rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
       vertical-align: top;
       color: #ccc;
     }
@@ -179,6 +181,77 @@
     }
 
     .back-link:hover { color: var(--green); }
+
+    @media (max-width: 900px) {
+      .controls {
+        gap: 0.7rem;
+      }
+
+      .filter-group {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .controls select,
+      .controls input[type="text"] {
+        width: min(66vw, 300px);
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      tbody tr {
+        display: block;
+        border-bottom: 1px solid var(--border);
+        padding: 0.35rem 0;
+      }
+
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.8rem;
+        width: 100%;
+        white-space: normal;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--dim);
+        font-size: 0.66rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        flex: 0 0 7.8rem;
+      }
+
+      td.model-cell {
+        white-space: normal;
+      }
+
+      .note-cell {
+        max-width: none;
+      }
+
+      .empty-state {
+        display: table-cell;
+      }
+
+      .empty-state::before {
+        content: none;
+      }
+    }
 
     /* ── Override body centering for wide table ── */
     body { justify-content: flex-start; }
@@ -424,24 +497,24 @@
 
       tbody.innerHTML = sorted.map(d => `
         <tr data-category="${d.category}" data-brand="${d.brand}" data-tier="${d.tier}">
-          <td class="brand-cell">${d.brand}</td>
-          <td class="model-cell">
+          <td class="brand-cell" data-label="Brand">${d.brand}</td>
+          <td class="model-cell" data-label="Model">
             <a href="${d.source_url}" target="_blank" rel="noopener noreferrer"
                style="color:inherit;text-decoration:none;"
                title="Official vendor page">${d.model}</a>
             ${d.verified ? '' : '<span class="unverified" title="Specs sourced from vendor page only — not yet hands-on tested">⚠</span>'}
           </td>
-          <td>${categoryBadge(d.category)}</td>
-          <td><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
-          <td>${priceLabel(d.price_usd)}</td>
-          <td>${cpuLabel(d.cpu)}</td>
-          <td>${gpuLabel(d.gpu)}</td>
-          <td>${ramLabel(d.ram_gb)}</td>
-          <td>${d.os || '—'}</td>
-          <td>${screenLabel(d.screen)}</td>
-          <td>${d.battery_mah ? d.battery_mah.toLocaleString() + ' mAh' : '—'}</td>
-          <td>${formLabel(d.form_factor)}</td>
-          <td class="note-cell">${d.notes || ''}</td>
+          <td data-label="Category">${categoryBadge(d.category)}</td>
+          <td data-label="Tier"><span class="badge badge-${d.tier}">${TIER_LABEL[d.tier]}</span></td>
+          <td data-label="Price">${priceLabel(d.price_usd)}</td>
+          <td data-label="CPU / SoC">${cpuLabel(d.cpu)}</td>
+          <td data-label="GPU">${gpuLabel(d.gpu)}</td>
+          <td data-label="RAM">${ramLabel(d.ram_gb)}</td>
+          <td data-label="OS">${d.os || '—'}</td>
+          <td data-label="Screen">${screenLabel(d.screen)}</td>
+          <td data-label="Battery">${d.battery_mah ? d.battery_mah.toLocaleString() + ' mAh' : '—'}</td>
+          <td data-label="Form">${formLabel(d.form_factor)}</td>
+          <td class="note-cell" data-label="Notes">${d.notes || ''}</td>
         </tr>
       `).join('');
     }
