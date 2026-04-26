@@ -10,7 +10,8 @@
       "MANGMI": "https://mangmi.com",
       "TrimUI": "https://trimui.com",
       "Konkr": "https://konkr.com",
-      "Miniloong": "https://www.miniloong.com"
+      "Miniloong": "https://www.miniloong.com",
+      "Litnxt": "https://www.litnxt.com"
     },
     "last_updated": "2026-04-26",
     "related_datasets": {
@@ -19,7 +20,7 @@
     "pending_sources": [
       "TrimUI — site does not expose product specs via web, needs manual entry",
       "Konkr — site not accessible, needs correct URL or manual entry",
-      "Miniloong — site not accessible, needs correct URL or manual entry"
+      "Miniloong — currently sourced from Litnxt reseller page; still need official manufacturer spec page"
     ]
   },
   "devices": [
@@ -703,29 +704,43 @@
       }
     },
     {
-      "id": "miniloong-placeholder",
+      "id": "miniloong-pocket-1",
       "brand": "Miniloong",
-      "model": "TBD",
+      "model": "Pocket 1",
+      "chipset_id": "rockchip-rk3566",
       "category": "retro-handheld",
-      "year": null,
-      "price_usd": null,
-      "tier": "budget",
+      "year": 2026,
+      "price_usd": 99.99,
+      "tier": "mid",
       "form_factor": "landscape",
-      "cpu": { "chip": "—", "architecture": "—", "cores": "—" },
-      "gpu": { "chip": "—", "cores": null },
-      "ram_gb": null,
-      "storage_gb": null,
-      "storage_type": null,
-      "os": null,
-      "screen": { "size_inch": null, "resolution": "—", "type": "—" },
-      "battery_mah": null,
-      "wifi": null,
-      "bluetooth": null,
-      "source_url": "https://www.miniloong.com",
+      "cpu": {
+        "chip": "Rockchip RK3566",
+        "architecture": "ARM Cortex-A55",
+        "cores": "4x Cortex-A55 @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Mali-G52",
+        "cores": "@800MHz"
+      },
+      "ram_gb": 1,
+      "storage_gb": 8,
+      "storage_type": "eMMC",
+      "os": "Linux (LOONGOS + HELO)",
+      "screen": { "size_inch": 4.0, "resolution": "960x720", "type": "IPS 4:3" },
+      "battery_mah": 4000,
+      "wifi": "Wi-Fi",
+      "bluetooth": "4.2",
+      "source_url": "https://www.litnxt.com/products/litnxt-miniloong-pocket-1-4-inch-ips-4-3-display-open-source-retro-handheld-game-console",
       "verified": false,
-      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names.",
+      "notes": "Specs sourced from Litnxt reseller listing because Miniloong official site was inaccessible. Please replace with official manufacturer source when available.",
       "capabilities": {
-        "evidence": "Waiting on official source material before adding device-level capabilities."
+        "controls": "RGB Hall effect joystick (up to 67 million color effects), modular D-pad modules, transparent crystal ABXY buttons.",
+        "software": "LOONGOS + HELO Linux stack with OTA updates.",
+        "design": "Modular custom design with replaceable front panels.",
+        "dimensions": "16.5 x 7.9 x 1.78 cm",
+        "weight": "258g",
+        "bundle": "USB cable and optional SD-card bundles are sold through the listing.",
+        "evidence": "Device-level details come from the Litnxt product specification section, not from an official Miniloong manufacturer page."
       }
     }
   ]
