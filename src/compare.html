@@ -392,6 +392,12 @@
         </select>
       </div>
       <div class="filter-group">
+        <label for="filter-aspect">Aspect</label>
+        <select id="filter-aspect">
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <label for="filter-search">Search</label>
         <input type="text" id="filter-search" placeholder="e.g. RK3566, Adreno, 8GB…" style="width:200px;">
       </div>
@@ -420,13 +426,14 @@
             <th data-col="ram_gb">RAM</th>
             <th data-col="os">OS</th>
             <th data-col="screen">Screen</th>
+            <th data-col="screen_aspect">Aspect</th>
             <th data-col="battery_mah">Battery</th>
             <th data-col="form_factor">Form</th>
             <th>Notes</th>
           </tr>
         </thead>
         <tbody id="device-tbody">
-          <tr><td colspan="13" class="empty-state"><span class="blink">▋</span> Loading devices…</td></tr>
+          <tr><td colspan="14" class="empty-state"><span class="blink">▋</span> Loading devices…</td></tr>
         </tbody>
       </table>
     </div>
@@ -439,7 +446,7 @@
   </div>
 
   <script>
-    const PAGE_REVISION = 'v0.7.0-beta.1';
+    const PAGE_REVISION = 'v0.7.0-beta.2';
     const TIERS = { budget: 0, mid: 1, flagship: 2 };
     const TIER_LABEL = { budget: 'budget', mid: 'mid', flagship: 'flagship' };
     const CATEGORY_LABEL = {
@@ -468,10 +475,66 @@
     }
 
     function normalizeDevice(device) {
+      const screen = device.screen || {};
+      const aspectRatio = screen.aspect_ratio || inferAspectRatio(screen.resolution);
       return {
         ...device,
-        category: device.category || inferCategory(device)
+        category: device.category || inferCategory(device),
+        screen: {
+          ...screen,
+          aspect_ratio: aspectRatio
+        }
       };
+    }
+
+    function gcd(a, b) {
+      let x = Math.abs(a);
+      let y = Math.abs(b);
+      while (y) {
+        [x, y] = [y, x % y];
+      }
+      return x || 1;
+    }
+
+    function inferAspectRatio(resolution) {
+      if (!resolution || resolution === '—') return '—';
+      const match = String(resolution).match(/(\d+)\s*[xX]\s*(\d+)/);
+      if (!match) return '—';
+
+      const width = Number(match[1]);
+      const height = Number(match[2]);
+      if (!width || !height) return '—';
+
+      const longSide = Math.max(width, height);
+      const shortSide = Math.min(width, height);
+      const ratio = longSide / shortSide;
+
+      const canonical = [
+        { label: '1:1', value: 1 },
+        { label: '5:4', value: 1.25 },
+        { label: '4:3', value: 4 / 3 },
+        { label: '3:2', value: 3 / 2 },
+        { label: '5:3', value: 5 / 3 },
+        { label: '16:10', value: 16 / 10 },
+        { label: '16:9', value: 16 / 9 },
+        { label: '18:9', value: 18 / 9 },
+        { label: '21:9', value: 21 / 9 }
+      ];
+
+      let best = null;
+      let bestDelta = Infinity;
+      canonical.forEach(candidate => {
+        const delta = Math.abs(ratio - candidate.value);
+        if (delta < bestDelta) {
+          bestDelta = delta;
+          best = candidate.label;
+        }
+      });
+
+      if (best && bestDelta <= 0.03) return best;
+
+      const divisor = gcd(longSide, shortSide);
+      return `${longSide / divisor}:${shortSide / divisor}`;
     }
 
     function setSelectOptions(selectId, values, labelMap = {}) {
@@ -495,10 +558,20 @@
         .sort((a, b) => (CATEGORY_LABEL[a] || a).localeCompare(CATEGORY_LABEL[b] || b));
       const brands = [...new Set(devices.map(device => device.brand).filter(Boolean))].sort();
       const operatingSystems = [...new Set(devices.map(device => device.os).filter(Boolean))].sort();
+      const aspects = [...new Set(devices.map(device => aspectLabel(device.screen)).filter(v => v && v !== '—'))]
+        .sort((a, b) => {
+          const parseAspect = value => {
+            const m = String(value).match(/^(\d+(?:\.\d+)?):(\d+(?:\.\d+)?)$/);
+            if (!m) return Number.POSITIVE_INFINITY;
+            return Number(m[1]) / Number(m[2]);
+          };
+          return parseAspect(a) - parseAspect(b);
+        });
 
       setSelectOptions('filter-category', categories, CATEGORY_LABEL);
       setSelectOptions('filter-brand', brands);
       setSelectOptions('filter-os', operatingSystems);
+      setSelectOptions('filter-aspect', aspects);
     }
 
     function ramLabel(gb) {
@@ -528,6 +601,11 @@
       return `${size}${resolution}<br><small style="color:rgba(0,255,65,0.5)">${type}</small>`;
     }
 
+    function aspectLabel(screen) {
+      if (!screen) return '—';
+      return screen.aspect_ratio || inferAspectRatio(screen.resolution);
+    }
+
     function formLabel(f) {
       if (!f) return '—';
       return f === 'clamshell' ? '🦀 Clamshell' : '🎮 Landscape';
@@ -547,6 +625,7 @@
       const brand  = document.getElementById('filter-brand').value;
       const tier   = document.getElementById('filter-tier').value;
       const os     = document.getElementById('filter-os').value;
+      const aspect = document.getElementById('filter-aspect').value;
       const search = document.getElementById('filter-search').value.toLowerCase();
 
       if (category !== 'all' && d.category !== category) return false;
@@ -556,6 +635,7 @@
         const osMatch = d.os.toLowerCase().includes(os.toLowerCase());
         if (!osMatch) return false;
       }
+      if (aspect !== 'all' && aspectLabel(d.screen) !== aspect) return false;
       if (search) {
         const haystack = JSON.stringify(d).toLowerCase();
         if (!haystack.includes(search)) return false;
@@ -568,6 +648,10 @@
         let av = a[sortCol], bv = b[sortCol];
         if (sortCol === 'tier') { av = TIERS[av] ?? 0; bv = TIERS[bv] ?? 0; }
         if (sortCol === 'ram_gb') { av = parseFloat(av); bv = parseFloat(bv); }
+        if (sortCol === 'screen_aspect') {
+          av = aspectLabel(a.screen);
+          bv = aspectLabel(b.screen);
+        }
         if (av == null && bv == null) return 0;
         if (av == null) return 1;
         if (bv == null) return -1;
@@ -590,7 +674,7 @@
       });
 
       if (sorted.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="13" class="empty-state">▋ No devices match filters.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="14" class="empty-state">▋ No devices match filters.</td></tr>';
         return;
       }
 
@@ -611,6 +695,7 @@
           <td data-label="RAM">${ramLabel(d.ram_gb)}</td>
           <td data-label="OS">${d.os || '—'}</td>
           <td data-label="Screen">${screenLabel(d.screen)}</td>
+          <td data-label="Aspect">${aspectLabel(d.screen)}</td>
           <td data-label="Battery">${d.battery_mah ? d.battery_mah.toLocaleString() + ' mAh' : '—'}</td>
           <td data-label="Form">${formLabel(d.form_factor)}</td>
           <td class="note-cell" data-label="Notes">${d.notes || ''}</td>
@@ -632,14 +717,14 @@
     });
 
     // Filters
-    ['filter-category', 'filter-brand', 'filter-tier', 'filter-os'].forEach(id => {
+    ['filter-category', 'filter-brand', 'filter-tier', 'filter-os', 'filter-aspect'].forEach(id => {
       document.getElementById(id).addEventListener('change', render);
     });
     document.getElementById('filter-search').addEventListener('input', render);
 
     loadDevices().catch(err => {
       document.getElementById('device-tbody').innerHTML =
-        `<tr><td colspan="13" class="empty-state"><span class="warn">⚠ Failed to load device data: ${err.message}</span></td></tr>`;
+        `<tr><td colspan="14" class="empty-state"><span class="warn">⚠ Failed to load device data: ${err.message}</span></td></tr>`;
     });
   </script>
 </body>
