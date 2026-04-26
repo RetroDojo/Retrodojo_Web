@@ -195,6 +195,27 @@
 
     .back-link:hover { color: var(--green); }
 
+    .meta-line {
+      margin-top: 1rem;
+      font-size: 0.72rem;
+      color: rgba(0,255,65,0.3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .rev-badge {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid #00d1ff;
+      color: #00d1ff;
+      border-radius: 2px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.66rem;
+    }
+
     @media (min-width: 901px) {
       #device-table th:nth-child(1),
       #device-table td:nth-child(1) {
@@ -376,13 +397,15 @@
       </table>
     </div>
 
-    <p style="margin-top:1rem; font-size:0.72rem; color:rgba(0,255,65,0.3);">
-      Data sourced from official vendor pages. Benchmark results added after hands-on testing.
-      Last updated: <span id="last-updated">—</span>
+    <p class="meta-line">
+      <span>Data sourced from official vendor pages. Benchmark results added after hands-on testing.</span>
+      <span class="rev-badge" id="page-revision">v0.0.0-beta.0</span>
+      <span>Last updated: <span id="last-updated">—</span></span>
     </p>
   </div>
 
   <script>
+    const PAGE_REVISION = 'v0.7.0-beta.1';
     const TIERS = { budget: 0, mid: 1, flagship: 2 };
     const TIER_LABEL = { budget: 'budget', mid: 'mid', flagship: 'flagship' };
     const CATEGORY_LABEL = {
@@ -399,6 +422,7 @@
       const json = await res.json();
       allDevices = json.devices.map(normalizeDevice);
       populateFilters(allDevices);
+      document.getElementById('page-revision').textContent = PAGE_REVISION;
       document.getElementById('last-updated').textContent = json._meta.last_updated;
       render();
     }
