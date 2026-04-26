@@ -62,7 +62,17 @@ cd api && func start         # runs Functions at http://localhost:7071
 ```
 Open `src/index.html` directly in browser — it will call the local API.
 
+## Standards Reference
+Brand, content, and production standards live in the private repo:
+**`RetroDojo/RetroDojo`** (private) — https://github.com/RetroDojo/RetroDojo
+
+Key files to reference when building web features:
+- `00_Canonical/Brand & Design System.md` — colors, fonts, visual identity
+- `02_Content_Format/Content Pillars.md` — content categories for the site
+- `04_Reference_Data/` — devices, games, emulators, benchmarks (potential web pages)
+
 ## Key Conventions
 - `src/` is the app root (`--app-location "src"`) — no build step, files served as-is
 - `api/` uses Azure Functions v4 Node.js runtime
 - `CHANGELOG.md` at repo root tracks all significant changes
+- When adding new pages or features, check `RetroDojo/RetroDojo` standards first
