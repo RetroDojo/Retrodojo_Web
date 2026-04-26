@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
-  --green:    #00ff41;
-  --dark:     #0a0a0a;
-  --card-bg:  #111;
-  --border:   rgba(0, 255, 65, 0.2);
-  --dim:      rgba(0, 255, 65, 0.5);
+  --accent:   #FFD700;
+  --green:    #FFD700;          /* legacy alias — now gold */
+  --dark:     #1E0F00;
+  --card-bg:  #2A1A08;
+  --border:   rgba(255, 215, 0, 0.15);
+  --dim:      rgba(255, 215, 0, 0.55);
+  --text:     #F5E6C8;
+  --red:      #B11217;
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-body:  'Courier New', 'Lucida Console', monospace;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background: var(--dark);
-  color: var(--green);
-  font-family: 'Courier New', monospace;
+  color: var(--accent);
+  font-family: var(--font-body);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -30,14 +37,17 @@ header {
 }
 
 .title {
-  font-size: 2.8rem;
-  text-shadow: 0 0 24px var(--green), 0 0 48px rgba(0,255,65,0.3);
+  font-family: var(--font-pixel);
+  font-size: 2.4rem;
+  text-shadow: 0 0 24px var(--accent), 0 0 48px rgba(255,215,0,0.3);
   letter-spacing: 0.08em;
+  color: var(--red);
 }
 
 .subtitle {
   margin-top: 0.6rem;
-  font-size: 0.85rem;
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
   letter-spacing: 0.3em;
   color: var(--dim);
   animation: blink 1.8s step-end infinite;
@@ -52,14 +62,15 @@ header {
 }
 
 .card h2, .card h3 {
-  font-size: 1rem;
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
   margin-bottom: 0.7rem;
   color: var(--dim);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.card p { line-height: 1.7; }
+.card p { line-height: 1.7; color: var(--text); }
 
 .success { color: var(--green); }
 .warn    { color: #ffcc00; }
