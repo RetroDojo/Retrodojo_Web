@@ -64,7 +64,7 @@ Open `src/index.html` directly in browser — it will call the local API.
 
 ## Standards Reference
 Brand, content, and production standards live in the private repo:
-**`RetroDojo/RetroDojo`** (private) — https://github.com/RetroDojo/RetroDojo
+**`RetroDojo/RetroDojo-Standards`** (private) — https://github.com/RetroDojo/RetroDojo-Standards
 
 Key files to reference when building web features:
 - `00_Canonical/Brand & Design System.md` — colors, fonts, visual identity
@@ -75,4 +75,4 @@ Key files to reference when building web features:
 - `src/` is the app root (`--app-location "src"`) — no build step, files served as-is
 - `api/` uses Azure Functions v4 Node.js runtime
 - `CHANGELOG.md` at repo root tracks all significant changes
-- When adding new pages or features, check `RetroDojo/RetroDojo` standards first
+- When adding new pages or features, check `RetroDojo/RetroDojo-Standards` standards first
