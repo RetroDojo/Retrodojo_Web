@@ -4,9 +4,20 @@
     "sources": {
       "Anbernic": "https://anbernic.com",
       "Retroid": "https://www.goretroid.com",
-      "Miyoo": "https://lomiyoo.com"
+      "Miyoo": "https://lomiyoo.com",
+      "AYN": "https://www.ayntec.com",
+      "AYANEO": "https://www.ayaneo.com",
+      "MANGMI": "https://mangmi.com",
+      "TrimUI": "https://trimui.com",
+      "Konkr": "https://konkr.com",
+      "Miniloong": "https://www.miniloong.com"
     },
-    "last_updated": "2026-04-26"
+    "last_updated": "2026-04-26",
+    "pending_sources": [
+      "TrimUI — site does not expose product specs via web, needs manual entry",
+      "Konkr — site not accessible, needs correct URL or manual entry",
+      "Miniloong — site not accessible, needs correct URL or manual entry"
+    ]
   },
   "devices": [
     {
@@ -331,6 +342,217 @@
       "source_url": "https://lomiyoo.com/products/miyoo-flip-v2",
       "verified": false,
       "notes": "Significantly more powerful than Mini Plus. HDMI output, OTG support, dual joysticks. RK3566 confirmed on official site."
+    },
+    {
+      "id": "ayn-odin3-base",
+      "brand": "AYN",
+      "model": "Odin 3 (Base)",
+      "year": 2025,
+      "price_usd": 339.00,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Qualcomm Dragonwing Q8 (Snapdragon 8 Gen 3)",
+        "architecture": "ARM Cortex-X4 / A720 / A520",
+        "cores": "1x Cortex-X4 @ 3.3GHz + 5x Cortex-A720 + 2x Cortex-A520"
+      },
+      "gpu": {
+        "chip": "Adreno 750",
+        "cores": null
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 15",
+      "screen": { "size_inch": 6.0, "resolution": "1080x1920", "type": "AMOLED 120Hz" },
+      "battery_mah": 8000,
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.4",
+      "source_url": "https://www.ayntec.com/products/ayn-odin-3",
+      "verified": false,
+      "notes": "Hall sticks, active cooling, 390g. Base 8+128GB $339. Also: Pro 12+256GB $439, Max 16+512GB $489, Ultra 24+1TB $519."
+    },
+    {
+      "id": "ayn-thor-lite",
+      "brand": "AYN",
+      "model": "Thor (Lite)",
+      "year": 2025,
+      "price_usd": 249.00,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon 865",
+        "architecture": "ARM Kryo 585 (A77-based)",
+        "cores": "1x @ 2.84GHz + 3x @ 2.42GHz + 4x @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Adreno 650",
+        "cores": null
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "UFS 3.1",
+      "os": "Android 13",
+      "screen": { "size_inch": 6.0, "resolution": "1080x1920", "type": "AMOLED" },
+      "battery_mah": 6000,
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.2",
+      "source_url": "https://www.ayntec.com/products/ayn-thor",
+      "verified": false,
+      "notes": "UNIQUE: dual-screen device — 6\" primary AMOLED + 3.92\" AMOLED secondary touchscreen. Lite = SD865. Base/Pro/Max/Max1TB use Snapdragon 8 Gen 2 ($319–$549)."
+    },
+    {
+      "id": "ayaneo-3",
+      "brand": "AYANEO",
+      "model": "AYANEO 3",
+      "year": 2025,
+      "price_usd": 1499.00,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "AMD Ryzen AI 9 HX 370",
+        "architecture": "AMD Zen 5 (Strix Point)",
+        "cores": "12 cores / 24 threads (4x Zen5 + 8x Zen5c)"
+      },
+      "gpu": {
+        "chip": "AMD Radeon 890M",
+        "cores": "16 CUs @ up to 2900MHz"
+      },
+      "ram_gb": 32,
+      "storage_gb": 1024,
+      "storage_type": "SSD",
+      "os": "Windows 11",
+      "screen": { "size_inch": 7.0, "resolution": "1920x1080", "type": "OLED / LCD 144Hz (selectable)" },
+      "battery_mah": null,
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.3",
+      "source_url": "https://www.ayaneo.com/product/AYANEO-3",
+      "verified": false,
+      "notes": "Windows PC handheld — significantly different category from Android/Linux retro devices. OCuLink + 2×USB4 40Gbps. 49Wh battery, 65W charging. 690g. Also available: 64GB+2TB and 64GB+4TB tiers."
+    },
+    {
+      "id": "mangmi-air-x",
+      "brand": "MANGMI",
+      "model": "AIR X",
+      "year": 2025,
+      "price_usd": 105.99,
+      "tier": "mid",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon 662",
+        "architecture": "ARM Kryo 260",
+        "cores": "4x Kryo 260 Gold @ 2.0GHz + 4x Kryo 260 Silver @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Adreno 610",
+        "cores": null
+      },
+      "ram_gb": 4,
+      "storage_gb": 64,
+      "storage_type": "eMMC",
+      "os": "Android",
+      "screen": { "size_inch": 5.5, "resolution": "1920x1080", "type": "IPS" },
+      "battery_mah": 5000,
+      "wifi": "Wi-Fi 5",
+      "bluetooth": "5.0",
+      "source_url": "https://mangmi.com/products/mangmi-air-x",
+      "verified": false,
+      "notes": "Budget Android entry. Snapdragon 662 is suitable for PSP/PS1/N64 era. Limited on PS2/GameCube. 600g. Good value for light retro play."
+    },
+    {
+      "id": "mangmi-pocket-max",
+      "brand": "MANGMI",
+      "model": "Pocket Max",
+      "year": 2026,
+      "price_usd": 239.99,
+      "tier": "flagship",
+      "form_factor": "landscape",
+      "cpu": {
+        "chip": "Snapdragon 865",
+        "architecture": "ARM Kryo 585 (A77-based)",
+        "cores": "1x @ 2.84GHz + 3x @ 2.42GHz + 4x @ 1.8GHz"
+      },
+      "gpu": {
+        "chip": "Adreno 650",
+        "cores": null
+      },
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "storage_type": "eMMC",
+      "os": "Android",
+      "screen": { "size_inch": 7.0, "resolution": "1920x1080", "type": "OLED" },
+      "battery_mah": 8000,
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.1",
+      "source_url": "https://mangmi.com/products/mangmi-pocket-max",
+      "verified": false,
+      "notes": "7\" OLED large-screen handheld. SD865 + Adreno 650 — same SoC tier as Retroid RP5 and AYN Thor Lite. Modular button sets available. 1kg."
+    },
+    {
+      "id": "trimui-smart-pro-placeholder",
+      "brand": "TrimUI",
+      "model": "Smart Pro",
+      "year": null,
+      "price_usd": null,
+      "tier": "budget",
+      "form_factor": "landscape",
+      "cpu": { "chip": "—", "architecture": "—", "cores": "—" },
+      "gpu": { "chip": "—", "cores": null },
+      "ram_gb": null,
+      "storage_gb": null,
+      "storage_type": null,
+      "os": "Linux",
+      "screen": { "size_inch": null, "resolution": "—", "type": "—" },
+      "battery_mah": null,
+      "wifi": null,
+      "bluetooth": null,
+      "source_url": "https://trimui.com",
+      "verified": false,
+      "notes": "PLACEHOLDER — TrimUI site does not expose specs. Known models: Smart Pro (Allwinner A133P), Brick (Allwinner A133P), Brick Pro. Please provide official spec sheet URL to populate."
+    },
+    {
+      "id": "konkr-placeholder",
+      "brand": "Konkr",
+      "model": "TBD",
+      "year": null,
+      "price_usd": null,
+      "tier": "budget",
+      "form_factor": "landscape",
+      "cpu": { "chip": "—", "architecture": "—", "cores": "—" },
+      "gpu": { "chip": "—", "cores": null },
+      "ram_gb": null,
+      "storage_gb": null,
+      "storage_type": null,
+      "os": null,
+      "screen": { "size_inch": null, "resolution": "—", "type": "—" },
+      "battery_mah": null,
+      "wifi": null,
+      "bluetooth": null,
+      "source_url": "https://konkr.com",
+      "verified": false,
+      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names."
+    },
+    {
+      "id": "miniloong-placeholder",
+      "brand": "Miniloong",
+      "model": "TBD",
+      "year": null,
+      "price_usd": null,
+      "tier": "budget",
+      "form_factor": "landscape",
+      "cpu": { "chip": "—", "architecture": "—", "cores": "—" },
+      "gpu": { "chip": "—", "cores": null },
+      "ram_gb": null,
+      "storage_gb": null,
+      "storage_type": null,
+      "os": null,
+      "screen": { "size_inch": null, "resolution": "—", "type": "—" },
+      "battery_mah": null,
+      "wifi": null,
+      "bluetooth": null,
+      "source_url": "https://www.miniloong.com",
+      "verified": false,
+      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names."
     }
   ]
 }
