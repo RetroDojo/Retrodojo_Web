@@ -1,0 +1,302 @@
+{
+  "_meta": {
+    "description": "RetroDojo chipset reference dataset. Stores SoC-level CPU, GPU, process, I/O, display, audio, storage, and power support details separately from device-level implementation notes.",
+    "last_updated": "2026-04-26",
+    "evidence_key": {
+      "official": "Official silicon vendor documentation or official device manufacturer specification page.",
+      "mixed": "Official device page plus secondary vendor-ecosystem references; useful but not fully verified at SoC level.",
+      "limited": "Public information is weak or incomplete; treat as provisional until official datasheet is available."
+    }
+  },
+  "chipsets": [
+    {
+      "id": "allwinner-h700",
+      "vendor": "Allwinner",
+      "model": "H700",
+      "evidence_confidence": "limited",
+      "process_nm": null,
+      "cpu": {
+        "architecture": "ARM Cortex-A53",
+        "core_layout": "4x Cortex-A53 @ 1.5GHz",
+        "notes": "Clock and core layout are confirmed by Anbernic device pages, not by a public Allwinner datasheet."
+      },
+      "gpu": {
+        "model": "Mali-G31 MP2",
+        "architecture": "ARM Mali-G31",
+        "clock_mhz": null
+      },
+      "memory_support": "Public SoC-level documentation unavailable. Device implementations in catalog pair it with 1GB RAM and TF-based storage.",
+      "display_support": "Not publicly documented at SoC level.",
+      "io_support": "Not publicly documented at SoC level.",
+      "wireless_support": "No integrated wireless capability confirmed at SoC level; Wi-Fi/Bluetooth are verified only at device level.",
+      "audio_support": "Not publicly documented at SoC level.",
+      "power_support": "Not publicly documented at SoC level.",
+      "notes": "Use device-level implementation notes for charging, expansion, and multimedia until an official H700 datasheet is available."
+    },
+    {
+      "id": "unisoc-t820",
+      "vendor": "Unisoc",
+      "model": "T820",
+      "evidence_confidence": "limited",
+      "process_nm": 6,
+      "cpu": {
+        "architecture": "ARM Cortex-A76 / Cortex-A55",
+        "core_layout": "1x Cortex-A76 @ 2.7GHz + 3x Cortex-A76 @ 2.3GHz + 4x Cortex-A55 @ 2.1GHz",
+        "notes": "Core layout is confirmed on the Anbernic RG556 official page. Public Unisoc documentation remains weak."
+      },
+      "gpu": {
+        "model": "Mali-G57 MC4",
+        "architecture": "ARM Mali-G57",
+        "clock_mhz": 850
+      },
+      "memory_support": "Catalog devices pair T820 with LPDDR4X RAM and UFS 2.2 storage.",
+      "display_support": "Display-out capability is confirmed at the RG556 device level through USB-C DisplayPort output, not at the public SoC-doc level.",
+      "io_support": "Public SoC-level USB and display documentation unavailable.",
+      "wireless_support": "Wireless capability in catalog is device-level Wi-Fi 5 / Bluetooth 5.0.",
+      "audio_support": "No public SoC-level audio specification collected.",
+      "power_support": "No public SoC-level charging controller data collected.",
+      "notes": "Treat process node and GPU data as mixed confidence until Unisoc releases a publicly accessible datasheet."
+    },
+    {
+      "id": "mediatek-dimensity-900",
+      "vendor": "MediaTek",
+      "model": "Dimensity 900",
+      "evidence_confidence": "mixed",
+      "process_nm": 6,
+      "cpu": {
+        "architecture": "ARM Cortex-A78 / Cortex-A55",
+        "core_layout": "2x Cortex-A78 @ 2.4GHz + 6x Cortex-A55 @ 2.0GHz",
+        "notes": "Core layout matches Retroid Pocket 4 official specs."
+      },
+      "gpu": {
+        "model": "Mali-G68 MC4",
+        "architecture": "ARM Mali-G68",
+        "clock_mhz": 900
+      },
+      "memory_support": "Commonly paired with LPDDR4X/LPDDR5 and UFS 3.1 class storage in device implementations.",
+      "display_support": "4K-class media pipeline and external display capability are commonly reported for Dimensity 900, but RetroDojo currently stores device-level display implementation separately.",
+      "io_support": "USB 3-class support is typical in reference designs; confirm per device.",
+      "wireless_support": "Retroid Pocket 4 pairs it with Wi-Fi 6 and Bluetooth 5.2.",
+      "audio_support": "No explicit official audio-block notes collected for this dataset revision.",
+      "power_support": "No explicit official charging-block notes collected for this dataset revision.",
+      "notes": "Good mid-tier Android handheld SoC; rely on device-level fields for ports and charging."
+    },
+    {
+      "id": "mediatek-dimensity-1100",
+      "vendor": "MediaTek",
+      "model": "Dimensity 1100",
+      "evidence_confidence": "mixed",
+      "process_nm": 6,
+      "cpu": {
+        "architecture": "ARM Cortex-A78 / Cortex-A55",
+        "core_layout": "4x Cortex-A78 @ 2.6GHz + 4x Cortex-A55 @ 2.0GHz",
+        "notes": "Core layout matches Retroid Pocket 4 Pro official specs."
+      },
+      "gpu": {
+        "model": "Mali-G77 MC9",
+        "architecture": "ARM Mali-G77",
+        "clock_mhz": 836
+      },
+      "memory_support": "Commonly paired with LPDDR4X/LPDDR5 and UFS 3.1 class storage in device implementations.",
+      "display_support": "External display capability varies by handheld implementation.",
+      "io_support": "USB 3-class support is common in higher-end Dimensity designs; confirm per device.",
+      "wireless_support": "Retroid Pocket 4 Pro pairs it with Wi-Fi 6 and Bluetooth 5.2.",
+      "audio_support": "No explicit official audio-block notes collected for this dataset revision.",
+      "power_support": "No explicit official charging-block notes collected for this dataset revision.",
+      "notes": "Use device-level entries for hall sticks, cooling, and HDMI/video-out behaviors."
+    },
+    {
+      "id": "qualcomm-snapdragon-865",
+      "vendor": "Qualcomm",
+      "model": "Snapdragon 865",
+      "evidence_confidence": "mixed",
+      "process_nm": 7,
+      "cpu": {
+        "architecture": "Kryo 585 (A77-based)",
+        "core_layout": "1x @ 2.84GHz + 3x @ 2.42GHz + 4x @ 1.8GHz",
+        "notes": "Used by Retroid Pocket 5, AYN Thor Lite, and MANGMI Pocket Max in this catalog."
+      },
+      "gpu": {
+        "model": "Adreno 650",
+        "architecture": "Adreno 6xx",
+        "clock_mhz": null
+      },
+      "memory_support": "Commonly paired with LPDDR5/LPDDR4X and UFS 3.1; device-level storage interfaces vary.",
+      "display_support": "High-end Android flagship-class display and external display support; exact video-out path depends on handheld board design.",
+      "io_support": "USB-C high-speed data and video-out support depend on device implementation.",
+      "wireless_support": "Wi-Fi 6 and Bluetooth 5.x are confirmed in catalog devices using this SoC.",
+      "audio_support": "USB-C digital audio and Bluetooth audio are typical; analog output depends on device hardware.",
+      "power_support": "Charging implementation varies by handheld vendor.",
+      "notes": "Strong SoC for PS2/GameCube-class Android handhelds; device-specific ports and charge rates are stored on each handheld entry."
+    },
+    {
+      "id": "qualcomm-snapdragon-8-gen-2",
+      "vendor": "Qualcomm",
+      "model": "Snapdragon 8 Gen 2",
+      "evidence_confidence": "mixed",
+      "process_nm": 4,
+      "cpu": {
+        "architecture": "ARM Cortex-X3 / Cortex-A715 / Cortex-A510",
+        "core_layout": "1x @ 3.2GHz + 4x @ 2.8GHz + 3x @ 2.0GHz",
+        "notes": "Retroid Pocket 6 and higher AYN Thor trims use this class of SoC in the catalog."
+      },
+      "gpu": {
+        "model": "Adreno 740",
+        "architecture": "Adreno 7xx",
+        "clock_mhz": 680
+      },
+      "memory_support": "Commonly paired with LPDDR5X and UFS 3.1/4.0-class storage in flagship devices.",
+      "display_support": "Flagship-class high refresh display pipeline; external display/video-out depends on device implementation.",
+      "io_support": "USB-C high-speed data/video-out support is usually available but should be treated as device-dependent in this catalog.",
+      "wireless_support": "Wi-Fi 7 / Bluetooth 5.3 confirmed in Retroid Pocket 6 implementation.",
+      "audio_support": "Bluetooth and USB-C digital audio are expected; analog output depends on handheld hardware.",
+      "power_support": "Charging behavior depends on handheld vendor power design.",
+      "notes": "Keep device-level I/O separate from chipset-level capabilities to avoid overstating unsupported board features."
+    },
+    {
+      "id": "qualcomm-snapdragon-g1-gen-2",
+      "vendor": "Qualcomm",
+      "model": "Snapdragon G1 Gen 2",
+      "evidence_confidence": "limited",
+      "process_nm": null,
+      "cpu": {
+        "architecture": "Kryo (2 performance + 6 efficiency cores)",
+        "core_layout": "2 performance cores + 6 efficiency cores",
+        "notes": "Public Qualcomm documentation is sparse; Retroid is the current practical source in this catalog."
+      },
+      "gpu": {
+        "model": "Adreno A12 / A122-class branding on device page",
+        "architecture": "Adreno",
+        "clock_mhz": null
+      },
+      "memory_support": "Retroid Pocket Classic pairs it with LPDDR4X and eMMC 5.1.",
+      "display_support": "No public SoC-level display block detail collected.",
+      "io_support": "No public SoC-level USB/video-out detail collected.",
+      "wireless_support": "Retroid Pocket Classic implementation confirms Wi-Fi 5 and Bluetooth 5.1.",
+      "audio_support": "No public SoC-level audio detail collected.",
+      "power_support": "Retroid Pocket Classic confirms device-level 27W charging support.",
+      "notes": "Treat this chipset entry as provisional until Qualcomm publishes fuller public G-series documentation."
+    },
+    {
+      "id": "qualcomm-dragonwing-q8",
+      "vendor": "Qualcomm",
+      "model": "Dragonwing Q8",
+      "marketing_name": "Snapdragon 8 Gen 3 class variant",
+      "evidence_confidence": "limited",
+      "process_nm": 4,
+      "cpu": {
+        "architecture": "ARM Cortex-X4 / Cortex-A720 / Cortex-A520",
+        "core_layout": "1x Cortex-X4 @ 3.3GHz + 5x Cortex-A720 + 2x Cortex-A520",
+        "notes": "Stored using AYN Odin 3 official product wording; true Qualcomm public documentation for this exact marketing label is limited."
+      },
+      "gpu": {
+        "model": "Adreno 750",
+        "architecture": "Adreno 7xx",
+        "clock_mhz": null
+      },
+      "memory_support": "AYN Odin 3 pairs it with UFS 3.1 storage.",
+      "display_support": "AYN Odin 3 implements a 6-inch 120Hz AMOLED panel; broader SoC-level display support is not separately documented here.",
+      "io_support": "No public SoC-level USB/video-out specification collected for this entry.",
+      "wireless_support": "AYN Odin 3 confirms Wi-Fi 7 and Bluetooth 5.4 at the device level.",
+      "audio_support": "No public SoC-level audio block detail collected.",
+      "power_support": "Charging implementation is device-specific and not explicitly published on the Odin 3 page.",
+      "notes": "Accept AYN's official device page as the authoritative source for this RetroDojo entry unless Qualcomm publishes a matching public reference sheet."
+    },
+    {
+      "id": "allwinner-a133p",
+      "vendor": "Allwinner",
+      "model": "A133P",
+      "evidence_confidence": "limited",
+      "process_nm": null,
+      "cpu": {
+        "architecture": "ARM Cortex-A7",
+        "core_layout": "4x Cortex-A7 @ 1.2GHz",
+        "notes": "CPU details come from device-level product descriptions in the catalog."
+      },
+      "gpu": {
+        "model": "PowerVR GE8300",
+        "architecture": "PowerVR Rogue",
+        "clock_mhz": null
+      },
+      "memory_support": "Very low-memory implementations are common in retro handhelds; this catalog currently stores 256MB RAM on Miyoo devices.",
+      "display_support": "No public SoC-level display block detail collected.",
+      "io_support": "OTG support is confirmed at the Miyoo Mini Flip device level.",
+      "wireless_support": "Wi-Fi appears at the device level; Bluetooth is not confirmed in current catalog entries.",
+      "audio_support": "No public SoC-level audio detail collected.",
+      "power_support": "No public SoC-level charging detail collected.",
+      "notes": "GPU detail is based on community teardown/kernel reference quality rather than a public Allwinner datasheet."
+    },
+    {
+      "id": "rockchip-rk3566",
+      "vendor": "Rockchip",
+      "model": "RK3566",
+      "evidence_confidence": "mixed",
+      "process_nm": 12,
+      "cpu": {
+        "architecture": "ARM Cortex-A55",
+        "core_layout": "4x Cortex-A55 @ 1.8GHz",
+        "notes": "Confirmed on Miyoo Flip V2 official product text."
+      },
+      "gpu": {
+        "model": "Mali-G52 2EE",
+        "architecture": "ARM Mali-G52",
+        "clock_mhz": null
+      },
+      "memory_support": "Often paired with LPDDR4X and eMMC or microSD in handhelds.",
+      "display_support": "Device implementation confirms HDMI output on Miyoo Flip V2.",
+      "io_support": "OTG and HDMI are confirmed at the Miyoo Flip V2 device level.",
+      "wireless_support": "Wireless varies by board design; current Miyoo Flip V2 entry only confirms Wi-Fi.",
+      "audio_support": "Headphone compatibility is confirmed by Miyoo Flip V2 product text.",
+      "power_support": "No public SoC-level charging detail collected.",
+      "notes": "Rockchip documentation is stronger than Allwinner, but RetroDojo currently stores the most reliable facts at the device level."
+    },
+    {
+      "id": "amd-ryzen-ai-9-hx-370",
+      "vendor": "AMD",
+      "model": "Ryzen AI 9 HX 370",
+      "evidence_confidence": "official",
+      "process_nm": 4,
+      "cpu": {
+        "architecture": "AMD Zen 5 / Zen 5c",
+        "core_layout": "4x Zen 5 + 8x Zen 5c, 12 cores / 24 threads, boost up to 5.2GHz",
+        "notes": "AYANEO 3 product page confirms third-generation AMD AI positioning and device implementation."
+      },
+      "gpu": {
+        "model": "Radeon 890M",
+        "architecture": "RDNA 3.5-class integrated graphics",
+        "clock_mhz": 3100
+      },
+      "memory_support": "LPDDR5X / DDR5-class support on platform; AYANEO 3 ships with 32GB or 64GB RAM tiers.",
+      "display_support": "AYANEO 3 confirms DP 1.4 over USB4 and high-refresh internal OLED/LCD options with FreeSync on LCD trim.",
+      "io_support": "USB4, OCuLink, microSD 4.0, and external video output are confirmed on AYANEO 3.",
+      "wireless_support": "AYANEO 3 confirms Wi-Fi and Bluetooth 5.3 at the device level.",
+      "audio_support": "AYANEO 3 confirms dual speakers, 3.5mm jack, and tuned HyperSound 2.0 audio.",
+      "power_support": "AYANEO 3 confirms 65W PD charging and bypass charging.",
+      "notes": "This is the strongest documented chipset entry in the current catalog because AYANEO exposes unusually detailed platform information."
+    },
+    {
+      "id": "qualcomm-snapdragon-662",
+      "vendor": "Qualcomm",
+      "model": "Snapdragon 662",
+      "evidence_confidence": "mixed",
+      "process_nm": 11,
+      "cpu": {
+        "architecture": "Kryo 260",
+        "core_layout": "4x Kryo 260 Gold @ 2.0GHz + 4x Kryo 260 Silver @ 1.8GHz",
+        "notes": "Confirmed on MANGMI AIR X official product page."
+      },
+      "gpu": {
+        "model": "Adreno 610",
+        "architecture": "Adreno 6xx",
+        "clock_mhz": null
+      },
+      "memory_support": "Current catalog device pairs it with eMMC-class storage and 4GB RAM.",
+      "display_support": "Device implementation supports TV mode and large-screen casting via 5G Wi-Fi on MANGMI AIR X.",
+      "io_support": "No explicit public SoC-level USB/video-out block collected for this dataset revision.",
+      "wireless_support": "MANGMI AIR X confirms Wi-Fi 5 and Bluetooth 5.0 at the device level.",
+      "audio_support": "No explicit public SoC-level audio block collected; rely on device-level notes.",
+      "power_support": "MANGMI AIR X confirms 15W charging at the device level.",
+      "notes": "Useful baseline Android retro SoC. Keep large-screen output, controls, and charging on the device entry rather than assuming all SD662 designs expose them."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added. Optional category distinguishes retro handhelds from PC handhelds.",
+    "description": "RetroDojo device catalog. Source of truth for compare.html. All entries sourced from official vendor websites. Fields marked verified:false need hands-on testing before benchmark data is added. Optional category distinguishes retro handhelds from PC handhelds. Device-level capabilities can reference chipset-level details stored in chipsets.json.",
     "sources": {
       "Anbernic": "https://anbernic.com",
       "Retroid": "https://www.goretroid.com",
@@ -13,6 +13,9 @@
       "Miniloong": "https://www.miniloong.com"
     },
     "last_updated": "2026-04-26",
+    "related_datasets": {
+      "chipsets": "/data/chipsets.json"
+    },
     "pending_sources": [
       "TrimUI — site does not expose product specs via web, needs manual entry",
       "Konkr — site not accessible, needs correct URL or manual entry",
@@ -24,6 +27,7 @@
       "id": "anbernic-rg35xxsp",
       "brand": "Anbernic",
       "model": "RG35XX SP",
+      "chipset_id": "allwinner-h700",
       "year": 2024,
       "price_usd": 39.99,
       "tier": "budget",
@@ -47,12 +51,21 @@
       "bluetooth": "4.2",
       "source_url": "https://anbernic.com/products/rg35xxsp",
       "verified": false,
-      "notes": "Clamshell GBA-SP style form factor. No analog sticks."
+      "notes": "Clamshell GBA-SP style form factor. No analog sticks.",
+      "capabilities": {
+        "expansion": "Dual TF card slots, up to 512GB official support.",
+        "audio": "High-fidelity speaker. Bluetooth 4.2 is documented for controllers; headphone support is not explicitly documented on the product page.",
+        "charging": "USB-C charging is implied by included Type-C cable, but official charging wattage is not listed on the product page.",
+        "software": "30+ emulators, multimedia playback, file manager, and TXT e-book reader.",
+        "connectivity": "2.4/5GHz Wi-Fi 802.11a/b/g/n/ac and Bluetooth 4.2.",
+        "evidence": "Device-level details sourced from official Anbernic product page."
+      }
     },
     {
       "id": "anbernic-rg35xxpro",
       "brand": "Anbernic",
       "model": "RG35XX Pro",
+      "chipset_id": "allwinner-h700",
       "year": 2024,
       "price_usd": 54.99,
       "tier": "budget",
@@ -76,12 +89,21 @@
       "bluetooth": "4.2",
       "source_url": "https://anbernic.com/products/rg35xxpro",
       "verified": false,
-      "notes": "Dual analog sticks. Same SoC as RG35XX SP."
+      "notes": "Dual analog sticks. Same SoC as RG35XX SP.",
+      "capabilities": {
+        "expansion": "Dual TF card slots, up to 512GB official support.",
+        "audio": "High-fidelity speaker. Bluetooth audio is not explicitly supported; product-page reviews indicate Bluetooth is primarily for controllers.",
+        "charging": "Officially supports 5V/1.5A charging and C-to-C charging.",
+        "software": "30+ emulators, multimedia playback, file manager, TXT e-book reader, and WiliWili online playback.",
+        "connectivity": "2.4/5GHz Wi-Fi 802.11a/b/g/n/ac and Bluetooth 4.2.",
+        "evidence": "Charging rate and software features are explicitly listed on the official Anbernic product page."
+      }
     },
     {
       "id": "anbernic-rg556",
       "brand": "Anbernic",
       "model": "RG556",
+      "chipset_id": "unisoc-t820",
       "year": 2024,
       "price_usd": 169.99,
       "tier": "flagship",
@@ -105,12 +127,23 @@
       "bluetooth": "5.0",
       "source_url": "https://anbernic.com/products/rg556",
       "verified": false,
-      "notes": "Android flagship from Anbernic. Hall joysticks, active cooling, 6nm SoC."
+      "notes": "Android flagship from Anbernic. Hall joysticks, active cooling, 6nm SoC.",
+      "capabilities": {
+        "video_output": "USB Type-C supports 1080p DisplayPort output; product page also lists wireless screencasting.",
+        "audio": "High-fidelity dual speakers and 3.5mm stereo earphone support.",
+        "charging": "Official 5V/2A charging, approximately 3.5 hours to full.",
+        "controls": "Hall joystick, Hall triggers, six-axis gyroscope, vibration motor.",
+        "cooling": "High-speed fan plus heat-pipe active cooling.",
+        "software": "FOTA wireless upgrade, netplay, streaming, joystick light control, display brightness, and energy-saving settings.",
+        "expansion": "TF card expansion officially supported up to 2TB.",
+        "evidence": "All capability fields above are explicitly listed on the official Anbernic RG556 page."
+      }
     },
     {
       "id": "retroid-rp4",
       "brand": "Retroid",
       "model": "Retroid Pocket 4",
+      "chipset_id": "mediatek-dimensity-900",
       "year": 2023,
       "price_usd": 139.00,
       "tier": "mid",
@@ -134,12 +167,22 @@
       "bluetooth": "5.2",
       "source_url": "https://www.goretroid.com/products/retroid-pocket-4-handheld",
       "verified": false,
-      "notes": "Hall sticks, analog L2/R2. Android 11 limits some compatibility."
+      "notes": "Hall sticks, analog L2/R2. Android 11 limits some compatibility.",
+      "capabilities": {
+        "expansion": "128GB UFS 3.1 plus TF card slot.",
+        "controls": "3D hall sticks, analog L2/R2.",
+        "cooling": "Active cooling.",
+        "software": "Official OTA incremental software upgrade support.",
+        "connectivity": "Wi-Fi 6 and Bluetooth 5.2.",
+        "video_output": "Official product page sells a micro HDMI to HDMI adapter alongside RP4/4 Pro, which strongly suggests wired TV-out support, but the spec text does not state the port explicitly.",
+        "evidence": "Most fields are explicit on the Retroid page; video-out is an official-store inference rather than a direct spec-line item."
+      }
     },
     {
       "id": "retroid-rp4pro",
       "brand": "Retroid",
       "model": "Retroid Pocket 4 Pro",
+      "chipset_id": "mediatek-dimensity-1100",
       "year": 2023,
       "price_usd": 149.00,
       "tier": "mid",
@@ -163,12 +206,22 @@
       "bluetooth": "5.2",
       "source_url": "https://www.goretroid.com/products/retroid-pocket-4-handheld",
       "verified": false,
-      "notes": "Significant GPU upgrade over RP4. Android 13. Same physical form as RP4."
+      "notes": "Significant GPU upgrade over RP4. Android 13. Same physical form as RP4.",
+      "capabilities": {
+        "expansion": "128GB UFS 3.1 plus TF card slot.",
+        "controls": "3D hall sticks, analog L2/R2.",
+        "cooling": "Active cooling.",
+        "software": "Official OTA incremental software upgrade support.",
+        "connectivity": "Wi-Fi 6 and Bluetooth 5.2.",
+        "video_output": "Official product page sells a micro HDMI to HDMI adapter alongside RP4/4 Pro, which strongly suggests wired TV-out support, but the spec text does not state the port explicitly.",
+        "evidence": "Most fields are explicit on the Retroid page; video-out is an official-store inference rather than a direct spec-line item."
+      }
     },
     {
       "id": "retroid-rp5",
       "brand": "Retroid",
       "model": "Retroid Pocket 5",
+      "chipset_id": "qualcomm-snapdragon-865",
       "year": 2024,
       "price_usd": 199.00,
       "tier": "flagship",
@@ -192,12 +245,22 @@
       "bluetooth": "5.1",
       "source_url": "https://www.goretroid.com/products/retroid-pocket-5",
       "verified": false,
-      "notes": "3D hall sticks, active cooling, AMOLED. Strong PS2/GameCube candidate."
+      "notes": "3D hall sticks, active cooling, AMOLED. Strong PS2/GameCube candidate.",
+      "capabilities": {
+        "expansion": "128GB UFS 3.1 plus TF card slot.",
+        "controls": "3D hall sticks, analog L2/R2.",
+        "cooling": "Active cooling.",
+        "software": "Official OTA incremental software upgrade support.",
+        "connectivity": "Wi-Fi 6 and Bluetooth 5.1.",
+        "charging": "Battery capacity is official, but charge rate is not listed on the product page excerpt collected here.",
+        "evidence": "All listed capability lines come from the official Retroid Pocket 5 specification block."
+      }
     },
     {
       "id": "retroid-rp6",
       "brand": "Retroid",
       "model": "Retroid Pocket 6",
+      "chipset_id": "qualcomm-snapdragon-8-gen-2",
       "year": 2025,
       "price_usd": 244.00,
       "tier": "flagship",
@@ -221,12 +284,22 @@
       "bluetooth": "5.3",
       "source_url": "https://www.goretroid.com/products/retroid-pocket-6-handheld",
       "verified": false,
-      "notes": "Top-tier SoC. Pre-order unit as of early 2026. 8GB and 12GB RAM configs."
+      "notes": "Top-tier SoC. Pre-order unit as of early 2026. 8GB and 12GB RAM configs.",
+      "capabilities": {
+        "expansion": "UFS 3.1 storage plus TF card slot.",
+        "controls": "3D hall sticks, analog L2/R2.",
+        "cooling": "Active cooling.",
+        "software": "Official OTA incremental software upgrade support.",
+        "connectivity": "Wi-Fi 7 and Bluetooth 5.3.",
+        "memory": "LPDDR5X RAM in 8GB or 12GB configurations.",
+        "evidence": "All listed capability lines come from the official Retroid Pocket 6 specification block."
+      }
     },
     {
       "id": "retroid-rp-classic",
       "brand": "Retroid",
       "model": "Retroid Pocket Classic",
+      "chipset_id": "qualcomm-snapdragon-g1-gen-2",
       "year": 2025,
       "price_usd": 149.00,
       "tier": "mid",
@@ -250,12 +323,22 @@
       "bluetooth": "5.1",
       "source_url": "https://www.goretroid.com/products/retroid-pocket-classic",
       "verified": false,
-      "notes": "GBA-style form factor with Android. Android 14 + active cooling. 4GB and 6GB configs."
+      "notes": "GBA-style form factor with Android. Android 14 + active cooling. 4GB and 6GB configs.",
+      "capabilities": {
+        "expansion": "eMMC 5.1 storage plus TF card slot.",
+        "controls": "Active cooling is official; other hall/trigger details are not exposed in the collected spec excerpt.",
+        "charging": "Officially supports 27W charging.",
+        "software": "Official OTA support.",
+        "connectivity": "Wi-Fi 5 and Bluetooth 5.1.",
+        "memory": "LPDDR4X @ 2133MHz with 4GB or 6GB configurations.",
+        "evidence": "All fields above are explicitly listed on the Retroid Pocket Classic page."
+      }
     },
     {
       "id": "miyoo-mini-plus",
       "brand": "Miyoo",
       "model": "Miyoo Mini Plus",
+      "chipset_id": "allwinner-a133p",
       "year": 2023,
       "price_usd": 56.99,
       "tier": "budget",
@@ -280,12 +363,20 @@
       "bluetooth": null,
       "source_url": "https://lomiyoo.com/products/miyoo-mini-plus",
       "verified": false,
-      "notes": "GPU/RAM not listed on official site. 256MB RAM — budget tier, limited to 16-bit era emulation. Beloved for Onion OS."
+      "notes": "GPU/RAM not listed on official site. 256MB RAM — budget tier, limited to 16-bit era emulation. Beloved for Onion OS.",
+      "capabilities": {
+        "expansion": "Storage is expandable via microSD according to official product JSON body content.",
+        "connectivity": "Integrated Wi-Fi enables multiplayer, firmware updates, and quick transfers.",
+        "charging": "3,000mAh battery is official; charging rate is not listed in collected source text.",
+        "software": "Linux-based Onion OS is referenced on the official product JSON page text.",
+        "evidence": "Fields above are derived from Miyoo's product JSON body_html and are more reliable than the storefront HTML redirect behavior."
+      }
     },
     {
       "id": "miyoo-mini-flip",
       "brand": "Miyoo",
       "model": "Miyoo Mini Flip",
+      "chipset_id": "allwinner-a133p",
       "year": 2025,
       "price_usd": 59.99,
       "tier": "budget",
@@ -311,12 +402,21 @@
       "bluetooth": null,
       "source_url": "https://lomiyoo.com/products/miyoo-mini-flip",
       "verified": false,
-      "notes": "Clamshell form factor. Upgraded hinges over original Miyoo Flip. CPU/GPU not confirmed on official site."
+      "notes": "Clamshell form factor. Upgraded hinges over original Miyoo Flip. CPU/GPU not confirmed on official site.",
+      "capabilities": {
+        "connectivity": "Built-in Wi-Fi supports multiplayer battles and RTC-backed time-based games.",
+        "io": "Official product JSON body text confirms OTG support and compatibility with retro sticks and headphones.",
+        "charging": "2,500mAh battery with up to 4 hours of gameplay according to official product JSON body text; charge rate not specified.",
+        "mechanical": "Upgraded hinge design with three-stage fold.",
+        "software": "Multi-emulator retro focus with multimedia playback.",
+        "evidence": "Capability fields are sourced from Miyoo product JSON body_html because the storefront page redirects."
+      }
     },
     {
       "id": "miyoo-flip-v2",
       "brand": "Miyoo",
       "model": "Miyoo Flip V2",
+      "chipset_id": "rockchip-rk3566",
       "year": 2025,
       "price_usd": 69.99,
       "tier": "budget",
@@ -341,12 +441,21 @@
       "bluetooth": null,
       "source_url": "https://lomiyoo.com/products/miyoo-flip-v2",
       "verified": false,
-      "notes": "Significantly more powerful than Mini Plus. HDMI output, OTG support, dual joysticks. RK3566 confirmed on official site."
+      "notes": "Significantly more powerful than Mini Plus. HDMI output, OTG support, dual joysticks. RK3566 confirmed on official site.",
+      "capabilities": {
+        "video_output": "Official product JSON body text explicitly lists HDMI output.",
+        "io": "Official product JSON body text explicitly lists OTG support and compatibility with retro sticks and headphones.",
+        "controls": "Dual joysticks and upgraded all-metal hinges are explicitly listed.",
+        "charging": "3,000mAh battery is official; charging rate is not listed in collected source text.",
+        "software": "Multi-emulator retro focus with multimedia playback.",
+        "evidence": "Capability fields are sourced from Miyoo product JSON body_html because the storefront page redirects."
+      }
     },
     {
       "id": "ayn-odin3-base",
       "brand": "AYN",
       "model": "Odin 3 (Base)",
+      "chipset_id": "qualcomm-dragonwing-q8",
       "category": "retro-handheld",
       "year": 2025,
       "price_usd": 339.00,
@@ -371,12 +480,21 @@
       "bluetooth": "5.4",
       "source_url": "https://www.ayntec.com/products/ayn-odin-3",
       "verified": false,
-      "notes": "Hall sticks, active cooling, 390g. Base 8+128GB $339. Also: Pro 12+256GB $439, Max 16+512GB $489, Ultra 24+1TB $519."
+      "notes": "Hall sticks, active cooling, 390g. Base 8+128GB $339. Also: Pro 12+256GB $439, Max 16+512GB $489, Ultra 24+1TB $519.",
+      "capabilities": {
+        "display": "6-inch 120Hz AMOLED touchscreen.",
+        "storage": "UFS 3.1 across published trims.",
+        "controls": "Hall sticks officially listed.",
+        "charging": "Battery capacity is official; charging rate is not exposed in the collected Odin 3 product text.",
+        "dock_ecosystem": "Official Odin 2 Super Dock accessory is sold alongside the device, but the Odin 3 page excerpt does not explicitly state supported dock functions.",
+        "evidence": "Current Odin 3 capability detail is device-level and intentionally conservative because AYN exposes less port detail than AYANEO or Anbernic."
+      }
     },
     {
       "id": "ayn-thor-lite",
       "brand": "AYN",
       "model": "Thor (Lite)",
+      "chipset_id": "qualcomm-snapdragon-865",
       "category": "retro-handheld",
       "year": 2025,
       "price_usd": 249.00,
@@ -401,12 +519,20 @@
       "bluetooth": "5.2",
       "source_url": "https://www.ayntec.com/products/ayn-thor",
       "verified": false,
-      "notes": "UNIQUE: dual-screen device — 6\" primary AMOLED + 3.92\" AMOLED secondary touchscreen. Lite = SD865. Base/Pro/Max/Max1TB use Snapdragon 8 Gen 2 ($319–$549)."
+      "notes": "UNIQUE: dual-screen device — 6\" primary AMOLED + 3.92\" AMOLED secondary touchscreen. Lite = SD865. Base/Pro/Max/Max1TB use Snapdragon 8 Gen 2 ($319–$549).",
+      "capabilities": {
+        "display": "Primary 6-inch AMOLED touchscreen plus 3.92-inch AMOLED bottom touch display.",
+        "storage": "UFS 3.1 across published trims.",
+        "controls": "Hall sticks officially listed.",
+        "charging": "Battery capacity is official; charging rate is not exposed in the collected Thor product text.",
+        "evidence": "Current Thor capability detail is device-level and intentionally conservative because AYN exposes less port detail than AYANEO or Anbernic."
+      }
     },
     {
       "id": "ayaneo-3",
       "brand": "AYANEO",
       "model": "AYANEO 3",
+      "chipset_id": "amd-ryzen-ai-9-hx-370",
       "category": "pc-handheld",
       "year": 2025,
       "price_usd": 1499.00,
@@ -431,12 +557,24 @@
       "bluetooth": "5.3",
       "source_url": "https://www.ayaneo.com/product/AYANEO-3",
       "verified": false,
-      "notes": "Windows PC handheld — significantly different category from Android/Linux retro devices. OCuLink + 2×USB4 40Gbps. 49Wh battery, 65W charging. 690g. Also available: 64GB+2TB and 64GB+4TB tiers."
+      "notes": "Windows PC handheld — significantly different category from Android/Linux retro devices. OCuLink + 2×USB4 40Gbps. 49Wh battery, 65W charging. 690g. Also available: 64GB+2TB and 64GB+4TB tiers.",
+      "capabilities": {
+        "video_output": "2x USB4 at 40Gbps with DP 1.4 support for charging, data transfer, and video output.",
+        "audio": "3.5mm headphone jack, large-cavity dual speakers, HyperSound 2.0 tuning.",
+        "charging": "65W PD charging with bypass charging support.",
+        "io": "2x USB4, 1x OCuLink 64Gbps, 1x MicroSD 4.0 up to 300MB/s.",
+        "controls": "RGB hall joysticks at 250Hz, hall-effect triggers with travel switch, dual rear buttons, dual six-axis gyroscopes, fingerprint power button.",
+        "cooling": "Triple copper-pipe cooling system, large PC turbo fan, graphene thermal patches.",
+        "software": "AYASpace 3.0 management suite, hardware-level keyboard/mouse mode, modular controller ecosystem.",
+        "display": "7-inch 1080p OLED up to 144Hz or LCD up to 120Hz with VRR and FreeSync Premium on LCD option.",
+        "evidence": "All capability fields above are explicitly described on the official AYANEO 3 product page."
+      }
     },
     {
       "id": "mangmi-air-x",
       "brand": "MANGMI",
       "model": "AIR X",
+      "chipset_id": "qualcomm-snapdragon-662",
       "category": "retro-handheld",
       "year": 2025,
       "price_usd": 105.99,
@@ -461,12 +599,22 @@
       "bluetooth": "5.0",
       "source_url": "https://mangmi.com/products/mangmi-air-x",
       "verified": false,
-      "notes": "Budget Android entry. Snapdragon 662 is suitable for PSP/PS1/N64 era. Limited on PS2/GameCube. 600g. Good value for light retro play."
+      "notes": "Budget Android entry. Snapdragon 662 is suitable for PSP/PS1/N64 era. Limited on PS2/GameCube. 600g. Good value for light retro play.",
+      "capabilities": {
+        "video_output": "Officially supports TV mode and casting to the big screen with 5G Wi-Fi.",
+        "charging": "15W charging explicitly listed.",
+        "controls": "RGB 3D Hall joysticks, linear Hall triggers, six-axis gyroscope.",
+        "cooling": "Active cooling with low-noise fan and optimized airflow.",
+        "software": "M Space launcher, key mapping, and game sidebar.",
+        "audio": "Audio category exists on official page, but the extracted text does not spell out speaker/jack specifics yet.",
+        "evidence": "Fields above are explicitly stated on the official MANGMI AIR X page except where marked as unresolved."
+      }
     },
     {
       "id": "mangmi-pocket-max",
       "brand": "MANGMI",
       "model": "Pocket Max",
+      "chipset_id": "qualcomm-snapdragon-865",
       "category": "retro-handheld",
       "year": 2026,
       "price_usd": 239.99,
@@ -491,7 +639,16 @@
       "bluetooth": "5.1",
       "source_url": "https://mangmi.com/products/mangmi-pocket-max",
       "verified": false,
-      "notes": "7\" OLED large-screen handheld. SD865 + Adreno 650 — same SoC tier as Retroid RP5 and AYN Thor Lite. Modular button sets available. 1kg."
+      "notes": "7\" OLED large-screen handheld. SD865 + Adreno 650 — same SoC tier as Retroid RP5 and AYN Thor Lite. Modular button sets available. 1kg.",
+      "capabilities": {
+        "display": "7-inch 144Hz OLED with HDR and 2ms response time.",
+        "controls": "TMR analog sticks and linear Hall triggers with modular D-pad / ABXY button modules.",
+        "cooling": "Active cooling with high-speed slim fan and oversized aluminum heat sink.",
+        "streaming": "Official page explicitly positions the device for low-latency cloud and remote streaming from PC, PlayStation, and Xbox.",
+        "audio": "Official page exposes an audio category and positions the device as premium media hardware, but the extracted text does not spell out exact speaker/jack configuration yet.",
+        "charging": "Battery capacity is explicit at 8000mAh, but charging rate is not present in the extracted text yet.",
+        "evidence": "Fields above are explicitly stated on the official MANGMI Pocket Max page except where marked unresolved."
+      }
     },
     {
       "id": "trimui-smart-pro-placeholder",
@@ -514,7 +671,10 @@
       "bluetooth": null,
       "source_url": "https://trimui.com",
       "verified": false,
-      "notes": "PLACEHOLDER — TrimUI site does not expose specs. Known models: Smart Pro (Allwinner A133P), Brick (Allwinner A133P), Brick Pro. Please provide official spec sheet URL to populate."
+      "notes": "PLACEHOLDER — TrimUI site does not expose specs. Known models: Smart Pro (Allwinner A133P), Brick (Allwinner A133P), Brick Pro. Please provide official spec sheet URL to populate.",
+      "capabilities": {
+        "evidence": "Waiting on official source material before adding device-level capabilities."
+      }
     },
     {
       "id": "konkr-placeholder",
@@ -537,7 +697,10 @@
       "bluetooth": null,
       "source_url": "https://konkr.com",
       "verified": false,
-      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names."
+      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names.",
+      "capabilities": {
+        "evidence": "Waiting on official source material before adding device-level capabilities."
+      }
     },
     {
       "id": "miniloong-placeholder",
@@ -560,7 +723,10 @@
       "bluetooth": null,
       "source_url": "https://www.miniloong.com",
       "verified": false,
-      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names."
+      "notes": "PLACEHOLDER — Official site not accessible. Please confirm correct website URL and device model names.",
+      "capabilities": {
+        "evidence": "Waiting on official source material before adding device-level capabilities."
+      }
     }
   ]
 }
