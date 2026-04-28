@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 :root {
-  --accent:   #FFD700;
-  --green:    #FFD700;          /* legacy alias — now gold */
-  --dark:     #1E0F00;
-  --card-bg:  #2A1A08;
-  --border:   rgba(255, 215, 0, 0.15);
-  --dim:      rgba(255, 215, 0, 0.55);
-  --text:     #F5E6C8;
-  --red:      #B11217;
-  --font-pixel: 'Press Start 2P', monospace;
-  --font-body:  'Courier New', 'Lucida Console', monospace;
+  --accent:   #60a5fa;
+  --green:    #60a5fa;          /* legacy alias */
+  --dark:     #121212;
+  --card-bg:  #1e1e1e;
+  --border:   rgba(255, 255, 255, 0.08);
+  --dim:      rgba(255, 255, 255, 0.45);
+  --text:     #e0e0e0;
+  --red:      #f87171;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background: var(--dark);
-  color: var(--accent);
+  color: var(--text);
   font-family: var(--font-body);
   min-height: 100vh;
   display: flex;
@@ -37,18 +34,16 @@ header {
 }
 
 .title {
-  font-family: var(--font-pixel);
-  font-size: 2.4rem;
-  text-shadow: 0 0 24px var(--accent), 0 0 48px rgba(255,215,0,0.3);
-  letter-spacing: 0.08em;
-  color: var(--red);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .subtitle {
-  margin-top: 0.6rem;
-  font-family: var(--font-pixel);
-  font-size: 0.55rem;
-  letter-spacing: 0.3em;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
   color: var(--dim);
   animation: blink 1.8s step-end infinite;
 }
@@ -56,14 +51,14 @@ header {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 1.4rem 1.6rem;
   margin-bottom: 1rem;
 }
 
 .card h2, .card h3 {
-  font-family: var(--font-pixel);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   margin-bottom: 0.7rem;
   color: var(--dim);
   text-transform: uppercase;
