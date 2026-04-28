@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "description": "Benchmark scores for SoCs in the RetroDojo chipset catalog. Scores marked estimated=true are architecture-based approximations.",
+    "last_updated": "2026-04-27",
+    "benchmark_versions": {
+      "geekbench": "6",
+      "antutu": "v10 (estimated from v11 where noted)",
+      "3dmark": "Wild Life / Wild Life Extreme"
+    },
+    "sources": [
+      "nanoreview.net",
+      "browser.geekbench.com",
+      "gadgetversus.com",
+      "notebookcheck.net"
+    ]
+  },
+  "benchmarks": [
+    {
+      "chipset_id": "allwinner-a133p",
+      "geekbench6": { "single_core": null, "multi_core": null, "estimated": true, "source": "Cortex-A7 is 32-bit only; cannot run Geekbench 6." },
+      "antutu_v10": { "total": 18000, "gpu": 2500, "estimated": true, "source": "Architecture estimate from A7 @ 1.2GHz + PowerVR GE8300." },
+      "3dmark": { "wild_life": null, "wild_life_extreme": null, "estimated": true, "source": "PowerVR GE8300 lacks Vulkan support for Wild Life." }
+    },
+    {
+      "chipset_id": "allwinner-h700",
+      "geekbench6": { "single_core": 130, "multi_core": 350, "estimated": true, "source": "Estimated from A53 @ 1.5GHz architecture (~65% of RK3566)." },
+      "antutu_v10": { "total": 42000, "gpu": 5000, "estimated": true, "source": "Estimated from Mali-G31 MP2 compute class, scaled from RK3566." },
+      "3dmark": { "wild_life": null, "wild_life_extreme": null, "estimated": true, "source": "Mali-G31 MP2 lacks Vulkan 1.1 for Wild Life." }
+    },
+    {
+      "chipset_id": "rockchip-rk3566",
+      "geekbench6": { "single_core": 204, "multi_core": 508, "estimated": false, "source": "browser.geekbench.com (avg of multiple entries)." },
+      "antutu_v10": { "total": 61000, "gpu": 9000, "estimated": true, "source": "gadgetversus.com (61,026 total, GPU sub-score estimated)." },
+      "3dmark": { "wild_life": null, "wild_life_extreme": null, "estimated": true, "source": "Mali-G52 2EE MC1 too weak for meaningful Wild Life." }
+    },
+    {
+      "chipset_id": "qualcomm-snapdragon-662",
+      "geekbench6": { "single_core": 339, "multi_core": 1088, "estimated": false, "source": "nanoreview.net (6 samples)." },
+      "antutu_v10": { "total": 250000, "gpu": 18000, "estimated": true, "source": "nanoreview v11 320,666 → v10 ~77%. User submission (Moto G30): 238,865." },
+      "3dmark": { "wild_life": 370, "wild_life_extreme": null, "estimated": true, "source": "Estimated from Adreno 610 compute class." }
+    },
+    {
+      "chipset_id": "qualcomm-snapdragon-g1-gen2",
+      "geekbench6": { "single_core": 350, "multi_core": 1150, "estimated": true, "source": "Estimated from Kryo 265-class cores, similar to SD 662 with 6nm uplift." },
+      "antutu_v10": { "total": 270000, "gpu": 35000, "estimated": true, "source": "Estimated. CPU ~SD 662 tier; Adreno A12 GPU ~30-50% over Adreno 610." },
+      "3dmark": { "wild_life": 500, "wild_life_extreme": null, "estimated": true, "source": "Estimated from Adreno A12/A122 compute class." }
+    },
+    {
+      "chipset_id": "unisoc-t820",
+      "geekbench6": { "single_core": 885, "multi_core": 2392, "estimated": false, "source": "nanoreview.net (3 samples)." },
+      "antutu_v10": { "total": 580000, "gpu": 44000, "estimated": true, "source": "nanoreview v11 757,199 → v10 ~77%." },
+      "3dmark": { "wild_life": 1900, "wild_life_extreme": 480, "estimated": true, "source": "Estimated from Mali-G57 MP4 compute class." }
+    },
+    {
+      "chipset_id": "mediatek-dimensity-900",
+      "geekbench6": { "single_core": 1003, "multi_core": 2423, "estimated": false, "source": "nanoreview.net (5 samples)." },
+      "antutu_v10": { "total": 520000, "gpu": 55000, "estimated": true, "source": "nanoreview v11 671,241 → v10 ~77%." },
+      "3dmark": { "wild_life": 2100, "wild_life_extreme": 609, "estimated": false, "source": "nanoreview.net (Wild Life Extreme direct; standard ~3.5x)." }
+    },
+    {
+      "chipset_id": "qualcomm-snapdragon-865",
+      "geekbench6": { "single_core": 1168, "multi_core": 3431, "estimated": false, "source": "nanoreview.net (50 samples)." },
+      "antutu_v10": { "total": 740000, "gpu": 130000, "estimated": true, "source": "nanoreview v11 964,589 → v10 ~77%." },
+      "3dmark": { "wild_life": 4100, "wild_life_extreme": 1110, "estimated": false, "source": "nanoreview.net (Wild Life Extreme direct)." }
+    },
+    {
+      "chipset_id": "mediatek-dimensity-1100",
+      "geekbench6": { "single_core": 1104, "multi_core": 3321, "estimated": false, "source": "nanoreview.net (48 samples)." },
+      "antutu_v10": { "total": 750000, "gpu": 105000, "estimated": true, "source": "nanoreview v11 972,810 → v10 ~77%." },
+      "3dmark": { "wild_life": 4350, "wild_life_extreme": 1238, "estimated": false, "source": "nanoreview.net + user stress test (Poco X3 GT: 4368/4337, 99.3%)." }
+    },
+    {
+      "chipset_id": "qualcomm-snapdragon-8-gen-2",
+      "geekbench6": { "single_core": 2004, "multi_core": 5311, "estimated": false, "source": "nanoreview.net (128 samples)." },
+      "antutu_v10": { "total": 1350000, "gpu": 330000, "estimated": true, "source": "nanoreview v11 1,752,044 → v10 ~77%." },
+      "3dmark": { "wild_life": 12800, "wild_life_extreme": 3667, "estimated": false, "source": "nanoreview.net (Wild Life Extreme direct)." }
+    },
+    {
+      "chipset_id": "qualcomm-dragonwing-q8",
+      "geekbench6": { "single_core": 2201, "multi_core": 6753, "estimated": true, "source": "Based on SD 8 Gen 3 (same silicon SM8650), nanoreview.net (122 samples)." },
+      "antutu_v10": { "total": 1800000, "gpu": 625000, "estimated": true, "source": "Based on SD 8 Gen 3, nanoreview v11 2,341,391 → v10 ~77%." },
+      "3dmark": { "wild_life": 16300, "wild_life_extreme": 4676, "estimated": true, "source": "Based on SD 8 Gen 3 Wild Life Extreme 4676 (nanoreview.net)." }
+    },
+    {
+      "chipset_id": "amd-ryzen-ai-9-hx-370",
+      "geekbench6": { "single_core": 2985, "multi_core": 15976, "estimated": false, "source": "nanoreview.net (3 samples)." },
+      "antutu_v10": { "total": null, "gpu": null, "estimated": true, "source": "N/A — AnTuTu is mobile-only (Android/iOS). x86 chip cannot run it." },
+      "3dmark": { "wild_life": null, "wild_life_extreme": 6775, "estimated": false, "source": "nanoreview.net — Radeon 890M Wild Life Extreme direct." }
+    }
+  ]
+}

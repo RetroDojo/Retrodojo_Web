@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RetroDojo — Benchmarks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    .bench-container {
+      max-width: 1100px;
+      width: 100%;
+      padding: clamp(0.8rem, 2vw, 2rem);
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+
+    .controls label {
+      font-size: 0.78rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-right: 0.3rem;
+    }
+
+    .controls select {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.4rem 0.6rem;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+    }
+
+    .controls select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .chip-toggles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .chip-toggle {
+      padding: 0.3rem 0.7rem;
+      font-size: 0.72rem;
+      font-family: var(--font-body);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--card-bg);
+      color: var(--dim);
+      cursor: pointer;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .chip-toggle.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(96, 165, 250, 0.08);
+    }
+
+    .chip-toggle:hover {
+      border-color: var(--accent);
+    }
+
+    .chip-toggle.estimated::after {
+      content: ' *';
+      opacity: 0.5;
+    }
+
+    .chart-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .chart-card h3 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .chart-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .legend-note {
+      font-size: 0.7rem;
+      color: var(--dim);
+      margin-top: 0.8rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--dim);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .back-link:hover { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    body { justify-content: flex-start; }
+  </style>
+</head>
+<body>
+  <div class="bench-container">
+    <div class="nav-links">
+      <a href="/" class="back-link">Back to RetroDojo</a>
+      <a href="/compare.html" class="back-link">Device Comparison</a>
+      <a href="/chipsets.html" class="back-link">What Can I Play?</a>
+    </div>
+
+    <header style="margin-bottom:1.5rem;">
+      <h1 class="title" style="font-size:1.6rem;">Benchmarks</h1>
+      <p class="subtitle">SoC performance comparison — select chipsets and metrics below</p>
+    </header>
+
+    <!-- Benchmark selector -->
+    <div class="controls">
+      <div class="filter-group">
+        <label for="bench-type">Benchmark</label>
+        <select id="bench-type">
+          <option value="geekbench_sc">Geekbench 6 — Single Core</option>
+          <option value="geekbench_mc">Geekbench 6 — Multi Core</option>
+          <option value="antutu_total">AnTuTu v10 — Total</option>
+          <option value="antutu_gpu">AnTuTu v10 — GPU</option>
+          <option value="3dmark_wl">3DMark Wild Life</option>
+          <option value="3dmark_wle">3DMark Wild Life Extreme</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Chipset toggles -->
+    <div class="chip-toggles" id="chip-toggles"></div>
+
+    <!-- Chart -->
+    <div class="chart-card">
+      <h3 id="chart-title">Geekbench 6 — Single Core</h3>
+      <div class="chart-wrapper">
+        <canvas id="bench-chart"></canvas>
+      </div>
+      <p class="legend-note">* Estimated score (architecture-based approximation, not a direct measurement)</p>
+    </div>
+  </div>
+
+  <script>
+    const COLORS = [
+      '#60a5fa', '#4ade80', '#fbbf24', '#fb923c', '#f87171',
+      '#c084fc', '#22d3ee', '#a78bfa', '#34d399', '#f472b6',
+      '#facc15', '#94a3b8'
+    ];
+
+    let chipsets = [];
+    let benchmarks = [];
+    let chart = null;
+    let selectedChips = new Set();
+
+    async function init() {
+      const [cRes, bRes] = await Promise.all([
+        fetch('/data/chipsets.json'),
+        fetch('/data/benchmarks.json')
+      ]);
+      const cData = await cRes.json();
+      const bData = await bRes.json();
+      chipsets = cData.chipsets;
+      benchmarks = bData.benchmarks;
+
+      // Sort by geekbench SC by default for ordering
+      benchmarks.sort((a, b) => {
+        const asc = a.geekbench6?.single_core || 0;
+        const bsc = b.geekbench6?.single_core || 0;
+        return asc - bsc;
+      });
+
+      buildToggles();
+      buildChart();
+
+      document.getElementById('bench-type').addEventListener('change', buildChart);
+    }
+
+    function chipLabel(id) {
+      const c = chipsets.find(ch => ch.id === id);
+      return c ? `${c.vendor} ${c.model}` : id;
+    }
+
+    function buildToggles() {
+      const container = document.getElementById('chip-toggles');
+      // Select all by default
+      benchmarks.forEach(b => selectedChips.add(b.chipset_id));
+
+      benchmarks.forEach((b, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'chip-toggle active';
+        btn.textContent = chipLabel(b.chipset_id);
+        btn.dataset.chipId = b.chipset_id;
+
+        // Flag if any score is estimated
+        const hasEstimate = b.geekbench6?.estimated || b.antutu_v10?.estimated || b['3dmark']?.estimated;
+        if (hasEstimate) btn.classList.add('estimated');
+
+        btn.addEventListener('click', () => {
+          if (selectedChips.has(b.chipset_id)) {
+            selectedChips.delete(b.chipset_id);
+            btn.classList.remove('active');
+          } else {
+            selectedChips.add(b.chipset_id);
+            btn.classList.add('active');
+          }
+          buildChart();
+        });
+
+        container.appendChild(btn);
+      });
+    }
+
+    function getScores(type) {
+      return benchmarks
+        .filter(b => selectedChips.has(b.chipset_id))
+        .map(b => {
+          let val = null;
+          let estimated = false;
+          switch (type) {
+            case 'geekbench_sc':
+              val = b.geekbench6?.single_core;
+              estimated = b.geekbench6?.estimated || false;
+              break;
+            case 'geekbench_mc':
+              val = b.geekbench6?.multi_core;
+              estimated = b.geekbench6?.estimated || false;
+              break;
+            case 'antutu_total':
+              val = b.antutu_v10?.total;
+              estimated = b.antutu_v10?.estimated || false;
+              break;
+            case 'antutu_gpu':
+              val = b.antutu_v10?.gpu;
+              estimated = b.antutu_v10?.estimated || false;
+              break;
+            case '3dmark_wl':
+              val = b['3dmark']?.wild_life;
+              estimated = b['3dmark']?.estimated || false;
+              break;
+            case '3dmark_wle':
+              val = b['3dmark']?.wild_life_extreme;
+              estimated = b['3dmark']?.estimated || false;
+              break;
+          }
+          return {
+            chipset_id: b.chipset_id,
+            label: chipLabel(b.chipset_id),
+            value: val || 0,
+            estimated,
+            hasData: val !== null && val !== 0
+          };
+        })
+        .sort((a, b) => a.value - b.value);
+    }
+
+    function buildChart() {
+      const type = document.getElementById('bench-type').value;
+      const titleEl = document.getElementById('chart-title');
+      titleEl.textContent = document.getElementById('bench-type').selectedOptions[0].text;
+
+      const scores = getScores(type);
+      const labels = scores.map(s => s.label + (s.estimated ? ' *' : ''));
+      const values = scores.map(s => s.value);
+      const colors = scores.map((s, i) => {
+        if (!s.hasData) return 'rgba(255,255,255,0.08)';
+        if (s.estimated) return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length] + '80';
+        return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length];
+      });
+      const borderColors = scores.map((s, i) => {
+        if (!s.hasData) return 'rgba(255,255,255,0.15)';
+        return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length];
+      });
+
+      // Dynamic height: 40px per bar, min 300px
+      const chartHeight = Math.max(300, scores.length * 40);
+      document.getElementById('bench-chart').parentElement.style.height = chartHeight + 'px';
+
+      if (chart) chart.destroy();
+
+      chart = new Chart(document.getElementById('bench-chart'), {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            data: values,
+            backgroundColor: colors,
+            borderColor: borderColors,
+            borderWidth: 1,
+            borderRadius: 3,
+            barPercentage: 0.7
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const s = scores[ctx.dataIndex];
+                  let text = ctx.raw.toLocaleString();
+                  if (s.estimated) text += ' (estimated)';
+                  if (!s.hasData) text = 'N/A — benchmark not supported';
+                  return text;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { color: 'rgba(255,255,255,0.05)' },
+              ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 11 } },
+              title: {
+                display: true,
+                text: 'Score',
+                color: 'rgba(255,255,255,0.45)',
+                font: { size: 12 }
+              }
+            },
+            y: {
+              grid: { display: false },
+              ticks: { color: '#e0e0e0', font: { size: 12 } }
+            }
+          }
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
