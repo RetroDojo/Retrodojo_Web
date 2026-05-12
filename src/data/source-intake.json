@@ -1,0 +1,278 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-11",
+  "notes": [
+    "Central registry for all external signal sources.",
+    "This file captures source metadata and access requirements.",
+    "Runtimes can selectively ingest from this registry into daily-report-sources.json."
+  ],
+  "sources": [
+    {
+      "id": "retroachievements-news-rss",
+      "label": "RetroAchievements News",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "rss",
+      "url": "https://retroachievements.org/rss-news",
+      "previewFields": ["title", "pubDate", "link"],
+      "purpose": "Track official RetroAchievements news posts",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "retrohandhelds-news-web",
+      "label": "RetroHandhelds.gg News",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://retrohandhelds.gg/news/",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track headline-level handheld news updates",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "retrohandhelds-x",
+      "label": "RetroHandhelds.gg on X",
+      "platform": "x",
+      "access": "public",
+      "collectionMethod": "api_or_feed",
+      "url": "https://x.com/retrohandhelds",
+      "accountHandle": "retrohandhelds",
+      "previewFields": ["text", "created_at", "url"],
+      "purpose": "Track social posts and fast-moving updates",
+      "auth": {
+        "type": "api_key_recommended",
+        "secretName": "X_API_BEARER_TOKEN"
+      },
+      "status": "needs_connector"
+    },
+    {
+      "id": "retrohandhelds-discord",
+      "label": "RetroHandhelds Discord",
+      "platform": "discord",
+      "access": "private_with_permission",
+      "collectionMethod": "bot_api",
+      "inviteUrl": "https://discord.gg/retrohandhelds",
+      "guildName": "Retro Handhelds",
+      "channelName": null,
+      "channelId": null,
+      "previewFields": ["author", "content", "timestamp"],
+      "purpose": "Track announcements and high-signal community activity",
+      "auth": {
+        "type": "bot_token",
+        "secretName": "DISCORD_BOT_TOKEN"
+      },
+      "status": "needs_channel_mapping"
+    },
+    {
+      "id": "retrogamecorps-buttondown-rss",
+      "label": "Retro Game Corps Newsletter (Buttondown)",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "rss",
+      "url": "https://buttondown.com/retrogamecorps/rss",
+      "previewFields": ["title", "pubDate", "link"],
+      "purpose": "Track newsletter drops",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "retrogamecorps-site-rss",
+      "label": "Retro Game Corps Site Feed",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "rss",
+      "url": "https://retrogamecorps.com/feed/",
+      "previewFields": ["title", "pubDate", "link"],
+      "purpose": "Track site posts and guides",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "retrogamecorps-x",
+      "label": "Retro Game Corps on X",
+      "platform": "x",
+      "access": "public",
+      "collectionMethod": "api_or_feed",
+      "url": "https://twitter.com/RetroGameCorps",
+      "accountHandle": "RetroGameCorps",
+      "previewFields": ["text", "created_at", "url"],
+      "purpose": "Track social updates and publishing cadence",
+      "auth": {
+        "type": "api_key_recommended",
+        "secretName": "X_API_BEARER_TOKEN"
+      },
+      "status": "needs_connector"
+    },
+    {
+      "id": "retrogamecorps-discord",
+      "label": "Retro Game Corps Discord",
+      "platform": "discord",
+      "access": "private_with_permission",
+      "collectionMethod": "bot_api",
+      "inviteUrl": "https://discord.gg/retrohandhelds",
+      "guildName": null,
+      "channelName": null,
+      "channelId": null,
+      "previewFields": ["author", "content", "timestamp"],
+      "purpose": "Track creator/community announcements",
+      "auth": {
+        "type": "bot_token",
+        "secretName": "DISCORD_BOT_TOKEN"
+      },
+      "status": "needs_channel_mapping"
+    },
+    {
+      "id": "joeys-rh-news-web",
+      "label": "Joey's Retro Handhelds Latest News",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://www.joeysretrohandhelds.com/latest-news/",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track latest coverage and announcements",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "joeys-rh-discord",
+      "label": "Joey's Retro Handhelds Discord",
+      "platform": "discord",
+      "access": "private_with_permission",
+      "collectionMethod": "bot_api",
+      "inviteUrl": "https://joeysrh.link/Discord",
+      "guildName": null,
+      "channelName": null,
+      "channelId": null,
+      "previewFields": ["author", "content", "timestamp"],
+      "purpose": "Track community and creator updates",
+      "auth": {
+        "type": "bot_token",
+        "secretName": "DISCORD_BOT_TOKEN"
+      },
+      "status": "needs_channel_mapping"
+    },
+    {
+      "id": "anbernic-web",
+      "label": "Anbernic Official",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://anbernic.com/",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track official product and site updates",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "anbernic-x",
+      "label": "Anbernic on X",
+      "platform": "x",
+      "access": "public",
+      "collectionMethod": "api_or_feed",
+      "url": "https://x.com/anbernic_china",
+      "accountHandle": "anbernic_china",
+      "previewFields": ["text", "created_at", "url"],
+      "purpose": "Track official social announcements",
+      "auth": {
+        "type": "api_key_recommended",
+        "secretName": "X_API_BEARER_TOKEN"
+      },
+      "status": "needs_connector"
+    },
+    {
+      "id": "retrododo-news-web",
+      "label": "Retro Dodo News Tag",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://retrododo.com/tag/news/",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track tagged retro handheld news",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "ayaneo-brand-community-web",
+      "label": "AYANEO Community Brand News",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://www.ayaneo.com/community/brand",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track AYANEO brand/community announcements",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "ayaneo-products-web",
+      "label": "AYANEO Product Page",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://www.ayaneo.com/product",
+      "previewFields": ["title", "headline"],
+      "purpose": "Track new or updated AYANEO product listings",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "ayaneo-discord",
+      "label": "AYANEO Discord",
+      "platform": "discord",
+      "access": "private_with_permission",
+      "collectionMethod": "bot_api",
+      "inviteUrl": "https://discord.gg/8qc4xz3St5",
+      "guildName": "AYANEO",
+      "guildId": "717181357109018694",
+      "channels": [
+        {
+          "name": "official-news",
+          "id": "1015064823295389806"
+        },
+        {
+          "name": "odin2",
+          "id": "1133939993694445641"
+        },
+        {
+          "name": "odin2-emulation-help",
+          "id": "1167669115620692018"
+        },
+        {
+          "name": "thor",
+          "id": "1407307760147628104"
+        },
+        {
+          "name": "thor-emulator-help",
+          "id": "1428201997164740679"
+        }
+      ],
+      "previewFields": ["author", "content", "timestamp"],
+      "purpose": "Track official and community updates",
+      "auth": {
+        "type": "bot_token",
+        "secretName": "DISCORD_BOT_TOKEN"
+      },
+      "status": "ready_for_token"
+    }
+  ]
+}
