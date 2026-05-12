@@ -1,0 +1,86 @@
+{
+  "instructions": {
+    "purpose": "Fill this with source access details. Copilot can then convert each entry into src/data/daily-report-sources.json.",
+    "notes": [
+      "This is an intake template, not the runtime config.",
+      "Use one object per source.",
+      "Prefer stable APIs, feeds, or raw JSON endpoints over brittle HTML scraping.",
+      "For secrets, provide the secret name to store in GitHub Actions, not the secret value in the file."
+    ]
+  },
+  "sources": [
+    {
+      "id": "example-web-page",
+      "label": "Example Web Page",
+      "platform": "web",
+      "access": "public",
+      "collectionMethod": "html",
+      "url": "https://example.com/news",
+      "dataPath": null,
+      "selectors": {
+        "items": ".article-card",
+        "title": ".article-title",
+        "timestamp": "time",
+        "link": "a"
+      },
+      "previewFields": ["title", "timestamp", "link"],
+      "purpose": "Track newly posted articles or announcements",
+      "auth": {
+        "type": "none",
+        "secretName": null
+      }
+    },
+    {
+      "id": "example-x-account",
+      "label": "Example X Account",
+      "platform": "x",
+      "access": "public",
+      "collectionMethod": "api_or_feed",
+      "url": "https://x.com/example",
+      "accountHandle": "example",
+      "preferredEndpoint": null,
+      "dataPath": null,
+      "previewFields": ["text", "created_at", "url"],
+      "purpose": "Track new posts from a public account",
+      "auth": {
+        "type": "api_key_if_needed",
+        "secretName": "X_API_BEARER_TOKEN"
+      },
+      "notes": "Public X data is best collected via official API if available. HTML scraping is brittle and may break often."
+    },
+    {
+      "id": "example-discord-channel",
+      "label": "Example Discord Channel",
+      "platform": "discord",
+      "access": "private_with_permission",
+      "collectionMethod": "bot_api",
+      "guildName": "Example Server",
+      "channelName": "announcements",
+      "channelId": null,
+      "dataPath": null,
+      "previewFields": ["author", "content", "timestamp"],
+      "purpose": "Track new announcements or key discussion signals",
+      "auth": {
+        "type": "bot_token",
+        "secretName": "DISCORD_BOT_TOKEN"
+      },
+      "notes": "Best practice is a bot with read permissions for specific channels."
+    },
+    {
+      "id": "example-github-repo",
+      "label": "Example GitHub Repo",
+      "platform": "github",
+      "access": "public",
+      "collectionMethod": "rest_api",
+      "repo": "owner/repo",
+      "endpoint": "https://api.github.com/repos/owner/repo/releases",
+      "dataPath": null,
+      "previewFields": ["name", "published_at", "html_url"],
+      "purpose": "Track releases, issues, commits, or discussions",
+      "auth": {
+        "type": "optional_token",
+        "secretName": "GITHUB_PAT"
+      }
+    }
+  ]
+}
