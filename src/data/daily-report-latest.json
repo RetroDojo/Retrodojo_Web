@@ -1,106 +1,62 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-05-12T01:03:46.111Z",
+  "generatedAt": "2026-05-12T01:18:39.729Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-05-12T01:03:42.928Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.947Z",
-      "durationMs": 19,
-      "summary": {
-        "kind": "array",
-        "count": 26
-      },
-      "previewRows": [
-        "name: Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1983",
-        "name: Super Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1990",
-        "name: Sega Genesis | manufacturer: Sega | release_year: 1988",
-        "name: Sega Master System | manufacturer: Sega | release_year: 1985",
-        "name: Neo Geo | manufacturer: SNK | release_year: 1990"
-      ]
+      "startedAt": "2026-05-12T01:18:36.716Z",
+      "ok": false,
+      "completedAt": "2026-05-12T01:18:36.717Z",
+      "durationMs": 1,
+      "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
       "id": "devices",
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-05-12T01:03:42.947Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.950Z",
-      "durationMs": 3,
-      "summary": {
-        "kind": "array",
-        "count": 19
-      },
-      "previewRows": [
-        "model: RG35XX SP | brand: Anbernic | chipset_id: allwinner-h700",
-        "model: RG35XX Pro | brand: Anbernic | chipset_id: allwinner-h700",
-        "model: RG556 | brand: Anbernic | chipset_id: unisoc-t820",
-        "model: Retroid Pocket 4 | brand: Retroid | chipset_id: mediatek-dimensity-900",
-        "model: Retroid Pocket 4 Pro | brand: Retroid | chipset_id: mediatek-dimensity-1100"
-      ]
+      "startedAt": "2026-05-12T01:18:36.717Z",
+      "ok": false,
+      "completedAt": "2026-05-12T01:18:36.717Z",
+      "durationMs": 0,
+      "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
       "id": "chipsets",
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-05-12T01:03:42.950Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.954Z",
-      "durationMs": 4,
-      "summary": {
-        "kind": "array",
-        "count": 12
-      },
-      "previewRows": [
-        "model: H700 | vendor: Allwinner",
-        "model: T820 | vendor: Unisoc | process_nm: 6",
-        "model: Dimensity 900 | vendor: MediaTek | process_nm: 6",
-        "model: Dimensity 1100 | vendor: MediaTek | process_nm: 6",
-        "model: Snapdragon 865 | vendor: Qualcomm | process_nm: 7"
-      ]
+      "startedAt": "2026-05-12T01:18:36.717Z",
+      "ok": false,
+      "completedAt": "2026-05-12T01:18:36.717Z",
+      "durationMs": 0,
+      "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
       "id": "benchmarks",
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-05-12T01:03:42.954Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.958Z",
-      "durationMs": 4,
-      "summary": {
-        "kind": "array",
-        "count": 12
-      },
-      "previewRows": [
-        "chipset_id: allwinner-a133p",
-        "chipset_id: allwinner-h700 | geekbench6.single_core: 130 | geekbench6.multi_core: 350",
-        "chipset_id: rockchip-rk3566 | geekbench6.single_core: 204 | geekbench6.multi_core: 508",
-        "chipset_id: qualcomm-snapdragon-662 | geekbench6.single_core: 339 | geekbench6.multi_core: 1088",
-        "chipset_id: qualcomm-snapdragon-g1-gen2 | geekbench6.single_core: 350 | geekbench6.multi_core: 1150"
-      ]
+      "startedAt": "2026-05-12T01:18:36.717Z",
+      "ok": false,
+      "completedAt": "2026-05-12T01:18:36.717Z",
+      "durationMs": 0,
+      "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
       "id": "retroachievements-news-rss",
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-05-12T01:03:42.958Z",
+      "startedAt": "2026-05-12T01:18:36.717Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.480Z",
-      "durationMs": 522,
+      "completedAt": "2026-05-12T01:18:37.193Z",
+      "durationMs": 476,
       "summary": {
         "kind": "array",
         "count": 20
@@ -118,11 +74,11 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-05-12T01:03:43.480Z",
+      "startedAt": "2026-05-12T01:18:37.193Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.670Z",
-      "durationMs": 190,
+      "completedAt": "2026-05-12T01:18:37.260Z",
+      "durationMs": 67,
       "summary": {
         "kind": "array",
         "count": 12
@@ -140,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-05-12T01:03:43.670Z",
+      "startedAt": "2026-05-12T01:18:37.260Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.966Z",
-      "durationMs": 296,
+      "completedAt": "2026-05-12T01:18:37.432Z",
+      "durationMs": 172,
       "summary": {
         "kind": "array",
         "count": 17
@@ -162,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-05-12T01:03:43.966Z",
+      "startedAt": "2026-05-12T01:18:37.432Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:44.442Z",
-      "durationMs": 476,
+      "completedAt": "2026-05-12T01:18:37.498Z",
+      "durationMs": 66,
       "summary": {
         "kind": "array",
         "count": 10
@@ -184,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-05-12T01:03:44.442Z",
+      "startedAt": "2026-05-12T01:18:37.498Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:44.972Z",
-      "durationMs": 530,
+      "completedAt": "2026-05-12T01:18:38.072Z",
+      "durationMs": 574,
       "summary": {
         "kind": "array",
         "count": 12
@@ -206,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-05-12T01:03:44.972Z",
+      "startedAt": "2026-05-12T01:18:38.072Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.220Z",
-      "durationMs": 248,
+      "completedAt": "2026-05-12T01:18:38.858Z",
+      "durationMs": 786,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-05-12T01:03:45.220Z",
+      "startedAt": "2026-05-12T01:18:38.858Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.323Z",
-      "durationMs": 103,
+      "completedAt": "2026-05-12T01:18:38.892Z",
+      "durationMs": 34,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-05-12T01:03:45.323Z",
+      "startedAt": "2026-05-12T01:18:38.892Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.962Z",
-      "durationMs": 639,
+      "completedAt": "2026-05-12T01:18:39.491Z",
+      "durationMs": 599,
       "summary": {
         "kind": "array",
         "count": 12
@@ -272,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-05-12T01:03:45.962Z",
+      "startedAt": "2026-05-12T01:18:39.491Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:46.110Z",
-      "durationMs": 148,
+      "completedAt": "2026-05-12T01:18:39.608Z",
+      "durationMs": 117,
       "summary": {
         "kind": "array",
         "count": 10
@@ -294,19 +250,11 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-05-12T01:03:46.110Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:46.111Z",
-      "durationMs": 1,
-      "summary": {
-        "kind": "array",
-        "count": 0
-      },
-      "previewRows": [
-        "status: Missing DISCORD_BOT_TOKEN. Set it in GitHub Actions secrets to enable Discord collection."
-      ],
-      "detail": "Skipped (token not configured)"
+      "startedAt": "2026-05-12T01:18:39.608Z",
+      "ok": false,
+      "completedAt": "2026-05-12T01:18:39.729Z",
+      "durationMs": 121,
+      "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
 }

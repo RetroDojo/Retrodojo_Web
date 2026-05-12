@@ -176,10 +176,10 @@
       <h1>RetroDojo Daily Data Pulse</h1>
       <p class="subtitle">Automated snapshot of key datasets</p>
       <div class="stats">
-        <span class="pill">Generated: 2026-05-12T01:03:46.111Z</span>
+        <span class="pill">Generated: 2026-05-12T01:18:39.729Z</span>
         <span class="pill">Sources: 14</span>
-        <span class="pill">Successful: 14</span>
-        <span class="pill">Failed: 0</span>
+        <span class="pill">Successful: 9</span>
+        <span class="pill">Failed: 5</span>
       </div>
     </section>
 
@@ -198,41 +198,41 @@
         <tbody>
           <tr>
         <td>Systems Catalog</td>
-        <td><span class="badge ok">OK</span></td>
-        <td>26 (array)</td>
-        <td>19 ms</td>
+        <td><span class="badge fail">FAILED</span></td>
+        <td>n/a</td>
+        <td>1 ms</td>
         <td class="mono">src/data/systems.json</td>
-        <td>Local file</td>
+        <td>ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json&#39;</td>
       </tr>
 <tr>
         <td>Device Database</td>
-        <td><span class="badge ok">OK</span></td>
-        <td>19 (array)</td>
-        <td>3 ms</td>
+        <td><span class="badge fail">FAILED</span></td>
+        <td>n/a</td>
+        <td>0 ms</td>
         <td class="mono">src/data/devices.json</td>
-        <td>Local file</td>
+        <td>ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json&#39;</td>
       </tr>
 <tr>
         <td>Chipset Matrix</td>
-        <td><span class="badge ok">OK</span></td>
-        <td>12 (array)</td>
-        <td>4 ms</td>
+        <td><span class="badge fail">FAILED</span></td>
+        <td>n/a</td>
+        <td>0 ms</td>
         <td class="mono">src/data/chipsets.json</td>
-        <td>Local file</td>
+        <td>ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json&#39;</td>
       </tr>
 <tr>
         <td>Benchmark Scores</td>
-        <td><span class="badge ok">OK</span></td>
-        <td>12 (array)</td>
-        <td>4 ms</td>
+        <td><span class="badge fail">FAILED</span></td>
+        <td>n/a</td>
+        <td>0 ms</td>
         <td class="mono">src/data/benchmarks.json</td>
-        <td>Local file</td>
+        <td>ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json&#39;</td>
       </tr>
 <tr>
         <td>RetroAchievements News</td>
         <td><span class="badge ok">OK</span></td>
         <td>20 (array)</td>
-        <td>522 ms</td>
+        <td>476 ms</td>
         <td class="mono">https://retroachievements.org/rss-news</td>
         <td>HTTP 200</td>
       </tr>
@@ -240,7 +240,7 @@
         <td>RetroHandhelds.gg News</td>
         <td><span class="badge ok">OK</span></td>
         <td>12 (array)</td>
-        <td>190 ms</td>
+        <td>67 ms</td>
         <td class="mono">https://retrohandhelds.gg/news/</td>
         <td>HTTP 200</td>
       </tr>
@@ -248,7 +248,7 @@
         <td>Retro Game Corps Newsletter</td>
         <td><span class="badge ok">OK</span></td>
         <td>17 (array)</td>
-        <td>296 ms</td>
+        <td>172 ms</td>
         <td class="mono">https://buttondown.com/retrogamecorps/rss</td>
         <td>HTTP 200</td>
       </tr>
@@ -256,7 +256,7 @@
         <td>Retro Game Corps Feed</td>
         <td><span class="badge ok">OK</span></td>
         <td>10 (array)</td>
-        <td>476 ms</td>
+        <td>66 ms</td>
         <td class="mono">https://retrogamecorps.com/feed/</td>
         <td>HTTP 200</td>
       </tr>
@@ -264,7 +264,7 @@
         <td>Joey&#39;s Retro Handhelds Latest News</td>
         <td><span class="badge ok">OK</span></td>
         <td>12 (array)</td>
-        <td>530 ms</td>
+        <td>574 ms</td>
         <td class="mono">https://www.joeysretrohandhelds.com/latest-news/</td>
         <td>HTTP 200</td>
       </tr>
@@ -272,7 +272,7 @@
         <td>Anbernic Official</td>
         <td><span class="badge ok">OK</span></td>
         <td>12 (array)</td>
-        <td>248 ms</td>
+        <td>786 ms</td>
         <td class="mono">https://anbernic.com/</td>
         <td>HTTP 200</td>
       </tr>
@@ -280,7 +280,7 @@
         <td>Retro Dodo News</td>
         <td><span class="badge ok">OK</span></td>
         <td>10 (array)</td>
-        <td>103 ms</td>
+        <td>34 ms</td>
         <td class="mono">https://retrododo.com/tag/news/</td>
         <td>HTTP 200</td>
       </tr>
@@ -288,7 +288,7 @@
         <td>AYANEO Community Brand</td>
         <td><span class="badge ok">OK</span></td>
         <td>12 (array)</td>
-        <td>639 ms</td>
+        <td>599 ms</td>
         <td class="mono">https://www.ayaneo.com/community/brand</td>
         <td>HTTP 200</td>
       </tr>
@@ -296,58 +296,42 @@
         <td>AYANEO Product</td>
         <td><span class="badge ok">OK</span></td>
         <td>10 (array)</td>
-        <td>148 ms</td>
+        <td>117 ms</td>
         <td class="mono">https://www.ayaneo.com/product</td>
         <td>HTTP 200</td>
       </tr>
 <tr>
         <td>AYN Discord Signals</td>
-        <td><span class="badge ok">OK</span></td>
-        <td>0 (array)</td>
-        <td>1 ms</td>
+        <td><span class="badge fail">FAILED</span></td>
+        <td>n/a</td>
+        <td>121 ms</td>
         <td class="mono">discord:guild:717181357109018694</td>
-        <td>Skipped (token not configured)</td>
+        <td>Discord API 403 Forbidden for channel official-news</td>
       </tr>
         </tbody>
       </table>
     </section>
 
     <section class="cards">
-      <article class="card ">
+      <article class="card error">
         <h3>Systems Catalog</h3>
-        <p class="meta">Latest sample rows</p>
-        <ul><li>name: Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1983</li>
-<li>name: Super Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1990</li>
-<li>name: Sega Genesis | manufacturer: Sega | release_year: 1988</li>
-<li>name: Sega Master System | manufacturer: Sega | release_year: 1985</li>
-<li>name: Neo Geo | manufacturer: SNK | release_year: 1990</li></ul>
+        <p class="meta">Source failed</p>
+        <p class="small">ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json&#39;</p>
       </article>
-<article class="card ">
+<article class="card error">
         <h3>Device Database</h3>
-        <p class="meta">Latest sample rows</p>
-        <ul><li>model: RG35XX SP | brand: Anbernic | chipset_id: allwinner-h700</li>
-<li>model: RG35XX Pro | brand: Anbernic | chipset_id: allwinner-h700</li>
-<li>model: RG556 | brand: Anbernic | chipset_id: unisoc-t820</li>
-<li>model: Retroid Pocket 4 | brand: Retroid | chipset_id: mediatek-dimensity-900</li>
-<li>model: Retroid Pocket 4 Pro | brand: Retroid | chipset_id: mediatek-dimensity-1100</li></ul>
+        <p class="meta">Source failed</p>
+        <p class="small">ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json&#39;</p>
       </article>
-<article class="card ">
+<article class="card error">
         <h3>Chipset Matrix</h3>
-        <p class="meta">Latest sample rows</p>
-        <ul><li>model: H700 | vendor: Allwinner</li>
-<li>model: T820 | vendor: Unisoc | process_nm: 6</li>
-<li>model: Dimensity 900 | vendor: MediaTek | process_nm: 6</li>
-<li>model: Dimensity 1100 | vendor: MediaTek | process_nm: 6</li>
-<li>model: Snapdragon 865 | vendor: Qualcomm | process_nm: 7</li></ul>
+        <p class="meta">Source failed</p>
+        <p class="small">ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json&#39;</p>
       </article>
-<article class="card ">
+<article class="card error">
         <h3>Benchmark Scores</h3>
-        <p class="meta">Latest sample rows</p>
-        <ul><li>chipset_id: allwinner-a133p</li>
-<li>chipset_id: allwinner-h700 | geekbench6.single_core: 130 | geekbench6.multi_core: 350</li>
-<li>chipset_id: rockchip-rk3566 | geekbench6.single_core: 204 | geekbench6.multi_core: 508</li>
-<li>chipset_id: qualcomm-snapdragon-662 | geekbench6.single_core: 339 | geekbench6.multi_core: 1088</li>
-<li>chipset_id: qualcomm-snapdragon-g1-gen2 | geekbench6.single_core: 350 | geekbench6.multi_core: 1150</li></ul>
+        <p class="meta">Source failed</p>
+        <p class="small">ENOENT: no such file or directory, open &#39;/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json&#39;</p>
       </article>
 <article class="card ">
         <h3>RetroAchievements News</h3>
@@ -430,10 +414,10 @@
 <li>headline: Support | url: https://www.ayaneo.com/product</li>
 <li>headline: Personal Center | url: https://www.ayaneo.com/product</li></ul>
       </article>
-<article class="card ">
+<article class="card error">
         <h3>AYN Discord Signals</h3>
-        <p class="meta">Latest sample rows</p>
-        <ul><li>status: Missing DISCORD_BOT_TOKEN. Set it in GitHub Actions secrets to enable Discord collection.</li></ul>
+        <p class="meta">Source failed</p>
+        <p class="small">Discord API 403 Forbidden for channel official-news</p>
       </article>
     </section>
   </div>
