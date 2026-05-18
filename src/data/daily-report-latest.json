@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-05-17T10:53:11.404Z",
+  "generatedAt": "2026-05-18T16:51:29.465Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-05-17T10:53:08.585Z",
+      "startedAt": "2026-05-18T16:51:26.718Z",
       "ok": false,
-      "completedAt": "2026-05-17T10:53:08.586Z",
+      "completedAt": "2026-05-18T16:51:26.719Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-05-17T10:53:08.586Z",
+      "startedAt": "2026-05-18T16:51:26.719Z",
       "ok": false,
-      "completedAt": "2026-05-17T10:53:08.586Z",
+      "completedAt": "2026-05-18T16:51:26.719Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-05-17T10:53:08.586Z",
+      "startedAt": "2026-05-18T16:51:26.719Z",
       "ok": false,
-      "completedAt": "2026-05-17T10:53:08.586Z",
+      "completedAt": "2026-05-18T16:51:26.719Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-05-17T10:53:08.586Z",
+      "startedAt": "2026-05-18T16:51:26.719Z",
       "ok": false,
-      "completedAt": "2026-05-17T10:53:08.586Z",
+      "completedAt": "2026-05-18T16:51:26.719Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-05-17T10:53:08.586Z",
+      "startedAt": "2026-05-18T16:51:26.719Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:09.066Z",
-      "durationMs": 480,
+      "completedAt": "2026-05-18T16:51:27.194Z",
+      "durationMs": 475,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 18 May 2026 00:26:59 +0000 | link: retroachievements:news:2305",
         "pubDate: Fri, 15 May 2026 17:25:25 +0000 | link: retroachievements:news:2304",
         "pubDate: Tue, 12 May 2026 00:57:02 +0000 | link: retroachievements:news:2302",
         "pubDate: Mon, 11 May 2026 17:08:48 +0000 | link: retroachievements:news:2301",
-        "pubDate: Sun, 10 May 2026 17:35:24 +0000 | link: https://retroachievements.org",
-        "pubDate: Sat, 09 May 2026 15:03:15 +0000 | link: retroachievements:news:2299"
+        "pubDate: Sun, 10 May 2026 17:35:24 +0000 | link: https://retroachievements.org"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-05-17T10:53:09.066Z",
+      "startedAt": "2026-05-18T16:51:27.194Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:09.123Z",
-      "durationMs": 57,
+      "completedAt": "2026-05-18T16:51:27.321Z",
+      "durationMs": 127,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: More RG Rotate, $10 Flash Carts, &amp; Big Custom Firmware Drops | url: https://retrohandhelds.gg/news/",
         "headline: AYANEO Pocket Block Leak Points to a Smaller, Cheaper Android Handheld | url: https://retrohandhelds.gg/news/",
         "headline: Anbernic RG DS Gets a New Linux Firmware That Finally Embraces Dual Screens | url: https://retrohandhelds.gg/news/",
-        "headline: AYANEO NEXT 2 Shipping Is Still on Track, But New Orders Remain Unavailable | url: https://retrohandhelds.gg/news/",
-        "headline: Batocera 43 Adds Support for AYN Thor, Retroid Pocket 6, and Is Packed With New Features | url: https://retrohandhelds.gg/news/"
+        "headline: AYANEO NEXT 2 Shipping Is Still on Track, But New Orders Remain Unavailable | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,21 +96,21 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-05-17T10:53:09.123Z",
+      "startedAt": "2026-05-18T16:51:27.321Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:09.264Z",
-      "durationMs": 141,
+      "completedAt": "2026-05-18T16:51:27.617Z",
+      "durationMs": 296,
       "summary": {
         "kind": "array",
-        "count": 17
+        "count": 18
       },
       "previewRows": [
+        "title: RGC #18: We&#39;re on a Puzzle Quest | pubDate: Sun, 17 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-018/",
         "title: RGC #17: I Just Think It&#39;s Neat | pubDate: Sun, 10 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-017/",
         "title: RGC #16: Dream Controller | pubDate: Sun, 03 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-016/",
         "title: RGC #15: Whole Lotta Pragmata | pubDate: Sun, 26 Apr 2026 12:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-015/",
-        "title: RGC #14: Steam is So Hot Right Now | pubDate: Sun, 19 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-014/",
-        "title: RGC #13: Racing Jackets are for Cheaters | pubDate: Sun, 12 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-013/"
+        "title: RGC #14: Steam is So Hot Right Now | pubDate: Sun, 19 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-014/"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-05-17T10:53:09.264Z",
+      "startedAt": "2026-05-18T16:51:27.617Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:09.384Z",
-      "durationMs": 120,
+      "completedAt": "2026-05-18T16:51:27.706Z",
+      "durationMs": 89,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-05-17T10:53:09.384Z",
+      "startedAt": "2026-05-18T16:51:27.706Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:09.990Z",
-      "durationMs": 606,
+      "completedAt": "2026-05-18T16:51:28.044Z",
+      "durationMs": 338,
       "summary": {
         "kind": "array",
         "count": 12
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-05-17T10:53:09.990Z",
+      "startedAt": "2026-05-18T16:51:28.044Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:10.410Z",
-      "durationMs": 420,
+      "completedAt": "2026-05-18T16:51:28.526Z",
+      "durationMs": 482,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-05-17T10:53:10.410Z",
+      "startedAt": "2026-05-18T16:51:28.526Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:10.596Z",
-      "durationMs": 186,
+      "completedAt": "2026-05-18T16:51:28.584Z",
+      "durationMs": 58,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Pocket Block Could Be AYANEO&#39;s Upcoming Mini Handheld, Leaks Suggest | url: https://retrododo.com/tag/news/",
-        "headline: ANBERNIC Brings Linux To The RG DS | url: https://retrododo.com/tag/news/",
-        "headline: Analogue&#39;s Latest 3D Update Finally Brings Save States To N64 | url: https://retrododo.com/tag/news/"
+        "headline: See Windows CE Running On The N64 | url: https://retrododo.com/tag/news/",
+        "headline: Pokémon LEGO Leaks Suggest Mewtwo Lab, Gengar, Jolteon, &amp; More Arriving This Year | url: https://retrododo.com/tag/news/",
+        "headline: LEGO Arcanine Set Releasing August 2026 Leaks | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-05-17T10:53:10.596Z",
+      "startedAt": "2026-05-18T16:51:28.584Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:11.171Z",
-      "durationMs": 575,
+      "completedAt": "2026-05-18T16:51:29.184Z",
+      "durationMs": 600,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-05-17T10:53:11.171Z",
+      "startedAt": "2026-05-18T16:51:29.184Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-17T10:53:11.289Z",
-      "durationMs": 118,
+      "completedAt": "2026-05-18T16:51:29.298Z",
+      "durationMs": 114,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-05-17T10:53:11.289Z",
+      "startedAt": "2026-05-18T16:51:29.298Z",
       "ok": false,
-      "completedAt": "2026-05-17T10:53:11.404Z",
-      "durationMs": 115,
+      "completedAt": "2026-05-18T16:51:29.465Z",
+      "durationMs": 167,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
