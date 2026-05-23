@@ -1,0 +1,202 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-01",
+  "source": "rocknix",
+  "chipsets": {
+    "SM8650": {
+      "name": "Snapdragon 8 Gen 3",
+      "vendor": "Qualcomm",
+      "category": "mobile",
+      "tier": "flagship",
+      "tier_rank": 1,
+      "tags": [
+        "android",
+        "high-end"
+      ],
+      "capability": {
+        "ps2": "excellent",
+        "gamecube": "excellent",
+        "switch": "partial",
+        "ps3": "limited",
+        "steam": "supported"
+      }
+    },
+    "SM8550": {
+      "name": "Snapdragon 8 Gen 2",
+      "vendor": "Qualcomm",
+      "category": "mobile",
+      "tier": "flagship",
+      "tier_rank": 1,
+      "tags": [
+        "android",
+        "high-end"
+      ],
+      "capability": {
+        "ps2": "excellent",
+        "gamecube": "excellent",
+        "switch": "partial",
+        "steam": "supported"
+      }
+    },
+    "SM8250": {
+      "name": "Snapdragon 865",
+      "vendor": "Qualcomm",
+      "category": "mobile",
+      "tier": "upper",
+      "tier_rank": 2,
+      "tags": [
+        "android"
+      ],
+      "capability": {
+        "ps2": "good",
+        "gamecube": "good",
+        "dreamcast": "excellent"
+      }
+    },
+    "SM6115": {
+      "name": "Snapdragon 662",
+      "vendor": "Qualcomm",
+      "category": "mobile",
+      "tier": "mid-mobile",
+      "tier_rank": 4,
+      "tags": [
+        "android",
+        "budget"
+      ],
+      "capability": {
+        "ps1": "excellent",
+        "n64": "limited",
+        "dreamcast": "limited"
+      }
+    },
+    "RK3588": {
+      "name": "RK3588",
+      "vendor": "Rockchip",
+      "category": "linux",
+      "tier": "flagship",
+      "tier_rank": 1,
+      "tags": [
+        "linux",
+        "high-end"
+      ],
+      "capability": {
+        "ps2": "excellent",
+        "gamecube": "excellent",
+        "linux_gaming": "supported"
+      }
+    },
+    "RK3576": {
+      "name": "RK3576",
+      "vendor": "Rockchip",
+      "category": "linux",
+      "tier": "mid",
+      "tier_rank": 3,
+      "tags": [
+        "linux"
+      ],
+      "capability": {
+        "n64": "good",
+        "psp": "good",
+        "dreamcast": "good"
+      }
+    },
+    "RK3566": {
+      "name": "RK3566",
+      "vendor": "Rockchip",
+      "category": "linux",
+      "tier": "mid",
+      "tier_rank": 3,
+      "tags": [
+        "linux",
+        "mainstream"
+      ],
+      "capability": {
+        "dreamcast": "excellent",
+        "n64": "excellent",
+        "psp": "good"
+      }
+    },
+    "RK3399": {
+      "name": "RK3399",
+      "vendor": "Rockchip",
+      "category": "linux",
+      "tier": "upper",
+      "tier_rank": 2,
+      "tags": [
+        "linux"
+      ],
+      "capability": {
+        "dreamcast": "excellent",
+        "n64": "excellent",
+        "psp": "good"
+      }
+    },
+    "RK3326": {
+      "name": "RK3326",
+      "vendor": "Rockchip",
+      "category": "linux",
+      "tier": "entry",
+      "tier_rank": 5,
+      "tags": [
+        "linux",
+        "budget"
+      ],
+      "capability": {
+        "ps1": "excellent",
+        "snes": "excellent",
+        "gba": "excellent"
+      }
+    },
+    "S922X": {
+      "name": "Amlogic S922X",
+      "vendor": "Amlogic",
+      "category": "linux",
+      "tier": "upper",
+      "tier_rank": 2,
+      "tags": [
+        "linux"
+      ],
+      "capability": {
+        "dreamcast": "excellent",
+        "gamecube": "limited"
+      }
+    },
+    "H700": {
+      "name": "Allwinner H700",
+      "vendor": "Allwinner",
+      "category": "linux",
+      "tier": "entry",
+      "tier_rank": 5,
+      "tags": [
+        "linux",
+        "budget"
+      ],
+      "capability": {
+        "ps1": "excellent",
+        "snes": "excellent"
+      }
+    }
+  },
+  "tiers": {
+    "flagship": {
+      "label": "\ud83d\udd25 Flagship",
+      "description": "Modern gaming, PS2+, Steam-capable"
+    },
+    "upper": {
+      "label": "\ud83d\udd35 Upper",
+      "description": "GameCube / PS2 range"
+    },
+    "mid": {
+      "label": "\ud83d\udfe1 Mid",
+      "description": "Dreamcast / N64 sweet spot"
+    },
+    "entry": {
+      "label": "\ud83d\udfe0 Entry",
+      "description": "PS1 and below"
+    },
+    "mid-mobile": {
+      "label": "\u26aa Mobile Mid",
+      "description": "Android handhelds (varies)"
+    }
+  }
+}

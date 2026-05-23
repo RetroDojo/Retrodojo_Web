@@ -29,6 +29,12 @@ func start
 ```
 Then visit http://localhost:7071/api/hello
 
+**One-command local health check**
+```powershell
+pwsh -File .github/scripts/check-local-api.ps1
+```
+This starts the Functions host on the first free localhost port starting at `7071`, probes `/api/hello`, prints the result, and shuts the host down automatically.
+
 ## Deploy
 
 Push to `main` → GitHub Actions auto-deploys to Azure.

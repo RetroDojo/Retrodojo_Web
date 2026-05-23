@@ -3,43 +3,13 @@
   "subtitle": "Automated snapshot of key datasets",
   "sources": [
     {
-      "id": "systems",
-      "label": "Systems Catalog",
-      "type": "file",
-      "format": "json",
-      "path": "src/data/systems.json",
-      "dataPath": "systems",
-      "previewFields": ["name", "manufacturer", "release_year"],
-      "previewLimit": 5
-    },
-    {
-      "id": "devices",
-      "label": "Device Database",
-      "type": "file",
-      "format": "json",
-      "path": "src/data/devices.json",
-      "dataPath": "devices",
-      "previewFields": ["model", "brand", "chipset_id"],
-      "previewLimit": 5
-    },
-    {
       "id": "chipsets",
       "label": "Chipset Matrix",
       "type": "file",
       "format": "json",
-      "path": "src/data/chipsets.json",
+      "path": "src/data/retrodojo-chipsets.json",
       "dataPath": "chipsets",
-      "previewFields": ["model", "vendor", "process_nm"],
-      "previewLimit": 5
-    },
-    {
-      "id": "benchmarks",
-      "label": "Benchmark Scores",
-      "type": "file",
-      "format": "json",
-      "path": "src/data/benchmarks.json",
-      "dataPath": "benchmarks",
-      "previewFields": ["chipset_id", "geekbench6.single_core", "geekbench6.multi_core"],
+      "previewFields": ["name", "vendor", "tier"],
       "previewLimit": 5
     },
     {
@@ -61,6 +31,18 @@
       "previewLimit": 5
     },
     {
+      "id": "retrohandhelds-x",
+      "label": "RetroHandhelds on X",
+      "type": "x",
+      "username": "retrohandhelds",
+      "maxResults": 10,
+      "includeReplies": false,
+      "includeRetweets": false,
+      "previewFields": ["created_at", "text", "url", "likes", "reposts"],
+      "previewLimit": 6,
+      "authEnv": "X_API_BEARER_TOKEN"
+    },
+    {
       "id": "retrogamecorps-buttondown-rss",
       "label": "Retro Game Corps Newsletter",
       "type": "url",
@@ -79,6 +61,18 @@
       "previewLimit": 5
     },
     {
+      "id": "retrogamecorps-x",
+      "label": "Retro Game Corps on X",
+      "type": "x",
+      "username": "RetroGameCorps",
+      "maxResults": 10,
+      "includeReplies": false,
+      "includeRetweets": false,
+      "previewFields": ["created_at", "text", "url", "likes", "reposts"],
+      "previewLimit": 6,
+      "authEnv": "X_API_BEARER_TOKEN"
+    },
+    {
       "id": "joeys-rh-news-web",
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
@@ -95,6 +89,18 @@
       "url": "https://anbernic.com/",
       "previewFields": ["headline", "url"],
       "previewLimit": 5
+    },
+    {
+      "id": "anbernic-x",
+      "label": "Anbernic on X",
+      "type": "x",
+      "username": "anbernic_china",
+      "maxResults": 10,
+      "includeReplies": false,
+      "includeRetweets": false,
+      "previewFields": ["created_at", "text", "url", "likes", "reposts"],
+      "previewLimit": 6,
+      "authEnv": "X_API_BEARER_TOKEN"
     },
     {
       "id": "retrododo-news-web",

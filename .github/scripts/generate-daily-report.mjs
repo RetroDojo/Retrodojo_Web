@@ -133,8 +133,23 @@ function pickCollection(data, dataPath) {
 }
 
 function buildPreviewRows(data, previewFields = [], previewLimit = 5) {
-  if (!Array.isArray(data)) return [];
-  return data.slice(0, previewLimit).map((item) => {
+  let items = data;
+  
+  // Convert object-shaped data (e.g., { "key1": {...}, "key2": {...} }) into an array of values
+  if (!Array.isArray(data) && data && typeof data === "object") {
+    items = Object.entries(data)
+      .map(([key, value]) => {
+        if (value && typeof value === "object") {
+          // Include the key as an identifier in the preview
+          return { ...value, _key: key };
+        }
+        return value;
+      });
+  }
+  
+  if (!Array.isArray(items)) return [];
+  
+  return items.slice(0, previewLimit).map((item) => {
     if (!item || typeof item !== "object") {
       return escapeHtml(String(item));
     }
@@ -165,6 +180,93 @@ function normalizeDiscordContent(message) {
   return "[no text content]";
 }
 
+function normalizeXText(text) {
+  return String(text || "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function loadXTimeline(source) {
+  const authEnv = source.authEnv || "X_API_BEARER_TOKEN";
+  const token = process.env[authEnv];
+
+  if (!token) {
+    return {
+      skippedReason: `Missing ${authEnv}. Set it in GitHub Actions secrets to enable X collection.`,
+      rows: []
+    };
+  }
+
+  const username = source.username || source.accountHandle || source.handle;
+  if (!username) {
+    return {
+      skippedReason: "No X username configured.",
+      rows: []
+    };
+  }
+
+  const userResponse = await fetch(`https://api.twitter.com/2/users/by/username/${encodeURIComponent(username)}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  if (!userResponse.ok) {
+    throw new Error(`X API ${userResponse.status} ${userResponse.statusText} for user ${username}`);
+  }
+
+  const userPayload = await userResponse.json();
+  const userId = userPayload?.data?.id;
+  if (!userId) {
+    throw new Error(`X API user lookup returned no id for ${username}`);
+  }
+
+  const maxResults = Math.min(Math.max(Number(source.maxResults || 8), 5), 100);
+  const includeReplies = Boolean(source.includeReplies);
+  const includeRetweets = Boolean(source.includeRetweets);
+  const exclude = [];
+  if (!includeReplies) exclude.push("replies");
+  if (!includeRetweets) exclude.push("retweets");
+
+  const params = new URLSearchParams({
+    max_results: String(maxResults),
+    "tweet.fields": "created_at,public_metrics"
+  });
+
+  if (exclude.length > 0) {
+    params.set("exclude", exclude.join(","));
+  }
+
+  const timelineResponse = await fetch(`https://api.twitter.com/2/users/${userId}/tweets?${params.toString()}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  if (!timelineResponse.ok) {
+    throw new Error(`X API ${timelineResponse.status} ${timelineResponse.statusText} for timeline ${username}`);
+  }
+
+  const timelinePayload = await timelineResponse.json();
+  const tweets = Array.isArray(timelinePayload?.data) ? timelinePayload.data : [];
+
+  const rows = tweets.map((tweet) => ({
+    username,
+    text: normalizeXText(tweet.text),
+    created_at: tweet.created_at,
+    url: `https://x.com/${username}/status/${tweet.id}`,
+    likes: tweet.public_metrics?.like_count ?? 0,
+    reposts: tweet.public_metrics?.retweet_count ?? 0,
+    replies: tweet.public_metrics?.reply_count ?? 0,
+    quotes: tweet.public_metrics?.quote_count ?? 0
+  }));
+
+  return {
+    skippedReason: null,
+    rows
+  };
+}
+
 async function loadDiscordMessages(source) {
   const authEnv = source.authEnv || "DISCORD_BOT_TOKEN";
   const token = process.env[authEnv];
@@ -184,6 +286,7 @@ async function loadDiscordMessages(source) {
   }
 
   const rows = [];
+  const channelErrors = [];
   const perChannelLimit = Math.min(Math.max(Number(source.messageLimitPerChannel || 3), 1), 25);
 
   for (const channel of source.channels) {
@@ -195,7 +298,12 @@ async function loadDiscordMessages(source) {
     });
 
     if (!response.ok) {
-      throw new Error(`Discord API ${response.status} ${response.statusText} for channel ${channel.name || channel.id}`);
+      channelErrors.push({
+        channel: channel.name || channel.id,
+        status: response.status,
+        statusText: response.statusText
+      });
+      continue;
     }
 
     const messages = await response.json();
@@ -217,7 +325,8 @@ async function loadDiscordMessages(source) {
 
   return {
     skippedReason: null,
-    rows
+    rows,
+    channelErrors
   };
 }
 
@@ -231,6 +340,8 @@ async function loadSource(source) {
       ? source.url
       : source.type === "discord"
         ? `discord:guild:${source.guildId || "unknown"}`
+        : source.type === "x"
+          ? `x:${source.username || source.accountHandle || source.handle || "unknown"}`
         : source.path,
     startedAt: new Date(startedAt).toISOString()
   };
@@ -258,6 +369,14 @@ async function loadSource(source) {
         ? [escapeHtml(`status: ${discord.skippedReason}`)]
         : buildPreviewRows(discord.rows, source.previewFields, source.previewLimit || 5);
 
+      if (Array.isArray(discord.channelErrors) && discord.channelErrors.length > 0) {
+        for (const chError of discord.channelErrors) {
+          previewRows.push(
+            escapeHtml(`status: channel ${chError.channel} returned ${chError.status} ${chError.statusText}`)
+          );
+        }
+      }
+
       return {
         ...baseResult,
         ok: true,
@@ -266,8 +385,29 @@ async function loadSource(source) {
         durationMs: Date.now() - startedAt,
         summary,
         previewRows,
-        detail: discord.skippedReason ? "Skipped (token not configured)" : "Discord API"
+        detail: discord.skippedReason
+          ? "Skipped (token not configured)"
+          : Array.isArray(discord.channelErrors) && discord.channelErrors.length > 0
+            ? "Discord API (partial)"
+            : "Discord API"
       };
+      } else if (source.type === "x") {
+        const xResult = await loadXTimeline(source);
+        const summary = summarizeData(xResult.rows);
+        const previewRows = xResult.skippedReason
+          ? [escapeHtml(`status: ${xResult.skippedReason}`)]
+          : buildPreviewRows(xResult.rows, source.previewFields, source.previewLimit || 5);
+
+        return {
+          ...baseResult,
+          ok: true,
+          httpStatus: null,
+          completedAt: new Date().toISOString(),
+          durationMs: Date.now() - startedAt,
+          summary,
+          previewRows,
+          detail: xResult.skippedReason ? "Skipped (token not configured)" : "X API"
+        };
     } else {
       throw new Error(`Unsupported source type: ${source.type}`);
     }

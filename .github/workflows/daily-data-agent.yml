@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN || secrets.discord_bot_token }}
+      X_API_BEARER_TOKEN: ${{ secrets.X_API_BEARER_TOKEN || secrets.x_api_bearer_token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,6 +29,14 @@ jobs:
             echo "Discord token detected."
           else
             echo "Discord token missing. Discord source will be skipped."
+          fi
+
+      - name: Check X token presence
+        run: |
+          if [[ -n "${X_API_BEARER_TOKEN}" ]]; then
+            echo "X token detected."
+          else
+            echo "X token missing. X sources will be skipped."
           fi
 
       - name: Generate daily report

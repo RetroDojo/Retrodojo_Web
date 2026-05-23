@@ -1,94 +1,28 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-05-12T01:03:46.111Z",
+  "generatedAt": "2026-05-23T17:24:59.161Z",
   "results": [
-    {
-      "id": "systems",
-      "label": "Systems Catalog",
-      "type": "file",
-      "location": "src/data/systems.json",
-      "startedAt": "2026-05-12T01:03:42.928Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.947Z",
-      "durationMs": 19,
-      "summary": {
-        "kind": "array",
-        "count": 26
-      },
-      "previewRows": [
-        "name: Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1983",
-        "name: Super Nintendo Entertainment System | manufacturer: Nintendo | release_year: 1990",
-        "name: Sega Genesis | manufacturer: Sega | release_year: 1988",
-        "name: Sega Master System | manufacturer: Sega | release_year: 1985",
-        "name: Neo Geo | manufacturer: SNK | release_year: 1990"
-      ]
-    },
-    {
-      "id": "devices",
-      "label": "Device Database",
-      "type": "file",
-      "location": "src/data/devices.json",
-      "startedAt": "2026-05-12T01:03:42.947Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.950Z",
-      "durationMs": 3,
-      "summary": {
-        "kind": "array",
-        "count": 19
-      },
-      "previewRows": [
-        "model: RG35XX SP | brand: Anbernic | chipset_id: allwinner-h700",
-        "model: RG35XX Pro | brand: Anbernic | chipset_id: allwinner-h700",
-        "model: RG556 | brand: Anbernic | chipset_id: unisoc-t820",
-        "model: Retroid Pocket 4 | brand: Retroid | chipset_id: mediatek-dimensity-900",
-        "model: Retroid Pocket 4 Pro | brand: Retroid | chipset_id: mediatek-dimensity-1100"
-      ]
-    },
     {
       "id": "chipsets",
       "label": "Chipset Matrix",
       "type": "file",
-      "location": "src/data/chipsets.json",
-      "startedAt": "2026-05-12T01:03:42.950Z",
+      "location": "src/data/retrodojo-chipsets.json",
+      "startedAt": "2026-05-23T17:24:55.109Z",
       "ok": true,
       "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.954Z",
-      "durationMs": 4,
+      "completedAt": "2026-05-23T17:24:55.121Z",
+      "durationMs": 12,
       "summary": {
-        "kind": "array",
-        "count": 12
+        "kind": "object",
+        "count": 11
       },
       "previewRows": [
-        "model: H700 | vendor: Allwinner",
-        "model: T820 | vendor: Unisoc | process_nm: 6",
-        "model: Dimensity 900 | vendor: MediaTek | process_nm: 6",
-        "model: Dimensity 1100 | vendor: MediaTek | process_nm: 6",
-        "model: Snapdragon 865 | vendor: Qualcomm | process_nm: 7"
-      ]
-    },
-    {
-      "id": "benchmarks",
-      "label": "Benchmark Scores",
-      "type": "file",
-      "location": "src/data/benchmarks.json",
-      "startedAt": "2026-05-12T01:03:42.954Z",
-      "ok": true,
-      "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:42.958Z",
-      "durationMs": 4,
-      "summary": {
-        "kind": "array",
-        "count": 12
-      },
-      "previewRows": [
-        "chipset_id: allwinner-a133p",
-        "chipset_id: allwinner-h700 | geekbench6.single_core: 130 | geekbench6.multi_core: 350",
-        "chipset_id: rockchip-rk3566 | geekbench6.single_core: 204 | geekbench6.multi_core: 508",
-        "chipset_id: qualcomm-snapdragon-662 | geekbench6.single_core: 339 | geekbench6.multi_core: 1088",
-        "chipset_id: qualcomm-snapdragon-g1-gen2 | geekbench6.single_core: 350 | geekbench6.multi_core: 1150"
+        "name: Snapdragon 8 Gen 3 | vendor: Qualcomm | tier: flagship",
+        "name: Snapdragon 8 Gen 2 | vendor: Qualcomm | tier: flagship",
+        "name: Snapdragon 865 | vendor: Qualcomm | tier: upper",
+        "name: Snapdragon 662 | vendor: Qualcomm | tier: mid-mobile",
+        "name: RK3588 | vendor: Rockchip | tier: flagship"
       ]
     },
     {
@@ -96,21 +30,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-05-12T01:03:42.958Z",
+      "startedAt": "2026-05-23T17:24:55.121Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.480Z",
-      "durationMs": 522,
+      "completedAt": "2026-05-23T17:24:55.607Z",
+      "durationMs": 486,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
-        "pubDate: Tue, 12 May 2026 00:57:02 +0000 | link: retroachievements:news:2302",
-        "pubDate: Mon, 11 May 2026 17:08:48 +0000 | link: retroachievements:news:2301",
-        "pubDate: Sun, 10 May 2026 17:35:24 +0000 | link: https://retroachievements.org",
-        "pubDate: Sat, 09 May 2026 15:03:15 +0000 | link: retroachievements:news:2299",
-        "pubDate: Sat, 09 May 2026 13:29:24 +0000 | link: retroachievements:news:2298"
+        "pubDate: Sat, 23 May 2026 00:18:12 +0000 | link: retroachievements:news:2310",
+        "pubDate: Fri, 22 May 2026 18:37:54 +0000 | link: retroachievements:news:2309",
+        "pubDate: Wed, 20 May 2026 11:23:27 +0000 | link: retroachievements:news:2308",
+        "pubDate: Tue, 19 May 2026 14:10:57 +0000 | link: retroachievements:news:2307",
+        "pubDate: Mon, 18 May 2026 17:17:06 +0000 | link: retroachievements:news:2306"
       ]
     },
     {
@@ -118,43 +52,62 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-05-12T01:03:43.480Z",
+      "startedAt": "2026-05-23T17:24:55.607Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.670Z",
-      "durationMs": 190,
+      "completedAt": "2026-05-23T17:24:55.763Z",
+      "durationMs": 156,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: AYANEO Announces a Restock of Pocket Fit Elite, Pocket Air Mini, and More | url: https://retrohandhelds.gg/news/",
-        "headline: Valve Hopes to Avoid Another Steam Controller Mess With the Steam Machine and Steam Frame | url: https://retrohandhelds.gg/news/",
-        "headline: [UPDATED]Dusk: Unofficial Twilight Princess Port | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: The RG Rotate Arrives, A New Yoo Handheld Appears, and Minish Cap Hits PC | url: https://retrohandhelds.gg/news/"
+        "headline: AYANEO Announces KONKR Pocket Block, Pocket AIR Mini IGS, and Teases Pocket Play | url: https://retrohandhelds.gg/news/",
+        "headline: Latest RG Vita Pro Update from Anbernic Brings the Google Play Store | url: https://retrohandhelds.gg/news/",
+        "headline: AYANEO Could Announce New ‘BITWAVE’ Handhelds Tomorrow Morning | url: https://retrohandhelds.gg/news/",
+        "headline: New GAMEMT E5 ModX Videos Show the Modular Handheld in Action | url: https://retrohandhelds.gg/news/"
       ]
+    },
+    {
+      "id": "retrohandhelds-x",
+      "label": "RetroHandhelds on X",
+      "type": "x",
+      "location": "x:retrohandhelds",
+      "startedAt": "2026-05-23T17:24:55.763Z",
+      "ok": true,
+      "httpStatus": null,
+      "completedAt": "2026-05-23T17:24:55.763Z",
+      "durationMs": 0,
+      "summary": {
+        "kind": "array",
+        "count": 0
+      },
+      "previewRows": [
+        "status: Missing X_API_BEARER_TOKEN. Set it in GitHub Actions secrets to enable X collection."
+      ],
+      "detail": "Skipped (token not configured)"
     },
     {
       "id": "retrogamecorps-buttondown-rss",
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-05-12T01:03:43.670Z",
+      "startedAt": "2026-05-23T17:24:55.763Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:43.966Z",
-      "durationMs": 296,
+      "completedAt": "2026-05-23T17:24:57.017Z",
+      "durationMs": 1254,
       "summary": {
         "kind": "array",
-        "count": 17
+        "count": 18
       },
       "previewRows": [
+        "title: RGC #18: We&#39;re on a Puzzle Quest | pubDate: Sun, 17 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-018/",
         "title: RGC #17: I Just Think It&#39;s Neat | pubDate: Sun, 10 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-017/",
         "title: RGC #16: Dream Controller | pubDate: Sun, 03 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-016/",
         "title: RGC #15: Whole Lotta Pragmata | pubDate: Sun, 26 Apr 2026 12:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-015/",
-        "title: RGC #14: Steam is So Hot Right Now | pubDate: Sun, 19 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-014/",
-        "title: RGC #13: Racing Jackets are for Cheaters | pubDate: Sun, 12 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-013/"
+        "title: RGC #14: Steam is So Hot Right Now | pubDate: Sun, 19 Apr 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-014/"
       ]
     },
     {
@@ -162,11 +115,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-05-12T01:03:43.966Z",
+      "startedAt": "2026-05-23T17:24:57.017Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:44.442Z",
-      "durationMs": 476,
+      "completedAt": "2026-05-23T17:24:57.252Z",
+      "durationMs": 235,
       "summary": {
         "kind": "array",
         "count": 10
@@ -180,15 +133,34 @@
       ]
     },
     {
+      "id": "retrogamecorps-x",
+      "label": "Retro Game Corps on X",
+      "type": "x",
+      "location": "x:RetroGameCorps",
+      "startedAt": "2026-05-23T17:24:57.252Z",
+      "ok": true,
+      "httpStatus": null,
+      "completedAt": "2026-05-23T17:24:57.252Z",
+      "durationMs": 0,
+      "summary": {
+        "kind": "array",
+        "count": 0
+      },
+      "previewRows": [
+        "status: Missing X_API_BEARER_TOKEN. Set it in GitHub Actions secrets to enable X collection."
+      ],
+      "detail": "Skipped (token not configured)"
+    },
+    {
       "id": "joeys-rh-news-web",
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-05-12T01:03:44.442Z",
+      "startedAt": "2026-05-23T17:24:57.252Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:44.972Z",
-      "durationMs": 530,
+      "completedAt": "2026-05-23T17:24:57.786Z",
+      "durationMs": 534,
       "summary": {
         "kind": "array",
         "count": 12
@@ -206,11 +178,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-05-12T01:03:44.972Z",
+      "startedAt": "2026-05-23T17:24:57.786Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.220Z",
-      "durationMs": 248,
+      "completedAt": "2026-05-23T17:24:58.246Z",
+      "durationMs": 460,
       "summary": {
         "kind": "array",
         "count": 12
@@ -224,15 +196,34 @@
       ]
     },
     {
+      "id": "anbernic-x",
+      "label": "Anbernic on X",
+      "type": "x",
+      "location": "x:anbernic_china",
+      "startedAt": "2026-05-23T17:24:58.246Z",
+      "ok": true,
+      "httpStatus": null,
+      "completedAt": "2026-05-23T17:24:58.246Z",
+      "durationMs": 0,
+      "summary": {
+        "kind": "array",
+        "count": 0
+      },
+      "previewRows": [
+        "status: Missing X_API_BEARER_TOKEN. Set it in GitHub Actions secrets to enable X collection."
+      ],
+      "detail": "Skipped (token not configured)"
+    },
+    {
       "id": "retrododo-news-web",
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-05-12T01:03:45.220Z",
+      "startedAt": "2026-05-23T17:24:58.246Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.323Z",
-      "durationMs": 103,
+      "completedAt": "2026-05-23T17:24:58.362Z",
+      "durationMs": 116,
       "summary": {
         "kind": "array",
         "count": 10
@@ -240,9 +231,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Nintendo Issued WWE Superstar Cody Rhodes a Cease And Desist Over His Love For Zelda | url: https://retrododo.com/tag/news/",
-        "headline: Uniqlo Reveal New Pokémon Collection Based On Original Game Boy Games | url: https://retrododo.com/tag/news/",
-        "headline: Zelda Twilight Princess Arrives On Windows, iOS, Android, Mac, &amp; Linux As &#39;Dusk&#39; | url: https://retrododo.com/tag/news/"
+        "headline: Lenovo Responds To That &quot;Fake&quot; Handheld - Yep, It&#39;s Official &amp; Illegally Loaded With Games | url: https://retrododo.com/tag/news/",
+        "headline: First New Major Crazy Taxi Game In 24 Years Teased In Online Clip | url: https://retrododo.com/tag/news/",
+        "headline: Donkey Kong Arcade Machine Could Be Getting A LEGO Set | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -250,11 +241,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-05-12T01:03:45.323Z",
+      "startedAt": "2026-05-23T17:24:58.362Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:45.962Z",
-      "durationMs": 639,
+      "completedAt": "2026-05-23T17:24:58.987Z",
+      "durationMs": 625,
       "summary": {
         "kind": "array",
         "count": 12
@@ -272,11 +263,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-05-12T01:03:45.962Z",
+      "startedAt": "2026-05-23T17:24:58.987Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-12T01:03:46.110Z",
-      "durationMs": 148,
+      "completedAt": "2026-05-23T17:24:59.161Z",
+      "durationMs": 174,
       "summary": {
         "kind": "array",
         "count": 10
@@ -294,11 +285,11 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-05-12T01:03:46.110Z",
+      "startedAt": "2026-05-23T17:24:59.161Z",
       "ok": true,
       "httpStatus": null,
-      "completedAt": "2026-05-12T01:03:46.111Z",
-      "durationMs": 1,
+      "completedAt": "2026-05-23T17:24:59.161Z",
+      "durationMs": 0,
       "summary": {
         "kind": "array",
         "count": 0
