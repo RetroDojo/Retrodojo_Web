@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-05-31T08:51:42.738Z",
+  "generatedAt": "2026-06-01T11:43:25.452Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-05-31T08:51:39.464Z",
+      "startedAt": "2026-06-01T11:43:22.087Z",
       "ok": false,
-      "completedAt": "2026-05-31T08:51:39.464Z",
-      "durationMs": 0,
+      "completedAt": "2026-06-01T11:43:22.088Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-05-31T08:51:39.464Z",
+      "startedAt": "2026-06-01T11:43:22.088Z",
       "ok": false,
-      "completedAt": "2026-05-31T08:51:39.465Z",
-      "durationMs": 1,
+      "completedAt": "2026-06-01T11:43:22.088Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-05-31T08:51:39.465Z",
+      "startedAt": "2026-06-01T11:43:22.088Z",
       "ok": false,
-      "completedAt": "2026-05-31T08:51:39.465Z",
+      "completedAt": "2026-06-01T11:43:22.088Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-05-31T08:51:39.465Z",
+      "startedAt": "2026-06-01T11:43:22.088Z",
       "ok": false,
-      "completedAt": "2026-05-31T08:51:39.465Z",
+      "completedAt": "2026-06-01T11:43:22.088Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-05-31T08:51:39.465Z",
+      "startedAt": "2026-06-01T11:43:22.088Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:39.948Z",
-      "durationMs": 483,
+      "completedAt": "2026-06-01T11:43:22.557Z",
+      "durationMs": 469,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-05-31T08:51:39.948Z",
+      "startedAt": "2026-06-01T11:43:22.557Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:40.022Z",
-      "durationMs": 74,
+      "completedAt": "2026-06-01T11:43:22.692Z",
+      "durationMs": 135,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: The Acer Nitro Blaze Link Sounds Like a Retro Handheld Disguised as a G Cloud Replacement | url: https://retrohandhelds.gg/news/",
-        "headline: MSI Announces Claw 8 EX AI Plus at Computex, and It Looks a Lot More Comfortable Than Its Predecessors | url: https://retrohandhelds.gg/news/",
-        "headline: The Ghostship 2.0 Update Adds So Many New Features, It’s Mind-Boggling | url: https://retrohandhelds.gg/news/",
-        "headline: OneXPlayer 3 and X2 Mini Pro Make Debut at Computex 2026 | url: https://retrohandhelds.gg/news/"
+        "headline: The ROG Xbox Ally X20 Turns the Xbox Ally X Into a 20th Anniversary Showpiece | url: https://retrohandhelds.gg/news/",
+        "headline: GameNative Finally Reaches 1.0 (Pre-Release) | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: Computex Brought the Handhelds, DK64 Brought the Nostalgia | url: https://retrohandhelds.gg/news/",
+        "headline: The Acer Nitro Blaze Link Sounds Like a Retro Handheld Disguised as a G Cloud Replacement | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,21 +96,21 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-05-31T08:51:40.022Z",
+      "startedAt": "2026-06-01T11:43:22.692Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:40.646Z",
-      "durationMs": 624,
+      "completedAt": "2026-06-01T11:43:23.575Z",
+      "durationMs": 883,
       "summary": {
         "kind": "array",
-        "count": 19
+        "count": 20
       },
       "previewRows": [
+        "title: RGC #20: Greetings from Taipei | pubDate: Sun, 31 May 2026 15:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-020/",
         "title: RGC #19: Back on that Tablet Stuff Again | pubDate: Sun, 24 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-019/",
         "title: RGC #18: We&#39;re on a Puzzle Quest | pubDate: Sun, 17 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-018/",
         "title: RGC #17: I Just Think It&#39;s Neat | pubDate: Sun, 10 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-017/",
-        "title: RGC #16: Dream Controller | pubDate: Sun, 03 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-016/",
-        "title: RGC #15: Whole Lotta Pragmata | pubDate: Sun, 26 Apr 2026 12:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-015/"
+        "title: RGC #16: Dream Controller | pubDate: Sun, 03 May 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-016/"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-05-31T08:51:40.646Z",
+      "startedAt": "2026-06-01T11:43:23.575Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:40.726Z",
-      "durationMs": 80,
+      "completedAt": "2026-06-01T11:43:23.733Z",
+      "durationMs": 158,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-05-31T08:51:40.726Z",
+      "startedAt": "2026-06-01T11:43:23.733Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:41.343Z",
-      "durationMs": 617,
+      "completedAt": "2026-06-01T11:43:24.073Z",
+      "durationMs": 340,
       "summary": {
         "kind": "array",
         "count": 12
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-05-31T08:51:41.343Z",
+      "startedAt": "2026-06-01T11:43:24.073Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:41.723Z",
-      "durationMs": 381,
+      "completedAt": "2026-06-01T11:43:24.471Z",
+      "durationMs": 398,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-05-31T08:51:41.724Z",
+      "startedAt": "2026-06-01T11:43:24.471Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:41.847Z",
-      "durationMs": 123,
+      "completedAt": "2026-06-01T11:43:24.589Z",
+      "durationMs": 118,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Pokémon Crystal Inheritance Gets An Official Release | url: https://retrododo.com/tag/news/",
         "headline: A Super Rare Miyamoto-Signed 2015 Championship Nintendo 3DS Is Up For Auction | url: https://retrododo.com/tag/news/",
-        "headline: Nubeo Just Dropped A Beautiful Missile Command Time Piece | url: https://retrododo.com/tag/news/",
-        "headline: Evercade Finally Shows Off The Nexus Handheld In-Person | url: https://retrododo.com/tag/news/"
+        "headline: Nubeo Just Dropped A Beautiful Missile Command Time Piece | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-05-31T08:51:41.847Z",
+      "startedAt": "2026-06-01T11:43:24.589Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:42.480Z",
-      "durationMs": 633,
+      "completedAt": "2026-06-01T11:43:25.195Z",
+      "durationMs": 606,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-05-31T08:51:42.480Z",
+      "startedAt": "2026-06-01T11:43:25.195Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-05-31T08:51:42.603Z",
-      "durationMs": 123,
+      "completedAt": "2026-06-01T11:43:25.309Z",
+      "durationMs": 114,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-05-31T08:51:42.603Z",
+      "startedAt": "2026-06-01T11:43:25.309Z",
       "ok": false,
-      "completedAt": "2026-05-31T08:51:42.738Z",
-      "durationMs": 135,
+      "completedAt": "2026-06-01T11:43:25.452Z",
+      "durationMs": 143,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
