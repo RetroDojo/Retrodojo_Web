@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-06-08T11:04:37.513Z",
+  "generatedAt": "2026-06-09T09:53:10.503Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-06-08T11:04:32.961Z",
+      "startedAt": "2026-06-09T09:53:07.241Z",
       "ok": false,
-      "completedAt": "2026-06-08T11:04:32.961Z",
+      "completedAt": "2026-06-09T09:53:07.241Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-06-08T11:04:32.961Z",
+      "startedAt": "2026-06-09T09:53:07.241Z",
       "ok": false,
-      "completedAt": "2026-06-08T11:04:32.961Z",
+      "completedAt": "2026-06-09T09:53:07.241Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,10 +30,10 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-06-08T11:04:32.961Z",
+      "startedAt": "2026-06-09T09:53:07.241Z",
       "ok": false,
-      "completedAt": "2026-06-08T11:04:32.962Z",
-      "durationMs": 1,
+      "completedAt": "2026-06-09T09:53:07.241Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-06-08T11:04:32.962Z",
+      "startedAt": "2026-06-09T09:53:07.241Z",
       "ok": false,
-      "completedAt": "2026-06-08T11:04:32.962Z",
+      "completedAt": "2026-06-09T09:53:07.241Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-06-08T11:04:32.962Z",
+      "startedAt": "2026-06-09T09:53:07.241Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:33.346Z",
-      "durationMs": 384,
+      "completedAt": "2026-06-09T09:53:07.772Z",
+      "durationMs": 531,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 08 Jun 2026 17:37:05 +0000 | link: retroachievements:news:2319",
         "pubDate: Sun, 07 Jun 2026 20:18:47 +0000 | link: https://retroachievements.org",
         "pubDate: Sat, 06 Jun 2026 14:50:30 +0000 | link: retroachievements:news:2317",
         "pubDate: Fri, 05 Jun 2026 12:10:41 +0000 | link: retroachievements:news:2316",
-        "pubDate: Fri, 05 Jun 2026 11:40:00 +0000 | link: https://retroachievements.org",
-        "pubDate: Mon, 01 Jun 2026 15:22:01 +0000 | link: retroachievements:news:2314"
+        "pubDate: Fri, 05 Jun 2026 11:40:00 +0000 | link: https://retroachievements.org"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-06-08T11:04:33.346Z",
+      "startedAt": "2026-06-09T09:53:07.772Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:33.499Z",
-      "durationMs": 153,
+      "completedAt": "2026-06-09T09:53:07.948Z",
+      "durationMs": 176,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Another Price Jump is Coming to the AYN Thor and Odin 3 | url: https://retrohandhelds.gg/news/",
         "headline: Retro Handhelds Weekly: SEGA Might Be Back, ROCKNIX Returns, and GameNative Hits 1.0 | url: https://retrohandhelds.gg/news/",
         "headline: SEGA Might Release a New Retro Handheld, Cartridges and All | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Releases an Update for Its Entire RG XX H700 Lineup | url: https://retrohandhelds.gg/news/",
-        "headline: ROCKNIX Releases First New Stable Build in Over a Year | url: https://retrohandhelds.gg/news/"
+        "headline: Anbernic Releases an Update for Its Entire RG XX H700 Lineup | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-06-08T11:04:33.499Z",
+      "startedAt": "2026-06-09T09:53:07.948Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:34.357Z",
-      "durationMs": 858,
+      "completedAt": "2026-06-09T09:53:08.270Z",
+      "durationMs": 322,
       "summary": {
         "kind": "array",
         "count": 21
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-06-08T11:04:34.357Z",
+      "startedAt": "2026-06-09T09:53:08.270Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:34.567Z",
-      "durationMs": 210,
+      "completedAt": "2026-06-09T09:53:08.442Z",
+      "durationMs": 172,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-06-08T11:04:34.567Z",
+      "startedAt": "2026-06-09T09:53:08.442Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:35.411Z",
-      "durationMs": 844,
+      "completedAt": "2026-06-09T09:53:08.750Z",
+      "durationMs": 308,
       "summary": {
         "kind": "array",
         "count": 12
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-06-08T11:04:35.411Z",
+      "startedAt": "2026-06-09T09:53:08.750Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:35.851Z",
-      "durationMs": 440,
+      "completedAt": "2026-06-09T09:53:09.263Z",
+      "durationMs": 513,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-06-08T11:04:35.851Z",
+      "startedAt": "2026-06-09T09:53:09.263Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:36.450Z",
-      "durationMs": 599,
+      "completedAt": "2026-06-09T09:53:09.458Z",
+      "durationMs": 195,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Two Upcoming Evercade Carts Have Been Leaked | url: https://retrododo.com/tag/news/",
-        "headline: New 2D Castlevania Game &#39;Belmont&#39;s Curse&#39; Arrives October 2026 | url: https://retrododo.com/tag/news/",
-        "headline: Spyro Is Back With A Brand New Game After Almost 20 Years | url: https://retrododo.com/tag/news/"
+        "headline: Rumours Suggest Ocarina Of Time Remake Is Coming Today, &amp; I Couldn&#39;t Be Happier | url: https://retrododo.com/tag/news/",
+        "headline: Halo: Campaign Evolved Collector&#39;s Edition Sells Out In Less Than 24 Hours | url: https://retrododo.com/tag/news/",
+        "headline: Super Mario Advance 4 ROM Hack Adds In Effects From GBA e-Reader Cards | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-06-08T11:04:36.451Z",
+      "startedAt": "2026-06-09T09:53:09.458Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:37.181Z",
-      "durationMs": 730,
+      "completedAt": "2026-06-09T09:53:10.088Z",
+      "durationMs": 630,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-06-08T11:04:37.181Z",
+      "startedAt": "2026-06-09T09:53:10.088Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-08T11:04:37.299Z",
-      "durationMs": 118,
+      "completedAt": "2026-06-09T09:53:10.208Z",
+      "durationMs": 120,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-06-08T11:04:37.299Z",
+      "startedAt": "2026-06-09T09:53:10.208Z",
       "ok": false,
-      "completedAt": "2026-06-08T11:04:37.513Z",
-      "durationMs": 214,
+      "completedAt": "2026-06-09T09:53:10.503Z",
+      "durationMs": 295,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
