@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-06-13T09:22:34.205Z",
+  "generatedAt": "2026-06-14T09:41:47.828Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-06-13T09:22:30.420Z",
+      "startedAt": "2026-06-14T09:41:44.476Z",
       "ok": false,
-      "completedAt": "2026-06-13T09:22:30.421Z",
-      "durationMs": 1,
+      "completedAt": "2026-06-14T09:41:44.476Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-06-13T09:22:30.421Z",
+      "startedAt": "2026-06-14T09:41:44.476Z",
       "ok": false,
-      "completedAt": "2026-06-13T09:22:30.421Z",
-      "durationMs": 0,
+      "completedAt": "2026-06-14T09:41:44.477Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-06-13T09:22:30.421Z",
+      "startedAt": "2026-06-14T09:41:44.477Z",
       "ok": false,
-      "completedAt": "2026-06-13T09:22:30.421Z",
+      "completedAt": "2026-06-14T09:41:44.477Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-06-13T09:22:30.421Z",
+      "startedAt": "2026-06-14T09:41:44.477Z",
       "ok": false,
-      "completedAt": "2026-06-13T09:22:30.421Z",
+      "completedAt": "2026-06-14T09:41:44.477Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-06-13T09:22:30.421Z",
+      "startedAt": "2026-06-14T09:41:44.477Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:30.870Z",
-      "durationMs": 449,
+      "completedAt": "2026-06-14T09:41:44.806Z",
+      "durationMs": 329,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Sat, 13 Jun 2026 17:10:25 +0000 | link: retroachievements:news:2321",
         "pubDate: Sat, 13 Jun 2026 07:29:29 +0000 | link: retroachievements:news:2320",
         "pubDate: Mon, 08 Jun 2026 17:37:05 +0000 | link: retroachievements:news:2319",
         "pubDate: Sun, 07 Jun 2026 20:18:47 +0000 | link: https://retroachievements.org",
-        "pubDate: Sat, 06 Jun 2026 14:50:30 +0000 | link: retroachievements:news:2317",
-        "pubDate: Fri, 05 Jun 2026 12:10:41 +0000 | link: retroachievements:news:2316"
+        "pubDate: Sat, 06 Jun 2026 14:50:30 +0000 | link: retroachievements:news:2317"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-06-13T09:22:30.870Z",
+      "startedAt": "2026-06-14T09:41:44.806Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:31.013Z",
-      "durationMs": 143,
+      "completedAt": "2026-06-14T09:41:44.923Z",
+      "durationMs": 117,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Valve’s Steam Machine and Steam Frame Launch Plans May Finally Be Coming Together | url: https://retrohandhelds.gg/news/",
         "headline: [UPDATE: Pre-orders Beginning] TrimUI Drops Another Teaser for Its Upcoming Brick Pro and Hammer Pro U Handhelds | url: https://retrohandhelds.gg/news/",
         "headline: Gentleman Brings a MiSTer-Style Frontend to PCs | url: https://retrohandhelds.gg/news/",
-        "headline: OneXPlayer X2 Mini Pro Signals Launch on Indiegogo With the OneXPlayer 3 Close Behind | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Finally Begins Selling Replacement Parts for Its Handhelds | url: https://retrohandhelds.gg/news/"
+        "headline: OneXPlayer X2 Mini Pro Signals Launch on Indiegogo With the OneXPlayer 3 Close Behind | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-06-13T09:22:31.013Z",
+      "startedAt": "2026-06-14T09:41:44.923Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:31.664Z",
-      "durationMs": 651,
+      "completedAt": "2026-06-14T09:41:45.715Z",
+      "durationMs": 792,
       "summary": {
         "kind": "array",
         "count": 21
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-06-13T09:22:31.664Z",
+      "startedAt": "2026-06-14T09:41:45.715Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:31.836Z",
-      "durationMs": 172,
+      "completedAt": "2026-06-14T09:41:46.032Z",
+      "durationMs": 317,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-06-13T09:22:31.836Z",
+      "startedAt": "2026-06-14T09:41:46.032Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:32.177Z",
-      "durationMs": 341,
+      "completedAt": "2026-06-14T09:41:46.316Z",
+      "durationMs": 284,
       "summary": {
         "kind": "array",
         "count": 12
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-06-13T09:22:32.177Z",
+      "startedAt": "2026-06-14T09:41:46.316Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:32.768Z",
-      "durationMs": 591,
+      "completedAt": "2026-06-14T09:41:46.661Z",
+      "durationMs": 345,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-06-13T09:22:32.768Z",
+      "startedAt": "2026-06-14T09:41:46.661Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:32.880Z",
-      "durationMs": 112,
+      "completedAt": "2026-06-14T09:41:46.876Z",
+      "durationMs": 215,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Super Mario Bros. Becomes The Most Expensive Video Game Ever Sold | url: https://retrododo.com/tag/news/",
         "headline: Retroid Reveals New 12GB + 128GB &quot;Top Stick&quot; Pocket 6 Handheld | url: https://retrododo.com/tag/news/",
-        "headline: A Pokémon Stadium Recomp Has Finally Arrived, But Lists Claude As A Contributor | url: https://retrododo.com/tag/news/",
-        "headline: Pokémon Crippling Medical Debt Edition Puts A Comedic Spin On The Traditional Formula | url: https://retrododo.com/tag/news/"
+        "headline: A Pokémon Stadium Recomp Has Finally Arrived, But Lists Claude As A Contributor | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-06-13T09:22:32.880Z",
+      "startedAt": "2026-06-14T09:41:46.876Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:33.745Z",
-      "durationMs": 865,
+      "completedAt": "2026-06-14T09:41:47.594Z",
+      "durationMs": 718,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-06-13T09:22:33.745Z",
+      "startedAt": "2026-06-14T09:41:47.594Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-13T09:22:33.914Z",
-      "durationMs": 169,
+      "completedAt": "2026-06-14T09:41:47.702Z",
+      "durationMs": 108,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-06-13T09:22:33.914Z",
+      "startedAt": "2026-06-14T09:41:47.702Z",
       "ok": false,
-      "completedAt": "2026-06-13T09:22:34.205Z",
-      "durationMs": 291,
+      "completedAt": "2026-06-14T09:41:47.828Z",
+      "durationMs": 126,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
