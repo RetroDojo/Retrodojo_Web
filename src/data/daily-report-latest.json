@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-06-16T11:19:24.364Z",
+  "generatedAt": "2026-06-17T11:04:28.147Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-06-16T11:19:21.028Z",
+      "startedAt": "2026-06-17T11:04:25.131Z",
       "ok": false,
-      "completedAt": "2026-06-16T11:19:21.029Z",
+      "completedAt": "2026-06-17T11:04:25.132Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-06-16T11:19:21.029Z",
+      "startedAt": "2026-06-17T11:04:25.132Z",
       "ok": false,
-      "completedAt": "2026-06-16T11:19:21.029Z",
+      "completedAt": "2026-06-17T11:04:25.132Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-06-16T11:19:21.029Z",
+      "startedAt": "2026-06-17T11:04:25.132Z",
       "ok": false,
-      "completedAt": "2026-06-16T11:19:21.029Z",
+      "completedAt": "2026-06-17T11:04:25.132Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-06-16T11:19:21.029Z",
+      "startedAt": "2026-06-17T11:04:25.132Z",
       "ok": false,
-      "completedAt": "2026-06-16T11:19:21.029Z",
+      "completedAt": "2026-06-17T11:04:25.132Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-06-16T11:19:21.029Z",
+      "startedAt": "2026-06-17T11:04:25.132Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:21.439Z",
-      "durationMs": 410,
+      "completedAt": "2026-06-17T11:04:25.471Z",
+      "durationMs": 339,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Wed, 17 Jun 2026 00:01:02 +0000 | link: retroachievements:news:2323",
         "pubDate: Mon, 15 Jun 2026 15:13:51 +0000 | link: retroachievements:news:2322",
         "pubDate: Sat, 13 Jun 2026 17:10:25 +0000 | link: retroachievements:news:2321",
         "pubDate: Sat, 13 Jun 2026 07:29:29 +0000 | link: retroachievements:news:2320",
-        "pubDate: Mon, 08 Jun 2026 17:37:05 +0000 | link: retroachievements:news:2319",
-        "pubDate: Sun, 07 Jun 2026 20:18:47 +0000 | link: https://retroachievements.org"
+        "pubDate: Mon, 08 Jun 2026 17:37:05 +0000 | link: retroachievements:news:2319"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-06-16T11:19:21.439Z",
+      "startedAt": "2026-06-17T11:04:25.471Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:21.633Z",
-      "durationMs": 194,
+      "completedAt": "2026-06-17T11:04:25.583Z",
+      "durationMs": 112,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Steam Machine Geekbench Scores Hint at Modest But Capable Performance | url: https://retrohandhelds.gg/news/",
+        "headline: GoldenEye 007 Recompilation: From PC With Love | url: https://retrohandhelds.gg/news/",
         "headline: Valve Expands SteamOS Support to Include Intel-Powered Handhelds and PCs | url: https://retrohandhelds.gg/news/",
-        "headline: Lenovo’s Retro Handheld Returns as the “SUNYAO G02” | url: https://retrohandhelds.gg/news/",
-        "headline: AYANEO Pocket MICRO 2 is Apparently ‘Retro’s New Icon’ | url: https://retrohandhelds.gg/news/",
-        "headline: iiSU Alpha Brings New Features and New Visuals on Board | url: https://retrohandhelds.gg/news/"
+        "headline: Lenovo’s Retro Handheld Returns as the “SUNYAO G02” | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-06-16T11:19:21.633Z",
+      "startedAt": "2026-06-17T11:04:25.583Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:22.196Z",
-      "durationMs": 563,
+      "completedAt": "2026-06-17T11:04:26.257Z",
+      "durationMs": 674,
       "summary": {
         "kind": "array",
         "count": 22
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-06-16T11:19:22.196Z",
+      "startedAt": "2026-06-17T11:04:26.257Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:22.284Z",
-      "durationMs": 88,
+      "completedAt": "2026-06-17T11:04:26.370Z",
+      "durationMs": 113,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,22 +140,33 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-06-16T11:19:22.284Z",
-      "ok": false,
-      "completedAt": "2026-06-16T11:19:22.461Z",
-      "durationMs": 177,
-      "error": "HTTP 415 Unsupported Media Type"
+      "startedAt": "2026-06-17T11:04:26.370Z",
+      "ok": true,
+      "httpStatus": 200,
+      "completedAt": "2026-06-17T11:04:26.671Z",
+      "durationMs": 301,
+      "summary": {
+        "kind": "array",
+        "count": 12
+      },
+      "previewRows": [
+        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Thor &amp; Odin 3 Price Increases, new TrimUI Bricks &amp; So many new games! // Joey’s Retro Newscast | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: GameNative 1.0, GameHub 6.0.6, Armada on ARM &amp; Anbernic’s at it again // Joey’s Retro Newscast | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Just don’t get a Steam Deck bro // Joey’s Retro Newscast | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Odin 3 Ultra Gone, New RG34XXSP Color &amp; Switch 2 selling gangbusters // Joey’s Retro Newscast | url: https://www.joeysretrohandhelds.com/latest-news/"
+      ]
     },
     {
       "id": "anbernic-web",
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-06-16T11:19:22.461Z",
+      "startedAt": "2026-06-17T11:04:26.671Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:22.931Z",
-      "durationMs": 470,
+      "completedAt": "2026-06-17T11:04:27.270Z",
+      "durationMs": 599,
       "summary": {
         "kind": "array",
         "count": 12
@@ -173,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-06-16T11:19:22.931Z",
+      "startedAt": "2026-06-17T11:04:27.270Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:23.148Z",
-      "durationMs": 217,
+      "completedAt": "2026-06-17T11:04:27.327Z",
+      "durationMs": 57,
       "summary": {
         "kind": "array",
         "count": 10
@@ -185,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: EarthBound Beginnings Remakes Mother 1 In 16-Bit Using The EarthBound Engine | url: https://retrododo.com/tag/news/",
-        "headline: Crash Bandicoot Returns To The Retro Dimension In New SNES ROM Hack | url: https://retrododo.com/tag/news/",
-        "headline: This ROM Hack Turns Every Pokémon Into A Banana | url: https://retrododo.com/tag/news/"
+        "headline: Smell Like Sonic With These New Dr Squatch Products | url: https://retrododo.com/tag/news/",
+        "headline: MemoryCore Reimagines Classic 90s Video Games Into Tabletop Role-Playing Games | url: https://retrododo.com/tag/news/",
+        "headline: EarthBound Beginnings Remakes Mother 1 In 16-Bit Using The EarthBound Engine | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -195,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-06-16T11:19:23.148Z",
+      "startedAt": "2026-06-17T11:04:27.327Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:24.001Z",
-      "durationMs": 853,
+      "completedAt": "2026-06-17T11:04:27.898Z",
+      "durationMs": 571,
       "summary": {
         "kind": "array",
         "count": 12
@@ -217,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-06-16T11:19:24.001Z",
+      "startedAt": "2026-06-17T11:04:27.898Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-06-16T11:19:24.165Z",
-      "durationMs": 164,
+      "completedAt": "2026-06-17T11:04:28.007Z",
+      "durationMs": 109,
       "summary": {
         "kind": "array",
         "count": 10
@@ -239,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-06-16T11:19:24.165Z",
+      "startedAt": "2026-06-17T11:04:28.007Z",
       "ok": false,
-      "completedAt": "2026-06-16T11:19:24.364Z",
-      "durationMs": 199,
+      "completedAt": "2026-06-17T11:04:28.147Z",
+      "durationMs": 140,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
