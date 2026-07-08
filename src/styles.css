@@ -10,6 +10,14 @@
   --green:     #4DDE8A;  /* success state */
   --red:       #FF5C5C;  /* red — CTA, warnings */
 
+  /* Theme-aware data/table tokens (added 2026-07-08 to fix light-mode contrast
+     in compare.html / chipsets.html / benchmarks.html — do not hardcode
+     rgba(255,255,255,...) or #e0e0e0 in page-level <style> blocks; use these instead) */
+  --panel-alt: #1a2035;                       /* sticky column / header row bg */
+  --dim-2:     rgba(238, 242, 248, 0.35);     /* extra-faint text (empty cells, meta) */
+  --hover-tint: rgba(255, 211, 77, 0.06);     /* row hover tint */
+  --grid-line: rgba(238, 242, 248, 0.08);     /* chart gridlines */
+
   /* Tiered font system — locked 2026-07-08 */
   --font-hero:  'Press Start 2P', monospace;   /* hero/logo only, large sizes */
   --font-head:  'Orbitron', sans-serif;        /* section headings, badges, nav */
@@ -28,6 +36,10 @@
     --dim:     rgba(26, 26, 26, 0.6);
     --accent:  #8a5a00;
     --red:     #B01E1E;
+    --panel-alt: #f1ede0;
+    --dim-2:     rgba(26, 26, 26, 0.35);
+    --hover-tint: rgba(138, 90, 0, 0.06);
+    --grid-line: rgba(26, 26, 26, 0.08);
   }
 }
 

@@ -24,7 +24,7 @@
 
     .controls label {
       font-family: var(--font-body);
-      font-size: 0.55rem;
+      font-size: 0.65rem;
       color: var(--dim);
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -70,10 +70,10 @@
     }
 
     thead th {
-      background: #1a1a1a;
+      background: var(--panel-alt);
       color: var(--dim);
       font-family: var(--font-body);
-      font-size: 0.52rem;
+      font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       padding: clamp(0.5rem, 0.5vw + 0.4rem, 0.7rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
@@ -90,17 +90,17 @@
     thead th.sorted-desc::after { content: ' ▼'; color: var(--green); }
 
     tbody tr {
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid var(--border);
       transition: background 0.15s;
     }
 
-    tbody tr:hover { background: rgba(255,255,255,0.04); }
+    tbody tr:hover { background: var(--hover-tint); }
     tbody tr.hidden { display: none; }
 
     td {
       padding: clamp(0.5rem, 0.45vw + 0.35rem, 0.65rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
       vertical-align: top;
-      color: #e0e0e0;
+      color: var(--text);
     }
 
     td.model-cell {
@@ -131,11 +131,11 @@
     .badge {
       display: inline-block;
       font-family: var(--font-body);
-      font-size: 0.45rem;
-      padding: 0.15rem 0.45rem;
+      font-size: 0.58rem;
+      padding: 0.2rem 0.5rem;
       border-radius: 2px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
     }
 
     .badge-budget   { border: 1px solid #60a5fa; color: #60a5fa; }
@@ -148,7 +148,7 @@
     .badge-tier-200-500 { border: 1px solid #fb923c; color: #fb923c; }
     .badge-tier-500-1000 { border: 1px solid #f87171; color: #f87171; }
     .badge-tier-1000-plus { border: 1px solid #f87171; color: #f87171; }
-    .badge-tier-unknown { border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.65); }
+    .badge-tier-unknown { border: 1px solid var(--dim-2); color: var(--dim); }
     .badge-category-retro-handheld { border: 1px solid #60a5fa; color: #60a5fa; }
     .badge-category-pc-handheld { border: 1px solid #c084fc; color: #c084fc; }
 
@@ -162,7 +162,7 @@
     /* ── Notes tooltip ── */
     .note-cell {
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.45);
+      color: var(--dim);
       max-width: 200px;
     }
 
@@ -199,7 +199,7 @@
       display: inline-block;
       margin-bottom: 1.5rem;
       font-family: var(--font-body);
-      font-size: 0.55rem;
+      font-size: 0.62rem;
       color: var(--dim);
       text-decoration: none;
       letter-spacing: 0.08em;
@@ -211,7 +211,7 @@
     .meta-line {
       margin-top: 1rem;
       font-size: 0.72rem;
-      color: rgba(255,255,255,0.3);
+      color: var(--dim-2);
       display: flex;
       flex-wrap: wrap;
       gap: 0.8rem;
@@ -241,7 +241,7 @@
       thead th,
       td {
         white-space: normal;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
       }
 
       #device-table th:nth-child(1),
@@ -263,7 +263,7 @@
         position: sticky;
         left: 0;
         z-index: 4;
-        background: #161616;
+        background: var(--panel-alt);
       }
 
       #device-table th:nth-child(2),
@@ -271,17 +271,17 @@
         position: sticky;
         left: var(--sticky-col-2-left, 7.5rem);
         z-index: 3;
-        background: #161616;
+        background: var(--panel-alt);
       }
 
       #device-table thead th:nth-child(1),
       #device-table thead th:nth-child(2) {
-        background: #1a1a1a;
+        background: var(--panel-alt);
       }
 
       #device-table tbody tr:hover td:nth-child(1),
       #device-table tbody tr:hover td:nth-child(2) {
-        background: #1e1e1e;
+        background: var(--panel-alt);
       }
     }
 
@@ -619,7 +619,7 @@
       if (!cpu || !cpu.chip) return '—';
       const detail = cpu.cores || cpu.architecture || '—';
       const slug = cpu.chip.toLowerCase().replace(/\s*\(.*\)/, '').replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
-      return `<a href="/chipsets.html#${slug}" style="color:inherit;text-decoration:none;" title="View emulation tiers"><strong>${cpu.chip}</strong></a><br><small style="color:rgba(255,255,255,0.5)">${detail}</small>`;
+      return `<a href="/chipsets.html#${slug}" style="color:inherit;text-decoration:none;" title="View emulation tiers"><strong>${cpu.chip}</strong></a><br><small style="color:var(--dim)">${detail}</small>`;
     }
 
     function gpuLabel(gpu) {
@@ -634,7 +634,7 @@
       const size = s.size_inch ? `${s.size_inch}" ` : '';
       const resolution = s.resolution || '—';
       const type = s.type || '—';
-      return `${size}${resolution}<br><small style="color:rgba(255,255,255,0.5)">${type}</small>`;
+      return `${size}${resolution}<br><small style="color:var(--dim)">${type}</small>`;
     }
 
     function aspectLabel(screen) {

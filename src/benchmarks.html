@@ -182,10 +182,26 @@
       '#facc15', '#94a3b8'
     ];
 
+    // Theme-aware chart colors — reads the live prefers-color-scheme so bar
+    // labels/gridlines stay legible in both light and dark mode (fixes
+    // white-on-white invisible axis labels in light mode).
+    function themeColors() {
+      const isLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      return isLight
+        ? { grid: 'rgba(26,26,26,0.08)', tick: 'rgba(26,26,26,0.55)', label: '#1a1a1a', noData: 'rgba(26,26,26,0.08)', noDataBorder: 'rgba(26,26,26,0.15)' }
+        : { grid: 'rgba(238,242,248,0.08)', tick: 'rgba(238,242,248,0.55)', label: '#eef2f8', noData: 'rgba(238,242,248,0.08)', noDataBorder: 'rgba(238,242,248,0.15)' };
+    }
+
     let chipsets = [];
     let benchmarks = [];
     let chart = null;
     let selectedChips = new Set();
+
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+        if (chart) buildChart();
+      });
+    }
 
     async function init() {
       const [cRes, bRes] = await Promise.all([
@@ -293,16 +309,17 @@
       const titleEl = document.getElementById('chart-title');
       titleEl.textContent = document.getElementById('bench-type').selectedOptions[0].text;
 
+      const tc = themeColors();
       const scores = getScores(type);
       const labels = scores.map(s => s.label + (s.estimated ? ' *' : ''));
       const values = scores.map(s => s.value);
       const colors = scores.map((s, i) => {
-        if (!s.hasData) return 'rgba(255,255,255,0.08)';
+        if (!s.hasData) return tc.noData;
         if (s.estimated) return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length] + '80';
         return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length];
       });
       const borderColors = scores.map((s, i) => {
-        if (!s.hasData) return 'rgba(255,255,255,0.15)';
+        if (!s.hasData) return tc.noDataBorder;
         return COLORS[benchmarks.findIndex(b => b.chipset_id === s.chipset_id) % COLORS.length];
       });
 
@@ -345,18 +362,18 @@
           },
           scales: {
             x: {
-              grid: { color: 'rgba(255,255,255,0.05)' },
-              ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 11 } },
+              grid: { color: tc.grid },
+              ticks: { color: tc.tick, font: { size: 11 } },
               title: {
                 display: true,
                 text: 'Score',
-                color: 'rgba(255,255,255,0.45)',
+                color: tc.tick,
                 font: { size: 12 }
               }
             },
             y: {
               grid: { display: false },
-              ticks: { color: '#e0e0e0', font: { size: 12 } }
+              ticks: { color: tc.label, font: { size: 12 } }
             }
           }
         }

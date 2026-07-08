@@ -24,7 +24,7 @@
 
     .controls label {
       font-family: var(--font-body);
-      font-size: 0.55rem;
+      font-size: 0.65rem;
       color: var(--dim);
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -91,10 +91,10 @@
     }
 
     thead th {
-      background: #1a1a1a;
+      background: var(--panel-alt);
       color: var(--dim);
       font-family: var(--font-body);
-      font-size: 0.5rem;
+      font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       padding: clamp(0.5rem, 0.5vw + 0.4rem, 0.7rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
@@ -109,13 +109,13 @@
       position: sticky;
       left: 0;
       z-index: 2;
-      background: #1a1a1a;
+      background: var(--panel-alt);
     }
 
     thead th .soc-vendor {
       display: block;
       font-size: 0.62rem;
-      color: rgba(255,255,255,0.35);
+      color: var(--dim-2);
       font-weight: normal;
       text-transform: none;
     }
@@ -123,16 +123,16 @@
     thead th .soc-gpu {
       display: block;
       font-size: 0.6rem;
-      color: rgba(255,255,255,0.3);
+      color: var(--dim-2);
       font-weight: normal;
       text-transform: none;
     }
 
     tbody tr {
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid var(--border);
     }
 
-    tbody tr:hover { background: rgba(255,255,255,0.04); }
+    tbody tr:hover { background: var(--hover-tint); }
 
     td {
       padding: clamp(0.4rem, 0.35vw + 0.3rem, 0.6rem) clamp(0.55rem, 0.5vw + 0.45rem, 1rem);
@@ -171,11 +171,11 @@
     }
 
     /* ── Cell rating colours ── */
-    .cell-full_speed   { background: rgba(255,255,255,0.15); color: #60a5fa; }
+    .cell-full_speed   { background: rgba(96,165,250,0.15); color: #60a5fa; }
     .cell-playable     { background: rgba(251,191,36,0.12); color: #fbbf24; }
     .cell-slow         { background: rgba(251,146,60,0.12); color: #fb923c; }
-    .cell-not_capable  { background: rgba(248,113,113,0.08); color: rgba(248,113,113,0.5); }
-    .cell-empty        { color: rgba(255,255,255,0.15); }
+    .cell-not_capable  { background: rgba(248,113,113,0.08); color: rgba(248,113,113,0.7); }
+    .cell-empty        { color: var(--dim-2); }
 
     .cell-rating {
       display: block;
@@ -238,7 +238,7 @@
     .soc-card .driver-info {
       font-size: 0.72rem;
       line-height: 1.6;
-      color: #e0e0e0;
+      color: var(--text);
     }
 
     .soc-card .driver-info strong {
@@ -260,8 +260,8 @@
       font-size: 0.62rem;
       padding: 0.12rem 0.4rem;
       border-radius: 2px;
-      border: 1px solid rgba(255,255,255,0.3);
-      color: rgba(255,255,255,0.7);
+      border: 1px solid var(--dim-2);
+      color: var(--dim);
       text-decoration: none;
       transition: border-color 0.15s, color 0.15s;
     }
@@ -301,7 +301,7 @@
     .rev-badge {
       font-size: 0.62rem;
       padding: 0.1rem 0.35rem;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid var(--dim-2);
       border-radius: 2px;
     }
 
@@ -311,7 +311,7 @@
       color: var(--dim);
       text-decoration: none;
       font-family: var(--font-body);
-      font-size: 0.55rem;
+      font-size: 0.62rem;
       margin-bottom: 1rem;
       transition: color 0.15s;
     }
@@ -376,7 +376,7 @@
 
     <!-- Legend -->
     <div class="legend">
-      <div class="legend-item"><span class="legend-swatch" style="background:rgba(255,255,255,0.25);"></span> Full Speed</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:rgba(96,165,250,0.25);"></span> Full Speed</div>
       <div class="legend-item"><span class="legend-swatch" style="background:rgba(251,191,36,0.2);"></span> Playable</div>
       <div class="legend-item"><span class="legend-swatch" style="background:rgba(251,146,60,0.2);"></span> Slow</div>
       <div class="legend-item"><span class="legend-swatch" style="background:rgba(248,113,113,0.12);"></span> Not Capable</div>
@@ -627,7 +627,7 @@
           html += `<strong>Driver Path:</strong> ${driver.driver_update_path || '—'}`;
           html += `</div>`;
 
-          html += `<p style="font-size:0.72rem;color:#e0e0e0;margin-top:0.5rem;">${perf.summary}</p>`;
+          html += `<p style="font-size:0.72rem;color:var(--text);margin-top:0.5rem;">${perf.summary}</p>`;
 
           /* Device badges */
           if (devs.length > 0) {
