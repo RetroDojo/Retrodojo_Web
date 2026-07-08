@@ -1,19 +1,42 @@
 :root {
-  --accent:   #60a5fa;
-  --green:    #60a5fa;          /* legacy alias */
-  --dark:     #121212;
-  --card-bg:  #1e1e1e;
-  --border:   rgba(255, 255, 255, 0.08);
-  --dim:      rgba(255, 255, 255, 0.45);
-  --text:     #e0e0e0;
-  --red:      #f87171;
-  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Retro Dojo — Web Palette 1 (Navy/Gold/Red, primary, dark mode default)
+     Source: RetroDojo-Standards/00_Canonical/Brand & Design System.md (locked 2026-07-08) */
+  --bg:        #0b1220;
+  --card-bg:   #141b2e;
+  --border:    rgba(255, 211, 77, 0.3);
+  --text:      #eef2f8;
+  --dim:       rgba(238, 242, 248, 0.6);
+  --accent:    #FFD34D;  /* gold — headings, badges */
+  --green:     #4DDE8A;  /* success state */
+  --red:       #FF5C5C;  /* red — CTA, warnings */
+
+  /* Tiered font system — locked 2026-07-08 */
+  --font-hero:  'Press Start 2P', monospace;   /* hero/logo only, large sizes */
+  --font-head:  'Orbitron', sans-serif;        /* section headings, badges, nav */
+  --font-body:  'Space Grotesk', sans-serif;   /* body copy */
+  --font-mono:  'JetBrains Mono', monospace;   /* spec/data tables */
+  --font-cta:   'Audiowide', sans-serif;       /* CTA/accent buttons */
 }
+
+/* Light mode override */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:      #fbfaf6;
+    --card-bg: #ffffff;
+    --border:  #e0d9c4;
+    --text:    #1a1a1a;
+    --dim:     rgba(26, 26, 26, 0.6);
+    --accent:  #8a5a00;
+    --red:     #B01E1E;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@700&family=Space+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Audiowide&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: var(--dark);
+  background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -34,15 +57,17 @@ header {
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: var(--font-hero);
+  font-size: 1.6rem;
+  line-height: 1.6;
   letter-spacing: 0.02em;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .subtitle {
-  margin-top: 0.4rem;
-  font-size: 0.8rem;
+  font-family: var(--font-head);
+  margin-top: 0.9rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
   color: var(--dim);
   animation: blink 1.8s step-end infinite;
@@ -57,25 +82,27 @@ header {
 }
 
 .card h2, .card h3 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-  color: var(--dim);
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
-.card p { line-height: 1.7; color: var(--text); }
+.card p { line-height: 1.7; color: var(--text); font-family: var(--font-body); }
 
 .success { color: var(--green); }
 .warn    { color: #ffcc00; }
-.dim     { color: var(--dim); font-size: 0.78rem; }
+.dim     { color: var(--dim); font-size: 0.78rem; font-family: var(--font-mono); }
 
 footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.75rem;
   color: var(--dim);
+  font-family: var(--font-mono);
 }
 
 .blink { animation: blink 1s step-end infinite; }
@@ -84,3 +111,4 @@ footer {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
+
