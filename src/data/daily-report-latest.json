@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-07-13T09:34:27.951Z",
+  "generatedAt": "2026-07-14T08:13:34.764Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-07-13T09:34:24.501Z",
+      "startedAt": "2026-07-14T08:13:31.969Z",
       "ok": false,
-      "completedAt": "2026-07-13T09:34:24.502Z",
-      "durationMs": 1,
+      "completedAt": "2026-07-14T08:13:31.969Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-07-13T09:34:24.502Z",
+      "startedAt": "2026-07-14T08:13:31.969Z",
       "ok": false,
-      "completedAt": "2026-07-13T09:34:24.502Z",
+      "completedAt": "2026-07-14T08:13:31.969Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-07-13T09:34:24.502Z",
+      "startedAt": "2026-07-14T08:13:31.969Z",
       "ok": false,
-      "completedAt": "2026-07-13T09:34:24.502Z",
+      "completedAt": "2026-07-14T08:13:31.969Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-07-13T09:34:24.502Z",
+      "startedAt": "2026-07-14T08:13:31.969Z",
       "ok": false,
-      "completedAt": "2026-07-13T09:34:24.502Z",
+      "completedAt": "2026-07-14T08:13:31.969Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-07-13T09:34:24.502Z",
+      "startedAt": "2026-07-14T08:13:31.969Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:24.855Z",
-      "durationMs": 353,
+      "completedAt": "2026-07-14T08:13:32.323Z",
+      "durationMs": 354,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 13 Jul 2026 18:09:17 +0000 | link: retroachievements:news:2343",
         "pubDate: Sun, 12 Jul 2026 13:26:59 +0000 | link: retroachievements:news:2342",
         "pubDate: Fri, 10 Jul 2026 00:17:03 +0000 | link: retroachievements:news:2341",
         "pubDate: Wed, 08 Jul 2026 19:26:38 +0000 | link: https://retroachievements.org",
-        "pubDate: Wed, 08 Jul 2026 17:48:56 +0000 | link: retroachievements:news:2339",
-        "pubDate: Mon, 06 Jul 2026 14:09:03 +0000 | link: retroachievements:news:2338"
+        "pubDate: Wed, 08 Jul 2026 17:48:56 +0000 | link: retroachievements:news:2339"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-07-13T09:34:24.855Z",
+      "startedAt": "2026-07-14T08:13:32.323Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:24.943Z",
-      "durationMs": 88,
+      "completedAt": "2026-07-14T08:13:32.406Z",
+      "durationMs": 83,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Virtua Racing is Back and Better Than Ever Thanks to this Port | url: https://retrohandhelds.gg/news/",
         "headline: Lenovo is Bringing a New Handheld With the C700? | url: https://retrohandhelds.gg/news/",
         "headline: Retro Handhelds Weekly: Retroid Gets More RAM, Mangmi Goes Vertical, and Dual-Screen Zelda | url: https://retrohandhelds.gg/news/",
-        "headline: Zelda 3 Now Has a Second Screen with This Port | url: https://retrohandhelds.gg/news/",
-        "headline: Mangmi Stands Tall With a New Vertical Handheld | url: https://retrohandhelds.gg/news/"
+        "headline: Zelda 3 Now Has a Second Screen with This Port | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-07-13T09:34:24.943Z",
+      "startedAt": "2026-07-14T08:13:32.406Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:25.657Z",
-      "durationMs": 714,
+      "completedAt": "2026-07-14T08:13:33.035Z",
+      "durationMs": 629,
       "summary": {
         "kind": "array",
         "count": 27
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-07-13T09:34:25.657Z",
+      "startedAt": "2026-07-14T08:13:33.035Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:25.770Z",
-      "durationMs": 113,
+      "completedAt": "2026-07-14T08:13:33.150Z",
+      "durationMs": 115,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-07-13T09:34:25.770Z",
+      "startedAt": "2026-07-14T08:13:33.150Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:26.081Z",
-      "durationMs": 311,
+      "completedAt": "2026-07-14T08:13:33.465Z",
+      "durationMs": 315,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-07-13T09:34:26.081Z",
+      "startedAt": "2026-07-14T08:13:33.465Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:26.867Z",
-      "durationMs": 786,
+      "completedAt": "2026-07-14T08:13:33.939Z",
+      "durationMs": 474,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-07-13T09:34:26.867Z",
+      "startedAt": "2026-07-14T08:13:33.939Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:26.924Z",
-      "durationMs": 57,
+      "completedAt": "2026-07-14T08:13:34.037Z",
+      "durationMs": 98,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Panic Bomber W Is Coming To Super Bomberman Collection | url: https://retrododo.com/tag/news/",
         "headline: Mangmi Reveals First Look At New &quot;Air Y&quot; Vertical Handhelds | url: https://retrododo.com/tag/news/",
-        "headline: Upcoming LEGO Donkey Kong Arcade Set Leaks | url: https://retrododo.com/tag/news/",
-        "headline: Evercade Cartridge &amp; Super Pocket Prices Are Going Up From This Month | url: https://retrododo.com/tag/news/"
+        "headline: Upcoming LEGO Donkey Kong Arcade Set Leaks | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-07-13T09:34:26.924Z",
+      "startedAt": "2026-07-14T08:13:34.037Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:27.717Z",
-      "durationMs": 793,
+      "completedAt": "2026-07-14T08:13:34.527Z",
+      "durationMs": 490,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-07-13T09:34:27.717Z",
+      "startedAt": "2026-07-14T08:13:34.527Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-13T09:34:27.836Z",
-      "durationMs": 119,
+      "completedAt": "2026-07-14T08:13:34.649Z",
+      "durationMs": 122,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,9 +250,9 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-07-13T09:34:27.836Z",
+      "startedAt": "2026-07-14T08:13:34.649Z",
       "ok": false,
-      "completedAt": "2026-07-13T09:34:27.951Z",
+      "completedAt": "2026-07-14T08:13:34.764Z",
       "durationMs": 115,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
