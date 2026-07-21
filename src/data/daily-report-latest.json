@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-07-20T09:21:25.912Z",
+  "generatedAt": "2026-07-21T08:34:43.142Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-07-20T09:21:21.042Z",
+      "startedAt": "2026-07-21T08:34:39.090Z",
       "ok": false,
-      "completedAt": "2026-07-20T09:21:21.043Z",
-      "durationMs": 1,
+      "completedAt": "2026-07-21T08:34:39.090Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-07-20T09:21:21.043Z",
+      "startedAt": "2026-07-21T08:34:39.090Z",
       "ok": false,
-      "completedAt": "2026-07-20T09:21:21.043Z",
-      "durationMs": 0,
+      "completedAt": "2026-07-21T08:34:39.091Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-07-20T09:21:21.043Z",
+      "startedAt": "2026-07-21T08:34:39.091Z",
       "ok": false,
-      "completedAt": "2026-07-20T09:21:21.043Z",
+      "completedAt": "2026-07-21T08:34:39.091Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-07-20T09:21:21.043Z",
+      "startedAt": "2026-07-21T08:34:39.091Z",
       "ok": false,
-      "completedAt": "2026-07-20T09:21:21.043Z",
+      "completedAt": "2026-07-21T08:34:39.091Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-07-20T09:21:21.043Z",
+      "startedAt": "2026-07-21T08:34:39.091Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:21.580Z",
-      "durationMs": 537,
+      "completedAt": "2026-07-21T08:34:39.514Z",
+      "durationMs": 423,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 20 Jul 2026 17:22:20 +0000 | link: retroachievements:news:2348",
         "pubDate: Mon, 20 Jul 2026 00:15:31 +0000 | link: retroachievements:news:2347",
         "pubDate: Sun, 19 Jul 2026 15:26:15 +0000 | link: retroachievements:news:2346",
         "pubDate: Sat, 18 Jul 2026 10:13:47 +0000 | link: retroachievements:news:2345",
-        "pubDate: Thu, 16 Jul 2026 00:11:50 +0000 | link: retroachievements:news:2344",
-        "pubDate: Mon, 13 Jul 2026 18:09:17 +0000 | link: retroachievements:news:2343"
+        "pubDate: Thu, 16 Jul 2026 00:11:50 +0000 | link: retroachievements:news:2344"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-07-20T09:21:21.580Z",
+      "startedAt": "2026-07-21T08:34:39.514Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:23.390Z",
-      "durationMs": 1810,
+      "completedAt": "2026-07-21T08:34:39.790Z",
+      "durationMs": 276,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: MANGMI AIR Y and AIR Y Pro Full Spec Sheet Finally Revealed | url: https://retrohandhelds.gg/news/",
         "headline: Retro Handhelds Weekly: New Handheld Reveals and Classic Games Find New Life | url: https://retrohandhelds.gg/news/",
         "headline: Cocoon 3 is Here and It’s Evolving into Something Great | url: https://retrohandhelds.gg/news/",
-        "headline: New GKD350H Ultra Details Reveal Specs, Pricing, and HiFi Audio | url: https://retrohandhelds.gg/news/",
-        "headline: KONKR Pocket Advance ‘Announced’ With Nothing More Than a Render | url: https://retrohandhelds.gg/news/"
+        "headline: New GKD350H Ultra Details Reveal Specs, Pricing, and HiFi Audio | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-07-20T09:21:23.390Z",
+      "startedAt": "2026-07-21T08:34:39.790Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:23.567Z",
-      "durationMs": 177,
+      "completedAt": "2026-07-21T08:34:40.405Z",
+      "durationMs": 615,
       "summary": {
         "kind": "array",
         "count": 28
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-07-20T09:21:23.567Z",
+      "startedAt": "2026-07-21T08:34:40.405Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:23.677Z",
-      "durationMs": 110,
+      "completedAt": "2026-07-21T08:34:40.493Z",
+      "durationMs": 88,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,22 +140,33 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-07-20T09:21:23.677Z",
-      "ok": false,
-      "completedAt": "2026-07-20T09:21:23.862Z",
-      "durationMs": 185,
-      "error": "HTTP 415 Unsupported Media Type"
+      "startedAt": "2026-07-21T08:34:40.493Z",
+      "ok": true,
+      "httpStatus": 200,
+      "completedAt": "2026-07-21T08:34:40.801Z",
+      "durationMs": 308,
+      "summary": {
+        "kind": "array",
+        "count": 7
+      },
+      "previewRows": [
+        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
+      ]
     },
     {
       "id": "anbernic-web",
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-07-20T09:21:23.862Z",
+      "startedAt": "2026-07-21T08:34:40.801Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:24.536Z",
-      "durationMs": 674,
+      "completedAt": "2026-07-21T08:34:41.780Z",
+      "durationMs": 979,
       "summary": {
         "kind": "array",
         "count": 12
@@ -173,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-07-20T09:21:24.536Z",
+      "startedAt": "2026-07-21T08:34:41.780Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:24.761Z",
-      "durationMs": 225,
+      "completedAt": "2026-07-21T08:34:41.876Z",
+      "durationMs": 96,
       "summary": {
         "kind": "array",
         "count": 10
@@ -185,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Mangmi Reveals Full Specs List Of Upcoming Air Y Handhelds | url: https://retrododo.com/tag/news/",
         "headline: GKD Reveals Specs &amp; Pricing Of Upcoming 350H Ultra Handheld | url: https://retrododo.com/tag/news/",
-        "headline: Badass Halo 1 Jewellery Is On Its Way | url: https://retrododo.com/tag/news/",
-        "headline: Blink-182 Team Up With Pac-Man For Arcade Collaboration | url: https://retrododo.com/tag/news/"
+        "headline: Badass Halo 1 Jewellery Is On Its Way | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -195,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-07-20T09:21:24.761Z",
+      "startedAt": "2026-07-21T08:34:41.876Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:25.540Z",
-      "durationMs": 779,
+      "completedAt": "2026-07-21T08:34:42.854Z",
+      "durationMs": 978,
       "summary": {
         "kind": "array",
         "count": 12
@@ -217,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-07-20T09:21:25.540Z",
+      "startedAt": "2026-07-21T08:34:42.854Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-20T09:21:25.700Z",
-      "durationMs": 160,
+      "completedAt": "2026-07-21T08:34:42.973Z",
+      "durationMs": 119,
       "summary": {
         "kind": "array",
         "count": 10
@@ -239,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-07-20T09:21:25.700Z",
+      "startedAt": "2026-07-21T08:34:42.973Z",
       "ok": false,
-      "completedAt": "2026-07-20T09:21:25.912Z",
-      "durationMs": 212,
+      "completedAt": "2026-07-21T08:34:43.142Z",
+      "durationMs": 169,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
