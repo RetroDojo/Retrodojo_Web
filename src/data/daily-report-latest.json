@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-07-24T08:31:58.310Z",
+  "generatedAt": "2026-07-25T08:11:06.510Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-07-24T08:31:54.379Z",
+      "startedAt": "2026-07-25T08:11:04.012Z",
       "ok": false,
-      "completedAt": "2026-07-24T08:31:54.379Z",
+      "completedAt": "2026-07-25T08:11:04.012Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-07-24T08:31:54.379Z",
+      "startedAt": "2026-07-25T08:11:04.012Z",
       "ok": false,
-      "completedAt": "2026-07-24T08:31:54.379Z",
+      "completedAt": "2026-07-25T08:11:04.012Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-07-24T08:31:54.379Z",
+      "startedAt": "2026-07-25T08:11:04.012Z",
       "ok": false,
-      "completedAt": "2026-07-24T08:31:54.379Z",
+      "completedAt": "2026-07-25T08:11:04.012Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-07-24T08:31:54.379Z",
+      "startedAt": "2026-07-25T08:11:04.012Z",
       "ok": false,
-      "completedAt": "2026-07-24T08:31:54.379Z",
+      "completedAt": "2026-07-25T08:11:04.012Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-07-24T08:31:54.379Z",
+      "startedAt": "2026-07-25T08:11:04.012Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:54.853Z",
-      "durationMs": 474,
+      "completedAt": "2026-07-25T08:11:04.452Z",
+      "durationMs": 440,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Fri, 24 Jul 2026 13:00:20 +0000 | link: retroachievements:news:2351",
         "pubDate: Wed, 22 Jul 2026 03:34:54 +0000 | link: retroachievements:news:2350",
         "pubDate: Tue, 21 Jul 2026 14:32:38 +0000 | link: retroachievements:news:2349",
         "pubDate: Mon, 20 Jul 2026 17:22:20 +0000 | link: retroachievements:news:2348",
-        "pubDate: Mon, 20 Jul 2026 00:15:31 +0000 | link: retroachievements:news:2347",
-        "pubDate: Sun, 19 Jul 2026 15:26:15 +0000 | link: retroachievements:news:2346"
+        "pubDate: Mon, 20 Jul 2026 00:15:31 +0000 | link: retroachievements:news:2347"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-07-24T08:31:54.853Z",
+      "startedAt": "2026-07-25T08:11:04.452Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:55.120Z",
-      "durationMs": 267,
+      "completedAt": "2026-07-25T08:11:04.646Z",
+      "durationMs": 194,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Game Bub is Finally ‘Shipping Soon’ and You Can Still Pre-order One | url: https://retrohandhelds.gg/news/",
+        "headline: Anbernic RG SP Gets Shown Off in First Gameplay Showcase | url: https://retrohandhelds.gg/news/",
         "headline: The MagicX Mini Dream Is ‘Official’, but It Raises Plenty of Questions | url: https://retrohandhelds.gg/news/",
-        "headline: XBOX Brings Backwards Compatibility to PC | url: https://retrohandhelds.gg/news/",
-        "headline: Hyperkin Announces Updated Colorways for the SupaBoy | url: https://retrohandhelds.gg/news/",
-        "headline: Nintendo Says “No!” To Consumer Tariff Refunds | url: https://retrohandhelds.gg/news/"
+        "headline: XBOX Brings Backwards Compatibility to PC | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-07-24T08:31:55.120Z",
+      "startedAt": "2026-07-25T08:11:04.646Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:55.851Z",
-      "durationMs": 731,
+      "completedAt": "2026-07-25T08:11:04.904Z",
+      "durationMs": 258,
       "summary": {
         "kind": "array",
         "count": 28
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-07-24T08:31:55.851Z",
+      "startedAt": "2026-07-25T08:11:04.904Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:55.971Z",
-      "durationMs": 120,
+      "completedAt": "2026-07-25T08:11:04.989Z",
+      "durationMs": 85,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-07-24T08:31:55.971Z",
+      "startedAt": "2026-07-25T08:11:04.989Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:56.358Z",
-      "durationMs": 387,
+      "completedAt": "2026-07-25T08:11:05.108Z",
+      "durationMs": 119,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-07-24T08:31:56.358Z",
+      "startedAt": "2026-07-25T08:11:05.108Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:57.157Z",
-      "durationMs": 799,
+      "completedAt": "2026-07-25T08:11:05.457Z",
+      "durationMs": 349,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-07-24T08:31:57.157Z",
+      "startedAt": "2026-07-25T08:11:05.457Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:57.254Z",
-      "durationMs": 97,
+      "completedAt": "2026-07-25T08:11:05.540Z",
+      "durationMs": 83,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: XBOX Announce Backward Compatibility On PC With Four Titles + More To Come | url: https://retrododo.com/tag/news/",
-        "headline: Hasbro Reveals First Wave Of Legend of Zelda Action Figures | url: https://retrododo.com/tag/news/",
-        "headline: Exclusive: AYANEO Shows Off New KONKR Pocket Advance Colourway | url: https://retrododo.com/tag/news/"
+        "headline: Mangmi Showcase Retro Classics On The Air Y In New Video | url: https://retrododo.com/tag/news/",
+        "headline: Pepsiman Has Been Recompiled And Can Be Played Through Your Web Browser | url: https://retrododo.com/tag/news/",
+        "headline: This Gundam Suit LEGO Set Concept Comes Complete With Cockpit &amp; Stands At 16.5&quot; Tall | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-07-24T08:31:57.254Z",
+      "startedAt": "2026-07-25T08:11:05.540Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:58.054Z",
-      "durationMs": 800,
+      "completedAt": "2026-07-25T08:11:06.158Z",
+      "durationMs": 618,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-07-24T08:31:58.054Z",
+      "startedAt": "2026-07-25T08:11:06.158Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-07-24T08:31:58.166Z",
-      "durationMs": 112,
+      "completedAt": "2026-07-25T08:11:06.306Z",
+      "durationMs": 148,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-07-24T08:31:58.166Z",
+      "startedAt": "2026-07-25T08:11:06.306Z",
       "ok": false,
-      "completedAt": "2026-07-24T08:31:58.310Z",
-      "durationMs": 144,
+      "completedAt": "2026-07-25T08:11:06.510Z",
+      "durationMs": 204,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
