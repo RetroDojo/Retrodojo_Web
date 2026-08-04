@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-03T09:52:35.530Z",
+  "generatedAt": "2026-08-04T08:43:03.524Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-03T09:52:31.744Z",
+      "startedAt": "2026-08-04T08:43:00.349Z",
       "ok": false,
-      "completedAt": "2026-08-03T09:52:31.745Z",
-      "durationMs": 1,
+      "completedAt": "2026-08-04T08:43:00.349Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-03T09:52:31.745Z",
+      "startedAt": "2026-08-04T08:43:00.349Z",
       "ok": false,
-      "completedAt": "2026-08-03T09:52:31.745Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-04T08:43:00.350Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-03T09:52:31.745Z",
+      "startedAt": "2026-08-04T08:43:00.350Z",
       "ok": false,
-      "completedAt": "2026-08-03T09:52:31.745Z",
+      "completedAt": "2026-08-04T08:43:00.350Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-03T09:52:31.745Z",
+      "startedAt": "2026-08-04T08:43:00.350Z",
       "ok": false,
-      "completedAt": "2026-08-03T09:52:31.745Z",
+      "completedAt": "2026-08-04T08:43:00.350Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-03T09:52:31.745Z",
+      "startedAt": "2026-08-04T08:43:00.350Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:32.246Z",
-      "durationMs": 501,
+      "completedAt": "2026-08-04T08:43:00.825Z",
+      "durationMs": 475,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 03 Aug 2026 15:35:57 +0000 | link: retroachievements:news:2360",
         "pubDate: Mon, 03 Aug 2026 01:53:00 +0000 | link: retroachievements:news:2359",
         "pubDate: Sat, 01 Aug 2026 16:07:05 +0000 | link: retroachievements:news:2358",
         "pubDate: Sat, 01 Aug 2026 16:02:38 +0000 | link: retroachievements:news:2357",
-        "pubDate: Sat, 01 Aug 2026 17:08:49 +0000 | link: retroachievements:news:2356",
-        "pubDate: Fri, 31 Jul 2026 00:06:56 +0000 | link: retroachievements:news:2355"
+        "pubDate: Sat, 01 Aug 2026 17:08:49 +0000 | link: retroachievements:news:2356"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-03T09:52:32.246Z",
+      "startedAt": "2026-08-04T08:43:00.825Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:32.509Z",
-      "durationMs": 263,
+      "completedAt": "2026-08-04T08:43:01.009Z",
+      "durationMs": 184,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: Retroid Pocket Nova Starts Shipping as GammaOS Nano Expands | url: https://retrohandhelds.gg/news/",
-        "headline: GPD Win Max 3 is Coming “Soon” | url: https://retrohandhelds.gg/news/",
-        "headline: AYANEO Shares a Few KONKR Pocket Advance Details, With More to Come ‘Next Week’ | url: https://retrohandhelds.gg/news/",
-        "headline: GammaOS Nano V1.4 Hits the A133P and There’s Still More to Come | url: https://retrohandhelds.gg/news/"
+        "headline: Pokémon Gen 1 Recomp is Here and It’s Already a Must Play! | url: https://retrohandhelds.gg/news/",
+        "headline: The EverDrive-64 Pro is Here, and It’s Packing a Punch | url: https://retrohandhelds.gg/news/",
+        "headline: The Price Creep is real, as 8GB Retroid Pocket Nova is the Latest Victim | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: Retroid Pocket Nova Starts Shipping as GammaOS Nano Expands | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-03T09:52:32.509Z",
+      "startedAt": "2026-08-04T08:43:01.009Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:32.957Z",
-      "durationMs": 448,
+      "completedAt": "2026-08-04T08:43:01.377Z",
+      "durationMs": 368,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-03T09:52:32.957Z",
+      "startedAt": "2026-08-04T08:43:01.377Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:33.099Z",
-      "durationMs": 142,
+      "completedAt": "2026-08-04T08:43:01.476Z",
+      "durationMs": 99,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-03T09:52:33.099Z",
+      "startedAt": "2026-08-04T08:43:01.476Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:33.491Z",
-      "durationMs": 392,
+      "completedAt": "2026-08-04T08:43:01.666Z",
+      "durationMs": 190,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,21 +162,21 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-03T09:52:33.491Z",
+      "startedAt": "2026-08-04T08:43:01.666Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:34.319Z",
-      "durationMs": 828,
+      "completedAt": "2026-08-04T08:43:02.127Z",
+      "durationMs": 461,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: Anbernic | url: https://anbernic.com/",
+        "headline: RG SP | url: https://anbernic.com/",
+        "headline: Slimmer | Narrower Bezel | Linux 64-bit | url: https://anbernic.com/",
         "headline: RG Rotate | url: https://anbernic.com/",
-        "headline: Android 12 | Rotating Design | url: https://anbernic.com/",
-        "headline: RG VITA Pro | url: https://anbernic.com/",
-        "headline: Android 14/Linux 64-bit &amp; 1080P Bezel-less Screen | url: https://anbernic.com/"
+        "headline: Android 12 | Rotating Design | url: https://anbernic.com/"
       ]
     },
     {
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-03T09:52:34.319Z",
+      "startedAt": "2026-08-04T08:43:02.127Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:34.455Z",
-      "durationMs": 136,
+      "completedAt": "2026-08-04T08:43:02.431Z",
+      "durationMs": 304,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Pokémon Emerald Ex Brings New Towns, Gyms, &amp; More In New ROM Hack | url: https://retrododo.com/tag/news/",
-        "headline: Krikkz Launches New &quot;Pro&quot; Everdrive For Nintendo 64 | url: https://retrododo.com/tag/news/",
-        "headline: PlayStation 1 Diorama Toys Are Here Ft. Final Fantasy, Metal Gear, Twisted Metal &amp; MediEvil | url: https://retrododo.com/tag/news/"
+        "headline: 1 Year 5 Months Later, Customers Still Haven&#39;t Received Their Croc Remastered Physical Order | url: https://retrododo.com/tag/news/",
+        "headline: This Dev Is Single-handedly Recreating Crash Bandicoot For GBA With A New Art Style | url: https://retrododo.com/tag/news/",
+        "headline: As Predicted The Retroid Pocket Nova Is Getting A Price Increase | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-03T09:52:34.455Z",
+      "startedAt": "2026-08-04T08:43:02.431Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:35.241Z",
-      "durationMs": 786,
+      "completedAt": "2026-08-04T08:43:03.169Z",
+      "durationMs": 739,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-03T09:52:35.241Z",
+      "startedAt": "2026-08-04T08:43:03.170Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-03T09:52:35.357Z",
-      "durationMs": 116,
+      "completedAt": "2026-08-04T08:43:03.316Z",
+      "durationMs": 146,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-03T09:52:35.357Z",
+      "startedAt": "2026-08-04T08:43:03.316Z",
       "ok": false,
-      "completedAt": "2026-08-03T09:52:35.529Z",
-      "durationMs": 172,
+      "completedAt": "2026-08-04T08:43:03.524Z",
+      "durationMs": 208,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
