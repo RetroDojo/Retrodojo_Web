@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-09T07:01:24.698Z",
+  "generatedAt": "2026-08-10T07:47:48.750Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-09T07:01:21.392Z",
+      "startedAt": "2026-08-10T07:47:45.992Z",
       "ok": false,
-      "completedAt": "2026-08-09T07:01:21.393Z",
+      "completedAt": "2026-08-10T07:47:45.993Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-09T07:01:21.393Z",
+      "startedAt": "2026-08-10T07:47:45.993Z",
       "ok": false,
-      "completedAt": "2026-08-09T07:01:21.393Z",
+      "completedAt": "2026-08-10T07:47:45.993Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-09T07:01:21.393Z",
+      "startedAt": "2026-08-10T07:47:45.993Z",
       "ok": false,
-      "completedAt": "2026-08-09T07:01:21.393Z",
+      "completedAt": "2026-08-10T07:47:45.993Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-09T07:01:21.393Z",
+      "startedAt": "2026-08-10T07:47:45.993Z",
       "ok": false,
-      "completedAt": "2026-08-09T07:01:21.393Z",
+      "completedAt": "2026-08-10T07:47:45.993Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-09T07:01:21.393Z",
+      "startedAt": "2026-08-10T07:47:45.993Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:21.773Z",
-      "durationMs": 380,
+      "completedAt": "2026-08-10T07:47:46.376Z",
+      "durationMs": 383,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-09T07:01:21.773Z",
+      "startedAt": "2026-08-10T07:47:46.376Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:21.864Z",
-      "durationMs": 91,
+      "completedAt": "2026-08-10T07:47:46.422Z",
+      "durationMs": 46,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: SteamBoy, Pokémon Recomp, and Faster PS3 Emulation | url: https://retrohandhelds.gg/news/",
+        "headline: Oh Snap; Abxylute is Going After MCON with its M5 and M6 Controllers | url: https://retrohandhelds.gg/news/",
         "headline: Seedless and WatermelonDS Drop Their Latest Updates at Once | url: https://retrohandhelds.gg/news/",
-        "headline: SpruceOS 4.3 Drops With Support for TrimUI Brick Pro, Anbernic XX and More | url: https://retrohandhelds.gg/news/",
-        "headline: ArduStudio Brings Easy Game Making to the Arduboy | url: https://retrohandhelds.gg/news/",
-        "headline: Jsaux Announces Voidjoy; the Next Step in Their Gaming Lineup | url: https://retrohandhelds.gg/news/"
+        "headline: SpruceOS 4.3 Drops With Support for TrimUI Brick Pro, Anbernic XX and More | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,21 +96,21 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-09T07:01:21.864Z",
+      "startedAt": "2026-08-10T07:47:46.422Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:22.187Z",
-      "durationMs": 323,
+      "completedAt": "2026-08-10T07:47:46.895Z",
+      "durationMs": 473,
       "summary": {
         "kind": "array",
         "count": 30
       },
       "previewRows": [
+        "title: RGC #30: God of War Machine | pubDate: Sun, 09 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-030/",
         "title: RGC #29: Four Videos and some Earbuds | pubDate: Sun, 02 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-029/",
         "title: RGC #28: Stop, Nova Time | pubDate: Sun, 26 Jul 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-028/",
         "title: RGC #27: They Play Games Upside-Down in Australia | pubDate: Sun, 19 Jul 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-027/",
-        "title: RGC #26: Snoop Dogg Baseball | pubDate: Sun, 12 Jul 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-026/",
-        "title: RGC #25: A Silver Jubilee | pubDate: Sun, 05 Jul 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-025/"
+        "title: RGC #26: Snoop Dogg Baseball | pubDate: Sun, 12 Jul 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-026/"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-09T07:01:22.187Z",
+      "startedAt": "2026-08-10T07:47:46.895Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:22.305Z",
-      "durationMs": 118,
+      "completedAt": "2026-08-10T07:47:46.946Z",
+      "durationMs": 51,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,21 +140,17 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-09T07:01:22.306Z",
+      "startedAt": "2026-08-10T07:47:46.946Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:22.721Z",
-      "durationMs": 415,
+      "completedAt": "2026-08-10T07:47:47.303Z",
+      "durationMs": 357,
       "summary": {
         "kind": "array",
-        "count": 7
+        "count": 1
       },
       "previewRows": [
-        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
+        "headline: One moment, please... | url: https://www.joeysretrohandhelds.com/latest-news/"
       ]
     },
     {
@@ -162,11 +158,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-09T07:01:22.721Z",
+      "startedAt": "2026-08-10T07:47:47.303Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:23.541Z",
-      "durationMs": 820,
+      "completedAt": "2026-08-10T07:47:47.916Z",
+      "durationMs": 613,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +180,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-09T07:01:23.541Z",
+      "startedAt": "2026-08-10T07:47:47.916Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:23.650Z",
-      "durationMs": 109,
+      "completedAt": "2026-08-10T07:47:47.966Z",
+      "durationMs": 50,
       "summary": {
         "kind": "array",
         "count": 10
@@ -206,11 +202,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-09T07:01:23.650Z",
+      "startedAt": "2026-08-10T07:47:47.966Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:24.424Z",
-      "durationMs": 774,
+      "completedAt": "2026-08-10T07:47:48.486Z",
+      "durationMs": 520,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,10 +224,10 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-09T07:01:24.424Z",
+      "startedAt": "2026-08-10T07:47:48.486Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-09T07:01:24.535Z",
+      "completedAt": "2026-08-10T07:47:48.597Z",
       "durationMs": 111,
       "summary": {
         "kind": "array",
@@ -250,10 +246,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-09T07:01:24.535Z",
+      "startedAt": "2026-08-10T07:47:48.597Z",
       "ok": false,
-      "completedAt": "2026-08-09T07:01:24.698Z",
-      "durationMs": 163,
+      "completedAt": "2026-08-10T07:47:48.750Z",
+      "durationMs": 153,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
