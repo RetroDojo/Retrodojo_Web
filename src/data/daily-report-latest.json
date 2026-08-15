@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-14T07:37:23.160Z",
+  "generatedAt": "2026-08-15T06:43:23.020Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-14T07:37:20.303Z",
+      "startedAt": "2026-08-15T06:43:19.744Z",
       "ok": false,
-      "completedAt": "2026-08-14T07:37:20.303Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-15T06:43:19.745Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-14T07:37:20.303Z",
+      "startedAt": "2026-08-15T06:43:19.745Z",
       "ok": false,
-      "completedAt": "2026-08-14T07:37:20.303Z",
+      "completedAt": "2026-08-15T06:43:19.745Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-14T07:37:20.303Z",
+      "startedAt": "2026-08-15T06:43:19.745Z",
       "ok": false,
-      "completedAt": "2026-08-14T07:37:20.303Z",
+      "completedAt": "2026-08-15T06:43:19.745Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-14T07:37:20.303Z",
+      "startedAt": "2026-08-15T06:43:19.745Z",
       "ok": false,
-      "completedAt": "2026-08-14T07:37:20.303Z",
+      "completedAt": "2026-08-15T06:43:19.745Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-14T07:37:20.303Z",
+      "startedAt": "2026-08-15T06:43:19.745Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:20.689Z",
-      "durationMs": 386,
+      "completedAt": "2026-08-15T06:43:20.159Z",
+      "durationMs": 414,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Fri, 14 Aug 2026 10:25:00 +0000 | link: https://retroachievements.org",
         "pubDate: Thu, 13 Aug 2026 01:19:45 +0000 | link: retroachievements:news:2366",
         "pubDate: Mon, 10 Aug 2026 15:06:21 +0000 | link: retroachievements:news:2365",
         "pubDate: Sat, 08 Aug 2026 19:24:03 +0000 | link: retroachievements:news:2364",
-        "pubDate: Sat, 08 Aug 2026 12:34:49 +0000 | link: retroachievements:news:2363",
-        "pubDate: Fri, 07 Aug 2026 22:08:08 +0000 | link: https://retroachievements.org"
+        "pubDate: Sat, 08 Aug 2026 12:34:49 +0000 | link: retroachievements:news:2363"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-14T07:37:20.689Z",
+      "startedAt": "2026-08-15T06:43:20.159Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:20.939Z",
-      "durationMs": 250,
+      "completedAt": "2026-08-15T06:43:20.259Z",
+      "durationMs": 100,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Is Your Retroid Pocket Nova D-pad Louder Than Normal? You’re Not Alone | url: https://retrohandhelds.gg/news/",
-        "headline: AYN Brings Indigo Back to the Portal | url: https://retrohandhelds.gg/news/",
-        "headline: More than 20,000 KONKR Pocket Advances Have Been Sold So Far | url: https://retrohandhelds.gg/news/",
-        "headline: Valve Adds Initial Gamepad Support for Ayaneo Pocket S2 in SteamOS Beta 3.8.25 | url: https://retrohandhelds.gg/news/"
+        "headline: ModRetro is Already Updating the M64 with 1.24.3 and 0.12.0 Drops | url: https://retrohandhelds.gg/news/",
+        "headline: Spruce Drops V4.3.3 With Some Nice Slice of Life Updates | url: https://retrohandhelds.gg/news/",
+        "headline: AYANEO Reveals a Developer Version of the KONKR Pocket Advance | url: https://retrohandhelds.gg/news/",
+        "headline: Is Your Retroid Pocket Nova D-pad Louder Than Normal? You’re Not Alone | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-14T07:37:20.939Z",
+      "startedAt": "2026-08-15T06:43:20.259Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:21.207Z",
-      "durationMs": 268,
+      "completedAt": "2026-08-15T06:43:21.032Z",
+      "durationMs": 773,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-14T07:37:21.207Z",
+      "startedAt": "2026-08-15T06:43:21.032Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:21.323Z",
-      "durationMs": 116,
+      "completedAt": "2026-08-15T06:43:21.303Z",
+      "durationMs": 271,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-14T07:37:21.323Z",
+      "startedAt": "2026-08-15T06:43:21.303Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:21.668Z",
-      "durationMs": 345,
+      "completedAt": "2026-08-15T06:43:21.646Z",
+      "durationMs": 343,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-14T07:37:21.668Z",
+      "startedAt": "2026-08-15T06:43:21.646Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:22.052Z",
-      "durationMs": 384,
+      "completedAt": "2026-08-15T06:43:22.094Z",
+      "durationMs": 448,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-14T07:37:22.052Z",
+      "startedAt": "2026-08-15T06:43:22.094Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:22.150Z",
-      "durationMs": 98,
+      "completedAt": "2026-08-15T06:43:22.212Z",
+      "durationMs": 118,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: You Can Now Buy Mangmi Air Y Handhelds, Starting At $89 | url: https://retrododo.com/tag/news/",
-        "headline: Fanmade Donkey Kong Country 4 Arrives This November With Classic N64 Characters | url: https://retrododo.com/tag/news/",
-        "headline: Original Pokémon Singer Creates AI-Generated GAME BOY Game &amp; Wants You To Pay $151 For It | url: https://retrododo.com/tag/news/"
+        "headline: AYANEO Reveals &quot;Developer Edition&quot; KONKR Pocket Advance That You Can&#39;t Buy | url: https://retrododo.com/tag/news/",
+        "headline: Neon Drift 200 Brings 8-Bit Anti-Gravity Racing To The Game Boy | url: https://retrododo.com/tag/news/",
+        "headline: Mattel Brick&#39;s Could Be Making An OG Xbox Set With 3,000+ Pieces | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-14T07:37:22.150Z",
+      "startedAt": "2026-08-15T06:43:22.212Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:22.926Z",
-      "durationMs": 776,
+      "completedAt": "2026-08-15T06:43:22.785Z",
+      "durationMs": 573,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-14T07:37:22.926Z",
+      "startedAt": "2026-08-15T06:43:22.785Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-14T07:37:23.039Z",
-      "durationMs": 113,
+      "completedAt": "2026-08-15T06:43:22.894Z",
+      "durationMs": 109,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-14T07:37:23.039Z",
+      "startedAt": "2026-08-15T06:43:22.894Z",
       "ok": false,
-      "completedAt": "2026-08-14T07:37:23.160Z",
-      "durationMs": 121,
+      "completedAt": "2026-08-15T06:43:23.020Z",
+      "durationMs": 126,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
