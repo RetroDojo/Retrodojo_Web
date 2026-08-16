@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-15T06:43:23.020Z",
+  "generatedAt": "2026-08-16T06:44:40.212Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-15T06:43:19.744Z",
+      "startedAt": "2026-08-16T06:44:36.972Z",
       "ok": false,
-      "completedAt": "2026-08-15T06:43:19.745Z",
-      "durationMs": 1,
+      "completedAt": "2026-08-16T06:44:36.972Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-15T06:43:19.745Z",
+      "startedAt": "2026-08-16T06:44:36.972Z",
       "ok": false,
-      "completedAt": "2026-08-15T06:43:19.745Z",
+      "completedAt": "2026-08-16T06:44:36.972Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,10 +30,10 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-15T06:43:19.745Z",
+      "startedAt": "2026-08-16T06:44:36.972Z",
       "ok": false,
-      "completedAt": "2026-08-15T06:43:19.745Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-16T06:44:36.973Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-15T06:43:19.745Z",
+      "startedAt": "2026-08-16T06:44:36.973Z",
       "ok": false,
-      "completedAt": "2026-08-15T06:43:19.745Z",
+      "completedAt": "2026-08-16T06:44:36.973Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-15T06:43:19.745Z",
+      "startedAt": "2026-08-16T06:44:36.973Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:20.159Z",
-      "durationMs": 414,
+      "completedAt": "2026-08-16T06:44:37.398Z",
+      "durationMs": 425,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,11 +74,11 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-15T06:43:20.159Z",
+      "startedAt": "2026-08-16T06:44:37.398Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:20.259Z",
-      "durationMs": 100,
+      "completedAt": "2026-08-16T06:44:37.456Z",
+      "durationMs": 58,
       "summary": {
         "kind": "array",
         "count": 12
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-15T06:43:20.259Z",
+      "startedAt": "2026-08-16T06:44:37.456Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:21.032Z",
-      "durationMs": 773,
+      "completedAt": "2026-08-16T06:44:38.181Z",
+      "durationMs": 725,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-15T06:43:21.032Z",
+      "startedAt": "2026-08-16T06:44:38.181Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:21.303Z",
-      "durationMs": 271,
+      "completedAt": "2026-08-16T06:44:38.296Z",
+      "durationMs": 115,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-15T06:43:21.303Z",
+      "startedAt": "2026-08-16T06:44:38.296Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:21.646Z",
-      "durationMs": 343,
+      "completedAt": "2026-08-16T06:44:38.631Z",
+      "durationMs": 335,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-15T06:43:21.646Z",
+      "startedAt": "2026-08-16T06:44:38.631Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:22.094Z",
-      "durationMs": 448,
+      "completedAt": "2026-08-16T06:44:39.238Z",
+      "durationMs": 607,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-15T06:43:22.094Z",
+      "startedAt": "2026-08-16T06:44:39.238Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:22.212Z",
-      "durationMs": 118,
+      "completedAt": "2026-08-16T06:44:39.337Z",
+      "durationMs": 99,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Newsletter | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Modular, Stackable Cartridge Storage Just Dropped On Kickstarter | url: https://retrododo.com/tag/news/",
         "headline: AYANEO Reveals &quot;Developer Edition&quot; KONKR Pocket Advance That You Can&#39;t Buy | url: https://retrododo.com/tag/news/",
-        "headline: Neon Drift 200 Brings 8-Bit Anti-Gravity Racing To The Game Boy | url: https://retrododo.com/tag/news/",
-        "headline: Mattel Brick&#39;s Could Be Making An OG Xbox Set With 3,000+ Pieces | url: https://retrododo.com/tag/news/"
+        "headline: Neon Drift 200 Brings 8-Bit Anti-Gravity Racing To The Game Boy | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-15T06:43:22.212Z",
+      "startedAt": "2026-08-16T06:44:39.337Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:22.785Z",
-      "durationMs": 573,
+      "completedAt": "2026-08-16T06:44:39.932Z",
+      "durationMs": 595,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-15T06:43:22.785Z",
+      "startedAt": "2026-08-16T06:44:39.932Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-15T06:43:22.894Z",
-      "durationMs": 109,
+      "completedAt": "2026-08-16T06:44:40.043Z",
+      "durationMs": 111,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-15T06:43:22.894Z",
+      "startedAt": "2026-08-16T06:44:40.043Z",
       "ok": false,
-      "completedAt": "2026-08-15T06:43:23.020Z",
-      "durationMs": 126,
+      "completedAt": "2026-08-16T06:44:40.212Z",
+      "durationMs": 169,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
