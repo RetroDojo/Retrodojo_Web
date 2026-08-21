@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-20T06:51:49.209Z",
+  "generatedAt": "2026-08-21T06:53:06.863Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-20T06:51:45.954Z",
+      "startedAt": "2026-08-21T06:53:04.349Z",
       "ok": false,
-      "completedAt": "2026-08-20T06:51:45.954Z",
-      "durationMs": 1,
+      "completedAt": "2026-08-21T06:53:04.349Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-20T06:51:45.955Z",
+      "startedAt": "2026-08-21T06:53:04.349Z",
       "ok": false,
-      "completedAt": "2026-08-20T06:51:45.955Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-21T06:53:04.350Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-20T06:51:45.955Z",
+      "startedAt": "2026-08-21T06:53:04.350Z",
       "ok": false,
-      "completedAt": "2026-08-20T06:51:45.955Z",
+      "completedAt": "2026-08-21T06:53:04.350Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-20T06:51:45.955Z",
+      "startedAt": "2026-08-21T06:53:04.350Z",
       "ok": false,
-      "completedAt": "2026-08-20T06:51:45.955Z",
+      "completedAt": "2026-08-21T06:53:04.350Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-20T06:51:45.955Z",
+      "startedAt": "2026-08-21T06:53:04.350Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:46.257Z",
-      "durationMs": 302,
+      "completedAt": "2026-08-21T06:53:04.727Z",
+      "durationMs": 377,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Thu, 20 Aug 2026 14:52:20 +0000 | link: retroachievements:news:2370",
         "pubDate: Mon, 17 Aug 2026 13:02:06 +0000 | link: retroachievements:news:2369",
         "pubDate: Sun, 16 Aug 2026 12:24:50 +0000 | link: retroachievements:news:2368",
         "pubDate: Fri, 14 Aug 2026 10:25:00 +0000 | link: https://retroachievements.org",
-        "pubDate: Thu, 13 Aug 2026 01:19:45 +0000 | link: retroachievements:news:2366",
-        "pubDate: Mon, 10 Aug 2026 15:06:21 +0000 | link: retroachievements:news:2365"
+        "pubDate: Thu, 13 Aug 2026 01:19:45 +0000 | link: retroachievements:news:2366"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-20T06:51:46.257Z",
+      "startedAt": "2026-08-21T06:53:04.727Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:46.351Z",
-      "durationMs": 94,
+      "completedAt": "2026-08-21T06:53:04.808Z",
+      "durationMs": 81,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Genki Manta Goes Live on Kickstarter | url: https://retrohandhelds.gg/news/",
         "headline: Steam Frame Unboxing Leaks | url: https://retrohandhelds.gg/news/",
         "headline: There’s a Breath of the Wild Demake for the 3DS, and It’s Kind of Playable | url: https://retrohandhelds.gg/news/",
-        "headline: A Supreme-branded Analogue Pocket is Coming This Fall, and in 24K Gold | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: Retroid Pocket Nova D-pad Drama, KONKR’s Special Edition, and Pokémon Recomp Magic | url: https://retrohandhelds.gg/news/"
+        "headline: A Supreme-branded Analogue Pocket is Coming This Fall, and in 24K Gold | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-20T06:51:46.351Z",
+      "startedAt": "2026-08-21T06:53:04.808Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:47.259Z",
-      "durationMs": 908,
+      "completedAt": "2026-08-21T06:53:05.172Z",
+      "durationMs": 364,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-20T06:51:47.259Z",
+      "startedAt": "2026-08-21T06:53:05.172Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:47.559Z",
-      "durationMs": 300,
+      "completedAt": "2026-08-21T06:53:05.242Z",
+      "durationMs": 70,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-20T06:51:47.559Z",
+      "startedAt": "2026-08-21T06:53:05.242Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:47.868Z",
-      "durationMs": 309,
+      "completedAt": "2026-08-21T06:53:05.550Z",
+      "durationMs": 308,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-20T06:51:47.868Z",
+      "startedAt": "2026-08-21T06:53:05.550Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:48.296Z",
-      "durationMs": 428,
+      "completedAt": "2026-08-21T06:53:05.958Z",
+      "durationMs": 408,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-20T06:51:48.296Z",
+      "startedAt": "2026-08-21T06:53:05.958Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:48.446Z",
-      "durationMs": 150,
+      "completedAt": "2026-08-21T06:53:06.009Z",
+      "durationMs": 51,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Mattel Reveals A Massive $324 Buildable 1:1 Original Xbox Brick Set | url: https://retrododo.com/tag/news/",
-        "headline: You Can Now Organise Your Nintendo 3DS Apps With &quot;Drag &amp; Drop&quot; on PC | url: https://retrododo.com/tag/news/",
-        "headline: Modder Turns Halo 2 Windows Media Skin Into An Actual MP3 Player | url: https://retrododo.com/tag/news/"
+        "headline: Analogue&#39;s 24K Gold Pocket Sells Out In Minutes - Already On eBay For $1K+ | url: https://retrododo.com/tag/news/",
+        "headline: Rayman Raycer Gets Surprise Announcement For Release This Week | url: https://retrododo.com/tag/news/",
+        "headline: Unreleased N64 Game Dinosaur Planet Is Now On iOS, iPad, &amp; Mac | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-20T06:51:48.446Z",
+      "startedAt": "2026-08-21T06:53:06.009Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:48.984Z",
-      "durationMs": 539,
+      "completedAt": "2026-08-21T06:53:06.604Z",
+      "durationMs": 595,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-20T06:51:48.985Z",
+      "startedAt": "2026-08-21T06:53:06.604Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-20T06:51:49.091Z",
-      "durationMs": 106,
+      "completedAt": "2026-08-21T06:53:06.715Z",
+      "durationMs": 111,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-20T06:51:49.091Z",
+      "startedAt": "2026-08-21T06:53:06.715Z",
       "ok": false,
-      "completedAt": "2026-08-20T06:51:49.209Z",
-      "durationMs": 118,
+      "completedAt": "2026-08-21T06:53:06.863Z",
+      "durationMs": 148,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
