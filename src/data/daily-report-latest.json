@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-26T06:54:42.324Z",
+  "generatedAt": "2026-08-27T17:28:23.734Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-26T06:54:38.757Z",
+      "startedAt": "2026-08-27T17:28:20.102Z",
       "ok": false,
-      "completedAt": "2026-08-26T06:54:38.757Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-27T17:28:20.103Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-26T06:54:38.757Z",
+      "startedAt": "2026-08-27T17:28:20.103Z",
       "ok": false,
-      "completedAt": "2026-08-26T06:54:38.757Z",
+      "completedAt": "2026-08-27T17:28:20.103Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-26T06:54:38.757Z",
+      "startedAt": "2026-08-27T17:28:20.103Z",
       "ok": false,
-      "completedAt": "2026-08-26T06:54:38.757Z",
+      "completedAt": "2026-08-27T17:28:20.103Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-26T06:54:38.757Z",
+      "startedAt": "2026-08-27T17:28:20.103Z",
       "ok": false,
-      "completedAt": "2026-08-26T06:54:38.757Z",
+      "completedAt": "2026-08-27T17:28:20.103Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-26T06:54:38.757Z",
+      "startedAt": "2026-08-27T17:28:20.103Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:39.177Z",
-      "durationMs": 420,
+      "completedAt": "2026-08-27T17:28:20.512Z",
+      "durationMs": 409,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Wed, 26 Aug 2026 11:53:44 +0000 | link: https://retroachievements.org",
         "pubDate: Sat, 22 Aug 2026 16:58:39 +0000 | link: retroachievements:news:2372",
         "pubDate: Sat, 22 Aug 2026 04:08:35 +0000 | link: retroachievements:news:2371",
         "pubDate: Thu, 20 Aug 2026 14:52:20 +0000 | link: retroachievements:news:2370",
-        "pubDate: Mon, 17 Aug 2026 13:02:06 +0000 | link: retroachievements:news:2369",
-        "pubDate: Sun, 16 Aug 2026 12:24:50 +0000 | link: retroachievements:news:2368"
+        "pubDate: Mon, 17 Aug 2026 13:02:06 +0000 | link: retroachievements:news:2369"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-26T06:54:39.177Z",
+      "startedAt": "2026-08-27T17:28:20.512Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:39.335Z",
-      "durationMs": 158,
+      "completedAt": "2026-08-27T17:28:20.760Z",
+      "durationMs": 248,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Atari and Activision Are Re-Releasing Almost 40 Physical Atari 2600 Games | url: https://retrohandhelds.gg/news/",
         "headline: GameSir Announces XBOX Edition X5 Lite | url: https://retrohandhelds.gg/news/",
         "headline: GameNative Drops V1.2 Release, and as Usual There’s a Lot to it | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Drops Full RG 55G1 Specs | url: https://retrohandhelds.gg/news/",
-        "headline: ASUS ROG Xbox Ally X20 Preorders Open With OLED, New Cooling, and a $1,299 Price | url: https://retrohandhelds.gg/news/"
+        "headline: Anbernic Drops Full RG 55G1 Specs | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-26T06:54:39.335Z",
+      "startedAt": "2026-08-27T17:28:20.760Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:40.085Z",
-      "durationMs": 750,
+      "completedAt": "2026-08-27T17:28:21.770Z",
+      "durationMs": 1010,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-26T06:54:40.085Z",
+      "startedAt": "2026-08-27T17:28:21.770Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:40.194Z",
-      "durationMs": 110,
+      "completedAt": "2026-08-27T17:28:21.919Z",
+      "durationMs": 149,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,21 +140,17 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-26T06:54:40.195Z",
+      "startedAt": "2026-08-27T17:28:21.919Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:40.389Z",
-      "durationMs": 194,
+      "completedAt": "2026-08-27T17:28:22.232Z",
+      "durationMs": 313,
       "summary": {
         "kind": "array",
-        "count": 7
+        "count": 1
       },
       "previewRows": [
-        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
+        "headline: One moment, please... | url: https://www.joeysretrohandhelds.com/latest-news/"
       ]
     },
     {
@@ -162,11 +158,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-26T06:54:40.389Z",
+      "startedAt": "2026-08-27T17:28:22.232Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:40.976Z",
-      "durationMs": 588,
+      "completedAt": "2026-08-27T17:28:22.894Z",
+      "durationMs": 662,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +180,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-26T06:54:40.977Z",
+      "startedAt": "2026-08-27T17:28:22.894Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:41.196Z",
-      "durationMs": 219,
+      "completedAt": "2026-08-27T17:28:22.948Z",
+      "durationMs": 54,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +192,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: An Unofficial PC Port Of SoulCalibur II For GameCube Has Arrived On GitHub | url: https://retrododo.com/tag/news/",
-        "headline: Yu-Gi-Oh! Duel Monsters 4 Get&#39;s English Translations For All Three Versions Of The Game | url: https://retrododo.com/tag/news/",
-        "headline: &quot;Just 3 games left to collect&quot;: NES Collector Of 40 Years Just Had His Entire Collection Stolen | url: https://retrododo.com/tag/news/"
+        "headline: Tamagotchi Rings Now Exist, And They&#39;re The Smallest Virtual Pets On The Market | url: https://retrododo.com/tag/news/",
+        "headline: The Original Super Mario Bros. Movie Is Coming To 4K UHD With A 3-Disc Steelbook Edition | url: https://retrododo.com/tag/news/",
+        "headline: The Minish Cap Now Has An Unofficial 3DS Port With Dual-Screen Support | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +202,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-26T06:54:41.196Z",
+      "startedAt": "2026-08-27T17:28:22.948Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:41.904Z",
-      "durationMs": 708,
+      "completedAt": "2026-08-27T17:28:23.480Z",
+      "durationMs": 532,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +224,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-26T06:54:41.904Z",
+      "startedAt": "2026-08-27T17:28:23.480Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-26T06:54:42.071Z",
-      "durationMs": 167,
+      "completedAt": "2026-08-27T17:28:23.595Z",
+      "durationMs": 115,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +246,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-26T06:54:42.071Z",
+      "startedAt": "2026-08-27T17:28:23.595Z",
       "ok": false,
-      "completedAt": "2026-08-26T06:54:42.323Z",
-      "durationMs": 253,
+      "completedAt": "2026-08-27T17:28:23.734Z",
+      "durationMs": 139,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
