@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-27T17:28:23.734Z",
+  "generatedAt": "2026-08-28T18:22:15.178Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-27T17:28:20.102Z",
+      "startedAt": "2026-08-28T18:22:11.754Z",
       "ok": false,
-      "completedAt": "2026-08-27T17:28:20.103Z",
-      "durationMs": 1,
+      "completedAt": "2026-08-28T18:22:11.754Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-27T17:28:20.103Z",
+      "startedAt": "2026-08-28T18:22:11.754Z",
       "ok": false,
-      "completedAt": "2026-08-27T17:28:20.103Z",
+      "completedAt": "2026-08-28T18:22:11.754Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,10 +30,10 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-27T17:28:20.103Z",
+      "startedAt": "2026-08-28T18:22:11.754Z",
       "ok": false,
-      "completedAt": "2026-08-27T17:28:20.103Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-28T18:22:11.755Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-27T17:28:20.103Z",
+      "startedAt": "2026-08-28T18:22:11.755Z",
       "ok": false,
-      "completedAt": "2026-08-27T17:28:20.103Z",
+      "completedAt": "2026-08-28T18:22:11.755Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-27T17:28:20.103Z",
+      "startedAt": "2026-08-28T18:22:11.755Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:20.512Z",
-      "durationMs": 409,
+      "completedAt": "2026-08-28T18:22:12.155Z",
+      "durationMs": 400,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-27T17:28:20.512Z",
+      "startedAt": "2026-08-28T18:22:12.155Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:20.760Z",
-      "durationMs": 248,
+      "completedAt": "2026-08-28T18:22:12.284Z",
+      "durationMs": 129,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Atari and Activision Are Re-Releasing Almost 40 Physical Atari 2600 Games | url: https://retrohandhelds.gg/news/",
-        "headline: GameSir Announces XBOX Edition X5 Lite | url: https://retrohandhelds.gg/news/",
-        "headline: GameNative Drops V1.2 Release, and as Usual There’s a Lot to it | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Drops Full RG 55G1 Specs | url: https://retrohandhelds.gg/news/"
+        "headline: The State of 3:2 Retro Handhelds in 2026 | url: https://retrohandhelds.gg/news/",
+        "headline: Disc to Digital: How Xbox is Hedging Against the End of Physical Media | url: https://retrohandhelds.gg/news/",
+        "headline: Panic Refunds Playdate Tariff Fees to US Customers | url: https://retrohandhelds.gg/news/",
+        "headline: Atari and Activision Are Re-Releasing Almost 40 Physical Atari 2600 Games | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-27T17:28:20.760Z",
+      "startedAt": "2026-08-28T18:22:12.284Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:21.770Z",
-      "durationMs": 1010,
+      "completedAt": "2026-08-28T18:22:12.866Z",
+      "durationMs": 582,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-27T17:28:21.770Z",
+      "startedAt": "2026-08-28T18:22:12.866Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:21.919Z",
-      "durationMs": 149,
+      "completedAt": "2026-08-28T18:22:12.954Z",
+      "durationMs": 88,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,17 +140,21 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-27T17:28:21.919Z",
+      "startedAt": "2026-08-28T18:22:12.954Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:22.232Z",
-      "durationMs": 313,
+      "completedAt": "2026-08-28T18:22:13.110Z",
+      "durationMs": 156,
       "summary": {
         "kind": "array",
-        "count": 1
+        "count": 7
       },
       "previewRows": [
-        "headline: One moment, please... | url: https://www.joeysretrohandhelds.com/latest-news/"
+        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
       ]
     },
     {
@@ -158,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-27T17:28:22.232Z",
+      "startedAt": "2026-08-28T18:22:13.110Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:22.894Z",
-      "durationMs": 662,
+      "completedAt": "2026-08-28T18:22:13.907Z",
+      "durationMs": 797,
       "summary": {
         "kind": "array",
         "count": 12
@@ -180,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-27T17:28:22.894Z",
+      "startedAt": "2026-08-28T18:22:13.907Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:22.948Z",
-      "durationMs": 54,
+      "completedAt": "2026-08-28T18:22:14.145Z",
+      "durationMs": 238,
       "summary": {
         "kind": "array",
         "count": 10
@@ -192,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Tamagotchi Rings Now Exist, And They&#39;re The Smallest Virtual Pets On The Market | url: https://retrododo.com/tag/news/",
-        "headline: The Original Super Mario Bros. Movie Is Coming To 4K UHD With A 3-Disc Steelbook Edition | url: https://retrododo.com/tag/news/",
-        "headline: The Minish Cap Now Has An Unofficial 3DS Port With Dual-Screen Support | url: https://retrododo.com/tag/news/"
+        "headline: Joe &amp; Mac Retro Collection Pre-Orders Are Up, Bringing 3 SNES Games To Modern Consoles | url: https://retrododo.com/tag/news/",
+        "headline: British Band Pillow Fort Are Releasing Their Debut Album On GBA Alongside A Rhythm Game | url: https://retrododo.com/tag/news/",
+        "headline: A New Tool For Extracting ROMs From Game Boy Cartridges Has Been Showcased For Analogue Pocket | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -202,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-27T17:28:22.948Z",
+      "startedAt": "2026-08-28T18:22:14.145Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:23.480Z",
-      "durationMs": 532,
+      "completedAt": "2026-08-28T18:22:14.763Z",
+      "durationMs": 618,
       "summary": {
         "kind": "array",
         "count": 12
@@ -224,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-27T17:28:23.480Z",
+      "startedAt": "2026-08-28T18:22:14.763Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-27T17:28:23.595Z",
-      "durationMs": 115,
+      "completedAt": "2026-08-28T18:22:14.912Z",
+      "durationMs": 149,
       "summary": {
         "kind": "array",
         "count": 10
@@ -246,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-27T17:28:23.595Z",
+      "startedAt": "2026-08-28T18:22:14.912Z",
       "ok": false,
-      "completedAt": "2026-08-27T17:28:23.734Z",
-      "durationMs": 139,
+      "completedAt": "2026-08-28T18:22:15.178Z",
+      "durationMs": 266,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
