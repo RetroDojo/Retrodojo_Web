@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-29T12:30:19.367Z",
+  "generatedAt": "2026-08-30T11:33:47.310Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-29T12:30:16.392Z",
+      "startedAt": "2026-08-30T11:33:43.825Z",
       "ok": false,
-      "completedAt": "2026-08-29T12:30:16.392Z",
+      "completedAt": "2026-08-30T11:33:43.825Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-29T12:30:16.392Z",
+      "startedAt": "2026-08-30T11:33:43.825Z",
       "ok": false,
-      "completedAt": "2026-08-29T12:30:16.392Z",
-      "durationMs": 0,
+      "completedAt": "2026-08-30T11:33:43.826Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-29T12:30:16.392Z",
+      "startedAt": "2026-08-30T11:33:43.826Z",
       "ok": false,
-      "completedAt": "2026-08-29T12:30:16.392Z",
+      "completedAt": "2026-08-30T11:33:43.826Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-29T12:30:16.392Z",
+      "startedAt": "2026-08-30T11:33:43.826Z",
       "ok": false,
-      "completedAt": "2026-08-29T12:30:16.393Z",
-      "durationMs": 1,
+      "completedAt": "2026-08-30T11:33:43.826Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-29T12:30:16.393Z",
+      "startedAt": "2026-08-30T11:33:43.826Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:16.834Z",
-      "durationMs": 441,
+      "completedAt": "2026-08-30T11:33:44.308Z",
+      "durationMs": 482,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-29T12:30:16.834Z",
+      "startedAt": "2026-08-30T11:33:44.308Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:16.909Z",
-      "durationMs": 75,
+      "completedAt": "2026-08-30T11:33:44.491Z",
+      "durationMs": 183,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Anbernic RG 55G1 Preorders Open on 8/31; Save $10 for 72 Hours | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: Anbernic RG 55G1, GameNative v1.2, and the Future of Physical Games | url: https://retrohandhelds.gg/news/",
         "headline: The State of 3:2 Retro Handhelds in 2026 | url: https://retrohandhelds.gg/news/",
-        "headline: Disc to Digital: How Xbox is Hedging Against the End of Physical Media | url: https://retrohandhelds.gg/news/",
-        "headline: Panic Refunds Playdate Tariff Fees to US Customers | url: https://retrohandhelds.gg/news/",
-        "headline: Atari and Activision Are Re-Releasing Almost 40 Physical Atari 2600 Games | url: https://retrohandhelds.gg/news/"
+        "headline: Disc to Digital: How Xbox is Hedging Against the End of Physical Media | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-29T12:30:16.909Z",
+      "startedAt": "2026-08-30T11:33:44.491Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:17.125Z",
-      "durationMs": 216,
+      "completedAt": "2026-08-30T11:33:45.050Z",
+      "durationMs": 559,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-29T12:30:17.125Z",
+      "startedAt": "2026-08-30T11:33:45.050Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:17.237Z",
-      "durationMs": 113,
+      "completedAt": "2026-08-30T11:33:45.180Z",
+      "durationMs": 130,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-29T12:30:17.238Z",
+      "startedAt": "2026-08-30T11:33:45.180Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:17.586Z",
-      "durationMs": 348,
+      "completedAt": "2026-08-30T11:33:45.299Z",
+      "durationMs": 119,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-29T12:30:17.586Z",
+      "startedAt": "2026-08-30T11:33:45.299Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:18.270Z",
-      "durationMs": 684,
+      "completedAt": "2026-08-30T11:33:45.870Z",
+      "durationMs": 571,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-29T12:30:18.270Z",
+      "startedAt": "2026-08-30T11:33:45.870Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:18.369Z",
-      "durationMs": 99,
+      "completedAt": "2026-08-30T11:33:46.092Z",
+      "durationMs": 222,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: A First Look At Yoniq&#39;s &quot;Portal&quot; Handheld Inside Of A PS2 Controller | url: https://retrododo.com/tag/news/",
-        "headline: Joe &amp; Mac Retro Collection Pre-Orders Are Up, Bringing 3 SNES Games To Modern Consoles | url: https://retrododo.com/tag/news/",
-        "headline: British Band Pillow Fort Are Releasing Their Debut Album On GBA Alongside A Rhythm Game | url: https://retrododo.com/tag/news/"
+        "headline: Meet The Man Building Custom Mini LCD TVs For A Living | url: https://retrododo.com/tag/news/",
+        "headline: Major PCSX2 Emulator Update Comes Packed With Performance Improvements | url: https://retrododo.com/tag/news/",
+        "headline: A First Look At Yoniq&#39;s &quot;Portal&quot; Handheld Inside Of A PS2 Controller | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-29T12:30:18.369Z",
+      "startedAt": "2026-08-30T11:33:46.092Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:19.117Z",
-      "durationMs": 748,
+      "completedAt": "2026-08-30T11:33:46.926Z",
+      "durationMs": 834,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-29T12:30:19.117Z",
+      "startedAt": "2026-08-30T11:33:46.926Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-29T12:30:19.226Z",
-      "durationMs": 109,
+      "completedAt": "2026-08-30T11:33:47.092Z",
+      "durationMs": 166,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-29T12:30:19.226Z",
+      "startedAt": "2026-08-30T11:33:47.092Z",
       "ok": false,
-      "completedAt": "2026-08-29T12:30:19.367Z",
-      "durationMs": 141,
+      "completedAt": "2026-08-30T11:33:47.310Z",
+      "durationMs": 218,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
