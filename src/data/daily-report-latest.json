@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-08-31T13:08:10.387Z",
+  "generatedAt": "2026-09-01T11:21:40.630Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-08-31T13:08:07.422Z",
+      "startedAt": "2026-09-01T11:21:34.352Z",
       "ok": false,
-      "completedAt": "2026-08-31T13:08:07.423Z",
-      "durationMs": 1,
+      "completedAt": "2026-09-01T11:21:34.352Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-08-31T13:08:07.423Z",
+      "startedAt": "2026-09-01T11:21:34.352Z",
       "ok": false,
-      "completedAt": "2026-08-31T13:08:07.423Z",
+      "completedAt": "2026-09-01T11:21:34.352Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-08-31T13:08:07.423Z",
+      "startedAt": "2026-09-01T11:21:34.352Z",
       "ok": false,
-      "completedAt": "2026-08-31T13:08:07.423Z",
+      "completedAt": "2026-09-01T11:21:34.352Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-08-31T13:08:07.423Z",
+      "startedAt": "2026-09-01T11:21:34.352Z",
       "ok": false,
-      "completedAt": "2026-08-31T13:08:07.423Z",
-      "durationMs": 0,
+      "completedAt": "2026-09-01T11:21:34.353Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-08-31T13:08:07.423Z",
+      "startedAt": "2026-09-01T11:21:34.353Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:07.803Z",
-      "durationMs": 380,
+      "completedAt": "2026-09-01T11:21:34.782Z",
+      "durationMs": 429,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-08-31T13:08:07.803Z",
+      "startedAt": "2026-09-01T11:21:34.782Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:08.072Z",
-      "durationMs": 269,
+      "completedAt": "2026-09-01T11:21:37.571Z",
+      "durationMs": 2789,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: ARC X1 Is a New Qualcomm-Powered Handheld With a Custom Version of Android | url: https://retrohandhelds.gg/news/",
         "headline: Anbernic RG 55G1 Preorders Open on 8/31; Save $10 for 72 Hours | url: https://retrohandhelds.gg/news/",
         "headline: Retro Handhelds Weekly: Anbernic RG 55G1, GameNative v1.2, and the Future of Physical Games | url: https://retrohandhelds.gg/news/",
-        "headline: The State of 3:2 Retro Handhelds in 2026 | url: https://retrohandhelds.gg/news/",
-        "headline: Disc to Digital: How Xbox is Hedging Against the End of Physical Media | url: https://retrohandhelds.gg/news/"
+        "headline: The State of 3:2 Retro Handhelds in 2026 | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-08-31T13:08:08.072Z",
+      "startedAt": "2026-09-01T11:21:37.571Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:08.384Z",
-      "durationMs": 312,
+      "completedAt": "2026-09-01T11:21:38.186Z",
+      "durationMs": 615,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-08-31T13:08:08.384Z",
+      "startedAt": "2026-09-01T11:21:38.186Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:08.538Z",
-      "durationMs": 154,
+      "completedAt": "2026-09-01T11:21:38.300Z",
+      "durationMs": 114,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-08-31T13:08:08.538Z",
+      "startedAt": "2026-09-01T11:21:38.300Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:08.834Z",
-      "durationMs": 296,
+      "completedAt": "2026-09-01T11:21:38.722Z",
+      "durationMs": 422,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,21 +162,21 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-08-31T13:08:08.834Z",
+      "startedAt": "2026-09-01T11:21:38.722Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:09.280Z",
-      "durationMs": 446,
+      "completedAt": "2026-09-01T11:21:39.437Z",
+      "durationMs": 715,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: Anbernic | url: https://anbernic.com/",
+        "headline: RG 35 | url: https://anbernic.com/",
+        "headline: Linux 64-bit | 3.5&quot; Fully Laminated IPS Display | url: https://anbernic.com/",
         "headline: RG 55G1 | url: https://anbernic.com/",
-        "headline: Snapdragon G1 Gen 2 | 5.5-inch FHD | Android 14 | url: https://anbernic.com/",
-        "headline: RG SP | url: https://anbernic.com/",
-        "headline: Slimmer | Narrower Bezel | Linux 64-bit | url: https://anbernic.com/"
+        "headline: Snapdragon G1 Gen 2 | 5.5-inch FHD | Android 14 | url: https://anbernic.com/"
       ]
     },
     {
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-08-31T13:08:09.280Z",
+      "startedAt": "2026-09-01T11:21:39.437Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:09.404Z",
-      "durationMs": 124,
+      "completedAt": "2026-09-01T11:21:39.572Z",
+      "durationMs": 136,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: ANBERNIC&#39;s New RG55G1 Retro Handheld Is Now Available To Buy | url: https://retrododo.com/tag/news/",
-        "headline: Meet The Man Building Custom Mini LCD TVs For A Living | url: https://retrododo.com/tag/news/",
-        "headline: Major PCSX2 Emulator Update Comes Packed With Performance Improvements | url: https://retrododo.com/tag/news/"
+        "headline: The Legend Of Doom Has Arrived On The New 3DS | url: https://retrododo.com/tag/news/",
+        "headline: Ocarina Of Time Unofficial Native PSP Port Has Been Released | url: https://retrododo.com/tag/news/",
+        "headline: DigiBitPlay Is A Cool Android Frontend Focusing On Box Art &amp; Manuals | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-08-31T13:08:09.404Z",
+      "startedAt": "2026-09-01T11:21:39.573Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:10.028Z",
-      "durationMs": 624,
+      "completedAt": "2026-09-01T11:21:40.339Z",
+      "durationMs": 766,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-08-31T13:08:10.028Z",
+      "startedAt": "2026-09-01T11:21:40.339Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-08-31T13:08:10.142Z",
-      "durationMs": 114,
+      "completedAt": "2026-09-01T11:21:40.463Z",
+      "durationMs": 124,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-08-31T13:08:10.142Z",
+      "startedAt": "2026-09-01T11:21:40.463Z",
       "ok": false,
-      "completedAt": "2026-08-31T13:08:10.387Z",
-      "durationMs": 245,
+      "completedAt": "2026-09-01T11:21:40.630Z",
+      "durationMs": 167,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
