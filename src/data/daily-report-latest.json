@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-02T10:55:35.693Z",
+  "generatedAt": "2026-09-03T10:55:04.919Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-02T10:55:31.006Z",
+      "startedAt": "2026-09-03T10:55:00.463Z",
       "ok": false,
-      "completedAt": "2026-09-02T10:55:31.006Z",
+      "completedAt": "2026-09-03T10:55:00.463Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-02T10:55:31.006Z",
+      "startedAt": "2026-09-03T10:55:00.463Z",
       "ok": false,
-      "completedAt": "2026-09-02T10:55:31.007Z",
-      "durationMs": 1,
+      "completedAt": "2026-09-03T10:55:00.463Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-02T10:55:31.007Z",
+      "startedAt": "2026-09-03T10:55:00.463Z",
       "ok": false,
-      "completedAt": "2026-09-02T10:55:31.007Z",
+      "completedAt": "2026-09-03T10:55:00.463Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-02T10:55:31.007Z",
+      "startedAt": "2026-09-03T10:55:00.463Z",
       "ok": false,
-      "completedAt": "2026-09-02T10:55:31.007Z",
-      "durationMs": 0,
+      "completedAt": "2026-09-03T10:55:00.464Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-02T10:55:31.007Z",
+      "startedAt": "2026-09-03T10:55:00.464Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:31.525Z",
-      "durationMs": 518,
+      "completedAt": "2026-09-03T10:55:01.069Z",
+      "durationMs": 605,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-02T10:55:31.525Z",
+      "startedAt": "2026-09-03T10:55:01.069Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:31.775Z",
-      "durationMs": 250,
+      "completedAt": "2026-09-03T10:55:01.135Z",
+      "durationMs": 66,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Socket Frontend Now Available for Free | url: https://retrohandhelds.gg/news/",
         "headline: 8BitDo Announces the Cozy Collection for XBOX | url: https://retrohandhelds.gg/news/",
         "headline: The Latest Rocknix Nightly Has Dropped with a Lot Under the Hood | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Surprise Drops the RG 35, a Which Appears to be a Rebranded BatleXP G350 | url: https://retrohandhelds.gg/news/",
-        "headline: Razer Drops Their Latest Controller: The Prio | url: https://retrohandhelds.gg/news/"
+        "headline: Anbernic Surprise Drops the RG 35, a Which Appears to be a Rebranded BatleXP G350 | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-02T10:55:31.775Z",
+      "startedAt": "2026-09-03T10:55:01.135Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:33.306Z",
-      "durationMs": 1531,
+      "completedAt": "2026-09-03T10:55:01.707Z",
+      "durationMs": 572,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-02T10:55:33.306Z",
+      "startedAt": "2026-09-03T10:55:01.707Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:33.513Z",
-      "durationMs": 207,
+      "completedAt": "2026-09-03T10:55:01.851Z",
+      "durationMs": 144,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,17 +140,21 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-02T10:55:33.513Z",
+      "startedAt": "2026-09-03T10:55:01.851Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:33.800Z",
-      "durationMs": 287,
+      "completedAt": "2026-09-03T10:55:03.092Z",
+      "durationMs": 1241,
       "summary": {
         "kind": "array",
-        "count": 1
+        "count": 7
       },
       "previewRows": [
-        "headline: One moment, please... | url: https://www.joeysretrohandhelds.com/latest-news/"
+        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
+        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
       ]
     },
     {
@@ -158,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-02T10:55:33.800Z",
+      "startedAt": "2026-09-03T10:55:03.092Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:34.557Z",
-      "durationMs": 757,
+      "completedAt": "2026-09-03T10:55:03.636Z",
+      "durationMs": 544,
       "summary": {
         "kind": "array",
         "count": 12
@@ -180,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-02T10:55:34.557Z",
+      "startedAt": "2026-09-03T10:55:03.636Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:34.765Z",
-      "durationMs": 208,
+      "completedAt": "2026-09-03T10:55:03.862Z",
+      "durationMs": 226,
       "summary": {
         "kind": "array",
         "count": 10
@@ -192,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: All The Pokémon Movies Are Being Released On Blu-ray In A Limited Edition Poké Ball Case | url: https://retrododo.com/tag/news/",
-        "headline: ANBERNIC Shadowdrops A New $38 Retro Handheld Outta Nowhere | url: https://retrododo.com/tag/news/",
-        "headline: Images Of The Upcoming LEGO PlayStation 1 Set Has Leaked | url: https://retrododo.com/tag/news/"
+        "headline: The Original Spyro Game Now Has A Co-Op Mod With Two-Player Split-Screen | url: https://retrododo.com/tag/news/",
+        "headline: FunnyPlaying Are Working On A Mini GAMEBOY DMG That Takes Cartridges | url: https://retrododo.com/tag/news/",
+        "headline: Frontend DigiBitPlay Will Soon Let You Add Stickers To Your Consoles &amp; Track Achievements | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -202,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-02T10:55:34.765Z",
+      "startedAt": "2026-09-03T10:55:03.862Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:35.359Z",
-      "durationMs": 594,
+      "completedAt": "2026-09-03T10:55:04.527Z",
+      "durationMs": 665,
       "summary": {
         "kind": "array",
         "count": 12
@@ -224,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-02T10:55:35.359Z",
+      "startedAt": "2026-09-03T10:55:04.527Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-02T10:55:35.478Z",
-      "durationMs": 119,
+      "completedAt": "2026-09-03T10:55:04.700Z",
+      "durationMs": 173,
       "summary": {
         "kind": "array",
         "count": 10
@@ -246,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-02T10:55:35.478Z",
+      "startedAt": "2026-09-03T10:55:04.700Z",
       "ok": false,
-      "completedAt": "2026-09-02T10:55:35.693Z",
-      "durationMs": 215,
+      "completedAt": "2026-09-03T10:55:04.919Z",
+      "durationMs": 219,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
