@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-04T10:54:35.003Z",
+  "generatedAt": "2026-09-05T10:14:50.451Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-04T10:54:30.843Z",
+      "startedAt": "2026-09-05T10:14:45.977Z",
       "ok": false,
-      "completedAt": "2026-09-04T10:54:30.843Z",
+      "completedAt": "2026-09-05T10:14:45.977Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-04T10:54:30.843Z",
+      "startedAt": "2026-09-05T10:14:45.977Z",
       "ok": false,
-      "completedAt": "2026-09-04T10:54:30.843Z",
-      "durationMs": 0,
+      "completedAt": "2026-09-05T10:14:45.978Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-04T10:54:30.843Z",
+      "startedAt": "2026-09-05T10:14:45.978Z",
       "ok": false,
-      "completedAt": "2026-09-04T10:54:30.843Z",
+      "completedAt": "2026-09-05T10:14:45.978Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-04T10:54:30.843Z",
+      "startedAt": "2026-09-05T10:14:45.978Z",
       "ok": false,
-      "completedAt": "2026-09-04T10:54:30.844Z",
-      "durationMs": 1,
+      "completedAt": "2026-09-05T10:14:45.978Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-04T10:54:30.844Z",
+      "startedAt": "2026-09-05T10:14:45.978Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:31.301Z",
-      "durationMs": 457,
+      "completedAt": "2026-09-05T10:14:46.426Z",
+      "durationMs": 448,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Fri, 04 Sep 2026 22:58:04 +0000 | link: retroachievements:news:2378",
         "pubDate: Wed, 02 Sep 2026 07:57:39 +0000 | link: retroachievements:news:2377",
         "pubDate: Tue, 01 Sep 2026 20:56:54 +0000 | link: retroachievements:news:2376",
         "pubDate: Sun, 30 Aug 2026 15:50:59 +0000 | link: retroachievements:news:2375",
-        "pubDate: Sun, 30 Aug 2026 14:24:16 +0000 | link: retroachievements:news:2374",
-        "pubDate: Wed, 26 Aug 2026 11:53:44 +0000 | link: https://retroachievements.org"
+        "pubDate: Sun, 30 Aug 2026 14:24:16 +0000 | link: retroachievements:news:2374"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-04T10:54:31.301Z",
+      "startedAt": "2026-09-05T10:14:46.426Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:31.488Z",
-      "durationMs": 187,
+      "completedAt": "2026-09-05T10:14:46.611Z",
+      "durationMs": 185,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Ocarina of Time 3D 4K 5.0: It’s Fantastic | url: https://retrohandhelds.gg/news/",
+        "headline: MSI Claw 8 EX AI+ Gets a New Arc G3 Model in Luminous Blue | url: https://retrohandhelds.gg/news/",
         "headline: UGREEN Is Getting Into the Smart Home Business | url: https://retrohandhelds.gg/news/",
-        "headline: FunnyPlaying Shows Off Mini Game Boy in the Works | url: https://retrohandhelds.gg/news/",
-        "headline: Sony Announces a New Physical Release in the LEGO PlayStation | url: https://retrohandhelds.gg/news/",
-        "headline: My Arcade Drops the Gamestation Retro Go at GameStop | url: https://retrohandhelds.gg/news/"
+        "headline: FunnyPlaying Shows Off Mini Game Boy in the Works | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-04T10:54:31.488Z",
+      "startedAt": "2026-09-05T10:14:46.611Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:32.807Z",
-      "durationMs": 1319,
+      "completedAt": "2026-09-05T10:14:47.161Z",
+      "durationMs": 550,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-04T10:54:32.807Z",
+      "startedAt": "2026-09-05T10:14:47.161Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:32.955Z",
-      "durationMs": 148,
+      "completedAt": "2026-09-05T10:14:47.421Z",
+      "durationMs": 260,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,21 +140,17 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-04T10:54:32.955Z",
+      "startedAt": "2026-09-05T10:14:47.421Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:33.126Z",
-      "durationMs": 171,
+      "completedAt": "2026-09-05T10:14:47.807Z",
+      "durationMs": 386,
       "summary": {
         "kind": "array",
-        "count": 7
+        "count": 1
       },
       "previewRows": [
-        "headline: Latest News | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Posts pagination | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Reviews | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Guides | url: https://www.joeysretrohandhelds.com/latest-news/",
-        "headline: Recommendations | url: https://www.joeysretrohandhelds.com/latest-news/"
+        "headline: One moment, please... | url: https://www.joeysretrohandhelds.com/latest-news/"
       ]
     },
     {
@@ -162,11 +158,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-04T10:54:33.126Z",
+      "startedAt": "2026-09-05T10:14:47.807Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:33.641Z",
-      "durationMs": 515,
+      "completedAt": "2026-09-05T10:14:49.379Z",
+      "durationMs": 1572,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +180,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-04T10:54:33.641Z",
+      "startedAt": "2026-09-05T10:14:49.379Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:33.864Z",
-      "durationMs": 223,
+      "completedAt": "2026-09-05T10:14:49.556Z",
+      "durationMs": 177,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +192,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Modder Creates GBA To Switch 2 Link Adapter For Trading Pokémon | url: https://retrododo.com/tag/news/",
-        "headline: Metal Canary Arrives As A Physical Wii Game This November | url: https://retrododo.com/tag/news/",
-        "headline: LEGO Officially Reveals New PlayStation 1 Set Just 48 Hours After Leaks | url: https://retrododo.com/tag/news/"
+        "headline: An Emulation Mod Kit For The LEGO PlayStation Is In The Works | url: https://retrododo.com/tag/news/",
+        "headline: Retro YouTuber Announces A Cool New Emulation Frontend Called Jump | url: https://retrododo.com/tag/news/",
+        "headline: Hyperkin Bring Modern Power To Retro Consoles With New USB-C Charging System Range | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +202,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-04T10:54:33.864Z",
+      "startedAt": "2026-09-05T10:14:49.556Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:34.646Z",
-      "durationMs": 782,
+      "completedAt": "2026-09-05T10:14:50.140Z",
+      "durationMs": 584,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +224,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-04T10:54:34.646Z",
+      "startedAt": "2026-09-05T10:14:50.140Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-04T10:54:34.793Z",
-      "durationMs": 147,
+      "completedAt": "2026-09-05T10:14:50.255Z",
+      "durationMs": 115,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +246,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-04T10:54:34.793Z",
+      "startedAt": "2026-09-05T10:14:50.255Z",
       "ok": false,
-      "completedAt": "2026-09-04T10:54:35.003Z",
-      "durationMs": 210,
+      "completedAt": "2026-09-05T10:14:50.451Z",
+      "durationMs": 196,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
