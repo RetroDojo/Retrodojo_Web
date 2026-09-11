@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-10T10:56:02.128Z",
+  "generatedAt": "2026-09-11T10:54:06.692Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-10T10:55:55.593Z",
+      "startedAt": "2026-09-11T10:54:03.650Z",
       "ok": false,
-      "completedAt": "2026-09-10T10:55:55.594Z",
+      "completedAt": "2026-09-11T10:54:03.651Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-10T10:55:55.594Z",
+      "startedAt": "2026-09-11T10:54:03.651Z",
       "ok": false,
-      "completedAt": "2026-09-10T10:55:55.594Z",
+      "completedAt": "2026-09-11T10:54:03.651Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-10T10:55:55.594Z",
+      "startedAt": "2026-09-11T10:54:03.651Z",
       "ok": false,
-      "completedAt": "2026-09-10T10:55:55.594Z",
+      "completedAt": "2026-09-11T10:54:03.651Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-10T10:55:55.594Z",
+      "startedAt": "2026-09-11T10:54:03.651Z",
       "ok": false,
-      "completedAt": "2026-09-10T10:55:55.594Z",
+      "completedAt": "2026-09-11T10:54:03.651Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-10T10:55:55.594Z",
+      "startedAt": "2026-09-11T10:54:03.651Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:55:55.983Z",
-      "durationMs": 389,
+      "completedAt": "2026-09-11T10:54:04.025Z",
+      "durationMs": 374,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Thu, 10 Sep 2026 16:56:40 +0000 | link: retroachievements:news:2383",
         "pubDate: Tue, 08 Sep 2026 20:54:37 +0000 | link: https://retroachievements.org",
         "pubDate: Mon, 07 Sep 2026 15:23:34 +0000 | link: retroachievements:news:2381",
         "pubDate: Sun, 06 Sep 2026 16:52:47 +0000 | link: retroachievements:news:2380",
-        "pubDate: Sat, 05 Sep 2026 18:26:37 +0000 | link: retroachievements:news:2379",
-        "pubDate: Fri, 04 Sep 2026 22:58:04 +0000 | link: retroachievements:news:2378"
+        "pubDate: Sat, 05 Sep 2026 18:26:37 +0000 | link: retroachievements:news:2379"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-10T10:55:55.983Z",
+      "startedAt": "2026-09-11T10:54:04.025Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:55:56.178Z",
-      "durationMs": 195,
+      "completedAt": "2026-09-11T10:54:04.147Z",
+      "durationMs": 122,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Here’s How Much the Retroid Pocket Duo and Pocket Duo Lite Will Cost | url: https://retrohandhelds.gg/news/",
-        "headline: Nintendo Direct 9/9/2026: Everything Announced! | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic RG DS Plus Unboxing Reveals Full Specs and More | url: https://retrohandhelds.gg/news/",
-        "headline: Retroid Pocket Duo Gets a Lite Model With IPS Screens and ‘Dragonwing’ Power | url: https://retrohandhelds.gg/news/"
+        "headline: Nintendo’s Hosting a ‘Customer Appreciation Sale’ To Compensate for Tariff Pricing | url: https://retrohandhelds.gg/news/",
+        "headline: Retroid Pocket Duo Pre-orders Open Tomorrow; Pricing Starts at Just $135 | url: https://retrohandhelds.gg/news/",
+        "headline: Ubisoft Drops Connect Requirement for Steam Games | url: https://retrohandhelds.gg/news/",
+        "headline: Ghostship Drops Their Latest 3.0 Update, and it’s a Big One | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-10T10:55:56.178Z",
+      "startedAt": "2026-09-11T10:54:04.147Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:55:59.744Z",
-      "durationMs": 3566,
+      "completedAt": "2026-09-11T10:54:04.520Z",
+      "durationMs": 373,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-10T10:55:59.744Z",
+      "startedAt": "2026-09-11T10:54:04.520Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:55:59.855Z",
-      "durationMs": 111,
+      "completedAt": "2026-09-11T10:54:04.660Z",
+      "durationMs": 140,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-10T10:55:59.855Z",
+      "startedAt": "2026-09-11T10:54:04.660Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:56:00.099Z",
-      "durationMs": 244,
+      "completedAt": "2026-09-11T10:54:05.041Z",
+      "durationMs": 381,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,21 +162,21 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-10T10:56:00.099Z",
+      "startedAt": "2026-09-11T10:54:05.041Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:56:00.991Z",
-      "durationMs": 892,
+      "completedAt": "2026-09-11T10:54:05.662Z",
+      "durationMs": 621,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: Anbernic | url: https://anbernic.com/",
+        "headline: RG DS Plus | url: https://anbernic.com/",
+        "headline: Dual 4.3″ Screens | 1024 × 768 | Built-in Stylus | url: https://anbernic.com/",
         "headline: RG 35 | url: https://anbernic.com/",
-        "headline: Linux 64-bit | 3.5&quot; Fully Laminated IPS Display | url: https://anbernic.com/",
-        "headline: RG 55G1 | url: https://anbernic.com/",
-        "headline: Snapdragon G1 Gen 2 | 5.5-inch FHD | Android 14 | url: https://anbernic.com/"
+        "headline: Linux 64-bit | 3.5&quot; Fully Laminated IPS Display | url: https://anbernic.com/"
       ]
     },
     {
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-10T10:56:00.991Z",
+      "startedAt": "2026-09-11T10:54:05.662Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:56:01.174Z",
-      "durationMs": 183,
+      "completedAt": "2026-09-11T10:54:05.785Z",
+      "durationMs": 123,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: The Punch Collision Problem In Alex Kidd In Miracle World Has Been Fixed 40 Years Later | url: https://retrododo.com/tag/news/",
-        "headline: Retroid Finally Reveals Pricing Of Pocket Duo &amp; Duo Lite | url: https://retrododo.com/tag/news/",
-        "headline: The NEOGEO AES+ Has Been Delayed An Entire Year | url: https://retrododo.com/tag/news/"
+        "headline: Retroid Pocket Duo &amp; Duo Lite Full Specifications Finally Revealed | url: https://retrododo.com/tag/news/",
+        "headline: Star Fox 64 Is Now Running On PSP At 60FPS | url: https://retrododo.com/tag/news/",
+        "headline: Nintendo Adds Mii Maker Music From The Wii, 3DS, and Wii U To Switch In New Update | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-10T10:56:01.174Z",
+      "startedAt": "2026-09-11T10:54:05.785Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:56:01.763Z",
-      "durationMs": 589,
+      "completedAt": "2026-09-11T10:54:06.351Z",
+      "durationMs": 566,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-10T10:56:01.763Z",
+      "startedAt": "2026-09-11T10:54:06.351Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-10T10:56:01.880Z",
-      "durationMs": 117,
+      "completedAt": "2026-09-11T10:54:06.439Z",
+      "durationMs": 88,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-10T10:56:01.880Z",
+      "startedAt": "2026-09-11T10:54:06.439Z",
       "ok": false,
-      "completedAt": "2026-09-10T10:56:02.128Z",
-      "durationMs": 248,
+      "completedAt": "2026-09-11T10:54:06.692Z",
+      "durationMs": 253,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
