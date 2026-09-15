@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-14T12:15:25.644Z",
+  "generatedAt": "2026-09-15T11:23:43.969Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-14T12:15:22.678Z",
+      "startedAt": "2026-09-15T11:23:40.665Z",
       "ok": false,
-      "completedAt": "2026-09-14T12:15:22.679Z",
-      "durationMs": 1,
+      "completedAt": "2026-09-15T11:23:40.665Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-14T12:15:22.679Z",
+      "startedAt": "2026-09-15T11:23:40.665Z",
       "ok": false,
-      "completedAt": "2026-09-14T12:15:22.679Z",
+      "completedAt": "2026-09-15T11:23:40.665Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-14T12:15:22.679Z",
+      "startedAt": "2026-09-15T11:23:40.665Z",
       "ok": false,
-      "completedAt": "2026-09-14T12:15:22.679Z",
+      "completedAt": "2026-09-15T11:23:40.665Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-14T12:15:22.679Z",
+      "startedAt": "2026-09-15T11:23:40.665Z",
       "ok": false,
-      "completedAt": "2026-09-14T12:15:22.679Z",
+      "completedAt": "2026-09-15T11:23:40.665Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-14T12:15:22.679Z",
+      "startedAt": "2026-09-15T11:23:40.665Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:23.163Z",
-      "durationMs": 484,
+      "completedAt": "2026-09-15T11:23:41.182Z",
+      "durationMs": 517,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Tue, 15 Sep 2026 03:24:07 +0000 | link: retroachievements:news:2386",
+        "pubDate: Mon, 14 Sep 2026 15:46:39 +0000 | link: retroachievements:news:2385",
         "pubDate: Sat, 12 Sep 2026 00:29:02 +0000 | link: retroachievements:news:2384",
         "pubDate: Thu, 10 Sep 2026 16:56:40 +0000 | link: retroachievements:news:2383",
-        "pubDate: Tue, 08 Sep 2026 20:54:37 +0000 | link: https://retroachievements.org",
-        "pubDate: Mon, 07 Sep 2026 15:23:34 +0000 | link: retroachievements:news:2381",
-        "pubDate: Sun, 06 Sep 2026 16:52:47 +0000 | link: retroachievements:news:2380"
+        "pubDate: Tue, 08 Sep 2026 20:54:37 +0000 | link: https://retroachievements.org"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-14T12:15:23.163Z",
+      "startedAt": "2026-09-15T11:23:41.182Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:23.345Z",
-      "durationMs": 182,
+      "completedAt": "2026-09-15T11:23:41.562Z",
+      "durationMs": 380,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Socket Gets its Latest 0.6.0 Update | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: Retroid Pocket Duo, Anbernic RG DS Plus, Zelda 40th Anniversary, and More | url: https://retrohandhelds.gg/news/",
-        "headline: spruceOS v4.4.0 Expands to Even More Handhelds and Adds a New DS Emulator | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic RG DS Plus Preorders Open Soon With a $10 Launch Discount | url: https://retrohandhelds.gg/news/"
+        "headline: Gamenative Drops its full V1.2.1 Update | url: https://retrohandhelds.gg/news/",
+        "headline: Valve Reveals Pricing and Opens Waitlist for the Steam Frame | url: https://retrohandhelds.gg/news/",
+        "headline: Retroid Slashes Prices on Remaining Stock of Devices | url: https://retrohandhelds.gg/news/",
+        "headline: Socket Gets its Latest 0.6.0 Update | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-14T12:15:23.345Z",
+      "startedAt": "2026-09-15T11:23:41.562Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:23.594Z",
-      "durationMs": 249,
+      "completedAt": "2026-09-15T11:23:41.804Z",
+      "durationMs": 242,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-14T12:15:23.594Z",
+      "startedAt": "2026-09-15T11:23:41.804Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:23.711Z",
-      "durationMs": 117,
+      "completedAt": "2026-09-15T11:23:42.036Z",
+      "durationMs": 232,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-14T12:15:23.711Z",
+      "startedAt": "2026-09-15T11:23:42.036Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:23.870Z",
-      "durationMs": 159,
+      "completedAt": "2026-09-15T11:23:42.147Z",
+      "durationMs": 111,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-14T12:15:23.870Z",
+      "startedAt": "2026-09-15T11:23:42.147Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:24.550Z",
-      "durationMs": 680,
+      "completedAt": "2026-09-15T11:23:42.742Z",
+      "durationMs": 595,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-14T12:15:24.550Z",
+      "startedAt": "2026-09-15T11:23:42.742Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:24.731Z",
-      "durationMs": 181,
+      "completedAt": "2026-09-15T11:23:42.976Z",
+      "durationMs": 234,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: The PSP Has A Brand New MP3 Player In 2026 | url: https://retrododo.com/tag/news/",
-        "headline: Delta Is Getting A Huge iPhone Duo Update For Nintendo DS Emulation | url: https://retrododo.com/tag/news/",
-        "headline: ANBERNIC RG DS Plus Price &amp; Release Date Announced | url: https://retrododo.com/tag/news/"
+        "headline: Play Randomised Versions Of The Original Green Hill Zone Forever In This New Hack | url: https://retrododo.com/tag/news/",
+        "headline: Sega &amp; Netflix Announce Crazy Taxi Film Adaptation Alongside Sonic Adaptation | url: https://retrododo.com/tag/news/",
+        "headline: Real-Time Battles Come To Pokémon Emerald Thanks To New ROM Hack | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-14T12:15:24.731Z",
+      "startedAt": "2026-09-15T11:23:42.976Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:25.301Z",
-      "durationMs": 570,
+      "completedAt": "2026-09-15T11:23:43.586Z",
+      "durationMs": 610,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-14T12:15:25.301Z",
+      "startedAt": "2026-09-15T11:23:43.587Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-14T12:15:25.419Z",
-      "durationMs": 118,
+      "completedAt": "2026-09-15T11:23:43.715Z",
+      "durationMs": 128,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-14T12:15:25.419Z",
+      "startedAt": "2026-09-15T11:23:43.715Z",
       "ok": false,
-      "completedAt": "2026-09-14T12:15:25.644Z",
-      "durationMs": 225,
+      "completedAt": "2026-09-15T11:23:43.969Z",
+      "durationMs": 254,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
