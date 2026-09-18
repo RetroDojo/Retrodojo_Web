@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-17T11:17:31.749Z",
+  "generatedAt": "2026-09-18T10:51:04.140Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-17T11:17:28.011Z",
+      "startedAt": "2026-09-18T10:51:00.967Z",
       "ok": false,
-      "completedAt": "2026-09-17T11:17:28.011Z",
+      "completedAt": "2026-09-18T10:51:00.967Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-17T11:17:28.011Z",
+      "startedAt": "2026-09-18T10:51:00.967Z",
       "ok": false,
-      "completedAt": "2026-09-17T11:17:28.012Z",
+      "completedAt": "2026-09-18T10:51:00.968Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-17T11:17:28.012Z",
+      "startedAt": "2026-09-18T10:51:00.968Z",
       "ok": false,
-      "completedAt": "2026-09-17T11:17:28.012Z",
+      "completedAt": "2026-09-18T10:51:00.968Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-17T11:17:28.012Z",
+      "startedAt": "2026-09-18T10:51:00.968Z",
       "ok": false,
-      "completedAt": "2026-09-17T11:17:28.012Z",
+      "completedAt": "2026-09-18T10:51:00.968Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-17T11:17:28.012Z",
+      "startedAt": "2026-09-18T10:51:00.968Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:28.498Z",
-      "durationMs": 486,
+      "completedAt": "2026-09-18T10:51:01.350Z",
+      "durationMs": 382,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Thu, 17 Sep 2026 12:09:50 +0000 | link: https://retroachievements.org",
         "pubDate: Tue, 15 Sep 2026 03:24:07 +0000 | link: retroachievements:news:2386",
         "pubDate: Mon, 14 Sep 2026 15:46:39 +0000 | link: retroachievements:news:2385",
         "pubDate: Sat, 12 Sep 2026 00:29:02 +0000 | link: retroachievements:news:2384",
-        "pubDate: Thu, 10 Sep 2026 16:56:40 +0000 | link: retroachievements:news:2383",
-        "pubDate: Tue, 08 Sep 2026 20:54:37 +0000 | link: https://retroachievements.org"
+        "pubDate: Thu, 10 Sep 2026 16:56:40 +0000 | link: retroachievements:news:2383"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-17T11:17:28.499Z",
+      "startedAt": "2026-09-18T10:51:01.350Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:28.814Z",
-      "durationMs": 315,
+      "completedAt": "2026-09-18T10:51:01.406Z",
+      "durationMs": 56,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Konsoru: The Thor Focused Launcher Drops v0.6.0 | url: https://retrohandhelds.gg/news/",
-        "headline: FunnyPlaying’s FPGB MINI Might Be Closer to Launch Than We Thought | url: https://retrohandhelds.gg/news/",
-        "headline: Those Weird Handhelds From Gamescom Might Be Nearing Their Release | url: https://retrohandhelds.gg/news/",
-        "headline: The GAMEMT MTX Combines Emulation With a GBA Cartridge Slot For Less Than $80 | url: https://retrohandhelds.gg/news/"
+        "headline: GPD Adds New Win 5 Configuration | url: https://retrohandhelds.gg/news/",
+        "headline: PaperBoat Gives Paper Mario 64 a Modern PC Makeover | url: https://retrohandhelds.gg/news/",
+        "headline: Acer Predator Atlas 8 is Now Available, Provided You’re in the UK | url: https://retrohandhelds.gg/news/",
+        "headline: Konsoru: The Thor Focused Launcher Drops v0.6.0 | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-17T11:17:28.814Z",
+      "startedAt": "2026-09-18T10:51:01.406Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:29.381Z",
-      "durationMs": 567,
+      "completedAt": "2026-09-18T10:51:01.770Z",
+      "durationMs": 364,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-17T11:17:29.381Z",
+      "startedAt": "2026-09-18T10:51:01.770Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:29.553Z",
-      "durationMs": 172,
+      "completedAt": "2026-09-18T10:51:01.878Z",
+      "durationMs": 108,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-17T11:17:29.553Z",
+      "startedAt": "2026-09-18T10:51:01.878Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:29.843Z",
-      "durationMs": 290,
+      "completedAt": "2026-09-18T10:51:02.225Z",
+      "durationMs": 347,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-17T11:17:29.843Z",
+      "startedAt": "2026-09-18T10:51:02.225Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:30.636Z",
-      "durationMs": 793,
+      "completedAt": "2026-09-18T10:51:03.409Z",
+      "durationMs": 1184,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-17T11:17:30.636Z",
+      "startedAt": "2026-09-18T10:51:03.409Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:30.873Z",
-      "durationMs": 237,
+      "completedAt": "2026-09-18T10:51:03.438Z",
+      "durationMs": 29,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Yoniq Has Also Listed The PS1 Portal Handheld Online With A Price | url: https://retrododo.com/tag/news/",
-        "headline: Hyperkin&#39;s New SupaBoy Handheld Colours Are Up For Pre-Order | url: https://retrododo.com/tag/news/",
-        "headline: We Finally Have Official Specs Of The FPGB Mini Handheld That Plays GB/GBC Cartridges | url: https://retrododo.com/tag/news/"
+        "headline: Star Wars Trilogy Arcade For The Sega Model 3 Has Been Ported To The Dreamcast | url: https://retrododo.com/tag/news/",
+        "headline: FunnyPlaying&#39;s New Mini GAME BOY That Plays Cartridges Is Now Up For Sale | url: https://retrododo.com/tag/news/",
+        "headline: Meet The World&#39;s First Fully Transparent Handheld | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-17T11:17:30.873Z",
+      "startedAt": "2026-09-18T10:51:03.438Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:31.491Z",
-      "durationMs": 618,
+      "completedAt": "2026-09-18T10:51:03.921Z",
+      "durationMs": 483,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,10 +228,10 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-17T11:17:31.491Z",
+      "startedAt": "2026-09-18T10:51:03.921Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-17T11:17:31.584Z",
+      "completedAt": "2026-09-18T10:51:04.014Z",
       "durationMs": 93,
       "summary": {
         "kind": "array",
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-17T11:17:31.584Z",
+      "startedAt": "2026-09-18T10:51:04.014Z",
       "ok": false,
-      "completedAt": "2026-09-17T11:17:31.749Z",
-      "durationMs": 165,
+      "completedAt": "2026-09-18T10:51:04.140Z",
+      "durationMs": 126,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
