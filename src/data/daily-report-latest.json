@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-19T10:34:15.917Z",
+  "generatedAt": "2026-09-20T10:57:04.210Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-19T10:34:11.246Z",
+      "startedAt": "2026-09-20T10:57:00.747Z",
       "ok": false,
-      "completedAt": "2026-09-19T10:34:11.246Z",
+      "completedAt": "2026-09-20T10:57:00.747Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-19T10:34:11.246Z",
+      "startedAt": "2026-09-20T10:57:00.747Z",
       "ok": false,
-      "completedAt": "2026-09-19T10:34:11.247Z",
-      "durationMs": 1,
+      "completedAt": "2026-09-20T10:57:00.747Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-19T10:34:11.247Z",
+      "startedAt": "2026-09-20T10:57:00.747Z",
       "ok": false,
-      "completedAt": "2026-09-19T10:34:11.247Z",
+      "completedAt": "2026-09-20T10:57:00.747Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-19T10:34:11.247Z",
+      "startedAt": "2026-09-20T10:57:00.747Z",
       "ok": false,
-      "completedAt": "2026-09-19T10:34:11.247Z",
+      "completedAt": "2026-09-20T10:57:00.747Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-19T10:34:11.247Z",
+      "startedAt": "2026-09-20T10:57:00.747Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:11.684Z",
-      "durationMs": 437,
+      "completedAt": "2026-09-20T10:57:01.354Z",
+      "durationMs": 607,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Sat, 19 Sep 2026 16:07:31 +0000 | link: retroachievements:news:2390",
         "pubDate: Sat, 19 Sep 2026 00:10:58 +0000 | link: retroachievements:news:2389",
         "pubDate: Fri, 18 Sep 2026 23:17:42 +0000 | link: retroachievements:news:2388",
         "pubDate: Thu, 17 Sep 2026 12:09:50 +0000 | link: https://retroachievements.org",
-        "pubDate: Tue, 15 Sep 2026 03:24:07 +0000 | link: retroachievements:news:2386",
-        "pubDate: Mon, 14 Sep 2026 15:46:39 +0000 | link: retroachievements:news:2385"
+        "pubDate: Tue, 15 Sep 2026 03:24:07 +0000 | link: retroachievements:news:2386"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-19T10:34:11.684Z",
+      "startedAt": "2026-09-20T10:57:01.354Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:11.837Z",
-      "durationMs": 153,
+      "completedAt": "2026-09-20T10:57:01.573Z",
+      "durationMs": 219,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Retroid Doesn’t Know How to Stop With the Duo Lite Plus | url: https://retrohandhelds.gg/news/",
+        "headline: Retro Handhelds Weekly: Tiny Game Boys, Real Cartridges, and a Whole Lot of Retro Gaming | url: https://retrohandhelds.gg/news/",
         "headline: Mangmi Air Y Pro Gains Armada Support | url: https://retrohandhelds.gg/news/",
-        "headline: ARC X1 Now Gets an Official Specs List | url: https://retrohandhelds.gg/news/",
-        "headline: FunnyPlaying’s $69 Mini Game Boy Launch Was Over In A Flash | url: https://retrohandhelds.gg/news/",
-        "headline: GPD Adds New Win 5 Configuration | url: https://retrohandhelds.gg/news/"
+        "headline: ARC X1 Now Gets an Official Specs List | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-19T10:34:11.837Z",
+      "startedAt": "2026-09-20T10:57:01.573Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:12.604Z",
-      "durationMs": 767,
+      "completedAt": "2026-09-20T10:57:01.837Z",
+      "durationMs": 264,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-19T10:34:12.604Z",
+      "startedAt": "2026-09-20T10:57:01.837Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:13.064Z",
-      "durationMs": 460,
+      "completedAt": "2026-09-20T10:57:02.093Z",
+      "durationMs": 257,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-19T10:34:13.064Z",
+      "startedAt": "2026-09-20T10:57:02.094Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:13.919Z",
-      "durationMs": 855,
+      "completedAt": "2026-09-20T10:57:02.161Z",
+      "durationMs": 67,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-19T10:34:13.919Z",
+      "startedAt": "2026-09-20T10:57:02.161Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:14.774Z",
-      "durationMs": 855,
+      "completedAt": "2026-09-20T10:57:02.509Z",
+      "durationMs": 348,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-19T10:34:14.774Z",
+      "startedAt": "2026-09-20T10:57:02.509Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:15.076Z",
-      "durationMs": 302,
+      "completedAt": "2026-09-20T10:57:02.582Z",
+      "durationMs": 73,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
+        "headline: Retroid Releases New Duo &quot;Lite Plus&quot; Handheld Based On Community Feedback | url: https://retrododo.com/tag/news/",
         "headline: Yes, The FPGB Mini Handheld Is Being Restocked &quot;In 20 Days&quot;, But There&#39;s A Catch | url: https://retrododo.com/tag/news/",
-        "headline: Dead Space Gets Reimagined As A Nokia 3310 Game In This Retro Demake | url: https://retrododo.com/tag/news/",
-        "headline: The GameCube Version Of Resident Evil 4 Is Being Ported To PS Vita | url: https://retrododo.com/tag/news/"
+        "headline: Dead Space Gets Reimagined As A Nokia 3310 Game In This Retro Demake | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-19T10:34:15.076Z",
+      "startedAt": "2026-09-20T10:57:02.582Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:15.653Z",
-      "durationMs": 577,
+      "completedAt": "2026-09-20T10:57:03.234Z",
+      "durationMs": 652,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-19T10:34:15.653Z",
+      "startedAt": "2026-09-20T10:57:03.234Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-19T10:34:15.756Z",
-      "durationMs": 103,
+      "completedAt": "2026-09-20T10:57:03.381Z",
+      "durationMs": 147,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-19T10:34:15.756Z",
+      "startedAt": "2026-09-20T10:57:03.381Z",
       "ok": false,
-      "completedAt": "2026-09-19T10:34:15.917Z",
-      "durationMs": 161,
+      "completedAt": "2026-09-20T10:57:04.210Z",
+      "durationMs": 829,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
