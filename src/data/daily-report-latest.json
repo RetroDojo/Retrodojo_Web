@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-09-20T10:57:04.210Z",
+  "generatedAt": "2026-09-21T12:23:08.252Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-09-20T10:57:00.747Z",
+      "startedAt": "2026-09-21T12:23:03.233Z",
       "ok": false,
-      "completedAt": "2026-09-20T10:57:00.747Z",
+      "completedAt": "2026-09-21T12:23:03.233Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-09-20T10:57:00.747Z",
+      "startedAt": "2026-09-21T12:23:03.234Z",
       "ok": false,
-      "completedAt": "2026-09-20T10:57:00.747Z",
+      "completedAt": "2026-09-21T12:23:03.234Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-09-20T10:57:00.747Z",
+      "startedAt": "2026-09-21T12:23:03.234Z",
       "ok": false,
-      "completedAt": "2026-09-20T10:57:00.747Z",
+      "completedAt": "2026-09-21T12:23:03.234Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-09-20T10:57:00.747Z",
+      "startedAt": "2026-09-21T12:23:03.234Z",
       "ok": false,
-      "completedAt": "2026-09-20T10:57:00.747Z",
+      "completedAt": "2026-09-21T12:23:03.234Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-09-20T10:57:00.747Z",
+      "startedAt": "2026-09-21T12:23:03.234Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:01.354Z",
-      "durationMs": 607,
+      "completedAt": "2026-09-21T12:23:03.764Z",
+      "durationMs": 530,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,43 +74,32 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-09-20T10:57:01.354Z",
-      "ok": true,
-      "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:01.573Z",
-      "durationMs": 219,
-      "summary": {
-        "kind": "array",
-        "count": 12
-      },
-      "previewRows": [
-        "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Retroid Doesn’t Know How to Stop With the Duo Lite Plus | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: Tiny Game Boys, Real Cartridges, and a Whole Lot of Retro Gaming | url: https://retrohandhelds.gg/news/",
-        "headline: Mangmi Air Y Pro Gains Armada Support | url: https://retrohandhelds.gg/news/",
-        "headline: ARC X1 Now Gets an Official Specs List | url: https://retrohandhelds.gg/news/"
-      ]
+      "startedAt": "2026-09-21T12:23:03.764Z",
+      "ok": false,
+      "completedAt": "2026-09-21T12:23:03.838Z",
+      "durationMs": 74,
+      "error": "fetch failed"
     },
     {
       "id": "retrogamecorps-buttondown-rss",
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-09-20T10:57:01.573Z",
+      "startedAt": "2026-09-21T12:23:03.838Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:01.837Z",
-      "durationMs": 264,
+      "completedAt": "2026-09-21T12:23:04.289Z",
+      "durationMs": 451,
       "summary": {
         "kind": "array",
         "count": 30
       },
       "previewRows": [
+        "title: RGC #36: Holding Pattern | pubDate: Sun, 20 Sep 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-036/",
         "title: RGC #35: Dual Screen Dueling | pubDate: Sun, 13 Sep 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-035/",
         "title: RGC #34: Back on Track | pubDate: Sun, 06 Sep 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-034/",
         "title: RGC #33: So Many GBAs | pubDate: Sun, 30 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-033/",
-        "title: RGC #32: 8BitDo is Getting Ultimater | pubDate: Sun, 23 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-032/",
-        "title: RGC #31: How to Properly Set Up a Handheld | pubDate: Sun, 16 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-031/"
+        "title: RGC #32: 8BitDo is Getting Ultimater | pubDate: Sun, 23 Aug 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-032/"
       ]
     },
     {
@@ -118,11 +107,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-09-20T10:57:01.837Z",
+      "startedAt": "2026-09-21T12:23:04.289Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:02.093Z",
-      "durationMs": 257,
+      "completedAt": "2026-09-21T12:23:04.487Z",
+      "durationMs": 198,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +129,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-09-20T10:57:02.094Z",
+      "startedAt": "2026-09-21T12:23:04.487Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:02.161Z",
-      "durationMs": 67,
+      "completedAt": "2026-09-21T12:23:04.858Z",
+      "durationMs": 371,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +151,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-09-20T10:57:02.161Z",
+      "startedAt": "2026-09-21T12:23:04.858Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:02.509Z",
-      "durationMs": 348,
+      "completedAt": "2026-09-21T12:23:07.159Z",
+      "durationMs": 2301,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +173,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-09-20T10:57:02.509Z",
+      "startedAt": "2026-09-21T12:23:07.159Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:02.582Z",
-      "durationMs": 73,
+      "completedAt": "2026-09-21T12:23:07.457Z",
+      "durationMs": 298,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +185,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Retroid Releases New Duo &quot;Lite Plus&quot; Handheld Based On Community Feedback | url: https://retrododo.com/tag/news/",
-        "headline: Yes, The FPGB Mini Handheld Is Being Restocked &quot;In 20 Days&quot;, But There&#39;s A Catch | url: https://retrododo.com/tag/news/",
-        "headline: Dead Space Gets Reimagined As A Nokia 3310 Game In This Retro Demake | url: https://retrododo.com/tag/news/"
+        "headline: ROM Hack Emerald Arena Gets Pokeballs &amp; Added Pokémon To Its Real-Time Battle Experience | url: https://retrododo.com/tag/news/",
+        "headline: You Can Now Play Crash Bash Online In Your Browser For Free | url: https://retrododo.com/tag/news/",
+        "headline: Retroid Releases New Duo &quot;Lite Plus&quot; Handheld Based On Community Feedback | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +195,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-09-20T10:57:02.582Z",
+      "startedAt": "2026-09-21T12:23:07.457Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:03.234Z",
-      "durationMs": 652,
+      "completedAt": "2026-09-21T12:23:07.977Z",
+      "durationMs": 520,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +217,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-09-20T10:57:03.234Z",
+      "startedAt": "2026-09-21T12:23:07.977Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-09-20T10:57:03.381Z",
-      "durationMs": 147,
+      "completedAt": "2026-09-21T12:23:08.082Z",
+      "durationMs": 105,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +239,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-09-20T10:57:03.381Z",
+      "startedAt": "2026-09-21T12:23:08.082Z",
       "ok": false,
-      "completedAt": "2026-09-20T10:57:04.210Z",
-      "durationMs": 829,
+      "completedAt": "2026-09-21T12:23:08.252Z",
+      "durationMs": 170,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
