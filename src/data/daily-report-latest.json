@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-10-01T12:45:20.215Z",
+  "generatedAt": "2026-10-02T12:09:17.548Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-10-01T12:45:17.480Z",
+      "startedAt": "2026-10-02T12:09:13.869Z",
       "ok": false,
-      "completedAt": "2026-10-01T12:45:17.480Z",
+      "completedAt": "2026-10-02T12:09:13.869Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-10-01T12:45:17.480Z",
+      "startedAt": "2026-10-02T12:09:13.869Z",
       "ok": false,
-      "completedAt": "2026-10-01T12:45:17.481Z",
+      "completedAt": "2026-10-02T12:09:13.870Z",
       "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-10-01T12:45:17.481Z",
+      "startedAt": "2026-10-02T12:09:13.870Z",
       "ok": false,
-      "completedAt": "2026-10-01T12:45:17.481Z",
+      "completedAt": "2026-10-02T12:09:13.870Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-10-01T12:45:17.481Z",
+      "startedAt": "2026-10-02T12:09:13.870Z",
       "ok": false,
-      "completedAt": "2026-10-01T12:45:17.481Z",
+      "completedAt": "2026-10-02T12:09:13.870Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-10-01T12:45:17.481Z",
+      "startedAt": "2026-10-02T12:09:13.870Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:17.815Z",
-      "durationMs": 334,
+      "completedAt": "2026-10-02T12:09:14.235Z",
+      "durationMs": 365,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-10-01T12:45:17.815Z",
+      "startedAt": "2026-10-02T12:09:14.235Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:17.988Z",
-      "durationMs": 173,
+      "completedAt": "2026-10-02T12:09:14.429Z",
+      "durationMs": 194,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Some Retroid Customers Are Getting Packages, Just Not Their Handhelds | url: https://retrohandhelds.gg/news/",
         "headline: Sony’s AI-Powered Controller Assistant Could Help Disabled Players, If It Ever Ships | url: https://retrohandhelds.gg/news/",
         "headline: EmuDeck 2.7 Just Got an Armada Update | url: https://retrohandhelds.gg/news/",
-        "headline: Wave Launcher Drops Their V1.0.2 Update | url: https://retrohandhelds.gg/news/",
-        "headline: Don’t Be Surprised if the KONKR Pocket Block Doesn’t Ship Before Thanksgiving | url: https://retrohandhelds.gg/news/"
+        "headline: Wave Launcher Drops Their V1.0.2 Update | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-10-01T12:45:17.988Z",
+      "startedAt": "2026-10-02T12:09:14.429Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:18.294Z",
-      "durationMs": 306,
+      "completedAt": "2026-10-02T12:09:14.830Z",
+      "durationMs": 401,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,17 +118,17 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-10-01T12:45:18.294Z",
+      "startedAt": "2026-10-02T12:09:14.830Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:18.386Z",
-      "durationMs": 92,
+      "completedAt": "2026-10-02T12:09:14.941Z",
+      "durationMs": 111,
       "summary": {
         "kind": "array",
         "count": 10
       },
       "previewRows": [
-        "title: AYN Thor (and other Dual-Screen Android Handheld) Guide | pubDate: Mon, 27 Oct 2025 14:00:00 +0000 | link: https://retrogamecorps.com/2025/10/27/dual-screen-android-handheld-guide/",
+        "title: AYN Thor (and other Dual-Screen Android Handhelds) Guide | pubDate: Mon, 27 Oct 2025 14:00:00 +0000 | link: https://retrogamecorps.com/2025/10/27/dual-screen-android-handheld-guide/",
         "title: MinUI Starter Guide | pubDate: Fri, 24 Oct 2025 14:00:00 +0000 | link: https://retrogamecorps.com/2025/10/24/minui-starter-guide/",
         "title: Linux on Android Handhelds (ROCKNIX Guide) | pubDate: Mon, 03 Mar 2025 20:12:49 +0000 | link: https://retrogamecorps.com/2025/03/03/linux-on-the-odin-2-rocknix-guide/",
         "title: Emulation on Mac Starter Guide | pubDate: Sun, 23 Feb 2025 15:00:00 +0000 | link: https://retrogamecorps.com/2025/02/23/emulation-on-mac-starter-guide/",
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-10-01T12:45:18.386Z",
+      "startedAt": "2026-10-02T12:09:14.941Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:18.531Z",
-      "durationMs": 145,
+      "completedAt": "2026-10-02T12:09:15.341Z",
+      "durationMs": 400,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-10-01T12:45:18.531Z",
+      "startedAt": "2026-10-02T12:09:15.341Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:19.079Z",
-      "durationMs": 548,
+      "completedAt": "2026-10-02T12:09:16.096Z",
+      "durationMs": 755,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-10-01T12:45:19.079Z",
+      "startedAt": "2026-10-02T12:09:16.096Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:19.270Z",
-      "durationMs": 191,
+      "completedAt": "2026-10-02T12:09:16.318Z",
+      "durationMs": 222,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: iFly Testflight Spots Are Available For iPhone Dreamcast Emulator | url: https://retrododo.com/tag/news/",
-        "headline: Majora&#39;s Mask On PS5 Runs Natively In 4K At 60fps | url: https://retrododo.com/tag/news/",
-        "headline: Super Mario Kart Deluxe ROM Hack Gets A Festive Release Date | url: https://retrododo.com/tag/news/"
+        "headline: Rare Are Rumoured To Be Making A New Crash Bandicoot Game | url: https://retrododo.com/tag/news/",
+        "headline: The Halo Recomp Is Now Running On The PS Vita | url: https://retrododo.com/tag/news/",
+        "headline: Turn Your MiSTer FPGA Into A Sega Saturn With This New &#39;Mercury&#39; Kit | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-10-01T12:45:19.270Z",
+      "startedAt": "2026-10-02T12:09:16.318Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:19.864Z",
-      "durationMs": 594,
+      "completedAt": "2026-10-02T12:09:17.093Z",
+      "durationMs": 775,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-10-01T12:45:19.864Z",
+      "startedAt": "2026-10-02T12:09:17.093Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-01T12:45:20.001Z",
-      "durationMs": 137,
+      "completedAt": "2026-10-02T12:09:17.225Z",
+      "durationMs": 132,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-10-01T12:45:20.001Z",
+      "startedAt": "2026-10-02T12:09:17.225Z",
       "ok": false,
-      "completedAt": "2026-10-01T12:45:20.215Z",
-      "durationMs": 214,
+      "completedAt": "2026-10-02T12:09:17.548Z",
+      "durationMs": 323,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
