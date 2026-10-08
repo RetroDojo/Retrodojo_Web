@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-10-07T12:56:37.601Z",
+  "generatedAt": "2026-10-08T13:04:43.801Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-10-07T12:56:34.056Z",
+      "startedAt": "2026-10-08T13:04:39.200Z",
       "ok": false,
-      "completedAt": "2026-10-07T12:56:34.056Z",
+      "completedAt": "2026-10-08T13:04:39.200Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-10-07T12:56:34.056Z",
+      "startedAt": "2026-10-08T13:04:39.200Z",
       "ok": false,
-      "completedAt": "2026-10-07T12:56:34.056Z",
-      "durationMs": 0,
+      "completedAt": "2026-10-08T13:04:39.201Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,10 +30,10 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-10-07T12:56:34.056Z",
+      "startedAt": "2026-10-08T13:04:39.201Z",
       "ok": false,
-      "completedAt": "2026-10-07T12:56:34.057Z",
-      "durationMs": 1,
+      "completedAt": "2026-10-08T13:04:39.201Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-10-07T12:56:34.057Z",
+      "startedAt": "2026-10-08T13:04:39.201Z",
       "ok": false,
-      "completedAt": "2026-10-07T12:56:34.057Z",
+      "completedAt": "2026-10-08T13:04:39.201Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-10-07T12:56:34.057Z",
+      "startedAt": "2026-10-08T13:04:39.201Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:34.656Z",
-      "durationMs": 599,
+      "completedAt": "2026-10-08T13:04:39.765Z",
+      "durationMs": 564,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-10-07T12:56:34.656Z",
+      "startedAt": "2026-10-08T13:04:39.765Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:34.780Z",
-      "durationMs": 124,
+      "completedAt": "2026-10-08T13:04:39.899Z",
+      "durationMs": 134,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Itch.io Shows Off Their Donk in the Latest App Update | url: https://retrohandhelds.gg/news/",
+        "headline: Abxylute Slides in With Their M5 and M6 Kickstarter | url: https://retrohandhelds.gg/news/",
         "headline: MagicX Mini Dream Gets Final Design Renders, and a $179 Dimensity 7300 Version | url: https://retrohandhelds.gg/news/",
-        "headline: GameStop is Raising the Price of the PS5 Pro | url: https://retrohandhelds.gg/news/",
-        "headline: The ModRetro Chromatic Is About to Get a Transparent Makeover | url: https://retrohandhelds.gg/news/",
-        "headline: A New Miyoo Mini Plus and Miyoo Flip Might Soon Be On the Horizon | url: https://retrohandhelds.gg/news/"
+        "headline: GameStop is Raising the Price of the PS5 Pro | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-10-07T12:56:34.780Z",
+      "startedAt": "2026-10-08T13:04:39.899Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:35.081Z",
-      "durationMs": 301,
+      "completedAt": "2026-10-08T13:04:40.385Z",
+      "durationMs": 486,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-10-07T12:56:35.081Z",
+      "startedAt": "2026-10-08T13:04:40.385Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:35.189Z",
-      "durationMs": 108,
+      "completedAt": "2026-10-08T13:04:40.589Z",
+      "durationMs": 204,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-10-07T12:56:35.189Z",
+      "startedAt": "2026-10-08T13:04:40.589Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:35.412Z",
-      "durationMs": 223,
+      "completedAt": "2026-10-08T13:04:41.353Z",
+      "durationMs": 764,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-10-07T12:56:35.412Z",
+      "startedAt": "2026-10-08T13:04:41.353Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:36.195Z",
-      "durationMs": 783,
+      "completedAt": "2026-10-08T13:04:42.006Z",
+      "durationMs": 653,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-10-07T12:56:36.195Z",
+      "startedAt": "2026-10-08T13:04:42.006Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:36.453Z",
-      "durationMs": 258,
+      "completedAt": "2026-10-08T13:04:42.307Z",
+      "durationMs": 301,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: New Limited Edition SuperStation One Consoles Are Up For Pre-Order | url: https://retrododo.com/tag/news/",
-        "headline: The Best Retro Gaming Prime Day Deals October 6th - 7th | url: https://retrododo.com/tag/news/",
-        "headline: Papercraft Genius Creates Mini Arcade That You Play Using Toothpicks | url: https://retrododo.com/tag/news/"
+        "headline: ATARI Reveals New 800XL Retro Console - Available To Pre-Order | url: https://retrododo.com/tag/news/",
+        "headline: Jurassic PokéPark Combines Two Of My Favourite Childhood Series In One Amazing Game | url: https://retrododo.com/tag/news/",
+        "headline: Retro Song Bird Is A GAME BOY Cartridge Music Player For Cool Nerds | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-10-07T12:56:36.453Z",
+      "startedAt": "2026-10-08T13:04:42.307Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:37.217Z",
-      "durationMs": 764,
+      "completedAt": "2026-10-08T13:04:42.863Z",
+      "durationMs": 556,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-10-07T12:56:37.217Z",
+      "startedAt": "2026-10-08T13:04:42.863Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-07T12:56:37.348Z",
-      "durationMs": 131,
+      "completedAt": "2026-10-08T13:04:42.964Z",
+      "durationMs": 101,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-10-07T12:56:37.348Z",
+      "startedAt": "2026-10-08T13:04:42.964Z",
       "ok": false,
-      "completedAt": "2026-10-07T12:56:37.601Z",
-      "durationMs": 253,
+      "completedAt": "2026-10-08T13:04:43.801Z",
+      "durationMs": 837,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
