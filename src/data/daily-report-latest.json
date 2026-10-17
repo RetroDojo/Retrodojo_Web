@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-10-16T11:00:22.116Z",
+  "generatedAt": "2026-10-17T10:22:02.057Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-10-16T11:00:17.997Z",
+      "startedAt": "2026-10-17T10:21:58.772Z",
       "ok": false,
-      "completedAt": "2026-10-16T11:00:17.998Z",
-      "durationMs": 1,
+      "completedAt": "2026-10-17T10:21:58.772Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-10-16T11:00:17.998Z",
+      "startedAt": "2026-10-17T10:21:58.772Z",
       "ok": false,
-      "completedAt": "2026-10-16T11:00:17.998Z",
-      "durationMs": 0,
+      "completedAt": "2026-10-17T10:21:58.773Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-10-16T11:00:17.998Z",
+      "startedAt": "2026-10-17T10:21:58.773Z",
       "ok": false,
-      "completedAt": "2026-10-16T11:00:17.998Z",
+      "completedAt": "2026-10-17T10:21:58.773Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-10-16T11:00:17.998Z",
+      "startedAt": "2026-10-17T10:21:58.773Z",
       "ok": false,
-      "completedAt": "2026-10-16T11:00:17.998Z",
+      "completedAt": "2026-10-17T10:21:58.773Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-10-16T11:00:17.998Z",
+      "startedAt": "2026-10-17T10:21:58.773Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:18.488Z",
-      "durationMs": 490,
+      "completedAt": "2026-10-17T10:21:59.199Z",
+      "durationMs": 426,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-10-16T11:00:18.488Z",
+      "startedAt": "2026-10-17T10:21:59.199Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:18.589Z",
-      "durationMs": 101,
+      "completedAt": "2026-10-17T10:21:59.485Z",
+      "durationMs": 286,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Miyoo Mini Plus V2 With Its RK3562 Processor Now Available From GoGameGeek | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic Begins Removing Bundled microSD Cards From Its Storefront | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic RG DDS Price and Release Details Leaked Ahead of Pre-orders | url: https://retrohandhelds.gg/news/",
-        "headline: Dual-Booting SteamOS and Android Just Got a Lot Less Annoying | url: https://retrohandhelds.gg/news/"
+        "headline: Afterplay Brings Cloud-Synced Retro Gaming to Android and iOS | url: https://retrohandhelds.gg/news/",
+        "headline: XBOX Drops Their Nano Controller and It’s Full-Featured | url: https://retrohandhelds.gg/news/",
+        "headline: Analogue Announces Super Nt+ and Mega Sg+ With Pre-orders Opening October 19 | url: https://retrohandhelds.gg/news/",
+        "headline: Miyoo Mini Plus V2 With Its RK3562 Processor Now Available From GoGameGeek | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-10-16T11:00:18.589Z",
+      "startedAt": "2026-10-17T10:21:59.485Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:19.034Z",
-      "durationMs": 445,
+      "completedAt": "2026-10-17T10:21:59.744Z",
+      "durationMs": 259,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-10-16T11:00:19.034Z",
+      "startedAt": "2026-10-17T10:21:59.744Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:19.115Z",
-      "durationMs": 82,
+      "completedAt": "2026-10-17T10:21:59.913Z",
+      "durationMs": 169,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-10-16T11:00:19.116Z",
+      "startedAt": "2026-10-17T10:21:59.913Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:20.872Z",
-      "durationMs": 1756,
+      "completedAt": "2026-10-17T10:22:00.596Z",
+      "durationMs": 683,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-10-16T11:00:20.872Z",
+      "startedAt": "2026-10-17T10:22:00.596Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:21.272Z",
-      "durationMs": 400,
+      "completedAt": "2026-10-17T10:22:01.105Z",
+      "durationMs": 509,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-10-16T11:00:21.272Z",
+      "startedAt": "2026-10-17T10:22:01.105Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:21.429Z",
-      "durationMs": 157,
+      "completedAt": "2026-10-17T10:22:01.226Z",
+      "durationMs": 121,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: You Can Now Pre-Order The ANBERNIC RG DDS | url: https://retrododo.com/tag/news/",
-        "headline: Taki Udon Teases Two Upcoming FPGA GAME BOYs With &quot;New Screens&quot; | url: https://retrododo.com/tag/news/",
-        "headline: Halo: Combat Evolved Gets A Nintendo 64 Multiplayer Port | url: https://retrododo.com/tag/news/"
+        "headline: Analogue Reveals New SuperNT+ &amp; MegaSG+ Consoles - Dropping Next Week | url: https://retrododo.com/tag/news/",
+        "headline: Afterplay Emulation Platform Finally Lands On iOS &amp; Android | url: https://retrododo.com/tag/news/",
+        "headline: You Can Now Pre-Order The ANBERNIC RG DDS | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-10-16T11:00:21.429Z",
+      "startedAt": "2026-10-17T10:22:01.226Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:21.886Z",
-      "durationMs": 457,
+      "completedAt": "2026-10-17T10:22:01.767Z",
+      "durationMs": 541,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-10-16T11:00:21.886Z",
+      "startedAt": "2026-10-17T10:22:01.767Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-16T11:00:21.981Z",
-      "durationMs": 95,
+      "completedAt": "2026-10-17T10:22:01.893Z",
+      "durationMs": 126,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-10-16T11:00:21.981Z",
+      "startedAt": "2026-10-17T10:22:01.893Z",
       "ok": false,
-      "completedAt": "2026-10-16T11:00:22.116Z",
-      "durationMs": 135,
+      "completedAt": "2026-10-17T10:22:02.057Z",
+      "durationMs": 164,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
