@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-10-21T11:25:33.570Z",
+  "generatedAt": "2026-10-22T11:25:37.224Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-10-21T11:25:31.679Z",
+      "startedAt": "2026-10-22T11:25:34.039Z",
       "ok": false,
-      "completedAt": "2026-10-21T11:25:31.679Z",
+      "completedAt": "2026-10-22T11:25:34.039Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-10-21T11:25:31.679Z",
+      "startedAt": "2026-10-22T11:25:34.039Z",
       "ok": false,
-      "completedAt": "2026-10-21T11:25:31.679Z",
-      "durationMs": 0,
+      "completedAt": "2026-10-22T11:25:34.040Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-10-21T11:25:31.679Z",
+      "startedAt": "2026-10-22T11:25:34.040Z",
       "ok": false,
-      "completedAt": "2026-10-21T11:25:31.679Z",
+      "completedAt": "2026-10-22T11:25:34.040Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-10-21T11:25:31.679Z",
+      "startedAt": "2026-10-22T11:25:34.040Z",
       "ok": false,
-      "completedAt": "2026-10-21T11:25:31.680Z",
-      "durationMs": 1,
+      "completedAt": "2026-10-22T11:25:34.040Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,32 +52,43 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-10-21T11:25:31.680Z",
-      "ok": false,
-      "completedAt": "2026-10-21T11:25:31.882Z",
-      "durationMs": 202,
-      "error": "HTTP 503 Service Unavailable"
+      "startedAt": "2026-10-22T11:25:34.040Z",
+      "ok": true,
+      "httpStatus": 200,
+      "completedAt": "2026-10-22T11:25:34.364Z",
+      "durationMs": 324,
+      "summary": {
+        "kind": "array",
+        "count": 20
+      },
+      "previewRows": [
+        "pubDate: Thu, 22 Oct 2026 03:11:52 +0000 | link: retroachievements:news:2413",
+        "pubDate: Mon, 19 Oct 2026 18:29:51 +0000 | link: retroachievements:news:2412",
+        "pubDate: Fri, 16 Oct 2026 00:13:05 +0000 | link: retroachievements:news:2411",
+        "pubDate: Thu, 15 Oct 2026 00:52:28 +0000 | link: retroachievements:news:2410",
+        "pubDate: Thu, 15 Oct 2026 00:12:19 +0000 | link: retroachievements:news:2409"
+      ]
     },
     {
       "id": "retrohandhelds-news-web",
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-10-21T11:25:31.882Z",
+      "startedAt": "2026-10-22T11:25:34.364Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:31.991Z",
-      "durationMs": 109,
+      "completedAt": "2026-10-22T11:25:34.560Z",
+      "durationMs": 196,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: Retroid Announces Mainline Linux Support for a Few of Its Latest Handhelds | url: https://retrohandhelds.gg/news/",
+        "headline: Odin 3 Portal Pre-orders Open Tomorrow with Prices Starting at $399 | url: https://retrohandhelds.gg/news/",
         "headline: AMD FSR 4.1 Coming Soon to ROG Xbox Ally X, Xbox Ally X20, and More Handhelds | url: https://retrohandhelds.gg/news/",
-        "headline: Anbernic RG DS Gets Better PSP and DS Performance with Its Latest Firmware Update | url: https://retrohandhelds.gg/news/",
-        "headline: AYN Odin 3 Portal Gets a Gameplay Showcase and More Details Revealed | url: https://retrohandhelds.gg/news/",
-        "headline: Steam Next Fest is Drowning in Demos, Here Are a Few We’re Checking Out | url: https://retrohandhelds.gg/news/"
+        "headline: Anbernic RG DS Gets Better PSP and DS Performance with Its Latest Firmware Update | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -85,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-10-21T11:25:31.991Z",
+      "startedAt": "2026-10-22T11:25:34.560Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:32.129Z",
-      "durationMs": 138,
+      "completedAt": "2026-10-22T11:25:34.689Z",
+      "durationMs": 129,
       "summary": {
         "kind": "array",
         "count": 30
@@ -107,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-10-21T11:25:32.129Z",
+      "startedAt": "2026-10-22T11:25:34.689Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:32.182Z",
-      "durationMs": 53,
+      "completedAt": "2026-10-22T11:25:34.778Z",
+      "durationMs": 89,
       "summary": {
         "kind": "array",
         "count": 10
@@ -129,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-10-21T11:25:32.182Z",
+      "startedAt": "2026-10-22T11:25:34.778Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:32.531Z",
-      "durationMs": 349,
+      "completedAt": "2026-10-22T11:25:35.707Z",
+      "durationMs": 929,
       "summary": {
         "kind": "array",
         "count": 7
@@ -151,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-10-21T11:25:32.531Z",
+      "startedAt": "2026-10-22T11:25:35.707Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:32.777Z",
-      "durationMs": 246,
+      "completedAt": "2026-10-22T11:25:36.229Z",
+      "durationMs": 522,
       "summary": {
         "kind": "array",
         "count": 12
@@ -173,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-10-21T11:25:32.777Z",
+      "startedAt": "2026-10-22T11:25:36.229Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:32.826Z",
-      "durationMs": 49,
+      "completedAt": "2026-10-22T11:25:36.382Z",
+      "durationMs": 153,
       "summary": {
         "kind": "array",
         "count": 10
@@ -185,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: XBOX Teases The Return Of The Iconic Xbox 360 Dashboards | url: https://retrododo.com/tag/news/",
-        "headline: Zeldamon Is A GBA Browser Fan Game That Adds Breath Of The Wild Inside Pokémon FireRed | url: https://retrododo.com/tag/news/",
-        "headline: Retroid Announces Linux Support For Pocket 6, Nova and Duo Handhelds | url: https://retrododo.com/tag/news/"
+        "headline: A Fan Remake of Digimon World For PlayStation 1 Is On Its Way | url: https://retrododo.com/tag/news/",
+        "headline: A Rare Prototype Cartridge Of Pokémon Red Is Up For Auction Starting At $25K | url: https://retrododo.com/tag/news/",
+        "headline: Let&#39;s Go Pikachu/Eevee GBA Demake Now Has An English Translation | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -195,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-10-21T11:25:32.826Z",
+      "startedAt": "2026-10-22T11:25:36.382Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:33.362Z",
-      "durationMs": 536,
+      "completedAt": "2026-10-22T11:25:36.997Z",
+      "durationMs": 615,
       "summary": {
         "kind": "array",
         "count": 12
@@ -217,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-10-21T11:25:33.362Z",
+      "startedAt": "2026-10-22T11:25:36.997Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-10-21T11:25:33.460Z",
-      "durationMs": 98,
+      "completedAt": "2026-10-22T11:25:37.090Z",
+      "durationMs": 93,
       "summary": {
         "kind": "array",
         "count": 10
@@ -239,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-10-21T11:25:33.460Z",
+      "startedAt": "2026-10-22T11:25:37.090Z",
       "ok": false,
-      "completedAt": "2026-10-21T11:25:33.570Z",
-      "durationMs": 110,
+      "completedAt": "2026-10-22T11:25:37.224Z",
+      "durationMs": 134,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
