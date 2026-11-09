@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-11-08T12:58:49.257Z",
+  "generatedAt": "2026-11-09T15:39:55.860Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-11-08T12:58:46.714Z",
+      "startedAt": "2026-11-09T15:39:53.328Z",
       "ok": false,
-      "completedAt": "2026-11-08T12:58:46.714Z",
+      "completedAt": "2026-11-09T15:39:53.328Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-11-08T12:58:46.714Z",
+      "startedAt": "2026-11-09T15:39:53.328Z",
       "ok": false,
-      "completedAt": "2026-11-08T12:58:46.715Z",
-      "durationMs": 1,
+      "completedAt": "2026-11-09T15:39:53.328Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-11-08T12:58:46.715Z",
+      "startedAt": "2026-11-09T15:39:53.328Z",
       "ok": false,
-      "completedAt": "2026-11-08T12:58:46.715Z",
+      "completedAt": "2026-11-09T15:39:53.328Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-11-08T12:58:46.715Z",
+      "startedAt": "2026-11-09T15:39:53.328Z",
       "ok": false,
-      "completedAt": "2026-11-08T12:58:46.715Z",
+      "completedAt": "2026-11-09T15:39:53.328Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-11-08T12:58:46.715Z",
+      "startedAt": "2026-11-09T15:39:53.328Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:47.134Z",
-      "durationMs": 419,
+      "completedAt": "2026-11-09T15:39:53.694Z",
+      "durationMs": 366,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 09 Nov 2026 15:04:23 +0000 | link: retroachievements:news:2425",
         "pubDate: Sat, 07 Nov 2026 09:09:21 +0000 | link: https://retroachievements.org",
         "pubDate: Sat, 07 Nov 2026 01:03:39 +0000 | link: retroachievements:news:2423",
         "pubDate: Fri, 06 Nov 2026 14:14:53 +0000 | link: retroachievements:news:2422",
-        "pubDate: Thu, 05 Nov 2026 14:46:24 +0000 | link: retroachievements:news:2421",
-        "pubDate: Mon, 02 Nov 2026 18:18:21 +0000 | link: retroachievements:news:2420"
+        "pubDate: Thu, 05 Nov 2026 14:46:24 +0000 | link: retroachievements:news:2421"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-11-08T12:58:47.134Z",
+      "startedAt": "2026-11-09T15:39:53.694Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:47.251Z",
-      "durationMs": 117,
+      "completedAt": "2026-11-09T15:39:53.905Z",
+      "durationMs": 211,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: Pokémon Fulldex Brings Every DS Pokémon Game To One Widescreen, Switch Included | url: https://retrohandhelds.gg/news/",
-        "headline: A ZX Spectrum 48K Is Now Emulating 18 Nintendo Game &amp; Watch Classics | url: https://retrohandhelds.gg/news/",
-        "headline: Six Lost Sega Technical Institute Prototypes Emerge From One Programmer’s Floppy Disks | url: https://retrohandhelds.gg/news/",
-        "headline: PS5 Emulator KytyPS5 Has Demon’s Souls Flirting With 60FPS, With New Builds Landing Daily | url: https://retrohandhelds.gg/news/"
+        "headline: AYN Odin 3 Portal Starts Shipping Right on Schedule | url: https://retrohandhelds.gg/news/",
+        "headline: Spruce 4.6 Arrives with New Device Support and Plenty of Quality of Life Updates | url: https://retrohandhelds.gg/news/",
+        "headline: GameNative V1.4 is Here Bringing Gamescope and More to Your Devices | url: https://retrohandhelds.gg/news/",
+        "headline: Fan Preservationist Rescues Japan-Only Pac-Man SP | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,21 +96,21 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-11-08T12:58:47.251Z",
+      "startedAt": "2026-11-09T15:39:53.905Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:47.625Z",
-      "durationMs": 374,
+      "completedAt": "2026-11-09T15:39:54.136Z",
+      "durationMs": 231,
       "summary": {
         "kind": "array",
         "count": 30
       },
       "previewRows": [
+        "title: RGC #43: Desert Air + Handheld Deals | pubDate: Sun, 08 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-043/",
         "title: RGC #42: Five Videos, No Fluff | pubDate: Sun, 01 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-042/",
         "title: RGC #41: New Castlevania, Old Mario | pubDate: Sun, 25 Oct 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-041/",
         "title: RGC #40: Okay, Retroid is Cooking. | pubDate: Sun, 18 Oct 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-040/",
-        "title: RGC #39: A Whirlwind Week | pubDate: Sun, 11 Oct 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-039/",
-        "title: RGC #38: Some Ups and Downs | pubDate: Sun, 04 Oct 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-038/"
+        "title: RGC #39: A Whirlwind Week | pubDate: Sun, 11 Oct 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-039/"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-11-08T12:58:47.625Z",
+      "startedAt": "2026-11-09T15:39:54.136Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:47.707Z",
-      "durationMs": 82,
+      "completedAt": "2026-11-09T15:39:54.229Z",
+      "durationMs": 93,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-11-08T12:58:47.707Z",
+      "startedAt": "2026-11-09T15:39:54.229Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:48.031Z",
-      "durationMs": 324,
+      "completedAt": "2026-11-09T15:39:54.422Z",
+      "durationMs": 193,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-11-08T12:58:48.031Z",
+      "startedAt": "2026-11-09T15:39:54.422Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:48.273Z",
-      "durationMs": 242,
+      "completedAt": "2026-11-09T15:39:54.708Z",
+      "durationMs": 286,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-11-08T12:58:48.273Z",
+      "startedAt": "2026-11-09T15:39:54.708Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:48.362Z",
-      "durationMs": 89,
+      "completedAt": "2026-11-09T15:39:54.928Z",
+      "durationMs": 220,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Thousands Of Gamers Are Playing NFS: Underground 2 Online Together In Their Browser | url: https://retrododo.com/tag/news/",
-        "headline: 2017 ROM Hack Pokémon Orange Gets Huge New Updates Evolving The Entire Game | url: https://retrododo.com/tag/news/",
-        "headline: Mario Kart 64 Now Runs In Your Browser With Online Multiplayer | url: https://retrododo.com/tag/news/"
+        "headline: Someone Put A GBA Emulator In World Of Warcraft: Forever So Flying Isn&#39;t Boring | url: https://retrododo.com/tag/news/",
+        "headline: Pokémon FullDex Converts Dual-Screen Poke&#39;Games To A Single Screen You Actually Enjoy Using | url: https://retrododo.com/tag/news/",
+        "headline: The Nintendo GameCube Just Got A Homebrew App Store | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-11-08T12:58:48.362Z",
+      "startedAt": "2026-11-09T15:39:54.928Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:48.943Z",
-      "durationMs": 581,
+      "completedAt": "2026-11-09T15:39:55.532Z",
+      "durationMs": 604,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-11-08T12:58:48.943Z",
+      "startedAt": "2026-11-09T15:39:55.532Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-08T12:58:49.041Z",
-      "durationMs": 98,
+      "completedAt": "2026-11-09T15:39:55.664Z",
+      "durationMs": 132,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-11-08T12:58:49.041Z",
+      "startedAt": "2026-11-09T15:39:55.664Z",
       "ok": false,
-      "completedAt": "2026-11-08T12:58:49.257Z",
-      "durationMs": 216,
+      "completedAt": "2026-11-09T15:39:55.860Z",
+      "durationMs": 196,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
