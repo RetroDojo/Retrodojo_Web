@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-11-19T15:28:16.967Z",
+  "generatedAt": "2026-11-20T15:05:14.872Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-11-19T15:28:14.664Z",
+      "startedAt": "2026-11-20T15:05:12.643Z",
       "ok": false,
-      "completedAt": "2026-11-19T15:28:14.664Z",
+      "completedAt": "2026-11-20T15:05:12.643Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-11-19T15:28:14.664Z",
+      "startedAt": "2026-11-20T15:05:12.643Z",
       "ok": false,
-      "completedAt": "2026-11-19T15:28:14.664Z",
+      "completedAt": "2026-11-20T15:05:12.643Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,10 +30,10 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-11-19T15:28:14.664Z",
+      "startedAt": "2026-11-20T15:05:12.643Z",
       "ok": false,
-      "completedAt": "2026-11-19T15:28:14.665Z",
-      "durationMs": 1,
+      "completedAt": "2026-11-20T15:05:12.643Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
     {
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-11-19T15:28:14.665Z",
+      "startedAt": "2026-11-20T15:05:12.643Z",
       "ok": false,
-      "completedAt": "2026-11-19T15:28:14.665Z",
+      "completedAt": "2026-11-20T15:05:12.643Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-11-19T15:28:14.665Z",
+      "startedAt": "2026-11-20T15:05:12.643Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:15.049Z",
-      "durationMs": 384,
+      "completedAt": "2026-11-20T15:05:12.898Z",
+      "durationMs": 255,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-11-19T15:28:15.049Z",
+      "startedAt": "2026-11-20T15:05:12.898Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:15.117Z",
-      "durationMs": 68,
+      "completedAt": "2026-11-20T15:05:12.977Z",
+      "durationMs": 79,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
-        "headline: MANGMI Air X Pro is ‘Coming Soon’ | url: https://retrohandhelds.gg/news/",
-        "headline: 8BitDo’s GC Bluetooth Gamepad Brings TMR Sticks to a Familiar Shape | url: https://retrohandhelds.gg/news/",
-        "headline: Lenovo’s Legion Go Beam Leak Points to a Simpler Handheld, but the Price Is Still Missing | url: https://retrohandhelds.gg/news/",
-        "headline: Geartowns 1.0.8 Gives FM Towns Emulation Better Controls | url: https://retrohandhelds.gg/news/"
+        "headline: Valve Opens Direct Steam Machine Orders, Closes New 2TB Waitlist Signups | url: https://retrohandhelds.gg/news/",
+        "headline: RomP and RomM Tackle ROM Clutter and Save-File Conflicts | url: https://retrohandhelds.gg/news/",
+        "headline: Backlog Turns Your Steam Library Into a Screensaver You Might Actually Watch | url: https://retrohandhelds.gg/news/",
+        "headline: CG Deck Takes Its Modular x86 Handheld to Kickstarter, but Mind the Kit Price | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-11-19T15:28:15.117Z",
+      "startedAt": "2026-11-20T15:05:12.977Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:15.397Z",
-      "durationMs": 280,
+      "completedAt": "2026-11-20T15:05:13.364Z",
+      "durationMs": 387,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-11-19T15:28:15.397Z",
+      "startedAt": "2026-11-20T15:05:13.364Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:15.478Z",
-      "durationMs": 81,
+      "completedAt": "2026-11-20T15:05:13.421Z",
+      "durationMs": 57,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-11-19T15:28:15.478Z",
+      "startedAt": "2026-11-20T15:05:13.421Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:15.777Z",
-      "durationMs": 299,
+      "completedAt": "2026-11-20T15:05:13.701Z",
+      "durationMs": 280,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-11-19T15:28:15.777Z",
+      "startedAt": "2026-11-20T15:05:13.701Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:16.102Z",
-      "durationMs": 325,
+      "completedAt": "2026-11-20T15:05:14.017Z",
+      "durationMs": 316,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-11-19T15:28:16.102Z",
+      "startedAt": "2026-11-20T15:05:14.017Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:16.164Z",
-      "durationMs": 62,
+      "completedAt": "2026-11-20T15:05:14.150Z",
+      "durationMs": 133,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Super Mario Wonder Game Boy Demake Is In The Works With No AI Used | url: https://retrododo.com/tag/news/",
-        "headline: MANGMI Tease New Air X Pro Handheld | url: https://retrododo.com/tag/news/",
-        "headline: Finally, You Can Now Update Your Analogue 3D Via WiFi | url: https://retrododo.com/tag/news/"
+        "headline: Designer Creates The Ultimate Gaming Wallets We&#39;ve All Dreamed Of | url: https://retrododo.com/tag/news/",
+        "headline: N64 Peripheral &#39;Bridge&#39; Creates Wireless Controller Conections Without Any Modifications | url: https://retrododo.com/tag/news/",
+        "headline: Super Mario Wonder Game Boy Demake Is In The Works With No AI Used | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-11-19T15:28:16.164Z",
+      "startedAt": "2026-11-20T15:05:14.150Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:16.732Z",
-      "durationMs": 568,
+      "completedAt": "2026-11-20T15:05:14.641Z",
+      "durationMs": 491,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,10 +228,10 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-11-19T15:28:16.732Z",
+      "startedAt": "2026-11-20T15:05:14.641Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-19T15:28:16.835Z",
+      "completedAt": "2026-11-20T15:05:14.744Z",
       "durationMs": 103,
       "summary": {
         "kind": "array",
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-11-19T15:28:16.835Z",
+      "startedAt": "2026-11-20T15:05:14.744Z",
       "ok": false,
-      "completedAt": "2026-11-19T15:28:16.967Z",
-      "durationMs": 132,
+      "completedAt": "2026-11-20T15:05:14.872Z",
+      "durationMs": 128,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
