@@ -1,17 +1,17 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-11-22T14:18:57.934Z",
+  "generatedAt": "2026-11-23T17:42:48.709Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-11-22T14:18:54.813Z",
+      "startedAt": "2026-11-23T17:42:01.774Z",
       "ok": false,
-      "completedAt": "2026-11-22T14:18:54.813Z",
-      "durationMs": 0,
+      "completedAt": "2026-11-23T17:42:01.775Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
     {
@@ -19,9 +19,9 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-11-22T14:18:54.813Z",
+      "startedAt": "2026-11-23T17:42:01.775Z",
       "ok": false,
-      "completedAt": "2026-11-22T14:18:54.813Z",
+      "completedAt": "2026-11-23T17:42:01.775Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-11-22T14:18:54.813Z",
+      "startedAt": "2026-11-23T17:42:01.775Z",
       "ok": false,
-      "completedAt": "2026-11-22T14:18:54.813Z",
+      "completedAt": "2026-11-23T17:42:01.775Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,9 +41,9 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-11-22T14:18:54.813Z",
+      "startedAt": "2026-11-23T17:42:01.775Z",
       "ok": false,
-      "completedAt": "2026-11-22T14:18:54.813Z",
+      "completedAt": "2026-11-23T17:42:01.775Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
@@ -52,21 +52,21 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-11-22T14:18:54.813Z",
+      "startedAt": "2026-11-23T17:42:01.775Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:55.173Z",
-      "durationMs": 360,
+      "completedAt": "2026-11-23T17:42:02.387Z",
+      "durationMs": 612,
       "summary": {
         "kind": "array",
         "count": 20
       },
       "previewRows": [
+        "pubDate: Mon, 23 Nov 2026 15:57:27 +0000 | link: retroachievements:news:2434",
         "pubDate: Sat, 21 Nov 2026 03:33:13 +0000 | link: retroachievements:news:2433",
         "pubDate: Wed, 18 Nov 2026 15:16:50 +0000 | link: retroachievements:news:2432",
         "pubDate: Tue, 17 Nov 2026 17:41:38 +0000 | link: retroachievements:news:2431",
-        "pubDate: Mon, 16 Nov 2026 17:51:46 +0000 | link: retroachievements:news:2430",
-        "pubDate: Sat, 14 Nov 2026 22:07:51 +0000 | link: retroachievements:news:2429"
+        "pubDate: Mon, 16 Nov 2026 17:51:46 +0000 | link: retroachievements:news:2430"
       ]
     },
     {
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-11-22T14:18:55.173Z",
+      "startedAt": "2026-11-23T17:42:02.387Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:55.312Z",
-      "durationMs": 139,
+      "completedAt": "2026-11-23T17:42:02.455Z",
+      "durationMs": 68,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: F1GameStation Is a Handheld You Can Build Yourself for About $25 | url: https://retrohandhelds.gg/news/",
+        "headline: ICYMI DIY: Wireless N64 Pads, Tiny Handhelds and Better Game Shelves | url: https://retrohandhelds.gg/news/",
         "headline: Anbernic Gives Us Another Look at the RG DDS Ahead of Next Month’s Launch | url: https://retrohandhelds.gg/news/",
-        "headline: Retro Handhelds Weekly: MANGMI Air X Pro, Virtual Boy Mario 64, and a Very Weird Week | url: https://retrohandhelds.gg/news/",
-        "headline: Valve Opens Direct Steam Machine Orders, Closes New 2TB Waitlist Signups | url: https://retrohandhelds.gg/news/",
-        "headline: RomP and RomM Tackle ROM Clutter and Save-File Conflicts | url: https://retrohandhelds.gg/news/"
+        "headline: Retro Handhelds Weekly: MANGMI Air X Pro, Virtual Boy Mario 64, and a Very Weird Week | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,11 +96,11 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-11-22T14:18:55.312Z",
+      "startedAt": "2026-11-23T17:42:02.455Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:55.832Z",
-      "durationMs": 520,
+      "completedAt": "2026-11-23T17:42:47.136Z",
+      "durationMs": 44681,
       "summary": {
         "kind": "array",
         "count": 30
@@ -118,10 +118,10 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-11-22T14:18:55.832Z",
+      "startedAt": "2026-11-23T17:42:47.136Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:55.933Z",
+      "completedAt": "2026-11-23T17:42:47.237Z",
       "durationMs": 101,
       "summary": {
         "kind": "array",
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-11-22T14:18:55.933Z",
+      "startedAt": "2026-11-23T17:42:47.237Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:56.105Z",
-      "durationMs": 172,
+      "completedAt": "2026-11-23T17:42:47.526Z",
+      "durationMs": 289,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-11-22T14:18:56.105Z",
+      "startedAt": "2026-11-23T17:42:47.526Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:56.454Z",
-      "durationMs": 349,
+      "completedAt": "2026-11-23T17:42:47.879Z",
+      "durationMs": 353,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-11-22T14:18:56.454Z",
+      "startedAt": "2026-11-23T17:42:47.879Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:56.531Z",
-      "durationMs": 77,
+      "completedAt": "2026-11-23T17:42:47.934Z",
+      "durationMs": 55,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: Designer Creates The Ultimate Gaming Wallets We&#39;ve All Dreamed Of | url: https://retrododo.com/tag/news/",
-        "headline: N64 Peripheral &#39;Bridge&#39; Creates Wireless Controller Conections Without Any Modifications | url: https://retrododo.com/tag/news/",
-        "headline: Super Mario Wonder Game Boy Demake Is In The Works With No AI Used | url: https://retrododo.com/tag/news/"
+        "headline: This LEGO SNES Set Is The Closest Concept Design I&#39;ve Seen To The Real Deal | url: https://retrododo.com/tag/news/",
+        "headline: There&#39;s A New Craft Kit That Lets You Make Your Own Replica Cartridges For The PlayGate | url: https://retrododo.com/tag/news/",
+        "headline: ATARI Reveals Gold GameStation Go Handheld To Celebrate 55th Anniversary | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-11-22T14:18:56.531Z",
+      "startedAt": "2026-11-23T17:42:47.934Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:57.331Z",
-      "durationMs": 800,
+      "completedAt": "2026-11-23T17:42:48.488Z",
+      "durationMs": 554,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-11-22T14:18:57.331Z",
+      "startedAt": "2026-11-23T17:42:48.488Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-22T14:18:57.462Z",
-      "durationMs": 131,
+      "completedAt": "2026-11-23T17:42:48.591Z",
+      "durationMs": 103,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-11-22T14:18:57.462Z",
+      "startedAt": "2026-11-23T17:42:48.591Z",
       "ok": false,
-      "completedAt": "2026-11-22T14:18:57.934Z",
-      "durationMs": 472,
+      "completedAt": "2026-11-23T17:42:48.709Z",
+      "durationMs": 118,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
