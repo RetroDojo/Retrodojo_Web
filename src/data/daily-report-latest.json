@@ -1,16 +1,16 @@
 {
   "title": "RetroDojo Daily Data Pulse",
   "subtitle": "Automated snapshot of key datasets",
-  "generatedAt": "2026-11-25T16:57:41.644Z",
+  "generatedAt": "2026-11-26T16:37:00.406Z",
   "results": [
     {
       "id": "systems",
       "label": "Systems Catalog",
       "type": "file",
       "location": "src/data/systems.json",
-      "startedAt": "2026-11-25T16:57:35.380Z",
+      "startedAt": "2026-11-26T16:36:57.817Z",
       "ok": false,
-      "completedAt": "2026-11-25T16:57:35.380Z",
+      "completedAt": "2026-11-26T16:36:57.817Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/systems.json'"
     },
@@ -19,10 +19,10 @@
       "label": "Device Database",
       "type": "file",
       "location": "src/data/devices.json",
-      "startedAt": "2026-11-25T16:57:35.380Z",
+      "startedAt": "2026-11-26T16:36:57.817Z",
       "ok": false,
-      "completedAt": "2026-11-25T16:57:35.381Z",
-      "durationMs": 1,
+      "completedAt": "2026-11-26T16:36:57.817Z",
+      "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/devices.json'"
     },
     {
@@ -30,9 +30,9 @@
       "label": "Chipset Matrix",
       "type": "file",
       "location": "src/data/chipsets.json",
-      "startedAt": "2026-11-25T16:57:35.381Z",
+      "startedAt": "2026-11-26T16:36:57.817Z",
       "ok": false,
-      "completedAt": "2026-11-25T16:57:35.381Z",
+      "completedAt": "2026-11-26T16:36:57.817Z",
       "durationMs": 0,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/chipsets.json'"
     },
@@ -41,10 +41,10 @@
       "label": "Benchmark Scores",
       "type": "file",
       "location": "src/data/benchmarks.json",
-      "startedAt": "2026-11-25T16:57:35.381Z",
+      "startedAt": "2026-11-26T16:36:57.817Z",
       "ok": false,
-      "completedAt": "2026-11-25T16:57:35.381Z",
-      "durationMs": 0,
+      "completedAt": "2026-11-26T16:36:57.818Z",
+      "durationMs": 1,
       "error": "ENOENT: no such file or directory, open '/home/runner/work/Retrodojo_Web/Retrodojo_Web/src/data/benchmarks.json'"
     },
     {
@@ -52,11 +52,11 @@
       "label": "RetroAchievements News",
       "type": "url",
       "location": "https://retroachievements.org/rss-news",
-      "startedAt": "2026-11-25T16:57:35.381Z",
+      "startedAt": "2026-11-26T16:36:57.818Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:35.793Z",
-      "durationMs": 412,
+      "completedAt": "2026-11-26T16:36:58.169Z",
+      "durationMs": 351,
       "summary": {
         "kind": "array",
         "count": 20
@@ -74,21 +74,21 @@
       "label": "RetroHandhelds.gg News",
       "type": "url",
       "location": "https://retrohandhelds.gg/news/",
-      "startedAt": "2026-11-25T16:57:35.793Z",
+      "startedAt": "2026-11-26T16:36:58.169Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:35.899Z",
-      "durationMs": 106,
+      "completedAt": "2026-11-26T16:36:58.381Z",
+      "durationMs": 212,
       "summary": {
         "kind": "array",
         "count": 12
       },
       "previewRows": [
         "headline: News | url: https://retrohandhelds.gg/news/",
+        "headline: AbyssME Turns an Android Handheld into a Museum of Unusual Mobile Games | url: https://retrohandhelds.gg/news/",
+        "headline: MANGMI Air X Pro Specs Revealed, But We’re Still Waiting on a Price | url: https://retrohandhelds.gg/news/",
         "headline: Plot Twist: The Legion Go Beam Might Actually Run Android | url: https://retrohandhelds.gg/news/",
-        "headline: PortareOS Builds a Linux Home Around the Retroid Pocket Nova | url: https://retrohandhelds.gg/news/",
-        "headline: DSlot Gives the Anbernic RG DS Plus a Cartridge-Style Linux Makeover | url: https://retrohandhelds.gg/news/",
-        "headline: F1GameStation Is a Handheld You Can Build Yourself for About $25 | url: https://retrohandhelds.gg/news/"
+        "headline: PortareOS Builds a Linux Home Around the Retroid Pocket Nova | url: https://retrohandhelds.gg/news/"
       ]
     },
     {
@@ -96,21 +96,21 @@
       "label": "Retro Game Corps Newsletter",
       "type": "url",
       "location": "https://buttondown.com/retrogamecorps/rss",
-      "startedAt": "2026-11-25T16:57:35.899Z",
+      "startedAt": "2026-11-26T16:36:58.381Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:40.309Z",
-      "durationMs": 4410,
+      "completedAt": "2026-11-26T16:36:58.584Z",
+      "durationMs": 203,
       "summary": {
         "kind": "array",
         "count": 30
       },
       "previewRows": [
+        "title: Black Friday 2026 Handheld Deals (and More) | pubDate: Thu, 26 Nov 2026 06:38:04 +0000 | link: https://buttondown.com/retrogamecorps/archive/Black-Friday-2026/",
         "title: RGC #45: Domo Arigato, Mr. Grand Theft Auto | pubDate: Sun, 22 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-045/",
         "title: RGC #44: The Odin 3 Portal Has Arrived. | pubDate: Sun, 15 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-044/",
         "title: AliExpress Singles&#39; Day (11/11) Handheld Deals | pubDate: Wed, 11 Nov 2026 03:17:25 +0000 | link: https://buttondown.com/retrogamecorps/archive/Singles-Day-2026/",
-        "title: RGC #43: Desert Air + Handheld Deals | pubDate: Sun, 08 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-043/",
-        "title: RGC #42: Five Videos, No Fluff | pubDate: Sun, 01 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-042/"
+        "title: RGC #43: Desert Air + Handheld Deals | pubDate: Sun, 08 Nov 2026 14:00:00 +0000 | link: https://buttondown.com/retrogamecorps/archive/RGC-043/"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "label": "Retro Game Corps Feed",
       "type": "url",
       "location": "https://retrogamecorps.com/feed/",
-      "startedAt": "2026-11-25T16:57:40.309Z",
+      "startedAt": "2026-11-26T16:36:58.584Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:40.362Z",
-      "durationMs": 53,
+      "completedAt": "2026-11-26T16:36:58.808Z",
+      "durationMs": 224,
       "summary": {
         "kind": "array",
         "count": 10
@@ -140,11 +140,11 @@
       "label": "Joey's Retro Handhelds Latest News",
       "type": "url",
       "location": "https://www.joeysretrohandhelds.com/latest-news/",
-      "startedAt": "2026-11-25T16:57:40.362Z",
+      "startedAt": "2026-11-26T16:36:58.808Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:40.631Z",
-      "durationMs": 269,
+      "completedAt": "2026-11-26T16:36:58.909Z",
+      "durationMs": 101,
       "summary": {
         "kind": "array",
         "count": 7
@@ -162,11 +162,11 @@
       "label": "Anbernic Official",
       "type": "url",
       "location": "https://anbernic.com/",
-      "startedAt": "2026-11-25T16:57:40.632Z",
+      "startedAt": "2026-11-26T16:36:58.909Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:40.957Z",
-      "durationMs": 325,
+      "completedAt": "2026-11-26T16:36:59.186Z",
+      "durationMs": 277,
       "summary": {
         "kind": "array",
         "count": 12
@@ -184,11 +184,11 @@
       "label": "Retro Dodo News",
       "type": "url",
       "location": "https://retrododo.com/tag/news/",
-      "startedAt": "2026-11-25T16:57:40.957Z",
+      "startedAt": "2026-11-26T16:36:59.186Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:40.996Z",
-      "durationMs": 39,
+      "completedAt": "2026-11-26T16:36:59.292Z",
+      "durationMs": 106,
       "summary": {
         "kind": "array",
         "count": 10
@@ -196,9 +196,9 @@
       "previewRows": [
         "headline: Join Our Free Newsletter Community | url: https://retrododo.com/tag/news/",
         "headline: Retro Gaming News | url: https://retrododo.com/tag/news/",
-        "headline: LEGO DSi XL Is Gaining Traction Over On LEGO Ideas | url: https://retrododo.com/tag/news/",
-        "headline: Pokémon Emerald Azure Update Brings Over 135 Regional Variants &amp; Exciting Story Rewrites | url: https://retrododo.com/tag/news/",
-        "headline: Best Retro Gaming Black Friday Deals [Updated Daily] | url: https://retrododo.com/tag/news/"
+        "headline: Pokémon Helix Is A Sequel To GameCube Games Pokémon XD and Colosseum | url: https://retrododo.com/tag/news/",
+        "headline: A New NDS Emulator Is Here On The Google Play Store From The Makers Of Pizza Boy | url: https://retrododo.com/tag/news/",
+        "headline: Pokémon Hearth and Thorn Brings Branched Stories, 30 Hours Of Content, &amp; 600 Pokémon | url: https://retrododo.com/tag/news/"
       ]
     },
     {
@@ -206,11 +206,11 @@
       "label": "AYANEO Community Brand",
       "type": "url",
       "location": "https://www.ayaneo.com/community/brand",
-      "startedAt": "2026-11-25T16:57:40.996Z",
+      "startedAt": "2026-11-26T16:36:59.292Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:41.454Z",
-      "durationMs": 458,
+      "completedAt": "2026-11-26T16:37:00.020Z",
+      "durationMs": 728,
       "summary": {
         "kind": "array",
         "count": 12
@@ -228,11 +228,11 @@
       "label": "AYANEO Product",
       "type": "url",
       "location": "https://www.ayaneo.com/product",
-      "startedAt": "2026-11-25T16:57:41.454Z",
+      "startedAt": "2026-11-26T16:37:00.020Z",
       "ok": true,
       "httpStatus": 200,
-      "completedAt": "2026-11-25T16:57:41.548Z",
-      "durationMs": 94,
+      "completedAt": "2026-11-26T16:37:00.172Z",
+      "durationMs": 152,
       "summary": {
         "kind": "array",
         "count": 10
@@ -250,10 +250,10 @@
       "label": "AYN Discord Signals",
       "type": "discord",
       "location": "discord:guild:717181357109018694",
-      "startedAt": "2026-11-25T16:57:41.548Z",
+      "startedAt": "2026-11-26T16:37:00.172Z",
       "ok": false,
-      "completedAt": "2026-11-25T16:57:41.644Z",
-      "durationMs": 96,
+      "completedAt": "2026-11-26T16:37:00.406Z",
+      "durationMs": 234,
       "error": "Discord API 403 Forbidden for channel official-news"
     }
   ]
